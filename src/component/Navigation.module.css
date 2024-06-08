@@ -1,0 +1,44 @@
+.navBar {
+    height: 72px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navBarBox {
+    height: 72px;
+    display: flex;
+    align-items: center;
+}
+.navBarLogin {
+    height: 72px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navBarLogin button {
+    margin-right: 40px;
+    border: none;
+    background: black;
+    color: white;
+    padding: 13px 40px 13px 40px;
+    border-radius: 40px;
+}
+.navBarLogin button:hover {
+    margin-right: 40px;
+    border: none;
+    background: red;
+    color: white;
+    padding: 13px 40px 13px 40px;
+    border-radius: 40px;
+}
+
+.pageLinkBox {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 1.3rem;
+    margin: 1rem;
+}
