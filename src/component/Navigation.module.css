@@ -78,3 +78,18 @@
 .pageLinkBox a:hover {
     text-decoration-line: underline;
 }
+
+.pageLinkedBox {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 1.3rem;
+    margin: 1rem;
+}
+.pageLinkedBox a {
+    color: rgb(255,85,62);
+    text-decoration-line: none;
+}
+.pageLinkedBox a:hover {
+    text-decoration-line: underline;
+}
