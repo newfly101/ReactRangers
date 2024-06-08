@@ -6,11 +6,24 @@
     align-items: center;
     justify-content: space-between;
 }
+.pageTitle {
+    /*font-size: 1.3rem;*/
+    display: flex;
+    font-size: 1.4rem;
+    margin-right: 40px;
+    align-items: center;
+    justify-content: center;
+}
+.pageTitle a {
+    color: black;
+    text-decoration-line: none;
+}
 
 .navBarBox {
     height: 72px;
     display: flex;
     align-items: center;
+    margin-left: 50px;
 }
 .navBarLogin {
     height: 72px;
@@ -41,4 +54,11 @@
     align-items: center;
     font-size: 1.3rem;
     margin: 1rem;
+}
+.pageLinkBox a {
+    color: black;
+    text-decoration-line: none;
+}
+.pageLinkBox a:hover {
+    text-decoration-line: underline;
 }

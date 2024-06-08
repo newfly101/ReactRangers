@@ -5,20 +5,20 @@ const Navigation = () => {
     return (
         <nav className={classes.navBar}>
                 <div className={classes.navBarBox}>
-                    <div className={classes.pageLinkBox}>
+                    <div className={classes.pageTitle}>
                         <a href="">Tistory</a>
                     </div>
                     <div className={classes.pageLinkBox}>
-                        피드
+                        <a href="">피드</a>
                     </div>
                     <div className={classes.pageLinkBox}>
-                        스토리
+                        <a href="">스토리</a>
                     </div>
                     <div className={classes.pageLinkBox}>
-                        스킨
+                        <a href="">스킨</a>
                     </div>
                     <div className={classes.pageLinkBox}>
-                        포럼
+                        <a href="">포럼</a>
                     </div>
                 </div>
                 <div className={classes.navBarLogin}>
