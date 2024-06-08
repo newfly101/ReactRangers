@@ -7,7 +7,8 @@ const Feed = () => {
       <div className={classes.mainFeed}>
         <div className={classes.innerFeed}>
           <h2 className={classes.nameFeed}>Feed</h2>
-          <p className={classes.pFont}>내가 구독하는 글입니다</p>
+          <p className={classes.pFont}>내가 입니다</p>
+        <div><h>???</h></div>
         </div>
       </div>
     </div>
