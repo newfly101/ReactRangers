@@ -1,7 +1,8 @@
-import TistoryMain from "./component/TistoryMain";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import Navigation from "./component/Navigation";
+import TistoryMain from "./component/TistoryMain";
 import ForumMain from "./component/forum/ForumMain";
+import Feed from "./component/feed/Feed";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Routes>
         <Route path="/" element={<TistoryMain />} />
         <Route path="/forum" element={<ForumMain />} />
+        <Route path="/feed" element={<Feed />} />
       </Routes>
       <footer>
         <div>
