@@ -1,5 +1,6 @@
 import React from 'react';
 import classes from './ForumMain.module.css';
+import ForumBlog from "./ForumBlog";
 
 const ForumMain = () => {
     let RN = Number(Math.floor(Math.random() * 3)+1);
@@ -12,6 +13,7 @@ const ForumMain = () => {
             <div>
                 <input type="text"/>
             </div>
+            <ForumBlog />
         </div>
     );
 };
