@@ -1,6 +1,7 @@
 import TistoryMain from "./component/TistoryMain";
 import {BrowserRouter as Router, Route, Routes} from "react-router-dom";
 import Navigation from "./component/Navigation";
+import ForumMain from "./component/forum/ForumMain";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
           </div>
           <Routes>
               <Route path="/" element={<TistoryMain />} />
+              <Route path="/forum" element={<ForumMain />} />
           {/*    
             <Route path="/" element={<TistoryMain />} /> // 여기에 page link 추가
             

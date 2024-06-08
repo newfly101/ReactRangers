@@ -6,26 +6,25 @@ const Navigation = () => {
         <nav className={classes.navBar}>
                 <div className={classes.navBarBox}>
                     <div className={classes.pageTitle}>
-                        <a href="">Tistory</a>
+                        <a href="/">Tistory</a>
                     </div>
                     <div className={classes.pageLinkBox}>
-                        <a href="">피드</a>
+                        <a href="/">피드</a>
                     </div>
                     <div className={classes.pageLinkBox}>
-                        <a href="">스토리</a>
+                        <a href="/">스토리</a>
                     </div>
                     <div className={classes.pageLinkBox}>
-                        <a href="">스킨</a>
+                        <a href="/">스킨</a>
                     </div>
                     <div className={classes.pageLinkBox}>
-                        <a href="">포럼</a>
+                        <a href="/forum">포럼</a>
                     </div>
                 </div>
                 <div className={classes.navBarLogin}>
                     <button>시작하기</button>
                 </div>
         </nav>
-
     );
 };
 
