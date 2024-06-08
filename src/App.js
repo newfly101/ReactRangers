@@ -14,6 +14,9 @@ function App() {
         <Route path="/" element={<TistoryMain />} />
         <Route path="/forum" element={<ForumMain />} />
         <Route path="/feed" element={<Feed />} />
+          {/*
+            <Route path="/" element={<TistoryMain />} /> // 여기에 page link 추가
+          */}
       </Routes>
       <footer>
         <div>
