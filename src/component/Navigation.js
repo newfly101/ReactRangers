@@ -2,6 +2,8 @@ import React from 'react';
 import classes from './Navigation.module.css';
 
 const Navigation = () => {
+    const navUrl = window.location.href.split('/');
+    console.log(navUrl[3]);
     return (
         <nav className={classes.navBar}>
                 <div className={classes.navBarBox}>
@@ -21,7 +23,8 @@ const Navigation = () => {
                         <a href="/forum">포럼</a>
                     </div>
                 </div>
-                <div className={classes.navBarLogin}>
+                <div className={`${navUrl[3] !== 'forum' ?
+                    classes.navBarLogin : classes.navBarLogin2}`}>
                     <button>시작하기</button>
                 </div>
         </nav>
