@@ -54,9 +54,9 @@ const TstorySkin = () => {
             </div>
             <div className={`${classes.roundButton}`}>
               <button>자세히 보기</button>
-              <button>
+              <button className={classes.button_link_Icon}>
                 적용 예시 보기
-                <span className={classes.button_link_Icon}>
+                <span>
                   <LinkIcon className={classes.icon} />
                 </span>
               </button>
