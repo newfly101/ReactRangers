@@ -24,6 +24,10 @@
     font-size: 1.2rem;
     padding: 1rem;
     text-align: center;
+    color: #695950;
+}
+.forumBlogTap button:hover {
+    color: #221d1a;
 }
 .forumBlogList {
     height: 105px;
@@ -34,5 +38,11 @@
     border: 1px solid black;
     border-radius: 30px;
     font-size: 1rem;
+    color: white;
+    background: black;
     padding: 5px 20px 5px 20px;
+}
+.forumWriteBtn button:hover{
+    background: #ff754a;
+    border: 1px solid #ff754a;
 }
