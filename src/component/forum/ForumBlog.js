@@ -1,4 +1,4 @@
-import React, {useEffect, useRef} from 'react';
+import React, {useRef} from 'react';
 import classes from './ForumBlog.module.css';
 import {
     blogEntryData,
@@ -8,7 +8,6 @@ import {
     blogTipData,
     blogTipDetailData
 } from "./ForumTapDummyData";
-import {getSwipeDirection} from "react-slick/lib/utils/innerSliderUtils";
 
 const ForumBlog = () => {
     const [response, setResponse] = React.useState(blogEntryData);
@@ -81,7 +80,7 @@ const ForumBlog = () => {
 
     // console.log(response.data.entries);
     // console.log("tapState",tapState);
-    console.log("blogTipDetailData", blogTipDetailData.data.comments);
+    // console.log("blogTipDetailData", blogTipDetailData.data.comments);
 
     return (
         <>
