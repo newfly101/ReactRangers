@@ -1,17 +1,17 @@
 import React from "react";
-import "./Story.css";
+import classes from "./Story.module.css";
 
 const Story = () => {
   return (
     <React.Fragment>
-      <section className="story__top-section">
-        <div className="story__top-section__innertext">
-          <h4 className="top-section__title">Story</h4>
-          <p className="top-section__message">
+      <section className={classes.storyTopSection}>
+        <div className={classes.storyTopSectionInnertext}>
+          <h4 className={classes.topSectionTitle}>Story</h4>
+          <p className={classes.topSectionMessage}>
             티스토리의 다양한 이야기들을 만나보세요
           </p>
         </div>
-        <div className="top-section__wrap-tag">
+        <div className={classes.topSectionWrapTag}>
           <tag>라이프</tag>
           <tag>여행.맛집</tag>
           <tag>문화.연예</tag>
@@ -20,7 +20,7 @@ const Story = () => {
           <tag>시사</tag>
         </div>
       </section>
-      <section className="story__mid-section">
+      <section className={classes.storyMidSection}>
         <div>
           <div>이미지</div>
           <div>교육 공감 233 응원 9</div>
@@ -31,7 +31,7 @@ const Story = () => {
         <div></div>
         <div></div>
       </section>
-      <section className="story__bottom-section"></section>
+      <section className={classes.storyBottomSection}></section>
     </React.Fragment>
   );
 };
