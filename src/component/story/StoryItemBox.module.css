@@ -1,0 +1,27 @@
+.bottomItemBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ItemBoxStart {
+  font-size: 0.6rem;
+}
+
+.itemBoxImg {
+  width: 6rem;
+}
+
+.ItemBoxdesc {
+  font-size: 0.6rem;
+}
+
+.ItemBoxAuthor {
+  display: flex;
+
+  align-items: center;
+  font-size: 0.6rem;
+}
+.ItemBoxAuthorImg {
+  width: 1.5rem;
+}
