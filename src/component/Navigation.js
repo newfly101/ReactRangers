@@ -38,7 +38,9 @@ const Navigation = () => {
             : classes.navBarLogin2
         }`}
       >
-        <button>시작하기</button>
+        <button>
+            <a href="/admin">시작하기</a>
+            </button>
       </div>
     </nav>
   );
