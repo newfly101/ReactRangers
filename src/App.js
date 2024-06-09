@@ -1,6 +1,5 @@
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import Navigation from "./component/Navigation";
-// import TistoryMain from './component/TistoryMain';
 import ForumMain from "./component/forum/ForumMain";
 import Feed from "./component/feed/Feed";
 import Admin from "./component/admin/Admin";
@@ -9,7 +8,7 @@ import "slick-carousel/slick/slick-theme.css";
 import Main from "./main/main";
 import Story from "./component/story/Story";
 import "./App.css";
-import Skin from "./component/skin/SkinPage";
+import Skin from "./component/skin/TstorySkin";
 
 function App() {
   return (
