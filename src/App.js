@@ -7,6 +7,7 @@ import Admin from './component/admin/Admin';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import Main from './main/main';
+import Story from './component/story/Story';
 import './App.css';
 
 function App() {
