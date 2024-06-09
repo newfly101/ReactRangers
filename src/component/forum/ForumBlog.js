@@ -39,6 +39,12 @@ const ForumBlog = () => {
         setShowDetail(!showDetail);
         setActiveIndex(index);
     }
+    const shortedString = (str, num) => {
+        if (str.length < num) {
+            return str;
+        }
+        return str.slice(0, num) + '...';
+    }
 
     console.log(response.data.entries);
     // console.log("tapState",tapState);
@@ -94,7 +100,7 @@ const ForumBlog = () => {
                                     {item.title}
                                 </div>
                                 <div className={classes.forumContext}>
-                                    {(showDetail && activeIndex === index) ? item.content : item.summary}
+                                    {(showDetail && activeIndex === index) ? item.content : shortedString(item.summary, 100)}
                                 </div>
                             </div>
                             <div className={classes.forumLookUp}>조회수 {item.viewCount} ㆍ 댓글 {item.commentCount}</div>
