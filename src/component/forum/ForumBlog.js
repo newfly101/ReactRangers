@@ -3,8 +3,6 @@ import classes from './ForumBlog.module.css';
 import {blogEtcData, blogIntroData, blogSkinData, blogTipData} from "./ForumTapDummyData";
 
 const ForumBlog = () => {
-    const img = `https://t1.daumcdn.net/tistory_admin/static/top/pc/photo_skin03.jpg`;
-    const url = "https://www.tistory.com/community/forum/entries/tip.json";
     const [response, setResponse] = React.useState(blogTipData);
 
     const onClickTapIntro = () => {
