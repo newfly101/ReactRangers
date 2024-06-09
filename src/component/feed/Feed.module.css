@@ -34,6 +34,8 @@
   font-family: Pretendard-Light, AppleSDGothicNeo-Regular, "Malgun Gothic",
     "맑은 고딕", dotum, "돋움", sans-serif;
   color: rgb(70, 71, 70);
+  display: flex;
+  justify-content: space-between;
 }
 
 .nameFeed {
@@ -48,4 +50,16 @@
     margin-left: 210px;
     margin-right: 210px;
   }
+}
+
+.subscription,
+.subscribers {
+  font-size: 13px;
+  margin: 0 0 0 22px;
+}
+
+.btn {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
 }
