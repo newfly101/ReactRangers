@@ -100,6 +100,7 @@ const ForumBlog = () => {
                             <div className={classes.forumLookUp}>조회수 {item.viewCount} ㆍ 댓글 {item.commentCount}</div>
                         </div>
                     </div>
+                    {activeIndex === index && showDetail === true &&
                     <div className={classes.forumBlogListDetail} key={`'블로그Detail-'${index}`}>>
                         <div className={classes.forumBlogListComment}>
                             <div className={classes.forumBlogListCommentImg}>
@@ -115,6 +116,7 @@ const ForumBlog = () => {
                             </div>
                         </div>
                     </div>
+                    }
                 </div>
             ))}
         </div>
