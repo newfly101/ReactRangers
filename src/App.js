@@ -3,6 +3,7 @@ import Navigation from "./component/Navigation";
 import TistoryMain from "./component/TistoryMain";
 import ForumMain from "./component/forum/ForumMain";
 import Feed from "./component/feed/Feed";
+import Admin from "./component/admin/Admin";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route path="/" element={<TistoryMain />} />
         <Route path="/forum" element={<ForumMain />} />
         <Route path="/feed" element={<Feed />} />
+        <Route path="/admin" element={<Admin />} />
           {/*
             <Route path="/" element={<TistoryMain />} /> // 여기에 page link 추가
           */}
