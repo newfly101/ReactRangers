@@ -1,0 +1,5 @@
+.blog {
+  display: block;
+  justify-content: space-evenly;
+  border: 1px soild #ccc;
+}
