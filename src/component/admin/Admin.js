@@ -33,18 +33,16 @@ const Admin = () => {
           </ul>
         </div>
       </div>
-      <div className="title__font">
-        <h3 className="situation_font">운영∙개설 현황</h3>
-        <form className="box">
-          <button className="box-button">새 블로그 만들기</button>
-        </form>
+      <h3 className="title__font">운영∙개설 현황</h3>
+      <div className="box">
+        <div className=""></div>
+        <button className="box-button">새 블로그 만들기</button>
       </div>
-      <div className="title__font">
-        <h3 className="email_font">이메일 알림</h3>
-        <form className="box">
-          <button className="box-button">변경사항 저장</button>
-        </form>
-      </div>
+
+      <h3 className="title__font">이메일 알림</h3>
+      <form className="box">
+        <button className="box-button">변경사항 저장</button>
+      </form>
     </div>
   );
 };
