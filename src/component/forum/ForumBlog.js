@@ -1,10 +1,19 @@
 import React from 'react';
 import classes from './ForumBlog.module.css';
-import {blogEntryData, blogEtcData, blogIntroData, blogSkinData, blogTipData} from "./ForumTapDummyData";
+import {
+    blogEntryData,
+    blogEtcData,
+    blogIntroData,
+    blogSkinData,
+    blogTipData,
+    blogTipDetailData
+} from "./ForumTapDummyData";
 
 const ForumBlog = () => {
     const [response, setResponse] = React.useState(blogEntryData);
     const [tapState, setTapState] = React.useState('all');
+    const [showDetail, setShowDetail] = React.useState(false);
+    const [activeIndex, setActiveIndex] = React.useState(null);
 
     const onClickTapIntro = () => {
         setResponse(blogIntroData);
@@ -26,9 +35,14 @@ const ForumBlog = () => {
         setResponse(blogEntryData);
         setTapState("all");
     }
+    const showBlogDetail = (index) => {
+        setShowDetail(!showDetail);
+        setActiveIndex(index);
+    }
 
     // console.log(response.data.entries);
-    console.log("tapState",tapState);
+    // console.log("tapState",tapState);
+    // console.log("blogTipDetailData",blogTipDetailData.data.comments);
 
     return (
         <div className={classes.forumBlogBox}>
@@ -54,11 +68,11 @@ const ForumBlog = () => {
                             <div className={classes.forumContext}>
                                 {item.userName}ㆍ{item.registered}ㆍ{item.category}
                             </div>
-                            <div className={classes.forumContextTitle}>
+                            <div className={classes.forumContextTitle} onClick={() => showBlogDetail(index)}>
                                 {item.title}
                             </div>
                             <div className={classes.forumContext}>
-                                {item.summary}
+                                {(showDetail && activeIndex === index) ? item.content : item.summary}
                             </div>
                         </div>
                         <div className={classes.forumLookUp}>조회수 {item.viewCount} ㆍ 댓글 {item.commentCount}</div>
