@@ -159,7 +159,6 @@
 .forumBlogWriteBox {
     width: 575px;
     /*border: 1px solid #dddddd;*/
-    padding-left: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
