@@ -116,3 +116,25 @@
 .forumBlogTap :hover {
     color: #221d1a;
 }
+.forumBlogListDetail {
+    display: flex;
+    flex-direction: row;
+    width: 800px;
+    justify-content: space-evenly;
+    padding: 40px 0 40px 0;
+    border-bottom: 1px solid #dddddd;
+    background: #fafafa;
+}
+.forumBlogListComment {
+    display: flex;
+    flex-direction: row;
+}
+.forumBlogListCommentImg {
+    width: 52px;
+    height: 52px;
+    flex-direction: column;
+}
+.forumBlogListCommentContext {
+    display: flex;
+    flex-direction: column;
+}

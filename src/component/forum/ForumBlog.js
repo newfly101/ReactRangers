@@ -8,7 +8,6 @@ import {
     blogTipData,
     blogTipDetailData
 } from "./ForumTapDummyData";
-import {Link} from "react-router-dom";
 
 const ForumBlog = () => {
     const [response, setResponse] = React.useState(blogEntryData);
@@ -70,33 +69,51 @@ const ForumBlog = () => {
                 </div>
             </div>
             {response.data.entries && response.data.entries.map((item, index) => (
-                <div className={classes.forumBlogList} key={`'블로그-'${index}`}>
-                    <div className={classes.forumImgBox}>
-                        <img src={item.userImage} alt="blogimg"/>
+                <div key={`'블로그-'${index}`}>
+                    <div className={classes.forumBlogList} key={`'블로그Info-'${index}`} >
+                        <div className={classes.forumImgBox}>
+                            <img src={item.userImage} alt="blogimg"/>
+                        </div>
+                        <div className={classes.forumBlogTitleBox}>
+                            <div className={classes.forumContextBox}>
+                                <div className={classes.forumContext}>
+                                    <div className={classes.forumContextHeader}>
+                                        <a href={item.userDefaultUrl} rel="noopener noreferrer"
+                                           target="_blank">{item.userName}</a>
+                                    </div>
+                                    ㆍ
+                                    <div className={classes.forumContextHeader}>
+                                        {item.registered}
+                                    </div>
+                                    ㆍ
+                                    <div className={classes.forumContextCategory}>
+                                        {item.category}
+                                    </div>
+                                </div>
+                                <div className={classes.forumContextTitle} onClick={() => showBlogDetail(index)}>
+                                    {item.title}
+                                </div>
+                                <div className={classes.forumContext}>
+                                    {(showDetail && activeIndex === index) ? item.content : item.summary}
+                                </div>
+                            </div>
+                            <div className={classes.forumLookUp}>조회수 {item.viewCount} ㆍ 댓글 {item.commentCount}</div>
+                        </div>
                     </div>
-                    <div className={classes.forumBlogTitleBox}>
-                        <div className={classes.forumContextBox}>
-                            <div className={classes.forumContext}>
-                                <div className={classes.forumContextHeader}>
-                                    <a href={item.userDefaultUrl} rel="noopener noreferrer" target="_blank">{item.userName}</a>
-                                </div>
-                                ㆍ
-                                <div className={classes.forumContextHeader}>
-                                    {item.registered}
-                                </div>
-                                ㆍ
-                                <div className={classes.forumContextCategory}>
-                                    {item.category}
-                                </div>
+                    <div className={classes.forumBlogListDetail} key={`'블로그Detail-'${index}`}>>
+                        <div className={classes.forumBlogListComment}>
+                            <div className={classes.forumBlogListCommentImg}>
+                                <img src="" alt="comImg" />
                             </div>
-                            <div className={classes.forumContextTitle} onClick={() => showBlogDetail(index)}>
-                                {item.title}
-                            </div>
-                            <div className={classes.forumContext}>
-                                {(showDetail && activeIndex === index) ? item.content : item.summary}
+                            <div className={classes.forumBlogListCommentContext}>
+                                <div>
+                                    숏힐링(Short Healing)2024.06.08 17:16신고
+                                </div>
+                                <div>
+                                    안녕하세요! 맞구독 신청해요~
+                                </div>
                             </div>
                         </div>
-                        <div className={classes.forumLookUp}>조회수 {item.viewCount} ㆍ 댓글 {item.commentCount}</div>
                     </div>
                 </div>
             ))}
