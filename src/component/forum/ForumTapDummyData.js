@@ -678,4 +678,203 @@ export const blogIntroData = {
         }], "hasPrev": true, "hasNext": false
     }
 };
+export const blogEntryData = {
+    "status": 200, "desc": "OK", "data": {
+        "entries": [{
+            "id": 304223,
+            "title": "안녕하세요! 평범한 공대생의 블로그입니다!",
+            "viewCount": 1,
+            "commentCount": 0,
+            "registered": "2024.06.09 17:38",
+            "summary": "다들 맞구독해요!",
+            "content": "다들 맞구독해요!",
+            "category": "블로그 소개",
+            "images": [],
+            "userId": 4369386,
+            "userName": "AGAPE1225",
+            "userDefaultUrl": "https://apape1225.tistory.com",
+            "userImage": "https://tistory1.daumcdn.net/tistory/3890383/attach/ea1a3826af3a4eef9f68b8ccd8712cee",
+            "status": "normal"
+        }, {
+            "id": 304222,
+            "title": "4세대 실손의료보험료 할인할증 내용확인!! (7.1일)",
+            "viewCount": 2,
+            "commentCount": 0,
+            "registered": "2024.06.09 17:34",
+            "summary": "https://sunnypark7788.tistory.com/61 4세대 실손의료보험료 할인.할증제도가 7.1일부터 본격시행되는군요. 실비 전환이 유리한지 자신들의 의료사용 행태를 살펴보면 유불리가 있을 것 같습니다. 무엇보다도 건강하시고요~!!",
+            "content": "https://sunnypark7788.tistory.com/61\r\n\r\n4세대 실손의료보험료 할인.할증제도가 7.1일부터 본격시행되는군요. 실비 전환이 유리한지 자신들의 의료사용 행태를 살펴보면 유불리가 있을 것 같습니다. 무엇보다도 건강하시고요~!!",
+            "category": "블로그 소개",
+            "images": [{
+                "url": "https://tistory1.daumcdn.net/tistory/forum/335d5697-3680-41b1-ac0e-0fa06a74a011",
+                "size": 37632,
+                "label": "rescue-7074654_640.png"
+            }],
+            "userId": 6664719,
+            "userName": "썸띵 디퍼런트",
+            "userDefaultUrl": "https://sunnypark7788.tistory.com",
+            "userImage": "https://tistory1.daumcdn.net/tistory/7055921/attach/41c50a8d5fa644f4b868e86f9877351e",
+            "status": "normal"
+        }, {
+            "id": 304221,
+            "title": "IT 블로그 입니다. 맞구독하고 소통하며 지내요!~",
+            "viewCount": 0,
+            "commentCount": 0,
+            "registered": "2024.06.09 17:17",
+            "summary": "1일 1포스팅 하며 하루하루 성장 중인 블로그입니다. 맞구독 하고 함께 성장할 블로그 구합니다!",
+            "content": "1일 1포스팅 하며 하루하루 성장 중인 블로그입니다. 맞구독 하고 함께 성장할 블로그 구합니다!",
+            "category": "블로그 소개",
+            "images": [],
+            "userId": 3914534,
+            "userName": "성준하이",
+            "userDefaultUrl": "https://thenicesj.tistory.com",
+            "userImage": "https://tistory1.daumcdn.net/tistory/5040068/attach/99fcae6db9514071b6fa84285f62c828",
+            "status": "normal"
+        }, {
+            "id": 304220,
+            "title": "여러분을 초대 합니다. ",
+            "viewCount": 1,
+            "commentCount": 0,
+            "registered": "2024.06.09 17:16",
+            "summary": "수다 한 잔, 사진 한 장 블로그입니다. 보기만 해도 힐-링이 되는 블로그를 추구합니다. 사진과 어울린 다양한 글을 올리고 있습니다. 많이 들러 주세요.",
+            "content": "수다 한 잔, 사진 한 장 블로그입니다. \r\n보기만 해도 힐-링이 되는 블로그를 추구합니다. \r\n사진과 어울린 다양한 글을 올리고 있습니다.\r\n많이 들러 주세요. ",
+            "category": "블로그 소개",
+            "images": [{
+                "url": "https://tistory1.daumcdn.net/tistory/forum/e47c86a8-473b-4b63-ae08-5d019409f00d",
+                "size": 1055356,
+                "label": "슬픈연가(1).JPG"
+            }, {
+                "url": "https://tistory1.daumcdn.net/tistory/forum/8f50dc5c-0652-49f0-97e1-0d0587141417",
+                "size": 956641,
+                "label": "벚꽃(해미).JPG"
+            }, {
+                "url": "https://tistory1.daumcdn.net/tistory/forum/7bd21a4c-843f-411c-bd62-fc0a5c6538ee",
+                "size": 487381,
+                "label": "아침이란 고독4.JPG"
+            }],
+            "userId": 6026884,
+            "userName": "훈 작가",
+            "userDefaultUrl": "https://soodaphoto.tistory.com",
+            "userImage": "https://tistory1.daumcdn.net/tistory/6133358/attach/96fdfe012176466a84d79a43d4dc1cff",
+            "status": "normal"
+        }, {
+            "id": 304219,
+            "title": "그저 그런 블로그는 아닙니다.",
+            "viewCount": 1,
+            "commentCount": 0,
+            "registered": "2024.06.09 17:12",
+            "summary": "사진을 취미로 하면서 이런 저런 글을 포스팅 하고 있습니다. 일단 보시고 좋은 콘텐츠라고 생각 되면 많은 방문 부탁 드립니다. 구독 댓글 달아 주시면 맞구독 해드립니다. 남은 휴일도 즐겁게 보내세요.",
+            "content": "사진을 취미로 하면서 이런 저런 글을 포스팅 하고 있습니다.\r\n일단 보시고 좋은 콘텐츠라고 생각 되면 많은 방문 부탁 드립니다. \r\n구독 댓글 달아 주시면 맞구독 해드립니다. \r\n남은 휴일도 즐겁게 보내세요. ",
+            "category": "블로그 소개",
+            "images": [{
+                "url": "https://tistory1.daumcdn.net/tistory/forum/1a825a5a-8e7a-4875-9bea-e47bae739511",
+                "size": 796510,
+                "label": "1.JPG"
+            }, {
+                "url": "https://tistory1.daumcdn.net/tistory/forum/28904b59-42a5-4900-8632-9df4a02e944a",
+                "size": 211653,
+                "label": "7.jpg"
+            }, {
+                "url": "https://tistory1.daumcdn.net/tistory/forum/cff34d1c-c347-429f-9a35-b532907a5dff",
+                "size": 470636,
+                "label": "사진은 시다..jpg"
+            }],
+            "userId": 6026884,
+            "userName": "훈 작가",
+            "userDefaultUrl": "https://soodaphoto.tistory.com",
+            "userImage": "https://tistory1.daumcdn.net/tistory/6133358/attach/96fdfe012176466a84d79a43d4dc1cff",
+            "status": "normal"
+        }, {
+            "id": 304218,
+            "title": "창작 분야 크리에이터 블로그입니다.",
+            "viewCount": 1,
+            "commentCount": 0,
+            "registered": "2024.06.09 17:09",
+            "summary": "사진을 소재로 다양한 글을 올리고 있습니다. 여러분과 많은 소통을 원합니다. 많은 응원 부탁 드립니다.",
+            "content": "사진을 소재로 다양한 글을 올리고 있습니다.\r\n여러분과 많은 소통을 원합니다. 많은 응원 부탁 드립니다. ",
+            "category": "블로그 소개",
+            "images": [{
+                "url": "https://tistory1.daumcdn.net/tistory/forum/4598c9ec-aecc-4851-9add-58affe091a26",
+                "size": 542617,
+                "label": "뽀뽀4-4.JPG"
+            }, {
+                "url": "https://tistory1.daumcdn.net/tistory/forum/ca5d7146-ba9a-4a31-8326-7492017b8de0",
+                "size": 461008,
+                "label": "달구경(2).JPG"
+            }, {
+                "url": "https://tistory1.daumcdn.net/tistory/forum/2b8e6718-1603-41e2-a0f7-e1eff000f218",
+                "size": 710867,
+                "label": "눈꽃5.JPG"
+            }],
+            "userId": 6026884,
+            "userName": "훈 작가",
+            "userDefaultUrl": "https://soodaphoto.tistory.com",
+            "userImage": "https://tistory1.daumcdn.net/tistory/6133358/attach/96fdfe012176466a84d79a43d4dc1cff",
+            "status": "normal"
+        }, {
+            "id": 304217,
+            "title": "당신의 티스토리 수익이 점점 줄어드는 이유",
+            "viewCount": 4,
+            "commentCount": 0,
+            "registered": "2024.06.09 17:05",
+            "summary": "이미지 첨부했습니다. 사실인가요?",
+            "content": "이미지 첨부했습니다. 사실인가요? ",
+            "category": "블로그 소개",
+            "images": [{
+                "url": "https://tistory1.daumcdn.net/tistory/forum/a87fb20b-6c7e-42e8-b98a-ab1b31da8e90",
+                "size": 70484,
+                "label": "fwfewfewfewfewfewfwefwefewfew.jpg"
+            }],
+            "userId": 4756324,
+            "userName": "[시론]",
+            "userDefaultUrl": "https://z11neo.tistory.com",
+            "userImage": "https://tistory1.daumcdn.net/tistory/4490393/attach/5d1251694f844891a68f235f9b4a9102",
+            "status": "normal"
+        }, {
+            "id": 304216,
+            "title": "^^안녕 하세요~열심히   공부 하는 블로거 에요^^",
+            "viewCount": 1,
+            "commentCount": 0,
+            "registered": "2024.06.09 16:53",
+            "summary": "^^ 행복한 시간 보내시구~ 응원 부탁드립니다 ^^ 하트와구독 도 부탁 드립니다^^ ^^찾아뵐테니구독 해주신다면 늘 감사하겠습니다~^^",
+            "content": "^^ 행복한  시간 보내시구~~ 응원 부탁드립니다~\r\n^^ 하트와구독 도 부탁 드립니다~^^\r\n^^찾아뵐테니~구독 해주신다면 늘 감사하겠습니다~^^",
+            "category": "블로그 소개",
+            "images": [],
+            "userId": 6510021,
+            "userName": "머니머니헤어",
+            "userDefaultUrl": "https://moneyheair.tistory.com",
+            "userImage": "https://tistory1.daumcdn.net/tistory/6799023/attach/126602fcb6a54ce2b98d3c0d7ce0c6e6",
+            "status": "normal"
+        }, {
+            "id": 304215,
+            "title": "^^안녕 하세요~열심히   공부 하는 블로거 에요^^",
+            "viewCount": 1,
+            "commentCount": 0,
+            "registered": "2024.06.09 16:53",
+            "summary": "^^ 행복한 시간 보내시구~ 응원 부탁드립니다 ^^ 하트와구독 도 부탁 드립니다^^ ^^찾아뵐테니구독 해주신다면 늘 감사하겠습니다~^^",
+            "content": "^^ 행복한  시간 보내시구~~ 응원 부탁드립니다~\r\n^^ 하트와구독 도 부탁 드립니다~^^\r\n^^찾아뵐테니~구독 해주신다면 늘 감사하겠습니다~^^",
+            "category": "블로그 소개",
+            "images": [],
+            "userId": 6510021,
+            "userName": "머니머니헤어",
+            "userDefaultUrl": "https://moneyheair.tistory.com",
+            "userImage": "https://tistory1.daumcdn.net/tistory/6799023/attach/126602fcb6a54ce2b98d3c0d7ce0c6e6",
+            "status": "normal"
+        }, {
+            "id": 304214,
+            "title": "^^안녕 하세요~열심히   공부 하는 블로거 에요^^",
+            "viewCount": 1,
+            "commentCount": 0,
+            "registered": "2024.06.09 16:53",
+            "summary": "^^ 행복한 시간 보내시구~ 응원 부탁드립니다 ^^ 하트와구독 도 부탁 드립니다^^ ^^찾아뵐테니구독 해주신다면 늘 감사하겠습니다~^^",
+            "content": "^^ 행복한  시간 보내시구~~ 응원 부탁드립니다~\r\n^^ 하트와구독 도 부탁 드립니다~^^\r\n^^찾아뵐테니~구독 해주신다면 늘 감사하겠습니다~^^",
+            "category": "블로그 소개",
+            "images": [],
+            "userId": 6510021,
+            "userName": "머니머니헤어",
+            "userDefaultUrl": "https://moneyheair.tistory.com",
+            "userImage": "https://tistory1.daumcdn.net/tistory/6799023/attach/126602fcb6a54ce2b98d3c0d7ce0c6e6",
+            "status": "normal"
+        }], "hasPrev": true, "hasNext": false
+    }
+};
 

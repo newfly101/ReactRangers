@@ -1,9 +1,9 @@
 import React from 'react';
 import classes from './ForumBlog.module.css';
-import {blogEtcData, blogIntroData, blogSkinData, blogTipData} from "./ForumTapDummyData";
+import {blogEntryData, blogEtcData, blogIntroData, blogSkinData, blogTipData} from "./ForumTapDummyData";
 
 const ForumBlog = () => {
-    const [response, setResponse] = React.useState(blogTipData);
+    const [response, setResponse] = React.useState(blogEntryData);
 
     const onClickTapIntro = () => {
         setResponse(blogIntroData);
@@ -17,6 +17,9 @@ const ForumBlog = () => {
     const onClickTapTip = () => {
         setResponse(blogTipData);
     }
+    const onClickTapEntry = () => {
+        setResponse(blogEntryData);
+    }
 
     console.log(response.data.entries);
 
@@ -24,7 +27,7 @@ const ForumBlog = () => {
         <div className={classes.forumBlogBox}>
             <div className={classes.forumBlogTitle}>
                 <div className={classes.forumBlogTap}>
-                    <button>전체</button>
+                    <button onClick={onClickTapEntry}>전체</button>
                     <button onClick={onClickTapIntro}>블로그 소개</button>
                     <button onClick={onClickTapTip}>블로그 운영팁</button>
                     <button onClick={onClickTapSkin}>스킨</button>
