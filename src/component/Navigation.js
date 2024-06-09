@@ -6,6 +6,10 @@ const Navigation = () => {
   const location = useLocation();
   console.log(location.pathname === "/forum/");
 
+  const onClickAdminPage = () => {
+      console.log(location.pathname);
+  }
+
   return (
     <nav className={classes.navBar}>
       <div className={classes.navBarBox}>
@@ -38,7 +42,7 @@ const Navigation = () => {
             : classes.navBarLogin2
         }`}
       >
-        <button>
+        <button onClick={onClickAdminPage}>
             <a href="/admin">시작하기</a>
             </button>
       </div>
