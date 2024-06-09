@@ -149,3 +149,10 @@
   width: 1em;
   height: 1em;
 }
+
+.card_image img {
+  width: 350px;
+  height: auto;
+  margin-top: 1rem;
+  margin-right: 1rem;
+}

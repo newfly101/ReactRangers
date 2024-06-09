@@ -1,6 +1,7 @@
 import React from "react";
 import classes from "./TstorySkin.module.css";
 import mainImage from "./SkinPageImage.jpg";
+import cardImage from "./card_image0.jpg";
 import { ReactComponent as LinkIcon } from "./link.svg";
 
 const TstorySkin = () => {
@@ -60,6 +61,11 @@ const TstorySkin = () => {
                 </span>
               </button>
             </div>
+          </div>
+          <div className={classes.card_image}>
+            <img src={cardImage} className={classes.card_image_0} alt="" />
+            <img src={cardImage} className={classes.card_image_0} alt="" />
+            <img src={cardImage} className={classes.card_image_0} alt="" />
           </div>
         </div>
       </div>
