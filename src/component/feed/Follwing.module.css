@@ -1,7 +1,7 @@
-.Fmain {
+.fMain {
   width: 100%;
-  height: 133px;
-  padding-top: 151px;
+  height: 103px;
+  padding: 151px 0 0 0;
   background-size: cover;
   background-position: 50% 50%;
 }
@@ -47,8 +47,8 @@
 @media (max-width: 1300px) {
   .fInnerFeed {
     max-width: calc(100% - 40px);
-    margin-left: 210px;
-    margin-right: 210px;
+    margin-left: 20px;
+    margin-right: 20px;
   }
 }
 
@@ -69,4 +69,34 @@ button {
   background-color: transparent;
   cursor: pointer;
   outline: none;
+}
+
+.fList {
+  width: 100%;
+  margin: 0 calc((100% - 1000px) / 2);
+}
+
+.fBody {
+  display: flex;
+  justify-content: center;
+}
+
+.fBlog {
+  padding: 41px 0 0;
+  margin: 0;
+  font-size: 20px;
+  line-height: 20px;
+  color: #777;
+  font-family: Pretendard-Light, AppleSDGothicNeo-Regular, "Malgun Gothic",
+    "맑은 고딕", dotum, "돋움", sans-serif;
+  word-wrap: break-word;
+  white-space: nowrap;
+}
+
+@media (max-width: 1300px) {
+  .fList {
+    max-width: calc(100% - 40px);
+    margin-left: 20px;
+    margin-right: 20px;
+  }
 }
