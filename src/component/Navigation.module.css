@@ -78,6 +78,13 @@
 .pageLinkBox a:hover {
     text-decoration-line: underline;
 }
+.pageLinkBox Link {
+    color: black;
+    text-decoration-line: none;
+}
+.pageLinkBox Link:hover {
+    text-decoration-line: underline;
+}
 
 .pageLinkedBox {
     display: flex;
@@ -91,5 +98,12 @@
     text-decoration-line: none;
 }
 .pageLinkedBox a:hover {
+    text-decoration-line: underline;
+}
+.pageLinkedBox Link {
+    color: rgb(255,85,62);
+    text-decoration-line: none;
+}
+.pageLinkedBox Link:hover {
     text-decoration-line: underline;
 }

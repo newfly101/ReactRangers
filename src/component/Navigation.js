@@ -1,6 +1,6 @@
 import React from "react";
 import classes from "./Navigation.module.css";
-import { useLocation } from "react-router-dom";
+import {Link, useLocation} from "react-router-dom";
 
 const Navigation = () => {
   const location = useLocation();
@@ -32,7 +32,8 @@ const Navigation = () => {
               : classes.pageLinkedBox
           }
         >
-          <a href="/forum">포럼</a>
+          <Link to="/forum">포럼</Link>
+          {/*<a href="/forum">포럼</a>*/}
         </div>
       </div>
       <div
