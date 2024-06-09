@@ -1,14 +1,38 @@
 .forumBlogBox {
+    display: flex;
     justify-content: center;
     flex-direction: column;
+    align-items: center;
 }
 .forumBlogTitle {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     width: 800px;
-    padding-bottom: 20px;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #dddddd;
+}
+.forumBlogTap {
+    display: flex;
+    width: 550px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.forumBlogTap button {
+    font-weight: bold;
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    padding: 1rem;
+    text-align: center;
 }
 .forumBlogList {
     height: 105px;
+}
+.forumWriteBtn button{
+    margin-right: 20px;
+    background: none;
+    border: 1px solid black;
+    border-radius: 30px;
+    font-size: 1rem;
+    padding: 5px 20px 5px 20px;
 }
