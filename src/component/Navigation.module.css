@@ -1,0 +1,95 @@
+.navBar {
+    height: 72px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.pageTitle {
+    /*font-size: 1.3rem;*/
+    display: flex;
+    font-size: 1.4rem;
+    margin-right: 40px;
+    align-items: center;
+    justify-content: center;
+}
+.pageTitle a {
+    color: black;
+    text-decoration-line: none;
+}
+
+.navBarBox {
+    height: 72px;
+    display: flex;
+    align-items: center;
+    margin-left: 50px;
+}
+.navBarLogin {
+    height: 72px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navBarLogin button {
+    margin-right: 40px;
+    border: none;
+    background: black;
+    color: white;
+    padding: 13px 40px 13px 40px;
+    border-radius: 40px;
+}
+.navBarLogin button:hover {
+    margin-right: 40px;
+    border: none;
+    background: red;
+    color: white;
+    padding: 13px 40px 13px 40px;
+    border-radius: 40px;
+}
+.navBarLogin2 button {
+    margin-right: 40px;
+    border: none;
+    background: rgb(165,137,120);
+    color: black;
+    padding: 13px 40px 13px 40px;
+    border-radius: 40px;
+}
+.navBarLogin2 button:hover {
+    margin-right: 40px;
+    border: none;
+    background: red;
+    color: white;
+    padding: 13px 40px 13px 40px;
+    border-radius: 40px;
+}
+
+.pageLinkBox {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 1.3rem;
+    margin: 1rem;
+}
+.pageLinkBox a {
+    color: black;
+    text-decoration-line: none;
+}
+.pageLinkBox a:hover {
+    text-decoration-line: underline;
+}
+
+.pageLinkedBox {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 1.3rem;
+    margin: 1rem;
+}
+.pageLinkedBox a {
+    color: rgb(255,85,62);
+    text-decoration-line: none;
+}
+.pageLinkedBox a:hover {
+    text-decoration-line: underline;
+}

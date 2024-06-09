@@ -13,3 +13,11 @@
 * git hub commit/push에 부담감이 있으시면, branch를 만들고 진행해도 괜찮습니다.
 
 ### 추가로 쓸 말이 있으시면 자주 수정해서, commit 해주세용
+
+### App.js 에 
+`<Route path="/forum" element={<ForumMain />} />`
+로 추가하고자하는 path='url' 와 element=`classJs` 를 선언해주고
+
+### Navigation.js 에
+각 페이지로 이동하는 `<a>` 태그에 App.js에 작성한 url 추가해주시면 페이지 연동이 됩니다.
+
