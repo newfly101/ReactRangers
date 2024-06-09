@@ -17,6 +17,7 @@ const ForumBlog = () => {
     const [addComment, setAddComment] = React.useState('');
 
     const inputRef = useRef(null);
+    const textareaRef = useRef(null);
 
     const onClickTapIntro = () => {
         setResponse(blogIntroData);
@@ -61,11 +62,14 @@ const ForumBlog = () => {
         event.preventDefault();
         console.log("addComment",addComment);
     }
-    // useEffect(() => {
-    //     if (textareaRef.current) {
-    //         textareaRef.current.placeholder =
-    //     }
-    // })
+    const autoScaleTextArea = () => {
+        const textarea = textareaRef.current;
+        if (textarea) {
+            textarea.style.height = 'auto';
+            textarea.style.height = `${textarea.scrollHeight}px`;
+        }
+
+    }
 
     // console.log(response.data.entries);
     // console.log("tapState",tapState);
@@ -171,6 +175,8 @@ const ForumBlog = () => {
                             value={addComment}
                             onChange={onChangeAddComment}
                             maxLength={500}
+                            ref={textareaRef}
+                            onInput={autoScaleTextArea}
                         />
                         <div>
                             <label>{addComment.length}/500</label>
