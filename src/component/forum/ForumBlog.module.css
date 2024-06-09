@@ -3,6 +3,7 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    padding-top: 30px;
 }
 .forumBlogTitle {
     display: flex;
@@ -24,9 +25,28 @@
     font-size: 1.2rem;
     padding: 1rem;
     text-align: center;
+    color: #695950;
+}
+.forumBlogTap button:hover {
+    color: #221d1a;
 }
 .forumBlogList {
-    height: 105px;
+    display: flex;
+    flex-direction: row;
+    width: 800px;
+    justify-content: space-evenly;
+    padding: 40px 0 40px 0;
+    border-bottom: 1px solid #dddddd;
+}
+.forumImgBox {
+    display: flex;
+    justify-content: center;
+    padding: 10px 10px 0 10px;
+}
+.forumImgBox img{
+    width: 52px;
+    height: 52px;
+    flex-direction: column;
 }
 .forumWriteBtn button{
     margin-right: 20px;
@@ -34,5 +54,30 @@
     border: 1px solid black;
     border-radius: 30px;
     font-size: 1rem;
+    color: white;
+    background: black;
     padding: 5px 20px 5px 20px;
+}
+.forumWriteBtn button:hover{
+    background: #ff754a;
+    border: 1px solid #ff754a;
+}
+.forumBlogTitleBox {
+    display: flex;
+    justify-content: space-between;
+}
+.forumContext {
+    width: 550px;
+}
+.forumContext {
+    font-size: 0.8rem;
+    padding-bottom: 8px;
+}
+.forumContextTitle {
+    font-size: 1.3rem;
+    font-weight: bold;
+    padding-bottom: 12px;
+}
+.forumLookUp {
+    font-size: 0.8rem;
 }
