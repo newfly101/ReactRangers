@@ -43,12 +43,42 @@ const Feed = () => {
           </a>
         </div>
       </div>
-      <div className={classes.bolgList}>
+      <div className={classes.sectionSubscribe}>
         <div className={classes.infoBlogList}>
           <p className={classes.blogInfoDesc}>
             최근 활동이 많은 블로그입니다. 구독해보세요.
           </p>
         </div>
+        <ul className={classes.listTistory}>
+          <li>
+            <div className={classes.listBoxType1}>
+              팀장님
+              <span className={classes.wrapListBox}>
+                <img
+                  src="https://cdn.dribbble.com/users/928524/screenshots/18187707/media/3434d86e6cb39ee60c07bf530ab4f6bc.jpg"
+                  className={classes.wrapListBoxProfile}
+                  alt=""
+                />
+              </span>
+              <strong className={classes.blogSubName}>친절한 강사님</strong>
+              <dl className={classes.listData}>
+                <dt>구독자</dt>
+                <dd>999+</dd>
+              </dl>
+              <p className={classes.blogInfoDesc}>팀장님의 블로그입니다.</p>
+            </div>
+            <div className={classes.infoSubscribe}>
+              <button type="button" className={classes.listBoxTypeBtn}>
+                구독하기
+              </button>
+            </div>
+          </li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
       </div>
     </div>
   );
