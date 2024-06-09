@@ -11,8 +11,12 @@ const Following = () => {
           <div className={classes.followingFont}>
             0개의 블로그를 구독중입니다
             <div className={classes.fBtn}>
-              <button>최신 구독순</button>
-              <button>블로그 이름순</button>
+              <button type="button" className="btnFollow">
+                최신 구독순
+              </button>
+              <button type="button" className="btnFollow">
+                블로그 이름순
+              </button>
             </div>
           </div>
         </div>
