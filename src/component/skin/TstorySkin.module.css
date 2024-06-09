@@ -1,5 +1,8 @@
 /* 상단 이미지 */
 .imageContaner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: relative;
   overflow: hidden;
   height: 15vw;
@@ -7,16 +10,10 @@
 }
 
 .imageContaner img {
-  position: absolute;
-  top: 0;
-  left: 0;
   height: 100%;
   width: 100%;
-  display: block;
   object-fit: cover;
-  z-index: -1;
 }
-
 .imageContaner::before {
   content: "";
   position: absolute;
@@ -24,13 +21,13 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
 
 .mainImage_textBox {
   position: absolute;
-  top: 50%;
+  top: 60%;
   left: 50%;
   width: 50%;
   transform: translate(-50%, -50%);
@@ -57,22 +54,22 @@
   font-weight: 100;
 }
 /* 버튼 */
-.container {
-  position: absolute;
-  top: 55%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+.buttonContainer {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   padding-top: 2rem;
-  border-bottom: 1px solid gray;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  width: 700px;
+  margin: auto;
 }
 
 .wrapUp button {
   background-color: transparent;
   color: black;
   border: none;
+  margin-bottom: 0.5rem;
+  margin-right: 1rem;
 }
 
 .wrapUp button:hover {

@@ -14,7 +14,7 @@ const TstorySkin = () => {
           </h2>
         </div>
       </div>
-      <div className={classes.container}>
+      <div className={classes.buttonContainer}>
         <div className={classes.wrapUp}>
           <button>티스토리 스킨</button>
           <button>이용자 제작 스킨</button>
