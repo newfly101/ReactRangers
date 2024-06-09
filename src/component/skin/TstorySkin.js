@@ -35,37 +35,76 @@ const TstorySkin = () => {
           </div>
         </div>
       </div>
-      <div className={`${classes.allContainer} ${classes.card_white}`}>
-        <div className={classes.card_wrap}>
-          <div className={`${classes.allButton} ${classes.card_title}`}>
-            <button>
-              <h1>Odyssey</h1>
-            </button>
-          </div>
-          <div className={` ${classes.card_text}`}>
-            <p>글과 사진, 그리고 영상을 담아</p>
-            <p>당신의 블로그 여행에 함께합니다.</p>
-          </div>
-          <div className={classes.card_button}>
-            <div className={`${classes.allButton} ${classes.hoverLine}`}>
-              <button>#반응형</button>
-              <button>#블로그형</button>
-              <button>#커버 지원</button>
-            </div>
-            <div className={`${classes.roundButton}`}>
-              <button>자세히 보기</button>
-              <button className={classes.button_link_Icon}>
-                적용 예시 보기
-                <span>
-                  <LinkIcon className={classes.icon} />
-                </span>
+      <div className={classes.card0}>
+        <div className={`${classes.allContainer} ${classes.card_white}`}>
+          <div className={classes.card_wrap}>
+            <div className={`${classes.allButton} ${classes.card_title}`}>
+              <button>
+                <h1>Odyssey</h1>
               </button>
             </div>
+            <div className={` ${classes.card_text}`}>
+              <p>글과 사진, 그리고 영상을 담아</p>
+              <p>당신의 블로그 여행에 함께합니다.</p>
+            </div>
+            <div className={classes.card_button}>
+              <div className={`${classes.allButton} ${classes.hoverLine}`}>
+                <button>#반응형</button>
+                <button>#블로그형</button>
+                <button>#커버 지원</button>
+              </div>
+              <div className={`${classes.roundButton}`}>
+                <button>자세히 보기</button>
+                <button className={classes.button_link_Icon}>
+                  적용 예시 보기
+                  <span>
+                    <LinkIcon className={classes.icon} />
+                  </span>
+                </button>
+              </div>
+            </div>
+            <div className={classes.card_image}>
+              <img src={cardImage} className={classes.card_image_0} alt="" />
+              <img src={cardImage} className={classes.card_image_0} alt="" />
+              <img src={cardImage} className={classes.card_image_0} alt="" />
+            </div>
           </div>
-          <div className={classes.card_image}>
-            <img src={cardImage} className={classes.card_image_0} alt="" />
-            <img src={cardImage} className={classes.card_image_0} alt="" />
-            <img src={cardImage} className={classes.card_image_0} alt="" />
+        </div>
+      </div>
+      <div className={classes.card1}>
+        <div className={`${classes.allContainer} ${classes.card_gray}`}>
+          <div className={classes.card_wrap}>
+            <div className={`${classes.allButton} ${classes.card_title}`}>
+              <button>
+                <h1>Poster</h1>
+              </button>
+            </div>
+            <div className={` ${classes.card_text}`}>
+              <p>블로그 홈을 처음 접하는 초심자에게 추천합니다.</p>
+              <p>단정한 첫인상을 블로그에 입혀 보세요.</p>
+            </div>
+            <div className={classes.card_button}>
+              <div className={`${classes.allButton} ${classes.hoverLine}`}>
+                <button>#반응형</button>
+                <button>#블로그형</button>
+                <button>#초보</button>
+                <button>#커버 지원</button>
+              </div>
+              <div className={`${classes.roundButton}`}>
+                <button>자세히 보기</button>
+                <button className={classes.button_link_Icon}>
+                  적용 예시 보기
+                  <span>
+                    <LinkIcon className={classes.icon} />
+                  </span>
+                </button>
+              </div>
+            </div>
+            <div className={classes.card_image}>
+              <img src={cardImage} className={classes.card_image_0} alt="" />
+              <img src={cardImage} className={classes.card_image_0} alt="" />
+              <img src={cardImage} className={classes.card_image_0} alt="" />
+            </div>
           </div>
         </div>
       </div>
