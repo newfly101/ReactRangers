@@ -74,11 +74,7 @@ const Navigation = () => {
             }
 
             <div
-                className={`${
-                    location.pathname !== "/forum"
-                        ? classes.navBarLogin
-                        : classes.navBarLogin2
-                }`}
+                className={classes.navBarLogin}
             >
                 <button onClick={onClickAdminPage}>
                     <Link to="/admin">시작하기</Link>
