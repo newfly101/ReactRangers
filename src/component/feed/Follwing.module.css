@@ -1,0 +1,72 @@
+.Fmain {
+  width: 100%;
+  height: 133px;
+  padding-top: 151px;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.fMainFeed {
+  display: flex;
+  justify-content: center;
+}
+
+.fInnerFeed {
+  height: 100%;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 calc((100% - 1000px) / 2);
+  box-sizing: border-box;
+  border-bottom: 2px solid black;
+}
+
+.followingFont,
+.fNameFeed {
+  word-wrap: break-word;
+  white-space: nowrap;
+}
+
+.followingFont {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+  line-height: 1;
+  font-family: Pretendard-Regular, AppleSDGothicNeo-Regular, "Malgun Gothic",
+    "맑은 고딕", dotum, "돋움", sans-serif;
+  color: rgb(0, 0, 0);
+  display: flex;
+  justify-content: space-between;
+}
+
+.fNameFeed {
+  margin: 0;
+  font-size: 1.375rem;
+  line-height: 1.2;
+}
+
+@media (max-width: 1300px) {
+  .fInnerFeed {
+    max-width: calc(100% - 40px);
+    margin-left: 210px;
+    margin-right: 210px;
+  }
+}
+
+.fBtn {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.btnFollow {
+  color: #909090;
+  margin-left: 22px;
+  font-size: 13px;
+}
+
+button {
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+  outline: none;
+}
