@@ -122,21 +122,95 @@
     display: flex;
     flex-direction: row;
     width: 800px;
-    justify-content: space-evenly;
-    padding: 40px 0 40px 0;
-    border-bottom: 1px solid #dddddd;
+    padding: 20px 0 20px 0;
+    /*border-bottom: 1px solid #dddddd;*/
     background: #fafafa;
+}
+.forumBlogInput{
+    width: 575px;
+    /*margin-left: 92px;*/
+    /*margin-top: 36px;*/
+    /*border: 1px solid #dddddd;*/
+    outline: none;
+    border: none;
+    min-height: 78px;
+    padding: 18px;
+    resize: none;
 }
 .forumBlogListComment {
     display: flex;
     flex-direction: row;
 }
-.forumBlogListCommentImg {
+.forumBlogListCommentImg{
+    flex-direction: column;
     width: 52px;
-    height: 52px;
+    margin-left: 110px;
+}
+.forumBlogListCommentImg img{
+    width: 42px;
+    height: 42px;
     flex-direction: column;
 }
 .forumBlogListCommentContext {
     display: flex;
     flex-direction: column;
+    width: 500px;
+}
+.forumBlogWriteBox {
+    width: 575px;
+    /*border: 1px solid #dddddd;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 78px;
+    padding: 18px;
+    background: #fafafa;
+}
+
+.forumBlogWriteDetail {
+    display: flex;
+    width: 800px;
+    padding: 20px 0 20px 0;
+    align-items: center;
+    justify-content: center;
+    background: #fafafa;
+}
+.forumBlogInputForm {
+    background: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 575px;
+    padding: 18px;
+}
+.inputInActiveLabel {
+    font-size: 13px;
+    color: #b9b9b9;
+}
+.inputActiveLabel {
+    font-size: 13px;
+    color: black;
+}
+.inputActiveButton {
+    padding: 5px 20px;
+    font-size: 13px;
+    border-radius: 20px;
+    background: black;
+    border: 1px solid black;
+    color: white;
+    box-sizing: border-box;
+}
+.inputActiveButton:hover {
+    background: rgb(255,85,62);
+    border: 1px solid rgb(255,85,62);
+}
+.inputInActiveButton {
+    padding: 5px 20px;
+    font-size: 13px;
+    border-radius: 20px;
+    background: #b9b9b9;
+    border: 1px solid #b9b9b9;
+    color: white;
+    box-sizing: border-box;
 }

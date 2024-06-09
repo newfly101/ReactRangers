@@ -877,4 +877,88 @@ export const blogEntryData = {
         }], "hasPrev": true, "hasNext": false
     }
 };
-
+export const blogTipDetailData = {
+    "status": 200, "desc": "OK", "data": {
+        "comments": [{
+            "entryId": 304124,
+            "id": 218652,
+            "registered": "2024.06.08 17:16",
+            "content": "안녕하세요! 맞구독 신청해요~",
+            "status": null,
+            "userId": 5545522,
+            "userName": "숏힐링(Short Healing)",
+            "userDefaultUrl": "https://taurine77.tistory.com",
+            "userImage": "https://tistory1.daumcdn.net/tistory/5581697/attach/bd3621800f28456f8807b54feb8e1ba7"
+        }, {
+            "entryId": 304124,
+            "id": 218685,
+            "registered": "2024.06.09 09:10",
+            "content": "똑같은 글 복사 붙이기 하는 것도 능력",
+            "status": null,
+            "userId": 86533,
+            "userName": "티스토리탈출",
+            "userDefaultUrl": "https://exit-out.tistory.com",
+            "userImage": "https://t1.daumcdn.net/tistory_admin/static/manage/images/r3/default_S.png"
+        }, {
+            "entryId": 304124,
+            "id": 218687,
+            "registered": "2024.06.09 09:21",
+            "content": "ㄴ 안녕하세요 ㅆㄷㄱ님! 굳이 또 세컨 계정으로 댓글을 남겨주시네요 ㅎㅎ 논리도 없고 팩트는 부정하고 싶은 ㅆㄷㄱ님이 남은 건 딴지걸기? 이 어려운 시기 꼭 잘 이겨내셔서 정년 넘도록 잘 운영하시길 진심으로 기원합니다. 권력이 영원하셨으면 좋겠네요 ",
+            "status": null,
+            "userId": 1185164,
+            "userName": "브랜던의 지식공장",
+            "userDefaultUrl": "https://infiniteinformation.tistory.com",
+            "userImage": "https://tistory1.daumcdn.net/tistory/2824660/attach/44523e9670224dafb46a227283f083fd"
+        }, {
+            "entryId": 304124,
+            "id": 218688,
+            "registered": "2024.06.09 09:44",
+            "content": "ㅋㅋㅋㅋ 망상도 자유죠. 아무튼 재미있게 혼자 흥분해서 잘 노시네요. 그 분노 블로그 운영하는데나 잘 쓰세요. ",
+            "status": null,
+            "userId": 86533,
+            "userName": "티스토리탈출",
+            "userDefaultUrl": "https://exit-out.tistory.com",
+            "userImage": "https://t1.daumcdn.net/tistory_admin/static/manage/images/r3/default_S.png"
+        }, {
+            "entryId": 304124,
+            "id": 218701,
+            "registered": "2024.06.09 15:34",
+            "content": "안녕하세요 맞구독 신청합니다!",
+            "status": null,
+            "userId": 6706535,
+            "userName": "btcgraduation",
+            "userDefaultUrl": "https://btcgraduation.tistory.com",
+            "userImage": "https://tistory1.daumcdn.net/tistory/7118771/attach/7ef49d0103454e4ebe34cf6018da7d28"
+        }, {
+            "entryId": 304124,
+            "id": 218707,
+            "registered": "2024.06.09 16:42",
+            "content": "ㅎㅎ사실 에너지를 써가며 그렇게 면박 줄만큼 뭐라할만큼 반박하고 싶지는 않았는데 그래도 그닥 보고싶지 않은 글들이 있어서 그닥 좋지 않았는데 다른 사람이 대신하네요. \n투정이 섞인 분석글은 자신의 블로그에 하심이 좋을 듯합니다.\n면박이나 조롱은 아니고 그저 권고일 뿐이에요",
+            "status": null,
+            "userId": 3780467,
+            "userName": "Esther♡",
+            "userDefaultUrl": "https://lovelyesther.tistory.com",
+            "userImage": "https://tistory1.daumcdn.net/tistory/2959036/attach/b87d2504ef15489688281e67cc87cc3c"
+        }, {
+            "entryId": 304124,
+            "id": 218708,
+            "registered": "2024.06.09 16:51",
+            "content": "ㄴ 투정한 적 없는데요?? 죄송하지만 제가 블로그를 열심히 하는게 아니라서요 ㅎㅎ 외부 상황 상관 없이 글 쓰는게 좋으신 에스더님에게는 그닥 불필요한 정보일 거 같구요 제가 님 블로그 어찌되든 상관할 바 아니니 하시던 것 열심히 하시면 됩니다. \n\n외부상황이 안 좋을 수록 돈만 보고온 유저가 이탈하니 순수하게 본연의 블러깅 하시는 에스더님이 더 좋지 않을까요? 면박이나 조롱은 아니고 그저 권고사항일 뿐입니다. \n\n그리고 ㅆㄷㄱ님은 별다른 논리도 없이 세컨아이디에 숨어 저러고 계십니다. 요즘 상황이 상황인지라 스트레스가 많으신 것 같네요 ㅎㅎ 응원부탁드립니다 ",
+            "status": null,
+            "userId": 1185164,
+            "userName": "브랜던의 지식공장",
+            "userDefaultUrl": "https://infiniteinformation.tistory.com",
+            "userImage": "https://tistory1.daumcdn.net/tistory/2824660/attach/44523e9670224dafb46a227283f083fd"
+        }, {
+            "entryId": 304124,
+            "id": 218720,
+            "registered": "2024.06.09 17:44",
+            "content": "좋은 정보 감사합니다. ",
+            "status": null,
+            "userId": 4756324,
+            "userName": "[시론]",
+            "userDefaultUrl": "https://z11neo.tistory.com",
+            "userImage": "https://tistory1.daumcdn.net/tistory/4490393/attach/5d1251694f844891a68f235f9b4a9102"
+        }]
+    }
+};
