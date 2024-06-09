@@ -8,7 +8,35 @@
 
 .blogWrapper {
   background-color: white;
-  width: 14.45rem;
+  width: 14.5rem;
   height: 18rem;
   margin-right: 0.8rem;
+}
+
+.blogTextWrapper {
+  padding: 1.1rem;
+}
+
+.blogInfo {
+  font-size: 0.6rem;
+}
+
+.blogTitle {
+  margin-top: 0.5rem;
+  font-weight: bold;
+}
+
+.blogDesc {
+  margin-top: 1.5rem;
+  font-size: 0.6rem;
+}
+
+.blogAuthor {
+  margin-top: 0.3rem;
+  font-size: 0.6rem;
+  opacity: 0.5;
+}
+
+.blogInfoNum {
+  color: #ff5544;
 }

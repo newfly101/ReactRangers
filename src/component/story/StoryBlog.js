@@ -2,7 +2,7 @@ import React from "react";
 import classes from "./StoryBlog.module.css";
 
 const StoryBlog = () => {
-  let RN = Number(Math.floor(Math.random() * 3) + 1);
+  let RN = Number(Math.floor(Math.random() * 20) + 1);
   return (
     <div className={classes.blogWrapper}>
       <img
@@ -10,13 +10,19 @@ const StoryBlog = () => {
         alt="스토리블로그 이미지"
         className={classes.blogImg}
       />
-      <div>
-        반려동물 · 공감{RN * RN} · 응원 {RN}
-      </div>
-      <div className={classes.blogText}>
-        <div>아이들과 고양이 함께 지내도 되나요?</div>
-        <div>수의사가 알려주는 반려동물 생활 속 꿀팁</div>
-        <div>by 10년째수의사</div>
+
+      <div className={classes.blogTextWrapper}>
+        <div className={classes.blogInfo}>
+          반려동물 &nbsp;·&nbsp; 공감
+          <label className={classes.blogInfoNum}> {RN * RN} </label>&nbsp;
+          ·&nbsp; 응원 <label className={classes.blogInfoNum}>{RN}</label>
+        </div>
+
+        <div className={classes.blogTitle}>
+          아이들과 강아지/고양이 함께 지내도 되나요?...
+        </div>
+        <div className={classes.blogDesc}>수의사가 알려주는 반려...</div>
+        <div className={classes.blogAuthor}>by 10년째수의사</div>
       </div>
     </div>
   );
