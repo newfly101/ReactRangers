@@ -38,7 +38,6 @@ const Admin = () => {
         <div className=""></div>
         <button className="box-button">새 블로그 만들기</button>
       </div>
-
       <h3 className="title__font">이메일 알림</h3>
       <form className="box">
         <button className="box-button">변경사항 저장</button>
