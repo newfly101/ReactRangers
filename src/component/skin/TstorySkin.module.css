@@ -58,6 +58,21 @@
 }
 
 /* 버튼 */
+.allbutton button {
+  background-color: transparent;
+  color: black;
+  border: none;
+  margin-bottom: 0.5rem;
+  margin-right: 1rem;
+  cursor: pointer;
+}
+
+.hoverline button:hover {
+  cursor: pointer;
+  color: black;
+  text-decoration-line: underline;
+}
+
 .buttonContainer {
   display: flex;
   justify-content: center;
@@ -70,18 +85,6 @@
   flex-direction: column;
 }
 
-.mainButton button {
-  background-color: transparent;
-  color: black;
-  border: none;
-  margin-bottom: 0.5rem;
-  margin-right: 1rem;
-}
-
-.mainButton button:hover {
-  cursor: pointer;
-}
-
 .tagButtonContainer {
   display: flex;
   justify-content: flex-start;
@@ -91,16 +94,9 @@
 }
 
 .tagButtonContainer button {
-  background-color: transparent;
   color: rgba(0, 0, 0, 0.7);
-  border: none;
   margin-top: 0.7rem;
-  margin-right: 1rem;
   font-size: 0.8rem;
 }
 
-.tagButtonContainer button:hover {
-  cursor: pointer;
-  color: black;
-  text-decoration-line: underline;
-}
+/* Main */

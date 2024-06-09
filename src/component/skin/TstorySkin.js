@@ -16,11 +16,13 @@ const TstorySkin = () => {
       </div>
       <div className={classes.buttonContainer}>
         <div className={classes.ButtonwrapUp}>
-          <div className={classes.mainButton}>
+          <div className={classes.allbutton}>
             <button>티스토리 스킨</button>
             <button>이용자 제작 스킨</button>
           </div>
-          <div className={classes.tagButtonContainer}>
+          <div
+            className={`${classes.allbutton} ${classes.hoverline} ${classes.tagButtonContainer}`}
+          >
             <button>#매거진</button>
             <button>#미니멀</button>
             <button>#반응형</button>
@@ -29,6 +31,20 @@ const TstorySkin = () => {
             <button>#초보</button>
             <button>#커버 지원</button>
           </div>
+        </div>
+      </div>
+      <div className={classes.card_white}>
+        <div className={classes.allbutton}>
+          <button>
+            <h1>Odyssey</h1>
+          </button>
+        </div>
+        <p>글과 사진, 그리고 영상을 담아</p>
+        <p>당신의 블로그 여행에 함께합니다.</p>
+        <div className={classes.allbutton}>
+          <button>#반응형</button>
+          <button>#블로그형</button>
+          <button>#커버 지원</button>
         </div>
       </div>
     </>
