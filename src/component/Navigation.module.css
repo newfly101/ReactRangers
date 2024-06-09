@@ -32,6 +32,7 @@
     align-items: center;
     justify-content: center;
     color: black;
+    white-space: nowrap;
 }
 .pageTitle a {
     color: black;
@@ -45,6 +46,7 @@
     margin-right: 40px;
     align-items: center;
     justify-content: center;
+    white-space: nowrap;
 }
 .pageTitleBlank a {
     color: white;
@@ -70,6 +72,7 @@
     color: white;
     padding: 13px 40px 13px 40px;
     border-radius: 40px;
+    white-space: nowrap;
 }
 .navBarLogin button a{
     color: white;
@@ -106,6 +109,7 @@
     align-items: center;
     font-size: 1.3rem;
     margin: 1rem;
+    white-space: nowrap;
 }
 .pageLinkBox a {
     color: black;
@@ -121,6 +125,7 @@
     font-size: 1.3rem;
     color:white;
     margin: 1rem;
+    white-space: nowrap;
 }
 .pageLinkBoxBlank a {
     color:white;
@@ -150,4 +155,10 @@
 }
 .pageLinkedBox Link:hover {
     text-decoration-line: underline;
+}
+
+@media (max-width: 800px) {
+    .navBarLogin button {
+        display: none;
+    }
 }
