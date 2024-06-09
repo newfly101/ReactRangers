@@ -17,6 +17,8 @@ const Main = () => {
     autoplaySpeed: 3000,
   };
 
+  // const img = `https://t1.daumcdn.net/tistory_admin/static/top/pc/thumb_skin1_1.jpg`;
+
   return (
     <div className="App">
       <div className="header">
@@ -33,6 +35,7 @@ const Main = () => {
                   display: 'block',
                 }}
               />
+              {/* <img src={img} alt="text" /> */}
             </div>
           ))}
         </Slider>
@@ -40,7 +43,7 @@ const Main = () => {
       <div className="content">
         <div className="section">
           <h2>Section 1</h2>
-          <p>This is the first section.</p>
+          <p>This is the f44334irst section.</p>
         </div>
         <div className="section">
           <h2>Section 2</h2>
