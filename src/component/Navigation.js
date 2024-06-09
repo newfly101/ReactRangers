@@ -1,6 +1,6 @@
 import React from "react";
 import classes from "./Navigation.module.css";
-import {Link, useLocation} from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 const Navigation = () => {
   const location = useLocation();
@@ -23,7 +23,7 @@ const Navigation = () => {
           <a href="/story">스토리</a>
         </div>
         <div className={classes.pageLinkBox}>
-          <a href="/">스킨</a>
+          <a href="/skin">스킨</a>
         </div>
         <div
           className={
