@@ -1,0 +1,14 @@
+.blogImg {
+  width: 100%;
+}
+
+.blogText {
+  font-size: 0.7rem;
+}
+
+.blogWrapper {
+  background-color: white;
+  width: 14.45rem;
+  height: 18rem;
+  margin-right: 0.8rem;
+}
