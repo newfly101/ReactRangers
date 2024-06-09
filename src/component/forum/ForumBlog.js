@@ -2,6 +2,7 @@ import React from 'react';
 import classes from './ForumBlog.module.css';
 
 const ForumBlog = () => {
+    const img = `https://t1.daumcdn.net/tistory_admin/static/top/pc/photo_skin03.jpg`;
     return (
         <div className={classes.forumBlogBox}>
             <div className={classes.forumBlogTitle}>
@@ -19,6 +20,7 @@ const ForumBlog = () => {
             <div className={classes.forumBlogList}>
                 <div>
                     <img src="/public/logo512.png" alt="sample" />
+                    <img src={img} alt="texty" />
                 </div>
             </div>
         </div>

@@ -1,22 +1,22 @@
-.story__top-section {
+.storyTopSection {
   height: 11.1rem;
   padding: 7rem 0 0 11rem;
 }
 
-.story__top-section__innertext {
+.storyTopSectionInnertext {
   width: 21rem;
   text-align: left;
 }
 
-.top-section__title {
+.topSectionTitle {
   margin: 0;
 }
-.top-section__message {
+.topSectionMessage {
   margin: 0.4rem 0 0 0;
   font-size: 1.1rem;
 }
 
-.top-section__wrap-tag {
+.topSectionWrapTag {
   padding: 3.8rem 0 0 0;
   font-size: 1.6rem;
   display: flex;
@@ -25,10 +25,10 @@
   width: 40rem;
 }
 
-.story__mid-section {
+.storyMidSection {
   height: 27.625rem;
   background-color: #f5f5f5;
 }
 
-.story__bottom-section {
+.storyBottomSection {
 }
