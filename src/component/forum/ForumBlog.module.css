@@ -126,6 +126,15 @@
     /*border-bottom: 1px solid #dddddd;*/
     background: #fafafa;
 }
+.forumBlogInput{
+    width: 575px;
+    margin-left: 92px;
+    margin-top: 36px;
+    border: 1px solid #dddddd;
+    min-height: 78px;
+    padding: 18px;
+    resize: none;
+}
 .forumBlogListComment {
     display: flex;
     flex-direction: row;

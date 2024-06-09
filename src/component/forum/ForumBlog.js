@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect, useRef} from 'react';
 import classes from './ForumBlog.module.css';
 import {
     blogEntryData,
@@ -14,6 +14,9 @@ const ForumBlog = () => {
     const [tapState, setTapState] = React.useState('all');
     const [showDetail, setShowDetail] = React.useState(false);
     const [activeIndex, setActiveIndex] = React.useState(null);
+    const [addComment, setAddComment] = React.useState('');
+
+    const inputRef = useRef(null);
 
     const onClickTapIntro = () => {
         setResponse(blogIntroData);
@@ -45,12 +48,31 @@ const ForumBlog = () => {
         }
         return str.slice(0, num) + '...';
     }
+    const scrollToInput = () => {
+        if(inputRef.current) {
+            inputRef.current.scrollIntoView({behavior: 'smooth'});
+            inputRef.current.focus();
+        }
+    }
+    const onChangeAddComment = (event) => {
+        setAddComment(event.target.value);
+    }
+    const submitComment = (event) => {
+        event.preventDefault();
+        console.log("addComment",addComment);
+    }
+    // useEffect(() => {
+    //     if (textareaRef.current) {
+    //         textareaRef.current.placeholder =
+    //     }
+    // })
 
     // console.log(response.data.entries);
     // console.log("tapState",tapState);
     console.log("blogTipDetailData",blogTipDetailData.data.comments);
 
     return (
+        <>
         <div className={classes.forumBlogBox}>
             <div className={classes.forumBlogTitle}>
                 <div className={classes.forumBlogTap}>
@@ -71,10 +93,11 @@ const ForumBlog = () => {
                     </button>
                 </div>
                 <div className={classes.forumWriteBtn}>
-                    <button>글쓰기</button>
+                    <button onClick={scrollToInput}>글쓰기</button>
                 </div>
             </div>
             {response.data.entries && response.data.entries.map((item, index) => (
+                <>
                 <div key={`'블로그-'${index}`}>
                     <div className={classes.forumBlogList} key={`'블로그Info-'${index}`} >
                         <div className={classes.forumImgBox}>
@@ -107,7 +130,7 @@ const ForumBlog = () => {
                         </div>
                     </div>
                     {activeIndex === index && showDetail === true &&
-                        blogTipDetailData.data.comments ? blogTipDetailData.data.comments.map((detailItem) =>
+                        blogTipDetailData.data.comments && blogTipDetailData.data.comments.map((detailItem) =>
                         (
                             <div className={classes.forumBlogListDetail} key={`'블로그Detail-'${detailItem.id}`}>
                                 <div className={classes.forumBlogListComment}>
@@ -137,11 +160,31 @@ const ForumBlog = () => {
                                 </div>
                             </div>
                         )
-                    ) : ''}
+                    )}
                 </div>
+                {activeIndex === index && showDetail === true &&
+                <div className={classes.forumBlogListDetail}>
+                    <form>
+                        <textarea
+                            className={classes.forumBlogInput}
+                            placeholder={`내용을 입력하세요\n하루에 10개까지 작성 가능합니다`}
+                            value={addComment}
+                            onChange={onChangeAddComment}
+                            maxLength={500}
+                        />
+                        <div>
+                            <label>{addComment.length}/500</label>
+                            <button onClick={submitComment}>완료</button>
+                        </div>
+
+                    </form>
+                </div>
+                }
+                </>
             ))}
         </div>
-
+        <input ref={inputRef}/>
+        </>
     );
 };
 
