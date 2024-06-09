@@ -65,6 +65,8 @@
     font-size: 0.8rem;
     padding-bottom: 8px;
     align-items: center;
+    cursor: default;
+    white-space: pre-wrap;
 }
 .forumContextHeader {
     color: #7b756b;
