@@ -115,3 +115,24 @@
   cursor: pointer;
   text-decoration: none;
 }
+
+.bolgList {
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 0;
+}
+
+.infoBlogList {
+  overflow: hidden;
+  width: 896px;
+  height: 30px;
+  margin: 0 auto;
+  padding: 34px 0 0;
+}
+
+.blogInfoDesc {
+  float: left;
+  padding: 6px 0 0;
+  font-size: 16px;
+  line-height: 16px;
+}

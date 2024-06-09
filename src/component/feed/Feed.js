@@ -43,6 +43,13 @@ const Feed = () => {
           </a>
         </div>
       </div>
+      <div className={classes.bolgList}>
+        <div className={classes.infoBlogList}>
+          <p className={classes.blogInfoDesc}>
+            최근 활동이 많은 블로그입니다. 구독해보세요.
+          </p>
+        </div>
+      </div>
     </div>
   );
 };
