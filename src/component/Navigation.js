@@ -12,22 +12,21 @@ const Navigation = () => {
         setUrl(location.pathname);
     };
 
-    const handleScroll = () => {
-        if (window.scrollY > 300) {
-            setScrolled(true);
-        } else {
-            setScrolled(false);
-        }
-    }
-    const changeUrl = () => {
-        console.log(location.pathname);
-        setUrl(location.pathname);
-    }
-
-    // scroll 하면 navigation background가 none이었다가 흰색으로 변경되게 만듦
     useEffect(() => {
-        window.addEventListener("scroll", handleScroll);
+        const handleScroll = () => {
+            if (window.scrollY > 300) {
+                setScrolled(true);
+            } else {
+                setScrolled(false);
+            }
+        }
+        const changeUrl = (url) => {
+            console.log(location.pathname);
+            setUrl(url);
+        }
+
         changeUrl(location.pathname);
+        window.addEventListener("scroll", handleScroll);
         return () => {
             window.removeEventListener("scroll", handleScroll);
         }

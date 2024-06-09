@@ -37,6 +37,11 @@ const Feed = () => {
           <br />
           구독하는 글을 피드에서 바로 확인하실 수 있습니다.
         </p>
+        <div className={classes.feedStoryWrapBtn}>
+          <a href="/story" className={classes.feedStoryBtn}>
+            스토리 보러가기
+          </a>
+        </div>
       </div>
     </div>
   );
