@@ -18,18 +18,8 @@
     align-items: center;
     justify-content: space-evenly;
 }
-.forumBlogTap button {
-    font-weight: bold;
-    background: none;
-    border: none;
-    font-size: 1.2rem;
-    padding: 1rem;
-    text-align: center;
-    color: #695950;
-}
-.forumBlogTap button:hover {
-    color: #221d1a;
-}
+
+
 .forumBlogList {
     display: flex;
     flex-direction: row;
@@ -66,18 +56,85 @@
     display: flex;
     justify-content: space-between;
 }
-.forumContext {
+.forumContextBox {
     width: 550px;
 }
 .forumContext {
+    display: flex;
+    flex-direction: row;
     font-size: 0.8rem;
     padding-bottom: 8px;
+    align-items: center;
+}
+.forumContextHeader {
+    color: #7b756b;
+    cursor: pointer;
+}
+.forumContextHeader a {
+    text-decoration-line: none;
+    color: inherit;
+}
+.forumContextCategory {
+    text-decoration: 1px underline;
+    color: #7b756b;
 }
 .forumContextTitle {
     font-size: 1.3rem;
     font-weight: bold;
     padding-bottom: 12px;
+    cursor: pointer;
+}
+.forumContextTitle:hover {
+    text-decoration: underline;
 }
 .forumLookUp {
     font-size: 0.8rem;
+}
+
+.forumTapActive {
+    font-weight: bold;
+    background: none;
+    border: none;
+    border-bottom: 2px solid red;
+    font-size: 1.2rem;
+    padding: 1rem;
+    text-align: center;
+    color: black;
+}
+.forumBlogTap :hover {
+    color: #221d1a;
+}
+.forumTapInActive {
+    font-weight: bold;
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    padding: 1rem;
+    text-align: center;
+    color: #695950;
+}
+.forumBlogTap :hover {
+    color: #221d1a;
+}
+.forumBlogListDetail {
+    display: flex;
+    flex-direction: row;
+    width: 800px;
+    justify-content: space-evenly;
+    padding: 40px 0 40px 0;
+    border-bottom: 1px solid #dddddd;
+    background: #fafafa;
+}
+.forumBlogListComment {
+    display: flex;
+    flex-direction: row;
+}
+.forumBlogListCommentImg {
+    width: 52px;
+    height: 52px;
+    flex-direction: column;
+}
+.forumBlogListCommentContext {
+    display: flex;
+    flex-direction: column;
 }
