@@ -21,7 +21,7 @@ const ForumBlog = () => {
         setResponse(blogEntryData);
     }
 
-    console.log(response.data.entries);
+    // console.log(response.data.entries);
 
     return (
         <div className={classes.forumBlogBox}>
