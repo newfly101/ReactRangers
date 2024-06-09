@@ -5,11 +5,20 @@ import {blogEtcData, blogIntroData, blogSkinData, blogTipData} from "./ForumTapD
 const ForumBlog = () => {
     const img = `https://t1.daumcdn.net/tistory_admin/static/top/pc/photo_skin03.jpg`;
     const url = "https://www.tistory.com/community/forum/entries/tip.json";
+    const [response, setResponse] = React.useState(blogTipData);
 
-    const response = blogTipData;
-    const resBlogEtcData= blogEtcData;
-    const resBlogSkinData = blogSkinData;
-    const resBlogIntroData = blogIntroData;
+    const onClickTapIntro = () => {
+        setResponse(blogIntroData);
+    }
+    const onClickTapEtc = () => {
+        setResponse(blogEtcData);
+    }
+    const onClickTapSkin = () => {
+        setResponse(blogSkinData);
+    }
+    const onClickTapTip = () => {
+        setResponse(blogTipData);
+    }
 
     console.log(response.data.entries);
 
@@ -18,10 +27,10 @@ const ForumBlog = () => {
             <div className={classes.forumBlogTitle}>
                 <div className={classes.forumBlogTap}>
                     <button>전체</button>
-                    <button>블로그 소개</button>
-                    <button>블로그 운영팁</button>
-                    <button>스킨</button>
-                    <button>질문/기타</button>
+                    <button onClick={onClickTapIntro}>블로그 소개</button>
+                    <button onClick={onClickTapTip}>블로그 운영팁</button>
+                    <button onClick={onClickTapSkin}>스킨</button>
+                    <button onClick={onClickTapEtc}>질문/기타</button>
                 </div>
                 <div className={classes.forumWriteBtn}>
                     <button>글쓰기</button>
