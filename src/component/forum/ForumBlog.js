@@ -4,34 +4,41 @@ import {blogEntryData, blogEtcData, blogIntroData, blogSkinData, blogTipData} fr
 
 const ForumBlog = () => {
     const [response, setResponse] = React.useState(blogEntryData);
+    const [tapState, setTapState] = React.useState('all');
 
     const onClickTapIntro = () => {
         setResponse(blogIntroData);
+        setTapState("intro");
     }
     const onClickTapEtc = () => {
         setResponse(blogEtcData);
+        setTapState("etc");
     }
     const onClickTapSkin = () => {
         setResponse(blogSkinData);
+        setTapState("skin");
     }
     const onClickTapTip = () => {
         setResponse(blogTipData);
+        setTapState("tip");
     }
     const onClickTapEntry = () => {
         setResponse(blogEntryData);
+        setTapState("all");
     }
 
     // console.log(response.data.entries);
+    console.log("tapState",tapState);
 
     return (
         <div className={classes.forumBlogBox}>
             <div className={classes.forumBlogTitle}>
                 <div className={classes.forumBlogTap}>
-                    <button onClick={onClickTapEntry}>전체</button>
-                    <button onClick={onClickTapIntro}>블로그 소개</button>
-                    <button onClick={onClickTapTip}>블로그 운영팁</button>
-                    <button onClick={onClickTapSkin}>스킨</button>
-                    <button onClick={onClickTapEtc}>질문/기타</button>
+                    <button className={tapState === 'all' ? classes.forumTapActive : classes.forumTapInActive} onClick={onClickTapEntry}>전체</button>
+                    <button className={tapState === 'intro' ? classes.forumTapActive : classes.forumTapInActive} onClick={onClickTapIntro}>블로그 소개</button>
+                    <button className={tapState === 'tip' ? classes.forumTapActive : classes.forumTapInActive} onClick={onClickTapTip}>블로그 운영팁</button>
+                    <button className={tapState === 'skin' ? classes.forumTapActive : classes.forumTapInActive} onClick={onClickTapSkin}>스킨</button>
+                    <button className={tapState === 'etc' ? classes.forumTapActive : classes.forumTapInActive} onClick={onClickTapEtc}>질문/기타</button>
                 </div>
                 <div className={classes.forumWriteBtn}>
                     <button>글쓰기</button>

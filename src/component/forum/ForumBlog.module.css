@@ -18,18 +18,8 @@
     align-items: center;
     justify-content: space-evenly;
 }
-.forumBlogTap button {
-    font-weight: bold;
-    background: none;
-    border: none;
-    font-size: 1.2rem;
-    padding: 1rem;
-    text-align: center;
-    color: #695950;
-}
-.forumBlogTap button:hover {
-    color: #221d1a;
-}
+
+
 .forumBlogList {
     display: flex;
     flex-direction: row;
@@ -80,4 +70,30 @@
 }
 .forumLookUp {
     font-size: 0.8rem;
+}
+
+.forumTapActive {
+    font-weight: bold;
+    background: none;
+    border: none;
+    border-bottom: 2px solid red;
+    font-size: 1.2rem;
+    padding: 1rem;
+    text-align: center;
+    color: black;
+}
+.forumBlogTap :hover {
+    color: #221d1a;
+}
+.forumTapInActive {
+    font-weight: bold;
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    padding: 1rem;
+    text-align: center;
+    color: #695950;
+}
+.forumBlogTap :hover {
+    color: #221d1a;
 }
