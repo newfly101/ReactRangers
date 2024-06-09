@@ -16,9 +16,11 @@ const ForumBlog = () => {
     const [showDetail, setShowDetail] = React.useState(false);
     const [activeIndex, setActiveIndex] = React.useState(null);
     const [addComment, setAddComment] = React.useState('');
+    const [focus, setFocus] = React.useState(false);
 
     const inputRef = useRef(null);
     const textareaRef = useRef(null);
+
 
     const onClickTapIntro = () => {
         setResponse(blogIntroData);
@@ -69,7 +71,12 @@ const ForumBlog = () => {
             textarea.style.height = 'auto';
             textarea.style.height = `${textarea.scrollHeight}px`;
         }
-
+    }
+    const onFocusTextArea = () => {
+        setFocus(true);
+    }
+    const onBlurTextArea = () => {
+        setFocus(false);
     }
 
     // console.log(response.data.entries);
@@ -182,10 +189,12 @@ const ForumBlog = () => {
                                             maxLength={500}
                                             ref={textareaRef}
                                             onInput={autoScaleTextArea}
+                                            onFocus={onFocusTextArea}
+                                            onBlur={onBlurTextArea}
                                         />
                                         <div className={classes.forumBlogInputForm}>
                                             <div>
-                                                <label className={addComment.length > 0 ?
+                                                <label className={focus === true ?
                                                     classes.inputActiveLabel : classes.inputInActiveLabel}>{addComment.length}</label>
                                                 <label className={classes.inputInActiveLabel}>/500</label>
                                             </div>
