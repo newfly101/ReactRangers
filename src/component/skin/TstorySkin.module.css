@@ -10,9 +10,12 @@
 }
 
 .imageContaner img {
-  height: 100%;
   width: 100%;
+  height: 365px;
   object-fit: cover;
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .imageContaner::before {
   content: "";
