@@ -15,20 +15,20 @@ const TstorySkin = () => {
         </div>
       </div>
       <div className={classes.buttonContainer}>
-        <div className={classes.mainButtonwrapUp}>
+        <div className={classes.ButtonwrapUp}>
           <div className={classes.mainButton}>
             <button>티스토리 스킨</button>
             <button>이용자 제작 스킨</button>
           </div>
-        </div>
-        <div className={classes.tagButtonContainer}>
-          <button>#매거진</button>
-          <button>#미니멀</button>
-          <button>#반응형</button>
-          <button>#블로그형</button>
-          <button>#사이트</button>
-          <button>#초보</button>
-          <button>#커버 지원</button>
+          <div className={classes.tagButtonContainer}>
+            <button>#매거진</button>
+            <button>#미니멀</button>
+            <button>#반응형</button>
+            <button>#블로그형</button>
+            <button>#사이트</button>
+            <button>#초보</button>
+            <button>#커버 지원</button>
+          </div>
         </div>
       </div>
     </>

@@ -53,19 +53,20 @@
   font-size: 1rem;
   font-weight: 100;
 }
+
 /* 버튼 */
 .buttonContainer {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 50%;
+  max-width: 100vw;
   padding-top: 2rem;
   margin: auto;
   white-space: nowrap;
+  flex-direction: column;
 }
 
-.mainButtonwrapUp {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-  width: 700px;
-}
 .mainButton button {
   background-color: transparent;
   color: black;
@@ -78,11 +79,19 @@
   cursor: pointer;
 }
 
+.tagButtonContainer {
+  display: flex;
+  justify-content: flex-start;
+  border-top: 1px solid rgba(0, 0, 0, 0.5);
+  width: 600px;
+  max-width: 100vw;
+}
+
 .tagButtonContainer button {
   background-color: transparent;
   color: rgba(0, 0, 0, 0.7);
   border: none;
-  margin-top: 0.5rem;
+  margin-top: 0.7rem;
   margin-right: 1rem;
   font-size: 0.8rem;
 }
