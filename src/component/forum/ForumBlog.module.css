@@ -56,12 +56,27 @@
     display: flex;
     justify-content: space-between;
 }
-.forumContext {
+.forumContextBox {
     width: 550px;
 }
 .forumContext {
+    display: flex;
+    flex-direction: row;
     font-size: 0.8rem;
     padding-bottom: 8px;
+    align-items: center;
+}
+.forumContextHeader {
+    color: #7b756b;
+    cursor: pointer;
+}
+.forumContextHeader a {
+    text-decoration-line: none;
+    color: inherit;
+}
+.forumContextCategory {
+    text-decoration: 1px underline;
+    color: #7b756b;
 }
 .forumContextTitle {
     font-size: 1.3rem;
