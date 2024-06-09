@@ -20,6 +20,7 @@ function App() {
         <Route path="/forum" element={<ForumMain />} />
         <Route path="/feed" element={<Feed />} />
         <Route path="/admin" element={<Admin />} />
+        <Route path="/story" element={<Story />} />
         {/*
             <Route path="/" element={<TistoryMain />} /> // 여기에 page link 추가
           */}
