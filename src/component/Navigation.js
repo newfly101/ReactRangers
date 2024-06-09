@@ -7,8 +7,8 @@ const Navigation = () => {
   console.log(location.pathname === "/forum/");
 
   const onClickAdminPage = () => {
-      console.log(location.pathname);
-  }
+    console.log(location.pathname);
+  };
 
   return (
     <nav className={classes.navBar}>
@@ -20,7 +20,7 @@ const Navigation = () => {
           <a href="/feed">피드</a>
         </div>
         <div className={classes.pageLinkBox}>
-          <a href="/">스토리</a>
+          <a href="/story">스토리</a>
         </div>
         <div className={classes.pageLinkBox}>
           <a href="/">스킨</a>
@@ -43,8 +43,8 @@ const Navigation = () => {
         }`}
       >
         <button onClick={onClickAdminPage}>
-            <a href="/admin">시작하기</a>
-            </button>
+          <a href="/admin">시작하기</a>
+        </button>
       </div>
     </nav>
   );
