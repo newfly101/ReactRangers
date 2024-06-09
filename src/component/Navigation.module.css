@@ -1,10 +1,28 @@
 .navBar {
+    position: fixed;
+    top: 0;
     height: 72px;
     width: 100%;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    z-index: 1;
+    transition: background 0.3s;
+    background: white;
+}
+.navBarBlank {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    height: 72px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    transition: background 0.3s;
+    background: none;
 }
 .pageTitle {
     /*font-size: 1.3rem;*/
@@ -13,9 +31,23 @@
     margin-right: 40px;
     align-items: center;
     justify-content: center;
+    color: black;
 }
 .pageTitle a {
     color: black;
+    text-decoration-line: none;
+}
+.pageTitleBlank {
+    /*font-size: 1.3rem;*/
+    display: flex;
+    font-size: 1.4rem;
+    color: white;
+    margin-right: 40px;
+    align-items: center;
+    justify-content: center;
+}
+.pageTitleBlank a {
+    color: white;
     text-decoration-line: none;
 }
 
@@ -38,6 +70,10 @@
     color: white;
     padding: 13px 40px 13px 40px;
     border-radius: 40px;
+}
+.navBarLogin button a{
+    color: white;
+    text-decoration-line: none;
 }
 .navBarLogin button:hover {
     margin-right: 40px;
@@ -78,11 +114,19 @@
 .pageLinkBox a:hover {
     text-decoration-line: underline;
 }
-.pageLinkBox Link {
-    color: black;
+.pageLinkBoxBlank {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 1.3rem;
+    color:white;
+    margin: 1rem;
+}
+.pageLinkBoxBlank a {
+    color:white;
     text-decoration-line: none;
 }
-.pageLinkBox Link:hover {
+.pageLinkBoxBlank a:hover {
     text-decoration-line: underline;
 }
 
