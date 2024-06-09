@@ -25,6 +25,9 @@
 .blogTitle {
   margin-top: 0.5rem;
   font-weight: bold;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  height: 2.9rem;
 }
 
 .blogDesc {
