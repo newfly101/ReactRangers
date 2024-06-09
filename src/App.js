@@ -1,6 +1,6 @@
 import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
 import Navigation from './component/Navigation';
-import TistoryMain from './component/TistoryMain';
+// import TistoryMain from './component/TistoryMain';
 import ForumMain from './component/forum/ForumMain';
 import Feed from './component/feed/Feed';
 import Admin from './component/admin/Admin';
