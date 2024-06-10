@@ -25,6 +25,66 @@ const TstorySkin = () => {
         img: ["Poster0.jpg", "Poster1.jpg", "Poster2.jpg"],
       },
     },
+    {
+      type: "cardWhite",
+      data: {
+        title: "Whatever",
+        content: "나만의 이야기를 담은 블로그부터 목적을 가진 사이트까지.",
+        content1: "어떤 성격의 콘텐츠든 담을 수 있습니다.",
+        tag: [
+          "#매거진",
+          "#반응형",
+          "#블로그형",
+          "#사이트",
+          "#초보",
+          "#커버 지원",
+        ],
+        img: ["Whatever0.jpg", "Whatever1.jpg", "Whatever2.jpg"],
+      },
+    },
+    { type: "Label" },
+    {
+      type: "cardWhite",
+      data: {
+        title: "Letter",
+        content:
+          "최소한의 디자인, 깔끔한 스킨을 원하는 블로거를 위해 만들었습니다.",
+        content1: "깔끔한 편지지 위에 여러분의 이야기를 들려 주세요.",
+        tag: ["#미니멀", "#반응형", "#블로그형", "#초보", "#커버 지원"],
+        img: ["Letter0.jpg", "Letter1.jpg", "Letter2.jpg"],
+      },
+    },
+    {
+      type: "cardGray",
+      data: {
+        title: "Portfolio",
+        content: "나만의 시선, 나만의 콘텐츠로 꽉 찬 공간.",
+        content1: "여러분의 포트폴리오를 보여주세요.",
+        tag: ["#반응형", "#사이트", "#커버 지원"],
+        img: ["Portfolio0.jpg", "Portfolio1.jpg", "Portfolio2.jpg"],
+      },
+    },
+    {
+      type: "cardWhite",
+      data: {
+        title: "Book Club",
+        content: "도서 콘텐츠를 제공하는 출판사 블로그에 추천합니다.",
+        content1: "상단 프로모션 영역을 활용해 콘텐츠 주목도를 높여보세요.",
+        tag: ["#반응형", "#블로그형", "#초보"],
+        img: ["Book Club0.jpg", "Book Club1.jpg", "Book Club2.jpg"],
+      },
+    },
+    {
+      type: "cardGray",
+      data: {
+        title: "Magazine",
+        content: "이 주제는 내가 전문가!",
+        content1:
+          "이제부터 여러분의 시선이 돋보이는 매거진을 만들 수 있습니다.",
+        tag: ["#매거진", "#반응형", "#커버 지원"],
+        img: ["Magazine0.jpg", "Magazine1.jpg", "Magazine2.jpg"],
+      },
+    },
   ]);
   return (
     <>
