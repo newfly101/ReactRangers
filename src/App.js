@@ -1,12 +1,12 @@
-import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
-import Navigation from './component/Navigation';
-import ForumMain from './component/forum/ForumMain';
-import Feed from './component/feed/Feed';
-import Admin from './component/admin/Admin';
-import Story from './component/story/Story';
-import './App.css';
-import Skin from './component/skin/TstorySkin';
-import TistoryMain from '../src/component/TistoryMain';
+import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
+import Navigation from "./component/Navigation";
+import ForumMain from "./component/forum/ForumMain";
+import Feed from "./component/feed/Feed";
+import Admin from "./component/admin/Admin";
+import Story from "./component/story/Story";
+import "./App.css";
+import Skin from "./component/skin/TstorySkin";
+import TistoryMain from "../src/component/TistoryMain";
 
 function App() {
   return (
