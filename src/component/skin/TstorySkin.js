@@ -51,9 +51,9 @@ const TstorySkin = () => {
                 <h1>Odyssey</h1>
               </button>
             </div>
-            <div className={` ${classes.cardText}`}>
-              <p>글과 사진, 그리고 영상을 담아</p>
-              <p>당신의 블로그 여행에 함께합니다.</p>
+            <div className={` ${classes.cardInnerText}`}>
+              <div>글과 사진, 그리고 영상을 담아</div>
+              <div>당신의 블로그 여행에 함께합니다.</div>
             </div>
             <div className={classes.cardButton}>
               <div
@@ -95,9 +95,9 @@ const TstorySkin = () => {
                 <h1>Odyssey</h1>
               </button>
             </div>
-            <div className={` ${classes.cardText}`}>
-              <p>글과 사진, 그리고 영상을 담아</p>
-              <p>당신의 블로그 여행에 함께합니다.</p>
+            <div className={` ${classes.cardInnerText}`}>
+              <div>글과 사진, 그리고 영상을 담아</div>
+              <div>당신의 블로그 여행에 함께합니다.</div>
             </div>
             <div className={classes.cardButton}>
               <div
