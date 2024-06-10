@@ -14,7 +14,7 @@ const Navigation = () => {
 
     useEffect(() => {
         const handleScroll = () => {
-            if (window.scrollY > 300) {
+            if (window.scrollY > 150) {
                 setScrolled(true);
             } else {
                 setScrolled(false);
