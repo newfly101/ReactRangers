@@ -1,4 +1,4 @@
-.imageContainer {
+.header {
   position: relative;
 }
 
@@ -64,6 +64,14 @@
 
 .buttonTop:hover {
   background-color: #cfcdd1;
+}
+
+.imageNo {
+  position: absolute;
+  top: 650px;
+  right: 480px;
+  width: 80px;
+  height: 80px;
 }
 
 .section1 {

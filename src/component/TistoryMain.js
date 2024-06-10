@@ -129,6 +129,7 @@ const TistoryMain = () => {
           <img
             src="https://t1.daumcdn.net/tistory_admin/static/top/pc/img_light.png"
             alt="244222222"
+            className={styles.imageNo}
           />
         </div>
       </div>
