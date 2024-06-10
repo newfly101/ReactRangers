@@ -5,7 +5,7 @@
   align-items: center;
   position: relative;
   overflow: clip;
-  height: 15vh;
+  height: 30vh;
   width: 100vw;
 }
 
@@ -86,14 +86,22 @@
   padding-top: 2rem;
 }
 
+.buttonTitle {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-bottom: 1.5px solid rgba(0, 0, 0, 0.1);
+}
+
 .buttonTitle button {
   margin-bottom: 0.5rem;
+  padding-left: 1px;
+  padding-right: 10px;
   font-size: 17px;
   letter-spacing: -1px;
 }
 
 .tagButtonContainer {
-  border-top: 1.5px solid rgba(0, 0, 0, 0.1);
   width: 700px;
   max-width: 100vw;
 }
@@ -196,8 +204,7 @@
 
 .cardImage {
   display: inline-block;
-  padding: 0;
-  margin: 20px 20px 10px 0;
+  margin: 20px 20px 50px 0;
   border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
@@ -209,4 +216,16 @@
 .cardImage:hover {
   cursor: pointer;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+/* action */
+
+.activeSkinTitle button span {
+  padding-bottom: 9px;
+  border-bottom: 2px solid #ff5f4f;
+}
+
+.activeSkinTitle button {
+  font-size: 15px;
+  font-weight: 1000;
 }

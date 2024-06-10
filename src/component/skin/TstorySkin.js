@@ -19,8 +19,16 @@ const TstorySkin = () => {
       <div className={`${classes.allContainer} ${classes.buttonContainer}`}>
         <div className={classes.ButtonWrapUp}>
           <div className={`${classes.allButton} ${classes.buttonTitle}`}>
-            <button>티스토리 스킨</button>
-            <button>이용자 제작 스킨</button>
+            <div className={classes.activeSkinTitle}>
+              <button>
+                <span>티스토리 스킨</span>
+              </button>
+            </div>
+            <div>
+              <button>
+                <span>이용자 제작 스킨</span>
+              </button>
+            </div>
           </div>
           <div
             className={`${classes.allButton} ${classes.hoverLine} ${classes.tagButtonContainer}`}
@@ -79,7 +87,7 @@ const TstorySkin = () => {
           </div>
         </div>
       </div>
-      <div className={classes.card0}>
+      <div className={classes.card1}>
         <div className={`${classes.allContainer} ${classes.cardGray}`}>
           <div className={classes.cardWrap}>
             <div className={`${classes.allButton} ${classes.cardTitle}`}>

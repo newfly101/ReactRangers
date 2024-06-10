@@ -1,0 +1,57 @@
+.section5 {
+  font-size: 1.2em;
+  font-weight: bold;
+
+  display: inline-block;
+  text-align: left;
+}
+
+.section5 p {
+  position: relative;
+  font-size: 2.5em;
+  margin-bottom: 5px;
+  color: rgb(144, 144, 144);
+  font-weight: 500;
+}
+
+.section5 p:hover {
+  color: rgb(70, 70, 70);
+}
+
+.section5 p span {
+  position: relative;
+}
+
+.section5 p span::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 8px;
+  width: 0;
+  height: 11px;
+  background-color: rgb(227, 92, 110);
+  transition: width 0.3s ease-in-out;
+  z-index: -1;
+}
+
+.section5 p:hover span::before {
+  width: 100%;
+}
+
+.customSpan {
+  color: #000000;
+  font-weight: 700;
+}
+
+.customH5 {
+  padding: 20px 10px 0;
+}
+
+p a {
+  text-decoration: none;
+  color: inherit;
+}
+
+p a:hover {
+  cursor: pointer;
+}
