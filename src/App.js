@@ -6,7 +6,6 @@ import Admin from "./component/admin/Admin";
 import Story from "./component/story/Story";
 import "./App.css";
 import Skin from "./component/skin/TstorySkin";
-import UserSkin from "./component/skin/Userskin";
 import TistoryMain from "../src/component/TistoryMain";
 
 function App() {
@@ -22,7 +21,6 @@ function App() {
         <Route path="/admin" element={<Admin />} />
         <Route path="/story" element={<Story />} />
         <Route path="/skin" element={<Skin />} />
-        <Route path="/userskin" element={<UserSkin />} />
         {/*
             <Route path="/" element={<TistoryMain />} /> // 여기에 page link 추가
           */}
