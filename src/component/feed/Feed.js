@@ -1,15 +1,21 @@
-import React from "react";
+import React, { useState } from "react";
 import classes from "./Feed.module.css";
 
-const subscriptionBtn = (event) => {
-  console.log(event);
-};
-
-const subscribersBtn = (event) => {
-  console.log(event);
-};
-
 const Feed = () => {
+  const [isListBox, setListBox] = useState(false);
+  const handleListBoxTypeBtn = () => {
+    setListBox(!isListBox);
+    console.log("isListBox", isListBox);
+  };
+
+  const subscriptionBtn = () => {
+    console.log(subscriptionBtn);
+  };
+
+  const subscribersBtn = () => {
+    console.log(subscribersBtn);
+  };
+
   return (
     <div>
       <div className={classes.main}>
@@ -68,8 +74,14 @@ const Feed = () => {
               <p className={classes.blogInfoDesc}>팀장님의 블로그입니다.</p>
             </div>
             <div className={classes.infoSubscribe}>
-              <button type="button" className={classes.listBoxTypeBtn}>
-                구독하기
+              <button
+                type="button"
+                className={
+                  isListBox ? classes.listBoxTypeBtn : classes.listBoxTypeChange
+                }
+                onClick={handleListBoxTypeBtn}
+              >
+                {isListBox ? "구독하기" : "구독중"}
               </button>
             </div>
           </li>
