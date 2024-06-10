@@ -9,7 +9,7 @@
 .section5 p {
   position: relative;
   font-size: 2.5em;
-  margin-bottom: -30px;
+  margin-bottom: -35px;
   color: rgb(144, 144, 144);
   font-weight: 500;
 }
@@ -40,6 +40,7 @@
 
 .customSpan {
   color: #000000;
+  font-weight: 700;
 }
 
 .customH5 {

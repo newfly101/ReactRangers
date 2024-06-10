@@ -42,23 +42,23 @@ const TistoryMain = () => {
       <div className="content">
         <div className="section">
           <h2>Section 1</h2>
-          <p>This is the first section.</p>
+          <p>탑메인</p>
         </div>
         <div className="section">
           <h2>Section 2</h2>
-          <p>This is the second section.</p>
+          <p>이미지4</p>
         </div>
         <div className="section">
           <h2>Section 3</h2>
-          <p>This is the third section.</p>
+          <p>젤 어려운거</p>
         </div>
         <div className="section">
           <h2>Section 4</h2>
-          <p>This is the fourth section.</p>
+          <p>이미지4 애니교차2</p>
         </div>
         <div className="section">
           <h2>Section 5</h2>
-          <p>This is the fifth section.</p>
+          <p>이미지2</p>
         </div>
 
         <div className={styles.section5}>
