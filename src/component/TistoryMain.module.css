@@ -9,7 +9,7 @@
 .section5 p {
   position: relative;
   font-size: 2.5em;
-  margin-bottom: -35px;
+  margin-bottom: 5px;
   color: rgb(144, 144, 144);
   font-weight: 500;
 }
@@ -45,4 +45,13 @@
 
 .customH5 {
   padding: 20px 10px 0;
+}
+
+p a {
+  text-decoration: none;
+  color: inherit;
+}
+
+p a:hover {
+  cursor: pointer;
 }
