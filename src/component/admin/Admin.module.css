@@ -2,46 +2,72 @@
   display: flex;
   flex-direction: row;
   background: #f3f5f7;
-  margin: 120px 0 100px 0;
-  padding: 0 67.5px 0 67.5px;
+  margin: 0 auto;
+  padding: 120px 0 120px 0;
   width: 1150px;
 }
 
 .AdminLeft {
-  flex-direction: column;
-  background: #ffffff;
   width: 216px;
+  border-style: soild;
+  border-color: #888;
+  border-width: 1px;
 }
 
 .AdminProfile {
-  border: 1px solid #e2e7ef;
+  background: #ffffff;
 }
 
 .AdminProfileImage {
   padding: 30px 0 25px 0;
   height: 100px;
   width: 100px;
-  text-align: center;
   margin: 0 58px 0 58px;
 }
 
-.Adminfont {
+.AdminName {
   text-align: center;
-  padding: 0 19px 25px 19px;
 }
 
-.AdminUserName {
+.AdminNameUser,
+.AdminBlockName {
   font-weight: 400;
   font-size: 16px;
 }
 
-.AdminUserEmail {
+.AdminNameEmail {
+  padding: 0 19px 25px 19px;
   color: #888;
   font-size: 13px;
 }
 
 .AdminMyblog {
-  border: 1px solid #e2e7ef;
   margin-top: 6px;
   padding-bottom: 7px;
+}
+
+.AdminRight {
+  width: 894px;
+  display: flex;
+  flex-direction: column;
+  margin-top: -35px;
+  margin-left: 50px;
+}
+
+.AdminFont {
+  margin: 33px 0 11px;
+  font-size: 18px;
+  font-weight: normal;
+  color: #000;
+}
+
+.AdminBlock {
+  background: #fff;
+  border-radius: 1px;
+  border: 1px solid #e0e5ee;
+}
+
+.AdminBlockEmail {
+  color: #888;
+  font-size: 13px;
 }
