@@ -42,7 +42,7 @@ const TstorySkin = () => {
         img: ["Whatever0.jpg", "Whatever1.jpg", "Whatever2.jpg"],
       },
     },
-    { type: "Label" },
+    { type: "label" },
     {
       type: "cardWhite",
       data: {
