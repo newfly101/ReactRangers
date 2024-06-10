@@ -3,6 +3,8 @@ import Slider from 'react-slick';
 import top1 from './top1.jpg';
 import top2 from './top2.png';
 import top3 from './top3.png';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 
 import styles from './TistoryMain.module.css';
 
