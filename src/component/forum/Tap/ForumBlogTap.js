@@ -5,7 +5,7 @@ import TapComment from "./Comment/TapComment";
 import TapAddComment from "./Comment/TapAddComment";
 import dayjs from "dayjs";
 
-const ForumBlogTapAll = (props) => {
+const ForumBlogTap = (props) => {
     const [showDetail, setShowDetail] = React.useState(false);
     const [activeIndex, setActiveIndex] = React.useState(null);
     const [userId, setUserId] = React.useState(null);
@@ -48,7 +48,8 @@ const ForumBlogTapAll = (props) => {
 
     const response = props.response;
 
-    console.log(blogTipDetailData.data.comments);
+    // console.log(blogTipDetailData.data.comments);
+    console.log("response",response);
 
     return (
         <>
@@ -104,4 +105,4 @@ const ForumBlogTapAll = (props) => {
 
 };
 
-export default ForumBlogTapAll;
+export default ForumBlogTap;
