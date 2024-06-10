@@ -9,6 +9,7 @@
 .fMainFeed {
   display: flex;
   justify-content: center;
+  padding-top: 20px;
 }
 
 .fInnerFeed {
@@ -40,17 +41,17 @@
 
 .fNameFeed {
   margin: 0;
-  font-size: 1.375rem;
+  font-size: 1.25rem;
   line-height: 1.2;
 }
 
-@media (max-width: 1300px) {
+/* @media (max-width: 1300px) {
   .fInnerFeed {
     max-width: calc(100% - 40px);
     margin-left: 20px;
     margin-right: 20px;
   }
-}
+} */
 
 .fBtn {
   display: flex;
@@ -58,17 +59,18 @@
   width: 100%;
 }
 
-.btnFollow {
-  color: #909090;
-  margin-left: 22px;
-  font-size: 13px;
-}
-
 button {
   border: 0;
   background-color: transparent;
   cursor: pointer;
   outline: none;
+  padding: 0;
+}
+
+.btnFollow {
+  color: #909090;
+  margin-left: 22px;
+  font-size: 13px;
 }
 
 .fList {
@@ -93,10 +95,10 @@ button {
   white-space: nowrap;
 }
 
-@media (max-width: 1300px) {
+/* @media (max-width: 1300px) {
   .fList {
     max-width: calc(100% - 40px);
     margin-left: 20px;
     margin-right: 20px;
   }
-}
+} */

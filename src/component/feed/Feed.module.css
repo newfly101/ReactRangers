@@ -355,15 +355,3 @@ dd {
   background-color: #000;
   cursor: pointer;
 }
-
-button,
-dd,
-div,
-dl,
-dt,
-li,
-p,
-ul {
-  margin: 0;
-  padding: 0;
-}
