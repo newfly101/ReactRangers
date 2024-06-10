@@ -1,5 +1,9 @@
-.blog {
-  display: block;
-  justify-content: space-evenly;
-  border: 1px soild #ccc;
+#Admin {
+  position: relative;
+  width: 1150px;
+  margin: auto;
+}
+
+.li {
+  width: 50px;
 }
