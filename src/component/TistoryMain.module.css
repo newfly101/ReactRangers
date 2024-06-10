@@ -1,0 +1,36 @@
+.section5 {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: rgb(144, 144, 144);
+  display: inline-block;
+  text-align: left;
+}
+
+.section5 p {
+  position: relative;
+  font-size: 2.5em;
+}
+
+.section5 p:hover {
+  color: rgb(80, 80, 80);
+}
+
+.section5 p span {
+  position: relative;
+}
+
+.section5 p span::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 4px;
+  width: 0;
+  height: 4px;
+  background-color: rgb(227, 92, 110);
+  transition: width 0.3s ease-in-out;
+  z-index: -1;
+}
+
+.section5 p:hover span::before {
+  width: 100%;
+}

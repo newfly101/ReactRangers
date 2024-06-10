@@ -17,7 +17,7 @@ function App() {
         <Navigation />
       </div>
       <Routes>
-        <Route path="/" element={<Main />} />
+        <Route path="/" element={<TistoryMain />} />
         <Route path="/forum" element={<ForumMain />} />
         <Route path="/feed" element={<Feed />} />
         <Route path="/admin" element={<Admin />} />
