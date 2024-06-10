@@ -1,3 +1,9 @@
-.admin{
-    
+#Admin {
+  position: relative;
+  width: 1150px;
+  margin: auto;
+}
+
+.li {
+  width: 50px;
 }

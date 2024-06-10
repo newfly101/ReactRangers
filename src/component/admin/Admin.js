@@ -2,25 +2,36 @@ import React from "react";
 
 const Admin = () => {
   return (
-    <div className="Admin">
-      <div className="blog">
+    <div id="Admin">
+      <div id="profile">
+        <div className="left-profile">
+          <div className="profile__image">
+            <a href=""></a>
+          </div>
+          <div className="profile__name">
+            <strong className="profile__name-pont">새벽감성개발자</strong>
+            <span className="profile__name-email">game@naver.com</span>
+          </div>
+        </div>
+        <div id="profile__menu">
+          <div className="">
+            
+          </div>
+        </div>
+      </div>
+
+      <div id="blog">
         <div className="blog__operation">
           <h3 className="title__font">운영 중인 블로그</h3>
           <ul className="myblog">
             <li>
               <div className="box">
                 <div className="myblog__name">
-                  <strong class="myblog__name-title">
+                  <strong className="myblog__name-title">
                     새벽의 이것저것
-                    <a
-                      href="https://inagi94.tistory.com/manage"
-                      className="myblog__name-url"
-                    ></a>
+                    <a href="" className="myblog__name-url"></a>
                   </strong>
-                  <a
-                    href="https://inagi94.tistory.com"
-                    className="myblog__name-text"
-                  >
+                  <a href="" className="myblog__name-text">
                     game.tistory.com
                   </a>
                   <button className="box-button">대표</button>
