@@ -1,9 +1,7 @@
 import React from "react";
 import classes from "./Category.module.css";
-import { Link, useLocation } from "react-router-dom";
 
 const Category = () => {
-  const location = useLocation();
   return (
     <>
       <div className={`${classes.allContainer} ${classes.buttonContainer}`}>
