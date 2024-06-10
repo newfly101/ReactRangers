@@ -6,25 +6,19 @@ import {
   blogIntroData,
   blogSkinData,
   blogTipData,
-  blogTipDetailData,
 } from "./ForumTapDummyData";
-import ForumBlogTapAll from "./Tap/ForumBlogTapAll";
+import ForumBlogTap from "./Tap/ForumBlogTap";
 
 const ForumBlog = () => {
     const [response, setResponse] = React.useState(blogEntryData);
     const [tapState, setTapState] = React.useState('all');
 
-
-
-
     const inputRef = useRef(null);
-
 
     const onClickTapEntry = () => {
         setResponse(blogEntryData);
         setTapState("all");
     }
-
     const onClickTapIntro = () => {
         setResponse(blogIntroData);
         setTapState("intro");
@@ -41,9 +35,6 @@ const ForumBlog = () => {
         setResponse(blogTipData);
         setTapState("tip");
     }
-
-
-
 
     // view에서 보여질 때 공용으로 쓰이는 부분
     // ----------------- 공용 ----------------------
@@ -62,11 +53,6 @@ const ForumBlog = () => {
             inputRef.current.focus();
         }
     }
-
-
-    // console.log(response.data.entries);
-    // console.log("tapState",tapState);
-    // console.log("blogTipDetailData", blogTipDetailData.data.comments);
 
     return (
         <>
@@ -93,14 +79,11 @@ const ForumBlog = () => {
                         <button onClick={scrollToInput}>글쓰기</button>
                     </div>
                 </div>
-
-                {tapState === "all" &&
-                    <ForumBlogTapAll
-                        response={response}
-                        shortedString={shortedString}
-                        scrollToInput={scrollToInput}
-                />}
-
+                <ForumBlogTap
+                    response={response}
+                    shortedString={shortedString}
+                    scrollToInput={scrollToInput}
+                />
             </div>
             {/*<input ref={inputRef}/>*/}
         </>
