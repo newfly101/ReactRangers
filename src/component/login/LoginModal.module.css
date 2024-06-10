@@ -1,18 +1,20 @@
 .loginModal {
     display: flex;
     flex-direction: row;
-    background: #807a7a;
+    background: white;
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 15;
+    border-radius: 8px;
 }
 .tistoryLogin {
     display: flex;
     width: 340px;
     height: 504px;
-    padding: 30px;
+    padding: 96px 30px 64px 30px;
+
     position: relative;
     align-items: center;
     justify-content: center;
