@@ -1,4 +1,10 @@
 @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
+.storyMain {
+  font-family: "Pretendard Variable", Pretendard, -apple-system,
+    BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI",
+    "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+}
 
 .storyWrapper {
   width: 48vw;
@@ -18,7 +24,7 @@
   width: 21rem;
   text-align: left;
   margin-top: 2.5rem;
-  margin-bottom: 3.3rem;
+  margin-bottom: 4rem;
 }
 
 .topSectionTitle {
@@ -30,11 +36,13 @@
 }
 
 .topSectionWrapTag {
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   display: flex;
   align-items: end;
   justify-content: space-between;
   width: 40rem;
+  font-weight: 300;
+  opacity: 0.9;
 }
 
 .storyBlog {
@@ -44,9 +52,127 @@
   margin-bottom: 2rem;
 }
 
-.storyMain {
-  font-family: "Pretendard Variable", Pretendard, -apple-system,
-    BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI",
-    "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji",
-    "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+.tags {
+  position: relative;
+  cursor: pointer;
+  user-select: none;
+}
+.tagHr0 {
+  opacity: 0.5;
+  margin: 0;
+  height: 0.35rem;
+  width: 4.6rem;
+  background-color: rgb(180, 180, 180);
+  position: absolute;
+  transform: translateY(-0.4rem);
+  border-color: none;
+}
+
+.tagHr1 {
+  opacity: 0.5;
+  margin: 0;
+  height: 0.35rem;
+  width: 6.5rem;
+  background-color: rgb(180, 180, 180);
+  position: absolute;
+  transform: translateY(-0.4rem);
+  border-color: none;
+}
+.tagHr2 {
+  opacity: 0.5;
+  margin: 0;
+  height: 0.35rem;
+  width: 6.5rem;
+  background-color: rgb(180, 180, 180);
+  position: absolute;
+  transform: translateY(-0.4rem);
+  border-color: none;
+}
+.tagHr3 {
+  opacity: 0.5;
+  margin: 0;
+  height: 0.35rem;
+  width: 1.3rem;
+  background-color: rgb(180, 180, 180);
+  position: absolute;
+  transform: translateY(-0.4rem);
+  border-color: none;
+}
+.tagHr4 {
+  opacity: 0.5;
+  margin: 0;
+  height: 0.35rem;
+  width: 4.6rem;
+  background-color: rgb(180, 180, 180);
+  position: absolute;
+  transform: translateY(-0.4rem);
+  border-color: none;
+}
+
+.tagHr5 {
+  opacity: 0.5;
+  margin: 0;
+  height: 0.35rem;
+  width: 3.2rem;
+  background-color: rgb(180, 180, 180);
+  position: absolute;
+  transform: translateY(-0.4rem);
+  border-color: none;
+}
+
+.tagHrView0 {
+  margin: 0;
+  height: 0.35rem;
+  width: 4.6rem;
+  background-color: #ff5544;
+  position: absolute;
+  transform: translateY(-0.4rem);
+  border-color: none;
+}
+
+.tagHrView1 {
+  margin: 0;
+  height: 0.35rem;
+  width: 6.5rem;
+  background-color: #ff5544;
+  position: absolute;
+  transform: translateY(-0.4rem);
+  border-color: none;
+}
+.tagHrView2 {
+  margin: 0;
+  height: 0.35rem;
+  width: 6.5rem;
+  background-color: #ff5544;
+  position: absolute;
+  transform: translateY(-0.4rem);
+  border-color: none;
+}
+.tagHrView3 {
+  margin: 0;
+  height: 0.35rem;
+  width: 1.3rem;
+  background-color: #ff5544;
+  position: absolute;
+  transform: translateY(-0.4rem);
+  border-color: none;
+}
+.tagHrView4 {
+  margin: 0;
+  height: 0.35rem;
+  width: 4.6rem;
+  background-color: #ff5544;
+  position: absolute;
+  transform: translateY(-0.4rem);
+  border-color: none;
+}
+
+.tagHrView5 {
+  margin: 0;
+  height: 0.35rem;
+  width: 3.2rem;
+  background-color: #ff5544;
+  position: absolute;
+  transform: translateY(-0.4rem);
+  border-color: none;
 }

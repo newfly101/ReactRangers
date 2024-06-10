@@ -1,15 +1,45 @@
-import React from "react";
+import React, { useState } from "react";
 import classes from "./Feed.module.css";
 
-const subscriptionBtn = (event) => {
-  console.log(event);
-};
-
-const subscribersBtn = (event) => {
-  console.log(event);
-};
-
 const Feed = () => {
+  const [isListBox1, setListBox1] = useState(false);
+  const handleListBoxTypeBtn1 = () => {
+    setListBox1(!isListBox1);
+  };
+
+  const [isListBox2, setListBox2] = useState(false);
+  const handleListBoxTypeBtn2 = () => {
+    setListBox2(!isListBox2);
+  };
+
+  const [isListBox3, setListBox3] = useState(false);
+  const handleListBoxTypeBtn3 = () => {
+    setListBox3(!isListBox3);
+  };
+
+  const [isListBox4, setListBox4] = useState(false);
+  const handleListBoxTypeBtn4 = () => {
+    setListBox4(!isListBox4);
+  };
+
+  const [isListBox5, setListBox5] = useState(false);
+  const handleListBoxTypeBtn5 = () => {
+    setListBox5(!isListBox5);
+  };
+
+  const [isListBox6, setListBox6] = useState(false);
+  const handleListBoxTypeBtn6 = () => {
+    setListBox6(!isListBox6);
+  };
+
+  const subscriptionBtn = () => {
+    console.log(subscriptionBtn);
+  };
+
+  const subscribersBtn = () => {
+    console.log(subscribersBtn);
+  };
+
   return (
     <div>
       <div className={classes.main}>
@@ -68,8 +98,16 @@ const Feed = () => {
               <p className={classes.blogInfoDesc}>팀장님의 블로그입니다.</p>
             </div>
             <div className={classes.infoSubscribe}>
-              <button type="button" className={classes.listBoxTypeBtn}>
-                구독하기
+              <button
+                type="button"
+                className={
+                  isListBox1
+                    ? classes.listBoxTypeBtn
+                    : classes.listBoxTypeChange
+                }
+                onClick={handleListBoxTypeBtn1}
+              >
+                {isListBox1 ? "구독하기" : "구독중"}
               </button>
             </div>
           </li>
@@ -91,8 +129,16 @@ const Feed = () => {
               <p className={classes.blogInfoDesc}>팀원의 블로그</p>
             </div>
             <div className={classes.infoSubscribe}>
-              <button type="button" className={classes.listBoxTypeBtn}>
-                구독하기
+              <button
+                type="button"
+                className={
+                  isListBox2
+                    ? classes.listBoxTypeBtn
+                    : classes.listBoxTypeChange
+                }
+                onClick={handleListBoxTypeBtn2}
+              >
+                {isListBox2 ? "구독하기" : "구독중"}
               </button>
             </div>
           </li>
@@ -114,8 +160,16 @@ const Feed = () => {
               <p className={classes.blogInfoDesc}>팀원의 블로그</p>
             </div>
             <div className={classes.infoSubscribe}>
-              <button type="button" className={classes.listBoxTypeBtn}>
-                구독하기
+              <button
+                type="button"
+                className={
+                  isListBox3
+                    ? classes.listBoxTypeBtn
+                    : classes.listBoxTypeChange
+                }
+                onClick={handleListBoxTypeBtn3}
+              >
+                {isListBox3 ? "구독하기" : "구독중"}
               </button>
             </div>
           </li>
@@ -137,8 +191,16 @@ const Feed = () => {
               <p className={classes.blogInfoDesc}>팀원의 블로그</p>
             </div>
             <div className={classes.infoSubscribe}>
-              <button type="button" className={classes.listBoxTypeBtn}>
-                구독하기
+              <button
+                type="button"
+                className={
+                  isListBox4
+                    ? classes.listBoxTypeBtn
+                    : classes.listBoxTypeChange
+                }
+                onClick={handleListBoxTypeBtn4}
+              >
+                {isListBox4 ? "구독하기" : "구독중"}
               </button>
             </div>
           </li>
@@ -160,8 +222,16 @@ const Feed = () => {
               <p className={classes.blogInfoDesc}>팀원의 블로그</p>
             </div>
             <div className={classes.infoSubscribe}>
-              <button type="button" className={classes.listBoxTypeBtn}>
-                구독하기
+              <button
+                type="button"
+                className={
+                  isListBox5
+                    ? classes.listBoxTypeBtn
+                    : classes.listBoxTypeChange
+                }
+                onClick={handleListBoxTypeBtn5}
+              >
+                {isListBox5 ? "구독하기" : "구독중"}
               </button>
             </div>
           </li>
@@ -183,8 +253,16 @@ const Feed = () => {
               <p className={classes.blogInfoDesc}>팀원의 블로그</p>
             </div>
             <div className={classes.infoSubscribe}>
-              <button type="button" className={classes.listBoxTypeBtn}>
-                구독하기
+              <button
+                type="button"
+                className={
+                  isListBox6
+                    ? classes.listBoxTypeBtn
+                    : classes.listBoxTypeChange
+                }
+                onClick={handleListBoxTypeBtn6}
+              >
+                {isListBox6 ? "구독하기" : "구독중"}
               </button>
             </div>
           </li>
