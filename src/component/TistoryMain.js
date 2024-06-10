@@ -125,6 +125,12 @@ const TistoryMain = () => {
             </div>
           ))}
         </Slider>
+        <div>
+          <img
+            src="https://t1.daumcdn.net/tistory_admin/static/top/pc/img_light.png"
+            alt="244222222"
+          />
+        </div>
       </div>
       <div className="content">
         <div className="section">
@@ -133,6 +139,7 @@ const TistoryMain = () => {
         </div>
         <div className="section">
           <h2>Section 3</h2>
+
           <p>제일 어려운거</p>
         </div>
         <div className="section">
