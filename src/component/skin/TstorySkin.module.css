@@ -1,0 +1,212 @@
+/* 상단 이미지 */
+.imageContaner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: clip;
+  height: 15vh;
+  width: 100vw;
+}
+
+.imageContaner img {
+  width: 100%;
+  height: 365px;
+  object-fit: cover;
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.imageContaner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.mainImageTextBox {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  width: 50%;
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+  margin: 0;
+  padding: 2rem 0 2rem 0;
+  z-index: 1;
+}
+
+.mainImageTextBoxTitle {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  font-size: 1rem;
+  color: white;
+  font-weight: 500;
+}
+
+.mainImageTextBoxText {
+  position: relative;
+  width: auto;
+  color: white;
+  font-size: 1rem;
+  font-weight: 100;
+}
+
+/* 버튼 */
+.allButton button {
+  background-color: transparent;
+  color: black;
+  border: none;
+  cursor: pointer;
+}
+
+.hoverLine button:hover {
+  cursor: pointer;
+  color: black;
+  text-decoration-line: underline;
+}
+
+.allContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 800px;
+  max-width: 100vw;
+  margin: auto;
+  white-space: nowrap;
+  flex-direction: column;
+}
+
+.buttonContainer {
+  padding-top: 2rem;
+}
+
+.buttonTitle button {
+  margin-bottom: 0.5rem;
+  font-size: 17px;
+  letter-spacing: -1px;
+}
+
+.tagButtonContainer {
+  border-top: 1.5px solid rgba(0, 0, 0, 0.1);
+  width: 700px;
+  max-width: 100vw;
+}
+
+.tagButtonContainer button {
+  color: rgba(0, 0, 0, 0.8);
+  margin-top: 1rem;
+  margin-right: 1rem;
+  font-weight: 400;
+}
+
+/* Card */
+.cardWhite {
+  background-color: white;
+  width: 100vw;
+  height: 80vh;
+  overflow: hidden;
+}
+
+.cardGray {
+  background-color: rgba(0, 0, 0, 0.15);
+  width: 100vw;
+  height: 80vh;
+}
+
+.cardTitle button {
+  font-size: 14px;
+  margin-top: 1rem;
+  margin-bottom: -5rem;
+  padding: 0;
+  letter-spacing: 0.5px;
+}
+
+.cardText {
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 11px;
+  line-height: 0.5;
+  margin-left: 0.2rem;
+  margin-top: 1rem;
+  letter-spacing: -1px;
+}
+
+.cardTagButton button {
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 11px;
+  letter-spacing: -1px;
+  margin-right: -1px;
+}
+
+.cardWrap {
+  max-width: 800px;
+  width: 100%;
+  margin: auto;
+}
+
+.cardButton {
+  display: flex;
+  justify-content: space-between;
+}
+
+.roundButton {
+  margin-right: 13%;
+}
+
+.roundButton button {
+  background-color: transparent;
+  border: 0.5px solid rgba(0, 0, 0, 0.5);
+  color: rgba(0, 0, 0, 0.7);
+  border-radius: 20px;
+  margin-right: 0.5rem;
+  font-size: 11px;
+  padding: 8px 15px 8px 15px;
+  font-weight: 500;
+  letter-spacing: -0.5px;
+  cursor: pointer;
+}
+.roundButton button:hover {
+  background-color: transparent;
+  border: 1px solid #ff5f4f;
+  background-color: #ff5f4f;
+  color: white;
+}
+
+.icon {
+  margin-left: 3px;
+  width: 1em;
+  height: 1em;
+  fill: rgba(0, 0, 0, 0.5);
+}
+
+.buttonLinkIcon:hover .icon {
+  fill: white;
+}
+
+.cardImageContaner {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.cardImage {
+  display: inline-block;
+  padding: 0;
+  margin: 20px 20px 10px 0;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.cardImage img {
+  width: 330px;
+  height: auto;
+}
+
+.cardImage:hover {
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}

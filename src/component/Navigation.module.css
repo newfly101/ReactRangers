@@ -1,10 +1,28 @@
 .navBar {
+    position: fixed;
+    top: 0;
     height: 72px;
     width: 100%;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    z-index: 1000;
+    transition: background 0.3s;
+    background: white;
+}
+.navBarBlank {
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    height: 72px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    transition: background 0.3s;
+    background: none;
 }
 .pageTitle {
     /*font-size: 1.3rem;*/
@@ -13,9 +31,25 @@
     margin-right: 40px;
     align-items: center;
     justify-content: center;
+    color: black;
+    white-space: nowrap;
 }
 .pageTitle a {
     color: black;
+    text-decoration-line: none;
+}
+.pageTitleBlank {
+    /*font-size: 1.3rem;*/
+    display: flex;
+    font-size: 1.4rem;
+    color: white;
+    margin-right: 40px;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+}
+.pageTitleBlank a {
+    color: white;
     text-decoration-line: none;
 }
 
@@ -38,6 +72,11 @@
     color: white;
     padding: 13px 40px 13px 40px;
     border-radius: 40px;
+    white-space: nowrap;
+}
+.navBarLogin button a{
+    color: white;
+    text-decoration-line: none;
 }
 .navBarLogin button:hover {
     margin-right: 40px;
@@ -70,6 +109,7 @@
     align-items: center;
     font-size: 1.3rem;
     margin: 1rem;
+    white-space: nowrap;
 }
 .pageLinkBox a {
     color: black;
@@ -78,11 +118,20 @@
 .pageLinkBox a:hover {
     text-decoration-line: underline;
 }
-.pageLinkBox Link {
-    color: black;
+.pageLinkBoxBlank {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 1.3rem;
+    color:white;
+    margin: 1rem;
+    white-space: nowrap;
+}
+.pageLinkBoxBlank a {
+    color:white;
     text-decoration-line: none;
 }
-.pageLinkBox Link:hover {
+.pageLinkBoxBlank a:hover {
     text-decoration-line: underline;
 }
 
@@ -106,4 +155,10 @@
 }
 .pageLinkedBox Link:hover {
     text-decoration-line: underline;
+}
+
+@media (max-width: 800px) {
+    .navBarLogin button {
+        display: none;
+    }
 }
