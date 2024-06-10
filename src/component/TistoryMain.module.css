@@ -1,7 +1,7 @@
 .section5 {
   font-size: 1.2em;
   font-weight: bold;
-  color: rgb(144, 144, 144);
+
   display: inline-block;
   text-align: left;
 }
@@ -9,10 +9,13 @@
 .section5 p {
   position: relative;
   font-size: 2.5em;
+  margin-bottom: -30px;
+  color: rgb(144, 144, 144);
+  font-weight: 600;
 }
 
 .section5 p:hover {
-  color: rgb(80, 80, 80);
+  color: rgb(70, 70, 70);
 }
 
 .section5 p span {
@@ -23,9 +26,9 @@
   content: '';
   position: absolute;
   left: 0;
-  bottom: 4px;
+  bottom: 8px;
   width: 0;
-  height: 4px;
+  height: 11px;
   background-color: rgb(227, 92, 110);
   transition: width 0.3s ease-in-out;
   z-index: -1;
@@ -33,4 +36,12 @@
 
 .section5 p:hover span::before {
   width: 100%;
+}
+
+.customSpan {
+  color: #000000;
+}
+
+.customH5 {
+  padding: 20px 10px 0;
 }
