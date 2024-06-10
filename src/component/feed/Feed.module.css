@@ -43,7 +43,7 @@
   line-height: 1.2;
 }
 
-@media (max-width: 1300px) {
+@media (max-width: 410px) {
   .innerFeed {
     max-width: calc(100% - 40px);
     margin-left: 210px;
@@ -117,19 +117,34 @@
 
 .sectionSubscribe {
   background-color: #f5f5f5;
-  margin: 0;
-  padding: 0;
   white-space: nowrap;
   text-overflow: ellipsis;
+  width: auto;
+  height: 708px;
 }
 
-.infoBlogList {
+.sectionSubscribe .listTistory {
+  width: 912px;
+  margin: -4px auto 0;
+  padding: 0 0 40px 0;
+  border-bottom: 0;
+  list-style: none;
+}
+
+.sectionSubscribe .infoBlogList {
   overflow: hidden;
   width: 896px;
   height: 50px;
   margin: 0 auto;
   padding: 34px 0 0;
 }
+/* .infoBlogList {
+  overflow: hidden;
+  width: 896px;
+  height: 50px;
+  margin: 0 auto;
+  padding: 34px 0 0;
+} */
 
 .blogInfoDesc {
   padding: 6px 0 0;
@@ -137,13 +152,13 @@
   line-height: 16px;
 }
 
-.listTistory {
+/* .listTistory {
   width: 912px;
   margin: 0 auto;
   padding: 0 0 40px 0;
   border-bottom: 0;
   list-style: none;
-}
+} */
 
 .listTistory li {
   position: relative;
@@ -153,7 +168,8 @@
   border-bottom: 0;
 }
 
-.listBoxType1 {
+.listBoxType1,
+.listBoxType {
   width: 288px;
   height: 288px;
   margin: 0 8px;
@@ -263,6 +279,18 @@ dd {
   color: #777;
   box-sizing: border-box;
 }
+.listBoxType .blogInfoDesc {
+  margin: 0;
+  width: 100%;
+  max-height: 36px;
+  padding: 2px 40px 0 40px;
+  font-size: 13px;
+  line-height: 18px;
+  text-align: center;
+  overflow: hidden;
+  color: #777;
+  box-sizing: border-box;
+}
 .infoSubscribe {
   bottom: 36px;
   right: 50%;
@@ -290,4 +318,16 @@ dd {
   text-align: center;
   font-family: Pretendard-Regular, AppleSDGothicNeo-Regular, Malgun Gothic,
     맑은 고딕, dotum, 돋움, sans-serif;
+}
+
+button,
+dd,
+div,
+dl,
+dt,
+li,
+p,
+ul {
+  margin: 0;
+  padding: 0;
 }

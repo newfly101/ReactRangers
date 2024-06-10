@@ -11,8 +11,11 @@ const storyItemBox = () => {
               <div className={classes.ItemBoxStart}>
                 <div className={classes.categoryName}>
                   {dummyCategory1.data.list[index].categoryName}
+                  <hr className={classes.textHr} />
                 </div>
-                <div>{dummyCategory1.data.list[index].publishedAgo}</div>
+                <div className={classes.publishedAgo}>
+                  {dummyCategory1.data.list[index].publishedAgo}
+                </div>
                 <div>
                   공감{" "}
                   <label className={classes.likeCount}>
@@ -52,7 +55,7 @@ const storyItemBox = () => {
               </div>
             </div>
           </section>
-          <hr />
+          <hr className={classes.mainBar} />
         </div>
       ))}
     </div>

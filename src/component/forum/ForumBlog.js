@@ -1,12 +1,12 @@
 import React, {useRef} from 'react';
 import classes from './ForumBlog.module.css';
 import {
-    blogEntryData,
-    blogEtcData,
-    blogIntroData,
-    blogSkinData,
-    blogTipData,
-    blogTipDetailData
+  blogEntryData,
+  blogEtcData,
+  blogIntroData,
+  blogSkinData,
+  blogTipData,
+  blogTipDetailData,
 } from "./ForumTapDummyData";
 
 const ForumBlog = () => {

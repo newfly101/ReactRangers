@@ -1,5 +1,40 @@
-.blog {
-  display: block;
-  justify-content: space-evenly;
-  border: 1px soild #ccc;
+.adminPage {
+  display: flex;
+  flex-direction: row;
+  margin-top: 72px;
+  background: #7b756b;
+/*  가로로 배치할지 세로로 배치할지 + @*/
+}
+.adminBlogCard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 216px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+.adminCard {
+  width: 214px;
+  height: 214px;
+  background: white;
+  border: 1px solid black;
+  margin: 5px;
+}
+
+
+.adminBlogCardList {
+  display: flex;
+  flex-direction: column;
+}
+
+
+#Admin {
+  position: relative;
+  width: 1150px;
+  margin: auto;
+}
+
+.li {
+  width: 50px;
 }
