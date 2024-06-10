@@ -330,6 +330,27 @@ dd {
   text-align: center;
   font-family: Pretendard-Regular, AppleSDGothicNeo-Regular, Malgun Gothic,
     맑은 고딕, dotum, 돋움, sans-serif;
+  cursor: pointer;
+}
+
+.listBoxTypeChange {
+  display: block;
+  width: 100%;
+  padding: 0;
+  transition: none;
+  border-radius: 16px;
+  min-width: 66px;
+  height: 30px;
+  font-size: 13px;
+  line-height: 28px;
+  box-sizing: border-box;
+  text-align: center;
+  font-family: Pretendard-Regular, AppleSDGothicNeo-Regular, Malgun Gothic,
+    맑은 고딕, dotum, 돋움, sans-serif;
+  border: 1px solid #000;
+  color: #fff;
+  background-color: #000;
+  cursor: pointer;
 }
 
 button,

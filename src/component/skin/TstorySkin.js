@@ -1,103 +1,96 @@
-import React from "react";
-import classes from "./TstorySkin.module.css";
-import cardImage from "./Odyssey.img/Odyssey0.jpg";
-import { ReactComponent as LinkIcon } from "./link.svg";
-import TopImage from "./ComponentA/Main/Main";
+import React, { useState } from "react";
+import Topimage from "./ComponentA/Main/Main";
 import Category from "./ComponentA/Category/Category";
+import Skinpage from "./ComponentA/SkinPage/SkinPage";
 
 const TstorySkin = () => {
+  const [items, setItems] = useState([
+    {
+      type: "cardWhite",
+      data: {
+        title: "Odyssey",
+        content: "글과 사진, 그리고 영상을 담아",
+        content1: "당신의 블로그 여행에 함께합니다.",
+        tag: ["#반응형", "#블로그형", "#커버 지원"],
+        img: ["Odyssey0.jpg", "Odyssey1.jpg", "Odyssey2.jpg"],
+      },
+    },
+    {
+      type: "cardGray",
+      data: {
+        title: "Poster",
+        content: "블로그 홈을 처음 접하는 초심자에게 추천합니다.",
+        content1: "단정한 첫인상을 블로그에 입혀 보세요.",
+        tag: ["#반응형", "#블로그형", "#초보", "#커버 지원"],
+        img: ["Poster0.jpg", "Poster1.jpg", "Poster2.jpg"],
+      },
+    },
+    {
+      type: "cardWhite",
+      data: {
+        title: "Whatever",
+        content: "나만의 이야기를 담은 블로그부터 목적을 가진 사이트까지.",
+        content1: "어떤 성격의 콘텐츠든 담을 수 있습니다.",
+        tag: [
+          "#매거진",
+          "#반응형",
+          "#블로그형",
+          "#사이트",
+          "#초보",
+          "#커버 지원",
+        ],
+        img: ["Whatever0.jpg", "Whatever1.jpg", "Whatever2.jpg"],
+      },
+    },
+    { type: "Label" },
+    {
+      type: "cardWhite",
+      data: {
+        title: "Letter",
+        content:
+          "최소한의 디자인, 깔끔한 스킨을 원하는 블로거를 위해 만들었습니다.",
+        content1: "깔끔한 편지지 위에 여러분의 이야기를 들려 주세요.",
+        tag: ["#미니멀", "#반응형", "#블로그형", "#초보", "#커버 지원"],
+        img: ["Letter0.jpg", "Letter1.jpg", "Letter2.jpg"],
+      },
+    },
+    {
+      type: "cardGray",
+      data: {
+        title: "Portfolio",
+        content: "나만의 시선, 나만의 콘텐츠로 꽉 찬 공간.",
+        content1: "여러분의 포트폴리오를 보여주세요.",
+        tag: ["#반응형", "#사이트", "#커버 지원"],
+        img: ["Portfolio0.jpg", "Portfolio1.jpg", "Portfolio2.jpg"],
+      },
+    },
+    {
+      type: "cardWhite",
+      data: {
+        title: "Book Club",
+        content: "도서 콘텐츠를 제공하는 출판사 블로그에 추천합니다.",
+        content1: "상단 프로모션 영역을 활용해 콘텐츠 주목도를 높여보세요.",
+        tag: ["#반응형", "#블로그형", "#초보"],
+        img: ["Book Club0.jpg", "Book Club1.jpg", "Book Club2.jpg"],
+      },
+    },
+    {
+      type: "cardGray",
+      data: {
+        title: "Magazine",
+        content: "이 주제는 내가 전문가!",
+        content1:
+          "이제부터 여러분의 시선이 돋보이는 매거진을 만들 수 있습니다.",
+        tag: ["#매거진", "#반응형", "#커버 지원"],
+        img: ["Magazine0.jpg", "Magazine1.jpg", "Magazine2.jpg"],
+      },
+    },
+  ]);
   return (
     <>
-      <TopImage />
+      <Topimage />
       <Category />
-      <div className={classes.card0}>
-        <div className={`${classes.allContainer} ${classes.cardWhite}`}>
-          <div className={classes.cardWrap}>
-            <div className={`${classes.allButton} ${classes.cardTitle}`}>
-              <button>
-                <h1>Odyssey</h1>
-              </button>
-            </div>
-            <div className={` ${classes.cardInnerText}`}>
-              <div>글과 사진, 그리고 영상을 담아</div>
-              <div>당신의 블로그 여행에 함께합니다.</div>
-            </div>
-            <div className={classes.cardButton}>
-              <div
-                className={`${classes.allButton} ${classes.hoverLine} ${classes.cardTagButton} `}
-              >
-                <button>#반응형</button>
-                <button>#블로그형</button>
-                <button>#커버 지원</button>
-              </div>
-              <div className={`${classes.roundButton}`}>
-                <button>자세히 보기</button>
-                <button className={classes.buttonLinkIcon}>
-                  적용 예시 보기
-                  <span>
-                    <LinkIcon className={classes.icon} />
-                  </span>
-                </button>
-              </div>
-            </div>
-            <div className={classes.cardImageContaner}>
-              <div className={classes.cardImage}>
-                <img src={cardImage} alt="" />
-              </div>
-              <div className={classes.cardImage}>
-                <img src={cardImage} alt="" />
-              </div>
-              <div className={classes.cardImage}>
-                <img src={cardImage} alt="" />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className={classes.card1}>
-        <div className={`${classes.allContainer} ${classes.cardGray}`}>
-          <div className={classes.cardWrap}>
-            <div className={`${classes.allButton} ${classes.cardTitle}`}>
-              <button>
-                <h1>Odyssey</h1>
-              </button>
-            </div>
-            <div className={` ${classes.cardInnerText}`}>
-              <div>글과 사진, 그리고 영상을 담아</div>
-              <div>당신의 블로그 여행에 함께합니다.</div>
-            </div>
-            <div className={classes.cardButton}>
-              <div
-                className={`${classes.allButton} ${classes.hoverLine} ${classes.cardTagButton} `}
-              >
-                <button>#반응형</button>
-                <button>#블로그형</button>
-                <button>#커버 지원</button>
-              </div>
-              <div className={`${classes.roundButton}`}>
-                <button>자세히 보기</button>
-                <button className={classes.buttonLinkIcon}>
-                  적용 예시 보기
-                  <span>
-                    <LinkIcon className={classes.icon} />
-                  </span>
-                </button>
-              </div>
-            </div>
-            <div className={classes.cardImageContaner}>
-              <div className={classes.cardImage}>
-                <img src={cardImage} alt="" />
-              </div>
-              <div className={classes.cardImage}>
-                <img src={cardImage} alt="" />
-              </div>
-              <div className={classes.cardImage}>
-                <img src={cardImage} alt="" />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      <Skinpage items={items} />
     </>
   );
 };
