@@ -50,7 +50,7 @@ const TistoryMain = () => {
         </div>
         <div className="section">
           <h2>Section 3</h2>
-          <p>젤 어려운거</p>
+          <p>제일 어려운거</p>
         </div>
         <div className="section">
           <h2>Section 4</h2>
