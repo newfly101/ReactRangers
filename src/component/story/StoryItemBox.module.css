@@ -1,3 +1,5 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
+
 .itemBoxWrapper {
   margin-bottom: 0.8rem;
 }
@@ -5,18 +7,22 @@
 .bottomItemBox {
   display: flex;
   align-items: start;
-  justify-content: center;
+  justify-content: start;
 }
 
 .ItemBoxStart {
   font-size: 0.6rem;
-  width: 8rem;
-  padding-right: 4rem;
+  width: 6rem;
+  margin-right: 2rem;
 }
 
+.publishedAgo {
+  margin-bottom: 0.3rem;
+  opacity: 0.6;
+}
 .itemBoxImg {
-  width: 6rem;
-  height: 6rem;
+  width: 6.5rem;
+  height: 6.5rem;
 }
 
 .likeCount {
@@ -24,7 +30,7 @@
 }
 
 .ItemBoxdesc {
-  font-size: 0.6rem;
+  font-size: 0.68rem;
   margin: 0.5rem 0 0.8rem 0;
   opacity: 0.6;
 }
@@ -49,10 +55,21 @@
 }
 
 .categoryName {
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.1rem;
+  opacity: 0.6;
+  position: relative;
 }
 
-hr {
+.textHr {
+  width: 1rem;
+  height: 0.2rem;
+  background-color: gray;
+  position: absolute;
+  transform: translateY(-0.64rem) translateX(0.1rem);
+  opacity: 0.4;
+}
+
+.mainBar {
   opacity: 0.3;
   height: 0.5px;
 }
@@ -60,4 +77,9 @@ hr {
 .blogName {
   margin-left: 0.3rem;
   opacity: 0.5;
+}
+
+.ItemBoxMid {
+  width: 28rem;
+  font-size: 1.1rem;
 }

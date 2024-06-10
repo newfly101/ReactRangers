@@ -5,7 +5,7 @@ import StoryItemBox from "./StoryItemBox";
 
 const Story = () => {
   return (
-    <div>
+    <div className={classes.storyMain}>
       <section className={`${classes.storyTopSection} ${classes.storyWrapper}`}>
         <div className={classes.storyTopSectionInnertext}>
           <h4 className={classes.topSectionTitle}>Story</h4>
