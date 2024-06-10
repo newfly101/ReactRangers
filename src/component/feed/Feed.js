@@ -73,11 +73,121 @@ const Feed = () => {
               </button>
             </div>
           </li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
+          <li>
+            <div className={classes.listBoxType}>
+              팀원
+              <span className={classes.wrapListBox}>
+                <img
+                  src="https://cdn.dribbble.com/users/3511234/screenshots/17460635/media/cbc5167f919d7c06970f88e701168d88.png?resize=1600x1200&vertical=center"
+                  className={classes.wrapListBoxProfile}
+                  alt=""
+                />
+              </span>
+              <strong className={classes.blogSubName}>팀원1</strong>
+              <dl className={classes.listData}>
+                <dt>구독자</dt>
+                <dd>1</dd>
+              </dl>
+              <p className={classes.blogInfoDesc}>팀원의 블로그</p>
+            </div>
+            <div className={classes.infoSubscribe}>
+              <button type="button" className={classes.listBoxTypeBtn}>
+                구독하기
+              </button>
+            </div>
+          </li>
+          <li>
+            <div className={classes.listBoxType}>
+              팀원
+              <span className={classes.wrapListBox}>
+                <img
+                  src="https://cdn.dribbble.com/userupload/12743553/file/original-2fda5aa6c8f679783b0dd0229db75c17.jpg?resize=1024x576"
+                  className={classes.wrapListBoxProfile}
+                  alt=""
+                />
+              </span>
+              <strong className={classes.blogSubName}>팀원2</strong>
+              <dl className={classes.listData}>
+                <dt>구독자</dt>
+                <dd>1</dd>
+              </dl>
+              <p className={classes.blogInfoDesc}>팀원의 블로그</p>
+            </div>
+            <div className={classes.infoSubscribe}>
+              <button type="button" className={classes.listBoxTypeBtn}>
+                구독하기
+              </button>
+            </div>
+          </li>
+          <li>
+            <div className={classes.listBoxType}>
+              팀원
+              <span className={classes.wrapListBox}>
+                <img
+                  src="https://cdn.dribbble.com/userupload/13883479/file/original-e43c5a7c87c7fd915e448fe09c67448e.png?resize=1024x1024"
+                  className={classes.wrapListBoxProfile}
+                  alt=""
+                />
+              </span>
+              <strong className={classes.blogSubName}>팀원3</strong>
+              <dl className={classes.listData}>
+                <dt>구독자</dt>
+                <dd>1</dd>
+              </dl>
+              <p className={classes.blogInfoDesc}>팀원의 블로그</p>
+            </div>
+            <div className={classes.infoSubscribe}>
+              <button type="button" className={classes.listBoxTypeBtn}>
+                구독하기
+              </button>
+            </div>
+          </li>
+          <li>
+            <div className={classes.listBoxType}>
+              팀원
+              <span className={classes.wrapListBox}>
+                <img
+                  src="https://cdn.dribbble.com/userupload/9605271/file/original-e312a23e7092797dde6ca8a66b0a5e85.png?resize=1024x768"
+                  className={classes.wrapListBoxProfile}
+                  alt=""
+                />
+              </span>
+              <strong className={classes.blogSubName}>팀원4</strong>
+              <dl className={classes.listData}>
+                <dt>구독자</dt>
+                <dd>1</dd>
+              </dl>
+              <p className={classes.blogInfoDesc}>팀원의 블로그</p>
+            </div>
+            <div className={classes.infoSubscribe}>
+              <button type="button" className={classes.listBoxTypeBtn}>
+                구독하기
+              </button>
+            </div>
+          </li>
+          <li>
+            <div className={classes.listBoxType}>
+              팀원
+              <span className={classes.wrapListBox}>
+                <img
+                  src="https://cdn.dribbble.com/userupload/13972326/file/original-348fea02bcdb53fe7d6347f517f1ca31.png?resize=752x564"
+                  className={classes.wrapListBoxProfile}
+                  alt=""
+                />
+              </span>
+              <strong className={classes.blogSubName}>팀원5</strong>
+              <dl className={classes.listData}>
+                <dt>구독자</dt>
+                <dd>1</dd>
+              </dl>
+              <p className={classes.blogInfoDesc}>팀원의 블로그</p>
+            </div>
+            <div className={classes.infoSubscribe}>
+              <button type="button" className={classes.listBoxTypeBtn}>
+                구독하기
+              </button>
+            </div>
+          </li>
         </ul>
       </div>
     </div>
