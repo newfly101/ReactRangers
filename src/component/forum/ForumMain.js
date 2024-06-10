@@ -10,9 +10,6 @@ const ForumMain = () => {
             <div className={classes.forumHeader}>
                 <img src={img2} alt="fourmHeaderImg"/>
             </div>
-            <div>
-                <input type="text"/>
-            </div>
             <ForumBlog />
         </div>
     );

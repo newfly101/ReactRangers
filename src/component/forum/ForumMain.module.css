@@ -1,5 +1,7 @@
 .forumHeader img{
     width: 100%;
+    height: 365px;
+    object-fit: cover;
     position: relative;
     background-size: cover;
     background-repeat: no-repeat;

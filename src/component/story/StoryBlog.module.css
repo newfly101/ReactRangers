@@ -1,0 +1,55 @@
+.blogImg {
+  width: 100%;
+  height: 8.5rem;
+}
+
+.blogText {
+  font-size: 0.7rem;
+}
+
+.blogWrapper {
+  background-color: white;
+  width: 14.5rem;
+  height: 18rem;
+  margin-right: 0.8rem;
+}
+
+.blogTextWrapper {
+  padding: 1.1rem;
+}
+
+.blogInfo {
+  font-size: 0.6rem;
+}
+
+.blogTitle {
+  margin-top: 0.5rem;
+  font-weight: bold;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  height: 2.9rem;
+}
+
+.blogDesc {
+  margin-top: 1.5rem;
+  font-size: 0.6rem;
+}
+
+.blogAuthor {
+  margin-top: 0.3rem;
+  font-size: 0.6rem;
+  opacity: 0.5;
+}
+
+.blogInfoNum {
+  color: #ff5544;
+}
+
+.storyMidSection {
+  height: 22rem;
+  background-color: #f5f5f5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2.6rem;
+}
