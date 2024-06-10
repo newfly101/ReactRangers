@@ -1,28 +1,18 @@
 import React from "react";
-import classes from "../Category/Category.module.css";
-import { Link, useLocation } from "react-router-dom";
+import classes from "./Category.module.css";
 
 const Category = () => {
-  const location = useLocation();
   return (
     <>
       <div className={`${classes.allContainer} ${classes.buttonContainer}`}>
         <div className={classes.ButtonWrapUp}>
           <div className={`${classes.allButton} ${classes.buttonTitle}`}>
-            <div
-              className={
-                location.pathname === "/skin" ? classes.activeSkinTitle : ""
-              }
-            >
+            <div className={classes.activeSkinTitle}>
               <button>
                 <span>티스토리 스킨</span>
               </button>
             </div>
-            <div
-              className={
-                location.pathname === "/userskin" ? classes.activeSkinTitle : ""
-              }
-            >
+            <div>
               <button>
                 <span>이용자 제작 스킨</span>
               </button>

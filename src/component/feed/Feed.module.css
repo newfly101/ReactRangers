@@ -115,6 +115,11 @@
   text-decoration: none;
 }
 
+.feedStoryBtn:hover {
+  border-color: #f54;
+  background-color: #f54;
+}
+
 .sectionSubscribe {
   background-color: #f5f5f5;
   white-space: nowrap;
