@@ -7,14 +7,28 @@ import dayjs from "dayjs";
 
 const ForumBlogTap = (props) => {
     const [showDetail, setShowDetail] = React.useState(false);
-    const [activeIndex, setActiveIndex] = React.useState(null);
+    const [activeIndex, setActiveIndex] = React.useState([{0: false}]);
     const [userId, setUserId] = React.useState(null);
     const [userName, setUserName] = React.useState(null);
     const [addData, setAddData] = React.useState('');
 
     const showBlogDetail = (index) => {
-        setShowDetail(!showDetail);
-        setActiveIndex(index);
+        setActiveIndex((prevActiveIndex) => {
+            // Find if the index exists
+            const indexExists = prevActiveIndex.find((item) => item.hasOwnProperty(index));
+
+            console.log("indexExists", indexExists);
+
+            // If index exists, toggle its value
+            if (indexExists) {
+                return prevActiveIndex.map((item) =>
+                    item.hasOwnProperty(index) ? {[index]: !item[index]} : item
+                );
+            } else {
+                // If index does not exist, add it to the array
+                return [...prevActiveIndex, {[index]: true}];
+            }
+        });
     }
 
 
@@ -35,7 +49,7 @@ const ForumBlogTap = (props) => {
     const request = {
         "comments": [{
             "entryId": 304124,
-            "id": Math.trunc((Math.random()*99999)+1),
+            "id": Math.trunc((Math.random() * 99999) + 1),
             "registered": dayjs(new Date()).format("YYYY-MM-DD HH:mm"),
             "content": addData,
             "status": null,
@@ -48,58 +62,60 @@ const ForumBlogTap = (props) => {
 
     const response = props.response;
 
-    // console.log(blogTipDetailData.data.comments);
-    console.log("response",response);
+    // console.log("response",response);
 
     return (
         <>
-            {response.data.entries && response.data.entries.map((item, index) => (
-                <div key={`'블로그-'${index}`}>
-                    <div>
-                        <div className={classes.forumBlogList} key={`'블로그Info-'${index}`}>
-                            <div className={classes.forumImgBox}>
-                                <img src={item.userImage} alt="blogimg"/>
-                            </div>
-                            <div className={classes.forumBlogTitleBox}>
-                                <div className={classes.forumContextBox}>
-                                    <div className={classes.forumContext}>
-                                        <div className={classes.forumContextHeader}>
-                                            <a href={item.userDefaultUrl} rel="noopener noreferrer"
-                                               target="_blank">{item.userName}</a>
-                                        </div>
-                                        ㆍ
-                                        <div className={classes.forumContextHeader}>
-                                            {item.registered}
-                                        </div>
-                                        ㆍ
-                                        <div className={classes.forumContextCategory}>
-                                            {item.category}
-                                        </div>
-                                    </div>
-                                    <div className={classes.forumContextTitle}
-                                         onClick={() => showBlogDetail(index)}>
-                                        {item.title}
-                                    </div>
-                                    <div className={classes.forumContext}>
-                                        {(showDetail && activeIndex === index) ? item.content : props.shortedString(item.summary, 100)}
-                                    </div>
+            {response.data.entries && response.data.entries.map((item, index) => {
+                const isActive = activeIndex.find((obj) => obj[index] === true);
+                return (
+                    <div key={`'블로그-'${index}`}>
+                        <div>
+                            <div className={classes.forumBlogList} key={`'블로그Info-'${index}`}>
+                                <div className={classes.forumImgBox}>
+                                    <img src={item.userImage} alt="blogimg"/>
                                 </div>
-                                <div className={classes.forumLookUp}>조회수 {item.viewCount} ㆍ
-                                    댓글 {item.commentCount}</div>
+                                <div className={classes.forumBlogTitleBox}>
+                                    <div className={classes.forumContextBox}>
+                                        <div className={classes.forumContext}>
+                                            <div className={classes.forumContextHeader}>
+                                                <a href={item.userDefaultUrl} rel="noopener noreferrer"
+                                                   target="_blank">{item.userName}</a>
+                                            </div>
+                                            ㆍ
+                                            <div className={classes.forumContextHeader}>
+                                                {item.registered}
+                                            </div>
+                                            ㆍ
+                                            <div className={classes.forumContextCategory}>
+                                                {item.category}
+                                            </div>
+                                        </div>
+                                        <div className={classes.forumContextTitle}
+                                             onClick={() => showBlogDetail(index)}>
+                                            {item.title}
+                                        </div>
+                                        <div className={classes.forumContext}>
+                                            {(showDetail && activeIndex === index) ? item.content : props.shortedString(item.summary, 100)}
+                                        </div>
+                                    </div>
+                                    <div className={classes.forumLookUp}>조회수 {item.viewCount} ㆍ
+                                        댓글 {item.commentCount}</div>
+                                </div>
                             </div>
+                            {isActive &&
+                                blogTipDetailData.data.comments && blogTipDetailData.data.comments.map((detailItem) =>
+                                    (
+                                        <TapComment detailItem={detailItem} key={`'블로그Detail-'${detailItem.id}`}/>
+                                    )
+                                )}
                         </div>
-                        {activeIndex === index && showDetail === true &&
-                            blogTipDetailData.data.comments && blogTipDetailData.data.comments.map((detailItem) =>
-                                (
-                                    <TapComment detailItem={detailItem} key={`'블로그Detail-'${detailItem.id}`}/>
-                                )
-                            )}
+                        {isActive &&
+                            <TapAddComment submitComment={submitComment}/>
+                        }
                     </div>
-                    {activeIndex === index && showDetail === true &&
-                        <TapAddComment submitComment={submitComment}/>
-                    }
-                </div>
-            ))}
+                )
+            })}
         </>
     );
 
