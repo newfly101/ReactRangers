@@ -11,9 +11,14 @@ const Navigation = () => {
 
     const openLoginModal = () => {
         setIsOpen(true);
+        onClickScrollUp();
     }
     const closeLoginModal = () => {
         setIsOpen(false);
+        onClickScrollUp();
+    }
+    const onClickScrollUp = () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
     }
 
     useEffect(() => {
@@ -42,37 +47,37 @@ const Navigation = () => {
             <nav className={scrolled ? classes.navBar : classes.navBarBlank}>
             {(url !== "/forum" && url !== "/skin") ?
                 <div className={classes.navBarBox}>
-                    <div className={classes.pageTitle}>
+                    <div className={classes.pageTitle} onClick={onClickScrollUp}>
                         <Link to="/">Tistory</Link>
                     </div>
-                    <div className={classes.pageLinkBox}>
+                    <div className={classes.pageLinkBox} onClick={onClickScrollUp}>
                         <Link to="/feed">피드</Link>
                     </div>
-                    <div className={classes.pageLinkBox}>
+                    <div className={classes.pageLinkBox} onClick={onClickScrollUp}>
                         <Link to="/story">스토리</Link>
                     </div>
-                    <div className={classes.pageLinkBox}>
+                    <div className={classes.pageLinkBox} onClick={onClickScrollUp}>
                         <Link to="/skin">스킨</Link>
                     </div>
-                    <div className={classes.pageLinkBox}>
+                    <div className={classes.pageLinkBox} onClick={onClickScrollUp}>
                         <Link to="/forum">포럼</Link>
                     </div>
                 </div>
                 :
                 <div className={classes.navBarBox}>
-                    <div className={scrolled ? classes.pageTitle : classes.pageTitleBlank}>
+                    <div className={scrolled ? classes.pageTitle : classes.pageTitleBlank} onClick={onClickScrollUp}>
                         <Link to="/">Tistory</Link>
                     </div>
-                    <div className={scrolled ? classes.pageLinkBox : classes.pageLinkBoxBlank}>
+                    <div className={scrolled ? classes.pageLinkBox : classes.pageLinkBoxBlank} onClick={onClickScrollUp}>
                         <Link to="/feed">피드</Link>
                     </div>
-                    <div className={scrolled ? classes.pageLinkBox : classes.pageLinkBoxBlank}>
+                    <div className={scrolled ? classes.pageLinkBox : classes.pageLinkBoxBlank} onClick={onClickScrollUp}>
                         <Link to="/story">스토리</Link>
                     </div>
-                    <div className={scrolled ? classes.pageLinkBox : classes.pageLinkBoxBlank}>
+                    <div className={scrolled ? classes.pageLinkBox : classes.pageLinkBoxBlank} onClick={onClickScrollUp}>
                         <Link to="/skin">스킨</Link>
                     </div>
-                    <div className={scrolled ? classes.pageLinkBox : classes.pageLinkBoxBlank}>
+                    <div className={scrolled ? classes.pageLinkBox : classes.pageLinkBoxBlank} onClick={onClickScrollUp}>
                         <Link to="/forum">포럼</Link>
                     </div>
                 </div>
