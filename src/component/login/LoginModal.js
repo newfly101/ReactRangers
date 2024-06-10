@@ -27,7 +27,7 @@ class LoginModal extends Component {
                             <div className={classes.loginDescription}>당신의 이야기가 값진 수익이 됩니다.</div>
                             <img src="https://t1.daumcdn.net/tistory_admin/static/top/pc/img_login.png" alt="loginImg"/>
                             <button className={classes.kakaoLoginBtn}>
-                                카카오 계정으로 로그인
+                                <img src={'/kakao_login_medium_narrow.png'} alt="kakaologin" />
                             </button>
                             <div className={classes.tistoryLoginHelp}>
                             내 티스토리 계정을 모르겠어요

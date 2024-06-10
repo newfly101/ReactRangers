@@ -47,6 +47,11 @@
     border: none;
     cursor: pointer;
     font-size: 16px;
+    border-radius: 8px;
+}
+.kakaoLoginBtn img{
+    width: 260px;
+    height: 52px;
 }
 .closeIco {
     position: absolute;
@@ -61,4 +66,5 @@
 .tistoryLoginHelp {
     font-size: 13px;
     margin-top: 24px;
+    cursor: pointer;
 }
