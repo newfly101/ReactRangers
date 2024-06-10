@@ -1,9 +1,9 @@
 import React from "react";
 import classes from "./TstorySkin.module.css";
 import cardImage from "./Odyssey.img/Odyssey0.jpg";
-import { ReactComponent as LinkIcon } from "./link.svg";
 import TopImage from "./ComponentA/Main/Main";
 import Category from "./ComponentA/Category/Category";
+import { ReactComponent as LinkIcon } from "./link.svg";
 
 const TstorySkin = () => {
   return (
