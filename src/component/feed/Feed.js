@@ -57,12 +57,20 @@ const Feed = () => {
             <div className={classes.pFont}>
               내가 구독하는 글입니다
               <div className={classes.btn}>
-                <div onClick={subscriptionBtn} className={classes.subscription}>
+                <a
+                  href="/following"
+                  onClick={subscriptionBtn}
+                  className={classes.subscription}
+                >
                   구독중
-                </div>
-                <div onClick={subscribersBtn} className={classes.subscribers}>
+                </a>
+                <a
+                  href="/follower"
+                  onClick={subscribersBtn}
+                  className={classes.subscribers}
+                >
                   구독자
-                </div>
+                </a>
               </div>
             </div>
           </div>
