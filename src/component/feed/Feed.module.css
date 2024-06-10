@@ -330,6 +330,7 @@ dd {
   text-align: center;
   font-family: Pretendard-Regular, AppleSDGothicNeo-Regular, Malgun Gothic,
     맑은 고딕, dotum, 돋움, sans-serif;
+  cursor: pointer;
 }
 
 .listBoxTypeChange {
@@ -349,6 +350,7 @@ dd {
   border: 1px solid #000;
   color: #fff;
   background-color: #000;
+  cursor: pointer;
 }
 
 button,
