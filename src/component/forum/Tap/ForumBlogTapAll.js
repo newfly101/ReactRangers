@@ -1,16 +1,55 @@
 import React from 'react';
 import classes from "../ForumBlog.module.css";
-import {blogEntryData, blogTipDetailData} from "../ForumTapDummyData";
+import {blogTipDetailData} from "../ForumTapDummyData";
 import TapComment from "./Comment/TapComment";
 import TapAddComment from "./Comment/TapAddComment";
+import dayjs from "dayjs";
 
 const ForumBlogTapAll = (props) => {
-    const [response, setResponse] = React.useState(blogEntryData);
+    const [showDetail, setShowDetail] = React.useState(false);
+    const [activeIndex, setActiveIndex] = React.useState(null);
+    const [userId, setUserId] = React.useState(null);
+    const [userName, setUserName] = React.useState(null);
+    const [addData, setAddData] = React.useState('');
 
-    console.log(response);
+    const showBlogDetail = (index) => {
+        setShowDetail(!showDetail);
+        setActiveIndex(index);
+    }
 
 
-    // const response = props.response;
+    const getLocalStorageUserId = () => {
+        setUserId(window.localStorage.getItem("user"));
+    }
+    const getLocalStorageUserName = () => {
+        setUserName(window.localStorage.getItem("userName"));
+    }
+    const submitComment = (addComment) => {
+        console.log("addComment", addComment);
+        setAddData(addComment);
+        getLocalStorageUserId();
+        getLocalStorageUserName();
+        console.log(request);
+    }
+
+    const request = {
+        "comments": [{
+            "entryId": 304124,
+            "id": Math.trunc((Math.random()*99999)+1),
+            "registered": dayjs(new Date()).format("YYYY-MM-DD HH:mm"),
+            "content": addData,
+            "status": null,
+            "userId": {userId},
+            "userName": {userName},
+            "userDefaultUrl": "https://github.com/newfly101/ReactRangers",
+            "userImage": "https://avatars.githubusercontent.com/u/62008619?v=4"
+        }]
+    }
+
+    const response = props.response;
+
+    console.log(blogTipDetailData.data.comments);
+
     return (
         <>
             {response.data.entries && response.data.entries.map((item, index) => (
@@ -37,26 +76,26 @@ const ForumBlogTapAll = (props) => {
                                         </div>
                                     </div>
                                     <div className={classes.forumContextTitle}
-                                         onClick={() => props.showBlogDetail(index)}>
+                                         onClick={() => showBlogDetail(index)}>
                                         {item.title}
                                     </div>
                                     <div className={classes.forumContext}>
-                                        {(props.showDetail && props.activeIndex === index) ? item.content : props.shortedString(item.summary, 100)}
+                                        {(showDetail && activeIndex === index) ? item.content : props.shortedString(item.summary, 100)}
                                     </div>
                                 </div>
                                 <div className={classes.forumLookUp}>조회수 {item.viewCount} ㆍ
                                     댓글 {item.commentCount}</div>
                             </div>
                         </div>
-                        {props.activeIndex === index && props.showDetail === true &&
+                        {activeIndex === index && showDetail === true &&
                             blogTipDetailData.data.comments && blogTipDetailData.data.comments.map((detailItem) =>
                                 (
                                     <TapComment detailItem={detailItem} key={`'블로그Detail-'${detailItem.id}`}/>
                                 )
                             )}
                     </div>
-                    {props.activeIndex === index && props.showDetail === true &&
-                        <TapAddComment props={props}/>
+                    {activeIndex === index && showDetail === true &&
+                        <TapAddComment submitComment={submitComment}/>
                     }
                 </div>
             ))}

@@ -1,34 +1,10 @@
 import React, {useRef} from 'react';
 import classes from "../../ForumBlog.module.css";
-import dayjs from "dayjs";
 
-const TapAddComment = () => {
+const TapAddComment = ({submitComment}) => {
     const [addComment, setAddComment] = React.useState('');
     const textareaRef = useRef(null);
     const [focus, setFocus] = React.useState(false);
-    const [userId, setUserId] = React.useState(null);
-    const [userName, setUserName] = React.useState(null);
-
-    const getLocalStorageUserId = () => {
-        setUserId(window.localStorage.getItem("user"));
-    }
-    const getLocalStorageUserName = () => {
-        setUserName(window.localStorage.getItem("userName"));
-    }
-    const request = {
-        "comments": [{
-            "entryId": 304124,
-            "id": Math.trunc((Math.random()*99999)+1),
-            "registered": dayjs(new Date()).format("YYYY-MM-DD HH:mm"),
-            "content": {addComment},
-            "status": null,
-            "userId": {userId},
-            "userName": {userName},
-            "userDefaultUrl": "https://github.com/newfly101/ReactRangers",
-            "userImage": "https://avatars.githubusercontent.com/u/62008619?v=4"
-        }]
-    }
-
 
     const onChangeAddComment = (event) => {
         setAddComment(event.target.value);
@@ -47,18 +23,17 @@ const TapAddComment = () => {
     const onBlurTextArea = () => {
         setFocus(false);
     }
-    const submitComment = (event) => {
+    const onSubmitForm = (event) => {
         event.preventDefault();
-        console.log("addComment", addComment);
-        getLocalStorageUserId();
-        getLocalStorageUserName();
-        console.log(request);
+        if (addComment.length > 0) {
+            submitComment(addComment);
+            setAddComment('');
+        }
     }
-
 
     return (
         <div className={classes.forumBlogWriteDetail}>
-            <form>
+            <form onSubmit={onSubmitForm}>
                 <div className={classes.forumBlogWriteBox}>
                     <textarea
                         className={classes.forumBlogInput}
@@ -79,7 +54,7 @@ const TapAddComment = () => {
                         </div>
                         <button
                             className={addComment.length === 0 ? classes.inputInActiveButton : classes.inputActiveButton}
-                            onClick={submitComment}
+                            type="submit"
                             disabled={addComment.length === 0}
                         >완료
                         </button>

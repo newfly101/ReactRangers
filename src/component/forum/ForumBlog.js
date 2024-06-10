@@ -13,9 +13,8 @@ import ForumBlogTapAll from "./Tap/ForumBlogTapAll";
 const ForumBlog = () => {
     const [response, setResponse] = React.useState(blogEntryData);
     const [tapState, setTapState] = React.useState('all');
-    const [showDetail, setShowDetail] = React.useState(false);
-    const [activeIndex, setActiveIndex] = React.useState(null);
-    const [addComment, setAddComment] = React.useState('');
+
+
 
 
     const inputRef = useRef(null);
@@ -43,26 +42,26 @@ const ForumBlog = () => {
         setTapState("tip");
     }
 
-    const showBlogDetail = (index) => {
-        setShowDetail(!showDetail);
-        setActiveIndex(index);
-    }
+
+
+
+    // view에서 보여질 때 공용으로 쓰이는 부분
+    // ----------------- 공용 ----------------------
     const shortedString = (str, num) => {
         if (str.length < num) {
             return str;
         }
         return str.slice(0, num) + '...';
     }
+
+
+    // ------------------------ nav -> 글쓰기 => 최 하단으로 보내주는 function
     const scrollToInput = () => {
         if (inputRef.current) {
             inputRef.current.scrollIntoView({behavior: 'smooth'});
             inputRef.current.focus();
         }
     }
-    const onChangeAddComment = (event) => {
-        setAddComment(event.target.value);
-    }
-
 
 
     // console.log(response.data.entries);
@@ -98,22 +97,8 @@ const ForumBlog = () => {
                 {tapState === "all" &&
                     <ForumBlogTapAll
                         response={response}
-                        showBlogDetail={showBlogDetail}
                         shortedString={shortedString}
                         scrollToInput={scrollToInput}
-                        onChangeAddComment={onChangeAddComment}
-                        // submitComment={submitComment}
-                        // autoScaleTextArea={autoScaleTextArea}
-                        // onFocusTextArea={onFocusTextArea}
-                        // onBlurTextArea={onBlurTextArea}
-                        activeIndex={activeIndex}
-                        setActiveIndex={setActiveIndex}
-                        // focus={focus}
-                        showDetail={showDetail}
-                        // textareaRef={textareaRef}
-                        addComment={addComment}
-                        setAddComment={setAddComment}
-
                 />}
 
             </div>
