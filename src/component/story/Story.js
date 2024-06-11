@@ -83,7 +83,7 @@ const Story = () => {
           <div className={classes.tags} onClick={() => onClickLife()}>
             <div
               className={`${classes.tagFocus} ${
-                dummyData[0] === "life" ? classes.focusTag : ""
+                dummyData.dataName === "life" ? classes.choiceTag : ""
               }`}
             >
               라이프
@@ -92,7 +92,7 @@ const Story = () => {
           <div className={classes.tags} onClick={() => onClickTravel()}>
             <div
               className={`${classes.tagFocus} ${
-                dummyData[0] === "travel" ? classes.focusTag : ""
+                dummyData.dataName === "travel" ? classes.choiceTag : ""
               }`}
             >
               여행.맛집
@@ -101,7 +101,7 @@ const Story = () => {
           <div className={classes.tags} onClick={() => onClickCulture()}>
             <div
               className={`${classes.tagFocus} ${
-                dummyData[0] === "culture" ? classes.focusTag : ""
+                dummyData.dataName === "culture" ? classes.choiceTag : ""
               }`}
             >
               문화.연예
@@ -110,7 +110,7 @@ const Story = () => {
           <div className={classes.tags} onClick={() => onClickIt()}>
             <div
               className={`${classes.tagFocus} ${
-                dummyData[0] === "it" ? classes.focusTag : ""
+                dummyData.dataName === "it" ? classes.choiceTag : ""
               }`}
             >
               It
@@ -119,7 +119,7 @@ const Story = () => {
           <div className={classes.tags} onClick={() => onClickSport()}>
             <div
               className={`${classes.tagFocus} ${
-                dummyData[0] === "sport" ? classes.focusTag : ""
+                dummyData.dataName === "sport" ? classes.choiceTag : ""
               }`}
             >
               스포츠
@@ -128,7 +128,7 @@ const Story = () => {
           <div className={classes.tags} onClick={() => onClickCurrent()}>
             <div
               className={`${classes.tagFocus} ${
-                dummyData[0] === "current" ? classes.focusTag : ""
+                dummyData.dataName === "current" ? classes.choiceTag : ""
               }`}
             >
               시사

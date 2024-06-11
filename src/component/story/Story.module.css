@@ -61,7 +61,7 @@
 }
 
 /*태그가 선택되었을때 주황선을 표시하는 부분*/
-.focusTag {
+.choiceTag {
   font-weight: bold;
   text-decoration: underline;
   text-decoration-thickness: 0.35rem;
