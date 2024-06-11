@@ -88,6 +88,10 @@
   color: white;
 }
 
+.hoverCard button:hover {
+  text-decoration-line: underline;
+}
+
 .hoverProfile {
   width: 40px;
   height: 40px;
