@@ -2,6 +2,7 @@
 
 .itemBoxWrapper {
   margin-bottom: 0.8rem;
+  margin-top: 1.5rem;
 }
 
 .bottomItemBox {
@@ -37,12 +38,28 @@
 
 .ItemBoxAuthor {
   display: flex;
+  justify-content: space-between;
 
   align-items: center;
   font-size: 0.6rem;
 }
+.ItemBoxAuthorDetali {
+  display: flex;
+  padding-top: 0.6rem;
+}
+.subscribeBtn {
+  display: none;
+  border: 0.5px solid rgb(211, 211, 211);
+  border-radius: 1rem;
+  padding: 0.3rem 0.6rem 0.3rem 0.6rem;
+  font-size: 0.7rem;
+}
+
+.itemBoxWrapper:hover .subscribeBtn {
+  display: block;
+}
 .ItemBoxAuthorImg {
-  width: 1.5rem;
+  width: 1.7rem;
 }
 
 .ItemBoxAuthorImg {
