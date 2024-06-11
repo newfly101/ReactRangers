@@ -59,16 +59,19 @@ const StoryItemBox = ({ useTag }) => {
                   {items.data.list[index].summary.substr(0, 100) + "..."}
                 </div>
                 <div className={classes.ItemBoxAuthor}>
-                  <img
-                    className={classes.ItemBoxAuthorImg}
-                    src={`${items.data.list[index].userImage}`}
-                    alt="아이템박스 저자 이미지"
-                  />
-                  <div>{items.data.list[index].userName}</div>
+                  <div className={classes.ItemBoxAuthorDetali}>
+                    <img
+                      className={classes.ItemBoxAuthorImg}
+                      src={`${items.data.list[index].userImage}`}
+                      alt="아이템박스 저자 이미지"
+                    />
+                    <div>{items.data.list[index].userName}</div>
 
-                  <div className={classes.blogName}>
-                    by {items.data.list[index].blogTitle}
+                    <div className={classes.blogName}>
+                      by {items.data.list[index].blogTitle}
+                    </div>
                   </div>
+                  <div className={classes.subscribeBtn}>구독하기</div>
                 </div>
               </div>
 
@@ -81,6 +84,7 @@ const StoryItemBox = ({ useTag }) => {
               </div>
             </div>
           </section>
+
           <hr className={classes.mainBar} />
         </div>
       ))}

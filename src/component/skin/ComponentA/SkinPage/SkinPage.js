@@ -9,7 +9,7 @@ const SkinPage = (props) => {
       {items.map((item, index) => (
         <div key={index}>
           {item.type === "label" ? (
-            <div className={`${classes.allContainer} ${classes.label}`}>
+            <div className={classes.container}>
               <div className={classes.labelWrap}>
                 <div className={classes.labelTitle}>
                   <h1>Skin FAQ</h1>
@@ -23,21 +23,19 @@ const SkinPage = (props) => {
               </div>
             </div>
           ) : (
-            <div className={`${classes.allContainer} ${classes[item.type]}`}>
+            <div className={`${classes.container} ${classes[item.type]}`}>
               <div className={classes.cardWrap}>
-                <div className={`${classes.allButton} ${classes.cardTitle}`}>
+                <div className={classes.title}>
                   <button>
                     <h1>{item.data.title}</h1>
                   </button>
                 </div>
-                <div className={classes.cardInnerText}>
+                <div className={classes.innerText}>
                   <div>{item.data.content}</div>
                   <div>{item.data.content1}</div>
                 </div>
                 <div className={classes.cardButton}>
-                  <div
-                    className={`${classes.allButton} ${classes.hoverLine} ${classes.cardTagButton} `}
-                  >
+                  <div className={classes.tagButton}>
                     {item.data.tag.map((tagItem, tagIndex) => (
                       <button key={tagIndex}>{tagItem}</button>
                     ))}
@@ -52,14 +50,16 @@ const SkinPage = (props) => {
                     </button>
                   </div>
                 </div>
-                <div className={classes.cardImageContaner}>
-                  <div className={classes.cardImage}>
+                <div className={classes.imageContaner}>
+                  <div className={classes.imageWrap}>
                     {item.data.img.map((imgSrc, imgIndex) => (
-                      <img
-                        key={imgIndex}
-                        src={`${process.env.PUBLIC_URL}/SkinImg/${item.data.title}/${imgSrc}`}
-                        alt={`Image ${imgIndex}`}
-                      />
+                      <div className={classes.image}>
+                        <img
+                          key={imgIndex}
+                          src={`${process.env.PUBLIC_URL}/SkinImg/${item.data.title}/${imgSrc}`}
+                          alt={`Image ${imgIndex}`}
+                        />
+                      </div>
                     ))}
                   </div>
                 </div>
