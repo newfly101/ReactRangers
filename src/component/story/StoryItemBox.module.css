@@ -3,6 +3,7 @@
 .itemBoxWrapper {
   margin-bottom: 0.8rem;
   margin-top: 1.5rem;
+  cursor: pointer;
 }
 
 .bottomItemBox {
