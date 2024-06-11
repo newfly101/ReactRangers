@@ -42,7 +42,16 @@ const TstorySkin = () => {
         img: ["Whatever0.jpg", "Whatever1.jpg", "Whatever2.jpg"],
       },
     },
-    { type: "label" },
+    {
+      type: "label",
+      data: {
+        question: [
+          "치환자가 무엇인가요?",
+          "목록 스타일을 바꿀 수 있나요?",
+          "첫 화면을 마음대로 편집하고 싶어요",
+        ],
+      },
+    },
     {
       type: "cardWhite",
       data: {
@@ -86,6 +95,7 @@ const TstorySkin = () => {
       },
     },
   ];
+
   return (
     <>
       <Topimage />

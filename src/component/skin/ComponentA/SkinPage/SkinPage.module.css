@@ -120,3 +120,44 @@
   cursor: pointer;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
+
+.labelContainer {
+  background-color: rgba(0, 0, 0, 0.1);
+  width: 100vw;
+  height: 25vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  margin: auto;
+}
+.labelWrap {
+  display: flex;
+}
+
+.labelTitle {
+  color: black;
+  font-size: 8px;
+  font-weight: 500;
+}
+
+.labelQuestion {
+  cursor: pointer;
+  margin-right: 5px;
+  color: #ff5f4f;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.labelItem {
+  display: flex;
+  margin-right: 30px;
+}
+
+.labelButton {
+  cursor: pointer;
+}
+
+.labelButton button:hover {
+  text-decoration-line: underline;
+}
