@@ -33,54 +33,59 @@ const StoryItemBox = ({ useTag }) => {
     <div>
       {items.data.list.map((item, index) => (
         <div key={index}>
-          <section className={classes.itemBoxWrapper}>
-            <div className={classes.bottomItemBox}>
-              <div className={classes.ItemBoxStart}>
-                <div className={classes.categoryName}>
-                  {items.data.list[index].categoryName}
-                  <hr className={classes.textHr} />
-                </div>
-                <div className={classes.publishedAgo}>
-                  {items.data.list[index].publishedAgo}
-                </div>
-                <div>
-                  공감{" "}
-                  <label className={classes.likeCount}>
-                    {items.data.list[index].likeCount}
-                  </label>
-                </div>
-              </div>
-
-              <div className={classes.ItemBoxMid}>
-                <div className={classes.ItemBoxTitle}>
-                  {items.data.list[index].title.substr(0, 35)}
-                </div>
-                <div className={classes.ItemBoxdesc}>
-                  {items.data.list[index].summary.substr(0, 100) + "..."}
-                </div>
-                <div className={classes.ItemBoxAuthor}>
-                  <img
-                    className={classes.ItemBoxAuthorImg}
-                    src={`${items.data.list[index].userImage}`}
-                    alt="아이템박스 저자 이미지"
-                  />
-                  <div>{items.data.list[index].userName}</div>
-
-                  <div className={classes.blogName}>
-                    by {items.data.list[index].blogTitle}
+          <a href={item.link}>
+            <section className={classes.itemBoxWrapper}>
+              <div className={classes.bottomItemBox}>
+                <div className={classes.ItemBoxStart}>
+                  <div className={classes.categoryName}>
+                    {items.data.list[index].categoryName}
+                    <hr className={classes.textHr} />
+                  </div>
+                  <div className={classes.publishedAgo}>
+                    {items.data.list[index].publishedAgo}
+                  </div>
+                  <div>
+                    공감{" "}
+                    <label className={classes.likeCount}>
+                      {items.data.list[index].likeCount}
+                    </label>
                   </div>
                 </div>
-              </div>
 
-              <div className={classes.ItemBoxEnd}>
-                <img
-                  className={classes.itemBoxImg}
-                  src={`${items.data.list[index].thumbnail}`}
-                  alt="아이템박스 이미지"
-                />
+                <div className={classes.ItemBoxMid}>
+                  <div className={classes.ItemBoxTitle}>
+                    {items.data.list[index].title.substr(0, 35)}
+                  </div>
+                  <div className={classes.ItemBoxdesc}>
+                    {items.data.list[index].summary.substr(0, 100) + "..."}
+                  </div>
+                  <div className={classes.ItemBoxAuthor}>
+                    <div className={classes.ItemBoxAuthorDetali}>
+                      <img
+                        className={classes.ItemBoxAuthorImg}
+                        src={`${items.data.list[index].userImage}`}
+                        alt="아이템박스 저자 이미지"
+                      />
+                      <div>{items.data.list[index].userName}</div>
+
+                      <div className={classes.blogName}>
+                        by {items.data.list[index].blogTitle}
+                      </div>
+                    </div>
+                    <div className={classes.subscribeBtn}>구독하기</div>
+                  </div>
+                </div>
+
+                <div className={classes.ItemBoxEnd}>
+                  <img
+                    className={classes.itemBoxImg}
+                    src={`${items.data.list[index].thumbnail}`}
+                    alt="아이템박스 이미지"
+                  />
+                </div>
               </div>
-            </div>
-          </section>
+            </section>
+          </a>
           <hr className={classes.mainBar} />
         </div>
       ))}

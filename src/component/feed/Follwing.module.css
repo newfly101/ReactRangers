@@ -102,3 +102,12 @@ button {
     margin-right: 20px;
   }
 } */
+
+.checkImg {
+  display: inline-block;
+  margin-left: 5px;
+  vertical-align: top;
+  width: 9px;
+  height: 7px;
+  background-position: 0 -30px;
+}
