@@ -9,6 +9,7 @@ import Story from "./component/story/Story";
 import "./App.css";
 import Skin from "./component/skin/TstorySkin";
 import TistoryMain from "../src/component/TistoryMain";
+import AccountRecovery from "./component/accountSreach/AccountRecovery";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
         <Route path="/admin" element={<Admin />} />
         <Route path="/story" element={<Story />} />
         <Route path="/skin" element={<Skin />} />
+        <Route path="/AccountRecovery" element={<AccountRecovery />} />
         {/*
             <Route path="/" element={<TistoryMain />} /> // 여기에 page link 추가
           */}

@@ -21,6 +21,7 @@ const Story = () => {
   const [dummyData, setDummyData] = useState({
     dataName: "life",
     cardData: dummyCardLife,
+
     itemData: dummyItemLife,
   });
   //tag클릭에 맞춰 state를 변경하는 함수
@@ -28,6 +29,7 @@ const Story = () => {
     setDummyData({
       dataName: "life",
       cardData: dummyCardLife,
+
       itemData: dummyItemLife,
     });
   };
