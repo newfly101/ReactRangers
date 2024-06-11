@@ -4,13 +4,14 @@
   align-items: center;
   margin: 0 auto;
   background: #f3f5f7;
-  padding: 120px 0 100px 0;
-  margin: 120px 0 100px;
+  padding: 60px 40px 100px 0;
+  margin: 80px 0 100px;
 }
 
 #AdminLeft {
   float: left;
   width: 216px;
+  position: relative;
 }
 
 .AdminProfile {
@@ -49,11 +50,14 @@
 }
 
 .AdminListHomeIcon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 21px;
   height: 21px;
   position: absolute;
-  left: 110px;
-  bottom: 408px;
+  left: 15px;
+  bottom: 176px;
 }
 
 .AdminMyblog {
@@ -69,11 +73,14 @@
 }
 
 .AdminListUserIcon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 21px;
   height: 21px;
   position: absolute;
-  left: 110px;
-  bottom: 361px;
+  left: 15px;
+  bottom: 131px;
 }
 
 .AdminListUser {
@@ -91,11 +98,14 @@
 }
 
 .AdminLisLinkMenuIcon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 21px;
   height: 21px;
   position: absolute;
-  left: 110px;
-  bottom: 245px;
+  left: 15px;
+  bottom: 14px;
 }
 
 .AdminListLinkMenu {
@@ -106,7 +116,7 @@
 #AdminRight {
   float: right;
   width: 814px;
-  margin-left: 30px;
+  margin-left: 40px;
 }
 
 .AdminBlockImage {
