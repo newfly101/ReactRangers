@@ -23,8 +23,8 @@ const ForumMain = () => {
                         <div className={classes.forumSearchBoxInput}>
                             <input placeholder="검색어를 입력하세요"/>
                         </div>
-                        <div className={classes.forumSearchBoxImg}>
-                            <img src={'/Forum/search.svg'} alt="search"/>
+                        <div className={classes.forumSearchBoxImgSearch}>
+                        <img src={'/Forum/search.svg'} alt="search"/>
                         </div>
                     </div>
                 </div>

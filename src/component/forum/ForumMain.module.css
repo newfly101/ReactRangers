@@ -13,7 +13,7 @@
     height: 365px;
 }
 .forumSearch {
-    width: 100%;
+    width: calc(100vw - 200px);
     height: 135px;
     justify-content: center;
     align-items: center;
@@ -30,6 +30,7 @@
 .forumDescription {
     padding-top: 11px;
     font-size: 24px;
+    white-space: nowrap;
 }
 .forumSearchBox {
     display: flex;
@@ -39,31 +40,53 @@
     border-radius: 4px;
     color: black;
     flex-direction: row;
+    margin-top: 30px;
 }
 .forumSearchBoxLabel {
-    width: 100px;
+    width: 80px;
     height: 54px;
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
+}
+.forumSearchBoxLabel:hover {
+    text-decoration: underline;
 }
 .forumSearchBoxImg {
     display: flex;
     justify-content: center;
     align-items: center;
+    border-right: 1px solid #f0f0f0;
+    cursor: pointer;
 }
 .forumSearchBoxImg img{
     width: 20px;
     height: 16px;
+    margin-right: 10px;
 }
+
 .forumSearchBoxInput {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-left: 5px;
 }
 .forumSearchBoxInput input{
     border: none;
     width: 548px;
-
+    outline: none;
+    font-size: 14px;
+    margin-left: 10px;
+}
+.forumSearchBoxImgSearch {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.forumSearchBoxImgSearch img{
+    width: 20px;
+    height: 16px;
+    cursor: pointer;
 }
 
