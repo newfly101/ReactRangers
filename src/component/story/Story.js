@@ -2,29 +2,45 @@ import React, { useState } from "react";
 import classes from "./Story.module.css";
 import StoryBlog from "./StoryBlog";
 import StoryItemBox from "./StoryItemBox";
+import { dummyCardLife } from "./DummyData/StoryDummyDataLife";
+import { dummyCardCulture } from "./DummyData/StoryDummyDataCulture";
+import { dummyCardIt } from "./DummyData/StoryDummyDataIt";
+import { dummyCardCurrent } from "./DummyData/StoryDummyDataCurrent";
+import { dummyCardSport } from "./DummyData/StoryDummyDataSport";
+import { dummyCardTravel } from "./DummyData/StoryDummyDataTravel";
+import { dummyItemLife } from "./DummyData/StoryDummyDataLife";
+import { dummyItemCulture } from "./DummyData/StoryDummyDataCulture";
+import { dummyItemIt } from "./DummyData/StoryDummyDataIt";
+import { dummyItemCurrent } from "./DummyData/StoryDummyDataCurrent";
+import { dummyItemSport } from "./DummyData/StoryDummyDataSport";
+import { dummyItemTravel } from "./DummyData/StoryDummyDataTravel";
 
 const Story = () => {
   //현재 보여주고 있는 페이지를 결정하는 부분
-  const [useTag, setUseTag] = useState("life");
 
+  const [dummyData, setDummyData] = useState([
+    "life",
+    dummyCardLife,
+    dummyItemLife,
+  ]);
   //tag클릭에 맞춰 state를 변경하는 함수
   const onClickLife = () => {
-    setUseTag("life");
+    setDummyData(["life", dummyCardLife, dummyItemLife]);
   };
   const onClickTravel = () => {
-    setUseTag("travel");
+    setDummyData(["travel", dummyCardTravel, dummyItemTravel]);
   };
   const onClickCulture = () => {
-    setUseTag("culture");
+    setDummyData(["culture", dummyCardCulture, dummyItemCulture]);
   };
   const onClickIt = () => {
-    setUseTag("it");
+    setDummyData(["it", dummyCardIt, dummyItemIt]);
   };
   const onClickSport = () => {
-    setUseTag("sport");
+    setDummyData(["sport", dummyCardSport, dummyItemSport]);
   };
   const onClickCurrent = () => {
-    setUseTag("current");
+    setDummyData(["current", dummyCardCurrent, dummyItemCurrent]);
   };
 
   return (
@@ -43,7 +59,7 @@ const Story = () => {
           <div className={classes.tags} onClick={() => onClickLife()}>
             <div
               className={`${classes.tagFocus} ${
-                useTag === "life" ? classes.textBold : ""
+                dummyData[0] === "life" ? classes.textBold : ""
               }`}
             >
               라이프
@@ -52,7 +68,7 @@ const Story = () => {
           <div className={classes.tags} onClick={() => onClickTravel()}>
             <div
               className={`${classes.tagFocus} ${
-                useTag === "travel" ? classes.textBold : ""
+                dummyData[0] === "travel" ? classes.textBold : ""
               }`}
             >
               여행.맛집
@@ -61,7 +77,7 @@ const Story = () => {
           <div className={classes.tags} onClick={() => onClickCulture()}>
             <div
               className={`${classes.tagFocus} ${
-                useTag === "culture" ? classes.textBold : ""
+                dummyData[0] === "culture" ? classes.textBold : ""
               }`}
             >
               문화.연예
@@ -70,7 +86,7 @@ const Story = () => {
           <div className={classes.tags} onClick={() => onClickIt()}>
             <div
               className={`${classes.tagFocus} ${
-                useTag === "it" ? classes.textBold : ""
+                dummyData[0] === "it" ? classes.textBold : ""
               }`}
             >
               It
@@ -79,7 +95,7 @@ const Story = () => {
           <div className={classes.tags} onClick={() => onClickSport()}>
             <div
               className={`${classes.tagFocus} ${
-                useTag === "sport" ? classes.textBold : ""
+                dummyData[0] === "sport" ? classes.textBold : ""
               }`}
             >
               스포츠
@@ -88,7 +104,7 @@ const Story = () => {
           <div className={classes.tags} onClick={() => onClickCurrent()}>
             <div
               className={`${classes.tagFocus} ${
-                useTag === "current" ? classes.textBold : ""
+                dummyData[0] === "current" ? classes.textBold : ""
               }`}
             >
               시사
@@ -98,11 +114,11 @@ const Story = () => {
         {/*하단 카드 형태 블로그 노출*/}
       </section>
       <section className={classes.storyMidSection}>
-        <StoryBlog className={classes.storyBlog} useTag={useTag} />
+        <StoryBlog className={classes.storyBlog} dummyData={dummyData} />
       </section>
       {/*하단 리스트 형태 블로그 노출*/}
       <div className={classes.storyWrapper}>
-        <StoryItemBox useTag={useTag} />
+        <StoryItemBox dummyData={dummyData} />
       </div>
     </div>
   );
