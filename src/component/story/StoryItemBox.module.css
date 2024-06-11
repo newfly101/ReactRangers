@@ -101,3 +101,8 @@
   width: 28rem;
   font-size: 1.1rem;
 }
+
+a {
+  text-decoration-line: none;
+  color: black;
+}
