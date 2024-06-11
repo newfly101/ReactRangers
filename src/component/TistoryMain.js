@@ -203,7 +203,7 @@ const TistoryMain = () => {
                   마우스를 올리면 나타나는 텍스트
                 </p>
               </a>
-              <a
+              {/* <a
                 href="https://mistyfriday.kr/#google_vignette"
                 className={styles.banner_link}
               >
@@ -215,10 +215,8 @@ const TistoryMain = () => {
                 <p className={styles.banner_hover_text}>
                   마우스를 올리면 나타나는 텍스트
                 </p>
-              </a>
+              </a> */}
             </div>
-            <button class="prevButton">이전</button>
-            <button class="nextButton">다음</button>
           </div>
           <div className={styles.sponsorContainer}>
             <div className={styles.sponsorImages}>
