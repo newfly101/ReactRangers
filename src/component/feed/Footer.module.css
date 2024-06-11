@@ -36,7 +36,7 @@ div {
   justify-content: center;
   align-items: center;
   height: 36px;
-  transform: translate(-55px, 0px);
+  transform: translate(-65px, 0px);
 }
 
 .tistroryImg {
@@ -58,11 +58,13 @@ div {
   color: #000;
   font-style: normal;
   font-weight: 400;
+  padding-left: 2px;
 }
 
 .txtFooter {
   color: #333;
   text-align: left;
+  font-size: 11px;
 }
 .innerFoot .corpInfo {
   padding-top: 26px;
@@ -85,16 +87,25 @@ div {
   line-height: 12px;
   margin-bottom: 12px;
   flex-shrink: 0;
+  margin-right: 5px;
 }
 
-.txt_info.has-before::before {
+/* .txt_info {
+  display: flex;
+  align-items: center;
+  line-height: 12px;
+  margin-bottom: 12px;
+  flex-shrink: 0;
+}
+
+.has_before::before {
   content: "";
   display: block;
   width: 1px;
   height: 12px;
   margin: 0 7px;
   background: #909090;
-}
+} */
 
 .linkFooter {
   color: #909090;
@@ -133,9 +144,7 @@ div {
 
 .searchTistory .inputText {
   width: 104px;
-  margin-top: 10px;
-}
-input {
+  margin-top: -2px;
   border: 0;
 }
 

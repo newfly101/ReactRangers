@@ -20,8 +20,8 @@ const Footer = () => {
           <div className={classes.corpInfo}>
             <div className={classes.boxInfo}>
               <div className={classes.txtInfo}>대표이사 정신아</div>
-              <div className={`txt_info has-before`}>
-                사업자 등록 번호 120-81-47521
+              <div className={classes.txtInfo}>
+                | 사업자 등록 번호 120-81-47521
               </div>
             </div>
             <div className={classes.boxInfo}>
@@ -41,18 +41,16 @@ const Footer = () => {
               <div className={classes.txtInfo}>
                 주소 제주특별자치도 제주시 첨단로 242(영평동)
               </div>
-              <div className={`txt_info has-before`}>
-                호스팅사업자 (주)카카오
-              </div>
+              <div className={classes.txtInfo}>| 호스팅사업자 (주)카카오</div>
             </div>
             <div className={classes.boxInfo}>
               <div className={classes.txtInfo}>
                 고객센터 1577-3754
                 <a
                   href="mailto:help.notice@kakaocorp.com"
-                  className={`link_footer has-before`}
+                  className={classes.linkFooter}
                 >
-                  이메일 help.notice@kakaocorp.com
+                  | 이메일 help.notice@kakaocorp.com
                 </a>
               </div>
             </div>
