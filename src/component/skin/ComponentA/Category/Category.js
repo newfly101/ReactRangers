@@ -1,19 +1,26 @@
 import React from "react";
 import classes from "./Category.module.css";
 
-const Category = () => {
+const Category = ({ handleCategoryButton }) => {
+  const handleAButton = () => {
+    handleCategoryButton(true);
+  };
+
+  const handleBButton = () => {
+    handleCategoryButton(false);
+  };
   return (
     <>
       <div className={classes.container}>
         <div>
           <div className={classes.title}>
             <div className={classes.titleAction}>
-              <button>
+              <button onClick={handleAButton}>
                 <span>티스토리 스킨</span>
               </button>
             </div>
             <div>
-              <button>
+              <button onClick={handleBButton}>
                 <span>이용자 제작 스킨</span>
               </button>
             </div>

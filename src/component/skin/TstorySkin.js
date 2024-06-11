@@ -1,9 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import Topimage from "./ComponentA/Main/Main";
 import Category from "./ComponentA/Category/Category";
 import Skinpage from "./ComponentA/SkinPage/SkinPage";
+import classes from "./TstorySkin.module.css";
 
 const TstorySkin = () => {
+  const [isAVew, setIsAVew] = useState(true);
+
+  const handleCategoryButton = (isA) => {
+    setIsAVew(isA);
+  };
+
   const items = [
     {
       type: "cardWhite",
@@ -48,7 +55,7 @@ const TstorySkin = () => {
         question: [
           "치환자가 무엇인가요?",
           "목록 스타일을 바꿀 수 있나요?",
-          "첫 화면을 마음대로 편집하고 싶어요",
+          "첫 화면을 마음대로 편집하고 싶어요.",
         ],
       },
     },
@@ -98,9 +105,11 @@ const TstorySkin = () => {
 
   return (
     <>
-      <Topimage />
-      <Category />
-      <Skinpage items={items} />
+      <div className={classes.main}>
+        <Topimage />
+        <Category handleCategoryButton={handleCategoryButton} />
+        <Skinpage items={items} isAVew={isAVew} />
+      </div>
     </>
   );
 };
