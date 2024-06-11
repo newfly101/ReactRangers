@@ -4,7 +4,7 @@ import classes from "./StoryItemBox.module.css";
 const StoryItemBox = ({ dummyData }) => {
   return (
     <div>
-      {dummyData.itemData.data.list.map((item, index) => (
+      {dummyData.map((item, index) => (
         <div key={index}>
           <a href={item.link}>
             {/*각 아이템 박스 전체를 섹션으로 감싼다*/}

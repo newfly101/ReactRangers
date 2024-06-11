@@ -5,7 +5,7 @@ const StoryBlog = ({ dummyData }) => {
   return (
     <div className={classes.storyMidSection}>
       {/*화면 전체에 a태그를 감싼다*/}
-      {dummyData.cardData.data.list.map((item, index) => (
+      {dummyData.map((item, index) => (
         <a href={item.blogUrl} key={index} className={classes.blogWrapper}>
           <img
             src={`${item.blogImage}`}
