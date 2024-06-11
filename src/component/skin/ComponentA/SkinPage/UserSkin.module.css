@@ -102,6 +102,10 @@
   flex-direction: column;
 }
 
+.hoverProfile:hover {
+  cursor: pointer;
+}
+
 .hoverProfile img {
   border-radius: 50%;
 }

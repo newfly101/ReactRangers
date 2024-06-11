@@ -51,8 +51,9 @@ const SkinPage = (props) => {
                       </button>
                     </div>
                     <div className={classes.innerText}>
-                      <div>{item.data.content}</div>
-                      <div>{item.data.content1}</div>
+                      {item.data.content.map((contentText, contentIndex) => (
+                        <div key={contentIndex}>{contentText}</div>
+                      ))}
                     </div>
                     <div className={classes.cardButton}>
                       <div className={classes.tagButton}>
@@ -71,7 +72,7 @@ const SkinPage = (props) => {
                       </div>
                     </div>
                     <div className={classes.imageContaner}>
-                      <div className={classes.imageWrap}>
+                      <div>
                         {item.data.img.map((imgSrc, imgIndex) => (
                           <div className={classes.image}>
                             <img
