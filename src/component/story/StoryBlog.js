@@ -1,40 +1,11 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import classes from "./StoryBlog.module.css";
-import { dummyCardLife } from "./DummyData/StoryDummyDataLife";
-import { dummyCardCulture } from "./DummyData/StoryDummyDataCulture";
-import { dummyCardIt } from "./DummyData/StoryDummyDataIt";
-import { dummyCardCurrent } from "./DummyData/StoryDummyDataCurrent";
-import { dummyCardSport } from "./DummyData/StoryDummyDataSport";
-import { dummyCardTravel } from "./DummyData/StoryDummyDataTravel";
 
-const StoryBlog = ({ useTag }) => {
-  //story.js에서 props를 받아서 보여줄 정보를 carditems state에 업데이트
-  const [carditems, setCardItems] = useState(dummyCardLife);
-
-  const itemChanger = (useTag) => {
-    if (useTag === "life") {
-      setCardItems(dummyCardLife);
-    } else if (useTag === "it") {
-      setCardItems(dummyCardIt);
-    } else if (useTag === "culture") {
-      setCardItems(dummyCardCulture);
-    } else if (useTag === "current") {
-      setCardItems(dummyCardCurrent);
-    } else if (useTag === "sport") {
-      setCardItems(dummyCardSport);
-    } else if (useTag === "travel") {
-      setCardItems(dummyCardTravel);
-    }
-  };
-
-  useEffect(() => {
-    itemChanger(useTag);
-  });
-
+const StoryBlog = ({ dummyData }) => {
   return (
     <div className={classes.storyMidSection}>
       {/*화면 전체에 a태그를 감싼다*/}
-      {carditems.data.list.map((item, index) => (
+      {dummyData[1].data.list.map((item, index) => (
         <a href={item.blogUrl} key={index}>
           <div className={classes.blogWrapper}>
             <img
