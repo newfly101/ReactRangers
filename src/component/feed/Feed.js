@@ -1,33 +1,34 @@
 import React, { useState } from "react";
 import classes from "./Feed.module.css";
+import { feedCardDummyData } from "./FeedCardDummyData";
 
 const Feed = () => {
-  const [isListBox1, setListBox1] = useState(false);
+  const [isListBox1, setListBox1] = useState(true);
   const handleListBoxTypeBtn1 = () => {
     setListBox1(!isListBox1);
   };
 
-  const [isListBox2, setListBox2] = useState(false);
+  const [isListBox2, setListBox2] = useState(true);
   const handleListBoxTypeBtn2 = () => {
     setListBox2(!isListBox2);
   };
 
-  const [isListBox3, setListBox3] = useState(false);
+  const [isListBox3, setListBox3] = useState(true);
   const handleListBoxTypeBtn3 = () => {
     setListBox3(!isListBox3);
   };
 
-  const [isListBox4, setListBox4] = useState(false);
+  const [isListBox4, setListBox4] = useState(true);
   const handleListBoxTypeBtn4 = () => {
     setListBox4(!isListBox4);
   };
 
-  const [isListBox5, setListBox5] = useState(false);
+  const [isListBox5, setListBox5] = useState(true);
   const handleListBoxTypeBtn5 = () => {
     setListBox5(!isListBox5);
   };
 
-  const [isListBox6, setListBox6] = useState(false);
+  const [isListBox6, setListBox6] = useState(true);
   const handleListBoxTypeBtn6 = () => {
     setListBox6(!isListBox6);
   };
@@ -40,6 +41,13 @@ const Feed = () => {
     console.log(subscribersBtn);
   };
 
+  const data1 = feedCardDummyData.data[0];
+  const data2 = feedCardDummyData.data[1];
+  const data3 = feedCardDummyData.data[2];
+  const data4 = feedCardDummyData.data[3];
+  const data5 = feedCardDummyData.data[4];
+  const data6 = feedCardDummyData.data[5];
+
   return (
     <div>
       <div className={classes.main}>
@@ -49,12 +57,20 @@ const Feed = () => {
             <div className={classes.pFont}>
               내가 구독하는 글입니다
               <div className={classes.btn}>
-                <div onClick={subscriptionBtn} className={classes.subscription}>
+                <a
+                  href="/following"
+                  onClick={subscriptionBtn}
+                  className={classes.subscription}
+                >
                   구독중
-                </div>
-                <div onClick={subscribersBtn} className={classes.subscribers}>
+                </a>
+                <a
+                  href="/follower"
+                  onClick={subscribersBtn}
+                  className={classes.subscribers}
+                >
                   구독자
-                </div>
+                </a>
               </div>
             </div>
           </div>
@@ -81,22 +97,21 @@ const Feed = () => {
         </div>
         <ul className={classes.listTistory}>
           <li>
-            <div className={classes.listBoxType1}>
-              팀장님
+            <a href={data1.defaultUrl} className={classes.listBoxType1}>
               <span className={classes.wrapListBox}>
                 <img
-                  src="https://cdn.dribbble.com/users/928524/screenshots/18187707/media/3434d86e6cb39ee60c07bf530ab4f6bc.jpg"
+                  src={data1.image}
                   className={classes.wrapListBoxProfile}
-                  alt=""
+                  alt={data1.nickname}
                 />
               </span>
-              <strong className={classes.blogSubName}>친절한 강사님</strong>
+              <strong className={classes.blogSubName}>{data1.title}</strong>
               <dl className={classes.listData}>
                 <dt>구독자</dt>
-                <dd>999+</dd>
+                <dd>{data1.subscribers}</dd>
               </dl>
-              <p className={classes.blogInfoDesc}>팀장님의 블로그입니다.</p>
-            </div>
+              <p className={classes.blogInfoDesc}>{data1.description}</p>
+            </a>
             <div className={classes.infoSubscribe}>
               <button
                 type="button"
@@ -112,22 +127,21 @@ const Feed = () => {
             </div>
           </li>
           <li>
-            <div className={classes.listBoxType}>
-              팀원
+            <a href={data2.defaultUrl} className={classes.listBoxType}>
               <span className={classes.wrapListBox}>
                 <img
-                  src="https://cdn.dribbble.com/users/3511234/screenshots/17460635/media/cbc5167f919d7c06970f88e701168d88.png?resize=1600x1200&vertical=center"
+                  src={data2.image}
                   className={classes.wrapListBoxProfile}
-                  alt=""
+                  alt={data2.nickname}
                 />
               </span>
-              <strong className={classes.blogSubName}>팀원1</strong>
+              <strong className={classes.blogSubName}>{data2.title}</strong>
               <dl className={classes.listData}>
                 <dt>구독자</dt>
-                <dd>1</dd>
+                <dd>{data2.subscribers}</dd>
               </dl>
-              <p className={classes.blogInfoDesc}>팀원의 블로그</p>
-            </div>
+              <p className={classes.blogInfoDesc}>{data2.description}</p>
+            </a>
             <div className={classes.infoSubscribe}>
               <button
                 type="button"
@@ -143,22 +157,21 @@ const Feed = () => {
             </div>
           </li>
           <li>
-            <div className={classes.listBoxType}>
-              팀원
+            <a href={data3.defaultUrl} className={classes.listBoxType}>
               <span className={classes.wrapListBox}>
                 <img
-                  src="https://cdn.dribbble.com/userupload/12743553/file/original-2fda5aa6c8f679783b0dd0229db75c17.jpg?resize=1024x576"
+                  src={data3.image}
                   className={classes.wrapListBoxProfile}
-                  alt=""
+                  alt={data3.nickname}
                 />
               </span>
-              <strong className={classes.blogSubName}>팀원2</strong>
+              <strong className={classes.blogSubName}>{data3.title}</strong>
               <dl className={classes.listData}>
                 <dt>구독자</dt>
-                <dd>1</dd>
+                <dd>{data3.subscribers}</dd>
               </dl>
-              <p className={classes.blogInfoDesc}>팀원의 블로그</p>
-            </div>
+              <p className={classes.blogInfoDesc}>{data3.description}</p>
+            </a>
             <div className={classes.infoSubscribe}>
               <button
                 type="button"
@@ -174,22 +187,21 @@ const Feed = () => {
             </div>
           </li>
           <li>
-            <div className={classes.listBoxType}>
-              팀원
+            <a href={data4.defaultUrl} className={classes.listBoxType}>
               <span className={classes.wrapListBox}>
                 <img
-                  src="https://cdn.dribbble.com/userupload/13883479/file/original-e43c5a7c87c7fd915e448fe09c67448e.png?resize=1024x1024"
+                  src={data4.image}
                   className={classes.wrapListBoxProfile}
-                  alt=""
+                  alt={data4.nickname}
                 />
               </span>
-              <strong className={classes.blogSubName}>팀원3</strong>
+              <strong className={classes.blogSubName}>{data4.title}</strong>
               <dl className={classes.listData}>
                 <dt>구독자</dt>
-                <dd>1</dd>
+                <dd>{data4.subscribers}</dd>
               </dl>
-              <p className={classes.blogInfoDesc}>팀원의 블로그</p>
-            </div>
+              <p className={classes.blogInfoDesc}>{data4.description}</p>
+            </a>
             <div className={classes.infoSubscribe}>
               <button
                 type="button"
@@ -205,22 +217,21 @@ const Feed = () => {
             </div>
           </li>
           <li>
-            <div className={classes.listBoxType}>
-              팀원
+            <a href={data5.defaultUrl} className={classes.listBoxType}>
               <span className={classes.wrapListBox}>
                 <img
-                  src="https://cdn.dribbble.com/userupload/9605271/file/original-e312a23e7092797dde6ca8a66b0a5e85.png?resize=1024x768"
+                  src={data5.image}
                   className={classes.wrapListBoxProfile}
-                  alt=""
+                  alt={data5.nickname}
                 />
               </span>
-              <strong className={classes.blogSubName}>팀원4</strong>
+              <strong className={classes.blogSubName}>{data5.title}</strong>
               <dl className={classes.listData}>
                 <dt>구독자</dt>
-                <dd>1</dd>
+                <dd>{data5.subscribers}</dd>
               </dl>
-              <p className={classes.blogInfoDesc}>팀원의 블로그</p>
-            </div>
+              <p className={classes.blogInfoDesc}>{data5.description}</p>
+            </a>
             <div className={classes.infoSubscribe}>
               <button
                 type="button"
@@ -236,22 +247,21 @@ const Feed = () => {
             </div>
           </li>
           <li>
-            <div className={classes.listBoxType}>
-              팀원
+            <a href={data6.defaultUrl} className={classes.listBoxType}>
               <span className={classes.wrapListBox}>
                 <img
-                  src="https://cdn.dribbble.com/userupload/13972326/file/original-348fea02bcdb53fe7d6347f517f1ca31.png?resize=752x564"
+                  src={data6.image}
                   className={classes.wrapListBoxProfile}
-                  alt=""
+                  alt={data6.nickname}
                 />
               </span>
-              <strong className={classes.blogSubName}>팀원5</strong>
+              <strong className={classes.blogSubName}>{data6.title}</strong>
               <dl className={classes.listData}>
                 <dt>구독자</dt>
-                <dd>1</dd>
+                <dd>{data6.subscribers}</dd>
               </dl>
-              <p className={classes.blogInfoDesc}>팀원의 블로그</p>
-            </div>
+              <p className={classes.blogInfoDesc}>{data6.description}</p>
+            </a>
             <div className={classes.infoSubscribe}>
               <button
                 type="button"

@@ -31,9 +31,29 @@
 }
 
 .cardGray {
-  background-color: rgba(0, 0, 0, 0.15);
+  background-color: rgba(0, 0, 0, 0.1);
   width: 100vw;
   height: 80vh;
+}
+
+.label {
+  background-color: rgba(0, 0, 0, 0.1);
+  width: 100vw;
+  height: 20vh;
+}
+
+.labelTitle {
+  font-size: 8px;
+}
+
+.labelWrap {
+  max-width: 800px;
+  width: 100%;
+  margin: auto;
+}
+
+.labelFAQ span {
+  color: #ff5f4f;
 }
 
 .cardTitle button {

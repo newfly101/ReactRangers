@@ -1,20 +1,29 @@
 import React, {useEffect} from "react";
 import classes from "./Navigation.module.css";
 import {Link, useLocation} from "react-router-dom";
+import LoginModal from "./login/LoginModal";
 
 const Navigation = () => {
+    const [isOpen, setIsOpen] = React.useState(false);
     const [scrolled, setScrolled] = React.useState(false);
     const [url, setUrl] = React.useState("/");
     const location = useLocation();
 
-    const onClickAdminPage = () => {
-        console.log(location.pathname);
-        setUrl(location.pathname);
-    };
+    const openLoginModal = () => {
+        setIsOpen(true);
+        onClickScrollUp();
+    }
+    const closeLoginModal = () => {
+        setIsOpen(false);
+        onClickScrollUp();
+    }
+    const onClickScrollUp = () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
 
     useEffect(() => {
         const handleScroll = () => {
-            if (window.scrollY > 300) {
+            if (window.scrollY > 150) {
                 setScrolled(true);
             } else {
                 setScrolled(false);
@@ -33,40 +42,42 @@ const Navigation = () => {
     }, [location.pathname]);
 
     return (
-        <nav className={scrolled ? classes.navBar : classes.navBarBlank}>
+        <div>
+            {isOpen && <div className={classes.backdrop} onClick={closeLoginModal}></div>}
+            <nav className={scrolled ? classes.navBar : classes.navBarBlank}>
             {(url !== "/forum" && url !== "/skin") ?
                 <div className={classes.navBarBox}>
-                    <div className={classes.pageTitle}>
+                    <div className={classes.pageTitle} onClick={onClickScrollUp}>
                         <Link to="/">Tistory</Link>
                     </div>
-                    <div className={classes.pageLinkBox}>
+                    <div className={classes.pageLinkBox} onClick={onClickScrollUp}>
                         <Link to="/feed">피드</Link>
                     </div>
-                    <div className={classes.pageLinkBox}>
+                    <div className={classes.pageLinkBox} onClick={onClickScrollUp}>
                         <Link to="/story">스토리</Link>
                     </div>
-                    <div className={classes.pageLinkBox}>
+                    <div className={classes.pageLinkBox} onClick={onClickScrollUp}>
                         <Link to="/skin">스킨</Link>
                     </div>
-                    <div className={classes.pageLinkBox}>
+                    <div className={classes.pageLinkBox} onClick={onClickScrollUp}>
                         <Link to="/forum">포럼</Link>
                     </div>
                 </div>
                 :
                 <div className={classes.navBarBox}>
-                    <div className={scrolled ? classes.pageTitle : classes.pageTitleBlank}>
+                    <div className={scrolled ? classes.pageTitle : classes.pageTitleBlank} onClick={onClickScrollUp}>
                         <Link to="/">Tistory</Link>
                     </div>
-                    <div className={scrolled ? classes.pageLinkBox : classes.pageLinkBoxBlank}>
+                    <div className={scrolled ? classes.pageLinkBox : classes.pageLinkBoxBlank} onClick={onClickScrollUp}>
                         <Link to="/feed">피드</Link>
                     </div>
-                    <div className={scrolled ? classes.pageLinkBox : classes.pageLinkBoxBlank}>
+                    <div className={scrolled ? classes.pageLinkBox : classes.pageLinkBoxBlank} onClick={onClickScrollUp}>
                         <Link to="/story">스토리</Link>
                     </div>
-                    <div className={scrolled ? classes.pageLinkBox : classes.pageLinkBoxBlank}>
+                    <div className={scrolled ? classes.pageLinkBox : classes.pageLinkBoxBlank} onClick={onClickScrollUp}>
                         <Link to="/skin">스킨</Link>
                     </div>
-                    <div className={scrolled ? classes.pageLinkBox : classes.pageLinkBoxBlank}>
+                    <div className={scrolled ? classes.pageLinkBox : classes.pageLinkBoxBlank} onClick={onClickScrollUp}>
                         <Link to="/forum">포럼</Link>
                     </div>
                 </div>
@@ -75,11 +86,16 @@ const Navigation = () => {
             <div
                 className={classes.navBarLogin}
             >
-                <button onClick={onClickAdminPage}>
+                <button onClick={openLoginModal}>
                     <Link to="/admin">시작하기</Link>
                 </button>
             </div>
+            {isOpen && <LoginModal
+                isOpen={isOpen}
+                close={closeLoginModal}
+            />}
         </nav>
+        </div>
     );
 };
 

@@ -8,8 +8,20 @@ const SkinPage = (props) => {
     <>
       {items.map((item, index) => (
         <div key={index}>
-          {item.type === "Label" ? (
-            <div>라벨</div>
+          {item.type === "label" ? (
+            <div className={`${classes.allContainer} ${classes.label}`}>
+              <div className={classes.labelWrap}>
+                <div className={classes.labelTitle}>
+                  <h1>Skin FAQ</h1>
+                </div>
+                <div className={`${classes.allButton} ${classes.hoverLine} `}>
+                  <span className={classes.labelFAQ}>Q.</span>
+                  <button>
+                    <span>치환자가 무엇인가요?</span>
+                  </button>
+                </div>
+              </div>
+            </div>
           ) : (
             <div className={`${classes.allContainer} ${classes[item.type]}`}>
               <div className={classes.cardWrap}>

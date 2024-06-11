@@ -6,7 +6,6 @@ import TapAddComment from "./Comment/TapAddComment";
 import dayjs from "dayjs";
 
 const ForumBlogTap = (props) => {
-    const [showDetail, setShowDetail] = React.useState(false);
     const [activeIndex, setActiveIndex] = React.useState([{0: false}]);
     const [userId, setUserId] = React.useState(null);
     const [userName, setUserName] = React.useState(null);
@@ -96,7 +95,7 @@ const ForumBlogTap = (props) => {
                                             {item.title}
                                         </div>
                                         <div className={classes.forumContext}>
-                                            {(showDetail && activeIndex === index) ? item.content : props.shortedString(item.summary, 100)}
+                                            {isActive ? item.content : props.shortedString(item.summary, 100)}
                                         </div>
                                     </div>
                                     <div className={classes.forumLookUp}>조회수 {item.viewCount} ㆍ

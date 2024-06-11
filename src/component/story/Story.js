@@ -18,6 +18,8 @@ const Story = () => {
   const [tagView4, setTagView4] = useState(false);
   const [tagView5, setTagView5] = useState(false);
 
+  const [useTag, setUseTag] = useState("life");
+
   const onHoverHandler = (num) => {
     if (num === 0) {
       setTagUp0(true);
@@ -58,6 +60,8 @@ const Story = () => {
       setTagView3(false);
       setTagView4(false);
       setTagView5(false);
+
+      setUseTag("life");
     } else if (num === 1) {
       setTagView0(false);
       setTagView1(true);
@@ -65,6 +69,7 @@ const Story = () => {
       setTagView3(false);
       setTagView4(false);
       setTagView5(false);
+      setUseTag("trip");
     } else if (num === 2) {
       setTagView0(false);
       setTagView1(false);
@@ -72,6 +77,7 @@ const Story = () => {
       setTagView3(false);
       setTagView4(false);
       setTagView5(false);
+      setUseTag("culture");
     } else if (num === 3) {
       setTagView0(false);
       setTagView1(false);
@@ -79,6 +85,7 @@ const Story = () => {
       setTagView3(true);
       setTagView4(false);
       setTagView5(false);
+      setUseTag("it");
     } else if (num === 4) {
       setTagView0(false);
       setTagView1(false);
@@ -86,6 +93,7 @@ const Story = () => {
       setTagView3(false);
       setTagView4(true);
       setTagView5(false);
+      setUseTag("sport");
     } else if (num === 5) {
       setTagView0(false);
       setTagView1(false);
@@ -93,6 +101,7 @@ const Story = () => {
       setTagView3(false);
       setTagView4(false);
       setTagView5(true);
+      setUseTag("news");
     }
   };
   return (
@@ -167,7 +176,7 @@ const Story = () => {
         <StoryBlog className={classes.storyBlog} />
       </section>
       <div className={classes.storyWrapper}>
-        <StoryItemBox />
+        <StoryItemBox useTag={useTag} />
       </div>
     </div>
   );
