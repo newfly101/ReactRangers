@@ -3,7 +3,7 @@
 
 ## 배포 페이지
 [netlify 배포 링크](https://reactranger.netlify.app/)
-https://reactranger.netlify.app/
+
 
 ## 1. 프로젝트 환경 동일화 작업
 
