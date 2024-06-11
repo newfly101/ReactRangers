@@ -3,7 +3,7 @@ import classes from "./StoryItemBox.module.css";
 
 const StoryItemBox = ({ dummyData }) => {
   //Story.js에서 useTag props를 받아서 보여줄 정보를 items state에 업데이트
-  console.log(dummyData[2]);
+
   return (
     <div>
       {dummyData[2].data.list.map((item, index) => (
