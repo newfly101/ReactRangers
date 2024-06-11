@@ -1,15 +1,16 @@
 import React, { useEffect, useState } from "react";
 import classes from "./StoryItemBox.module.css";
-import { dummyCategory1 } from "./StoryDummyData";
 
-import { dummyCategoryCurrent } from "./StoryDummyData";
+import { dummyItemLife } from "./DummyData/StoryDummyDataLife";
+
 const StoryItemBox = ({ useTag }) => {
-  const [items, setItems] = useState(dummyCategory1);
+  const [items, setItems] = useState(dummyItemLife);
   const itemChanger = (useTag) => {
     if (useTag === "life") {
-      setItems(dummyCategory1);
+      setItems(dummyItemLife);
     } else if (useTag === "it") {
-      setItems(dummyCategoryCurrent);
+      //여기에 바뀔 데이터를 셋
+      setItems(dummyItemLife);
     }
   };
   useEffect(() => {

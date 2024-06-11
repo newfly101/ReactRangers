@@ -1,11 +1,11 @@
 import React from "react";
 import classes from "./StoryBlog.module.css";
-import { dummyCard } from "./StoryDummyData";
+import { dummyCardLife } from "./DummyData/StoryDummyDataLife";
 
 const StoryBlog = () => {
   return (
     <div className={classes.storyMidSection}>
-      {dummyCard.data.list.map((item, index) => (
+      {dummyCardLife.data.list.map((item, index) => (
         <div className={classes.blogWrapper} key={index}>
           <img
             src={`${item.blogImage}`}
