@@ -1,8 +1,26 @@
-import classes from "./Follwing.module.css";
-
-import React from "react";
+import classes from "./Following.module.css";
+import { feedCardDummyData } from "./FeedCardDummyData";
+import React, { useState } from "react";
 
 const Following = () => {
+  const [isListBox1, setListBox1] = useState(true);
+  const handleListBoxTypeBtn1 = () => {
+    setListBox1(!isListBox1);
+  };
+
+  let followingList = (
+    <p className={classes.fBlog}>
+      아직 구독하는 블로그가 없습니다. 피드에서 추천 블로그를 확인하세요
+    </p>
+  );
+
+  // if (FilerList.length > 0) {
+  //   followingList = FilerList.map((data) =>
+
+  //   );
+  // }
+
+  const data = feedCardDummyData.data[0];
   return (
     <div>
       <div className={classes.fMain}>
@@ -57,9 +75,49 @@ const Following = () => {
       </div>
       <div className={classes.fBody}>
         <div className={classes.fList}>
-          <p className={classes.fBlog}>
-            아직 구독하는 블로그가 없습니다. 피드에서 추천 블로그를 확인하세요
-          </p>
+          {/* {followingList} */}
+          <ul className={classes.fListTistory}>
+            <li>
+              <div className={classes.fListTistoryBox}>
+                <a href={data.defaultUrl} className={classes.wrapThumb}>
+                  <span className={classes.innerThumb}>
+                    <img src={data.image} className={classes.thumbProfile} />
+                  </span>
+                </a>
+                <a href={data.defaultUrl} className={classes.wrapCont}>
+                  <strong className={classes.descTit}>{data.title}</strong>
+                  <p className={classes.descG}>{data.description}</p>
+                </a>
+                <div className={classes.infoContainer}>
+                  <a href={data.defaultUrl} className={classes.infoG}>
+                    <dl className={classes.listData}>
+                      <dt>구독자</dt>
+                      <dd>{data.followerCount}</dd>
+                    </dl>
+                    <dl>
+                      <dl className={classes.listData}>
+                        <dt>구독</dt>
+                        <dd className={classes.listDataDd}>2024.06.11</dd>
+                      </dl>
+                    </dl>
+                  </a>
+                  <div className={classes.infoSubscribe}>
+                    <button
+                      type="button"
+                      className={
+                        isListBox1
+                          ? classes.listBoxTypeBtn
+                          : classes.listBoxTypeChange
+                      }
+                      onClick={handleListBoxTypeBtn1}
+                    >
+                      {isListBox1 ? "구독중" : "구독하기"}
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
