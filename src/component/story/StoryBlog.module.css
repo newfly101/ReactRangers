@@ -6,6 +6,7 @@
   align-items: center;
   justify-content: center;
   margin-top: 2.6rem;
+  white-space: nowrap;
 }
 /*호버시 그림자가 나타나는 css*/
 .blogWrapper:hover {

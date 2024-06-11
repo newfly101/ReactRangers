@@ -6,6 +6,8 @@
   display: flex;
   align-items: start;
   justify-content: start;
+  white-space: nowrap;
+  width: 60rem;
 }
 
 /*아이템 박스 앞부분*/
