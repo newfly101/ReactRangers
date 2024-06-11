@@ -14,35 +14,33 @@ const Admin = () => {
                   alt="프로필이미지"
                 ></img>
               </a>
+              <div className={classes.AdminNameUser}>새벽감성개발자</div>
+              <div className={classes.AdminNameEmail}>game@naver.com</div>
             </div>
-          </div>
-          <div className={classes.AdminName}>
-            <div className={classes.AdminNameUser}>새벽감성개발자</div>
-            <div className={classes.AdminNameEmail}>game@naver.com</div>
           </div>
         </div>
         <div id={classes.AdminList}>
           <div>
-            <div>
+            <div className={classes.AdminMyblog}>
               <div className={classes.AdminListHomeIcon}></div>
               <div className={classes.AdminListMyblog}>내 블로그</div>
             </div>
-            <div>
+            <div className={classes.AdminListLine}>
               <div className={classes.AdminListUserIcon}></div>
-              <div className={classes.AdminListMyUser}>내 계정</div>
-              <ul>
-                <li>프로필 레이어</li>
-                <li>응원내역보기</li>
-                <li>카카오계정 관리</li>
-              </ul>
+              <div className={classes.AdminListUser}>내 계정</div>
+              <div className={classes.AdminListMenu}>
+                <div className={classes.AdminListMenuFont}>프로필 레이어</div>
+                <div className={classes.AdminListMenuFont}>응원내역보기</div>
+                <div className={classes.AdminListMenuFont}>카카오계정 관리</div>
+              </div>
             </div>
-            <div className={classes.AdminListIcon}></div>
+            <div className={classes.AdminLisLinkMenuIcon}></div>
             <div className={classes.AdminListLinkMenu}>외부 기능</div>
           </div>
         </div>
       </div>
       <div id={classes.AdminRight}>
-        <div className={classes.AdminMyblog}>
+        <div className={classes.AdminBlog}>
           <h3 className={classes.AdminFont}>
             운영 중인 블로그
             <form className={classes.AdminBlock}>
