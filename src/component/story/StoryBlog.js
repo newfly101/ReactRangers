@@ -5,7 +5,7 @@ const StoryBlog = ({ dummyData }) => {
   return (
     <div className={classes.storyMidSection}>
       {/*화면 전체에 a태그를 감싼다*/}
-      {dummyData[1].data.list.map((item, index) => (
+      {dummyData.cardData.data.list.map((item, index) => (
         <a href={item.blogUrl} key={index} className={classes.blogWrapper}>
           <img
             src={`${item.blogImage}`}
@@ -17,10 +17,9 @@ const StoryBlog = ({ dummyData }) => {
             <div className={classes.blogInfo}>
               {item.serviceCategoryName} &nbsp;·&nbsp; 공감
               <label className={classes.blogInfoNum}>
-                {" "}
-                {item.reactionCount}{" "}
+                {item.reactionCount}
               </label>
-              &nbsp; ·&nbsp; 응원{" "}
+              &nbsp; ·&nbsp; 응원
               <label className={classes.blogInfoNum}>{item.commentCount}</label>
             </div>
             {/*카드 뉴스 최하단 저자와 블로그 제목*/}
