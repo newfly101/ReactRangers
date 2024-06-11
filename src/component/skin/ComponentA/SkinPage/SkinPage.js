@@ -85,10 +85,16 @@ const SkinPage = (props) => {
             <div className={UserClasses.cardWrap}>
               {usersSkin.map((user, index) => (
                 <div key={index}>
-                  <div className={UserClasses.cardItem}>
-                    <img src={user.image} alt="user.index" />
-                    <button>{user.title}</button>
-                    <button>{user.tag}</button>
+                  <div className={UserClasses.item}>
+                    <div className={UserClasses.image}>
+                      <img src={user.image} alt="user.index" />
+                    </div>
+                    <div className={UserClasses.title}>
+                      <button>{user.title}</button>
+                    </div>
+                    <div className={UserClasses.tag}>
+                      <button>{user.tag}</button>
+                    </div>
                   </div>
                 </div>
               ))}
