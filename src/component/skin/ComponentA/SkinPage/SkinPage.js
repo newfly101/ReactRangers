@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { ReactComponent as LinkIcon } from "../SkinPage/link.svg";
 import classes from "../SkinPage/SkinPage.module.css";
 import UserSkin from "./UserSkin";
@@ -65,6 +65,7 @@ const SkinPage = (props) => {
                       <div>
                         {item.data.img.map((imgSrc, imgIndex) => (
                           <div className={classes.image}>
+                            {/* eslint-disable-next-line jsx-a11y/img-redundant-alt */}
                             <img
                               key={imgIndex}
                               src={`${process.env.PUBLIC_URL}/SkinImg/${item.data.title}/${imgSrc}`}

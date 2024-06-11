@@ -1,7 +1,6 @@
 import React from "react";
 import classes from "./AccountRecovery.module.css";
 import check from "./check.svg";
-
 const AccountRecovery = () => {
   return (
     <div className={classes.AccountRecoveryWrapper}>

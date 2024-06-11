@@ -54,7 +54,7 @@ const Admin = () => {
             운영 중인 블로그
             <form className={classes.AdminBlock}>
               <div className={classes.AdminBlockImage}>
-                <a href="">
+                <a href="/">
                   <img
                     src="https://img1.daumcdn.net/thumb/S180x180/?scode=mtistory2&fname=https%3A%2F%2Ft1.daumcdn.net%2Ftistory_admin%2Fstatic%2Fmanage%2Fimages%2Fr3%2Fdefault_S.png"
                     alt="프로필 이미지"
