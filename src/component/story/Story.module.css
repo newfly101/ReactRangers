@@ -58,14 +58,14 @@
   user-select: none;
 }
 
-.textBold {
-  font-weight: bold;
-  text-decoration: underline;
-  text-decoration-thickness: 0.35rem;
-  text-decoration-color: #ff5544;
-}
 .tagFocus:hover {
   text-decoration: underline;
   text-decoration-thickness: 0.35rem;
   text-decoration-color: rgb(180, 180, 180);
+}
+.textBold {
+  font-weight: bold;
+  text-decoration: underline;
+  text-decoration-thickness: 0.35rem;
+  text-decoration-color: #ff5544 !important;
 }
