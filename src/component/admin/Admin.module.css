@@ -1,6 +1,7 @@
 #Admin {
   display: flex;
   justify-content: center;
+  align-items: center;
   margin: 0 auto;
   background: #f3f5f7;
   padding: 120px 0 100px 0;
@@ -13,23 +14,43 @@
 }
 
 .AdminProfile {
-  width: 216px;
   background: #fff;
+  text-align: center;
+  border: 1px solid #e0e5ee;
+  border-bottom: 0;
 }
 
 .AdminProfileImage {
+  padding: 30px 0 25px;
+  border-radius: 0.5rem;
+}
+
+.AdminProfileImage img {
   width: 100px;
   height: 100px;
-  background: #fff;
-  padding: 50px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .AdminName {
+  text-align: center;
+  padding: 0 19x 25px;
   background: #fff;
+  border: 1px soild #e0e5ee;
+}
+
+#AdminList {
+  padding-top: 8px;
 }
 
 #AdminRight {
   float: right;
   width: 814px;
   margin-left: 30px;
+}
+
+.AdminBlockImage{
+  width: 80px;
+  height: 80px;
 }

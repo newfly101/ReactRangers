@@ -5,11 +5,16 @@ const Admin = () => {
   return (
     <div id={classes.Admin}>
       <div id={classes.AdminLeft}>
-        <div id={classes.AdminProfile}>
-          <div className={classes.AdminProfileImage}>
-            <a href="">
-              <img src="" width="100" height="100" alt></img>
-            </a>
+        <div>
+          <div className={classes.AdminProfile}>
+            <div className={classes.AdminProfileImage}>
+              <a href="/admin">
+                <img
+                  src="https://img1.daumcdn.net/thumb/C100x100/?scode=mtistory2&fname=https%3A%2F%2Ft1.daumcdn.net%2Ftistory_admin%2Fstatic%2Fmanage%2Fimages%2Fr3%2Fdefault_S.png"
+                  alt="프로필이미지"
+                ></img>
+              </a>
+            </div>
           </div>
           <div className={classes.AdminName}>
             <div className={classes.AdminNameUser}>새벽감성개발자</div>
@@ -43,7 +48,10 @@ const Admin = () => {
             <form className={classes.AdminBlock}>
               <div className={classes.AdminBlockImage}>
                 <a href="">
-                  <img src=""></img>
+                  <img
+                    src="https://img1.daumcdn.net/thumb/S180x180/?scode=mtistory2&fname=https%3A%2F%2Ft1.daumcdn.net%2Ftistory_admin%2Fstatic%2Fmanage%2Fimages%2Fr3%2Fdefault_S.png"
+                    alt="프로필 이미지"
+                  ></img>
                 </a>
               </div>
               <div className={classes.AdminBlockName}>
