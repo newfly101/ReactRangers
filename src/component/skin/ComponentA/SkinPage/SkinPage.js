@@ -89,11 +89,13 @@ const SkinPage = (props) => {
                     <div className={UserClasses.image}>
                       <img src={user.image} alt="user.index" />
                     </div>
-                    <div className={UserClasses.title}>
-                      <button>{user.title}</button>
-                    </div>
-                    <div className={UserClasses.tag}>
-                      <button>{user.tag}</button>
+                    <div className={UserClasses.cardButton}>
+                      <div className={UserClasses.title}>
+                        <button>{user.title}</button>
+                      </div>
+                      <div className={UserClasses.tag}>
+                        <button>{user.tag}</button>
+                      </div>
                     </div>
                   </div>
                 </div>

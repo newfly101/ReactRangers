@@ -7,6 +7,8 @@
 .cardWrap {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  margin: 0;
+  padding: 0;
 }
 
 .item {
@@ -14,13 +16,16 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-
   margin: 50px 12px 20px 12px;
+  width: 240px;
+  height: auto;
 }
 
 .image {
   position: relative;
+  border: 0.5px solid rgba(0, 0, 0, 0.1);
 }
+
 .image:hover::before {
   content: "";
   position: absolute;
@@ -32,6 +37,31 @@
   z-index: 1;
 }
 
+.cardButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.cardButton button:hover {
+  color: black;
+  text-decoration-line: underline;
+}
+
 .title {
-  font-size: 1rem;
+  margin-top: 10px;
+}
+
+.title button {
+  font-size: 12px;
+}
+
+.tag {
+  margin-top: 5px;
+}
+
+.tag button {
+  font-size: 11px;
+  color: rgba(0, 0, 0, 0.7);
 }
