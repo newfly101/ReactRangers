@@ -23,9 +23,9 @@ const StoryItemBox = ({ dummyData }) => {
               </div>
               {/*아이템 박스 중간 부분*/}
               <div className={classes.ItemBoxMid}>
-                <div>{item.title.substr(0, 35)}</div>
+                <div>{item.title.substring(0, 35)}</div>
                 <div className={classes.ItemBoxdesc}>
-                  {item.summary.substr(0, 100) + "..."}
+                  {item.summary.substring(0, 100) + "..."}
                 </div>
                 <div className={classes.ItemBoxAuthor}>
                   <div className={classes.ItemBoxAuthorDetali}>

@@ -27,7 +27,7 @@ const StoryBlog = ({ dummyData }) => {
             <div className={classes.blogFooter}>
               <div>
                 <div className={classes.blogDesc}>
-                  {item.blogTitle.substr(0, 15)}
+                  {item.blogTitle.substring(0, 15)}
                 </div>
                 <div className={classes.blogAuthor}>by {item.authorName}</div>
               </div>
