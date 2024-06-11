@@ -1,12 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import classes from "./Category.module.css";
 
 const Category = ({ handleCategoryButton }) => {
+  const [isAActive, setIsAActive] = useState(true);
+
   const handleAButton = () => {
+    setIsAActive(true);
     handleCategoryButton(true);
   };
 
   const handleBButton = () => {
+    setIsAActive(false);
     handleCategoryButton(false);
   };
   return (
@@ -14,12 +18,12 @@ const Category = ({ handleCategoryButton }) => {
       <div className={classes.container}>
         <div>
           <div className={classes.title}>
-            <div className={classes.titleAction}>
+            <div className={isAActive ? classes.titleAction : ""}>
               <button onClick={handleAButton}>
                 <span>티스토리 스킨</span>
               </button>
             </div>
-            <div>
+            <div className={!isAActive ? classes.titleAction : ""}>
               <button onClick={handleBButton}>
                 <span>이용자 제작 스킨</span>
               </button>
