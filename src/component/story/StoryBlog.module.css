@@ -14,6 +14,11 @@
   margin-right: 0.8rem;
 }
 
+.blogWrapper:hover {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  transition: 0.6s all ease-out;
+}
+
 .blogTextWrapper {
   padding: 1.1rem;
 }
@@ -52,4 +57,18 @@
   align-items: center;
   justify-content: center;
   margin-top: 2.6rem;
+}
+
+.subscribeBtn {
+  transform: translateY(0.5rem) translateX(-0.5rem);
+  border: 0.5px solid rgb(211, 211, 211);
+  border-radius: 1rem;
+  padding: 0.3rem 0.6rem 0.3rem 0.6rem;
+  font-size: 0.7rem;
+}
+
+.blogFooter {
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
 }

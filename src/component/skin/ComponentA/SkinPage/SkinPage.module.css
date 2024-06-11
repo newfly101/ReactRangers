@@ -1,15 +1,7 @@
-/* Card */
-.allButton button {
-  background-color: transparent;
-  color: black;
-  border: none;
-  cursor: pointer;
-}
-
-.allContainer {
+.container {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
   width: 800px;
   max-width: 100vw;
   margin: auto;
@@ -17,17 +9,10 @@
   flex-direction: column;
 }
 
-.hoverLine button:hover {
-  cursor: pointer;
-  color: black;
-  text-decoration-line: underline;
-}
-
 .cardWhite {
   background-color: white;
   width: 100vw;
   height: 80vh;
-  overflow: hidden;
 }
 
 .cardGray {
@@ -36,57 +21,47 @@
   height: 80vh;
 }
 
-.label {
-  background-color: rgba(0, 0, 0, 0.1);
-  width: 100vw;
-  height: 20vh;
-}
-
-.labelTitle {
-  font-size: 8px;
-}
-
-.labelWrap {
-  max-width: 800px;
-  width: 100%;
-  margin: auto;
-}
-
-.labelFAQ span {
-  color: #ff5f4f;
-}
-
-.cardTitle button {
-  font-size: 14px;
-  margin-top: 1rem;
-  margin-bottom: -5rem;
-  padding: 0;
-  letter-spacing: 0.5px;
-}
-
-.cardInnerText {
-  color: rgba(0, 0, 0, 0.8);
-  font-size: 11px;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  letter-spacing: -0.5px;
-}
-
-.cardTagButton button {
-  color: rgba(0, 0, 0, 0.8);
-  font-size: 11px;
-  margin-right: 10px;
-}
-
 .cardWrap {
   max-width: 800px;
   width: 100%;
   margin: auto;
+  padding-bottom: 20px;
+}
+
+.title {
+  background-color: transparent;
+  color: black;
+  border: none;
+  cursor: pointer;
+}
+
+.title button {
+  font-size: 14px;
+  margin-bottom: -10px;
+}
+
+.innerText {
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 11px;
+  margin: 8px 0 8px 0;
 }
 
 .cardButton {
   display: flex;
   justify-content: space-between;
+}
+
+.tagButton button {
+  background-color: transparent;
+  color: rgba(0, 0, 0, 0.7);
+  border: none;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.tagButton button:hover {
+  color: black;
+  text-decoration-line: underline;
 }
 
 .roundButton {
@@ -123,24 +98,66 @@
   fill: white;
 }
 
-.cardImageContaner {
+.imageContaner {
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 
-.cardImage {
+.image {
   display: inline-block;
-  margin: 20px 20px 50px 0;
+  margin-top: 10px;
+  margin-right: 20px;
+}
+
+.image img {
+  width: 330px;
+  height: auto;
   border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-.cardImage img {
-  width: 330px;
-  height: auto;
-}
-
-.cardImage img:hover {
+.image:hover {
   cursor: pointer;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.labelContainer {
+  background-color: rgba(0, 0, 0, 0.1);
+  width: 100vw;
+  height: 25vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  margin: auto;
+}
+.labelWrap {
+  display: flex;
+}
+
+.labelTitle {
+  color: black;
+  font-size: 8px;
+  font-weight: 500;
+}
+
+.labelQuestion {
+  cursor: pointer;
+  margin-right: 5px;
+  color: #ff5f4f;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.labelItem {
+  display: flex;
+  margin-right: 30px;
+}
+
+.labelButton {
+  cursor: pointer;
+}
+
+.labelButton button:hover {
+  text-decoration-line: underline;
 }
