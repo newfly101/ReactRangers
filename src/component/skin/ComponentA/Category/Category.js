@@ -40,12 +40,17 @@ const Category = ({ handleCategoryButton }) => {
               <button>#커버 지원</button>
             </div>
           ) : (
-            <div className={classes.categoryTag}>
-              <button>#반응형</button>
-              <button>#심플형</button>
-              <button>#갤러리형</button>
-              <button>#그리드형</button>
-              <button>#일반형</button>
+            <div className={classes.userTag}>
+              <div className={classes.categoryTag}>
+                <button>#반응형</button>
+                <button>#심플형</button>
+                <button>#갤러리형</button>
+                <button>#그리드형</button>
+                <button>#일반형</button>
+              </div>
+              <div className={classes.roundButton}>
+                <button>스킨 등록하기</button>
+              </div>
             </div>
           )}
         </div>
