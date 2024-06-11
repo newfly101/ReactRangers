@@ -1,7 +1,9 @@
 .header {
   position: relative;
 }
-
+.app {
+  overflow-x: hidden;
+}
 .arrow {
   position: absolute;
   top: 50%;
@@ -240,7 +242,7 @@ em {
 .banner_image {
   display: block;
   border: 1px solid #f0f0f0;
-  width: 100%;
+  width: 96%;
   height: 350px;
   transition: transform 0.3s ease-in-out;
 }
