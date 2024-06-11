@@ -127,7 +127,9 @@ const SkinPage = (props) => {
                         <button>{user.title}</button>
                       </div>
                       <div className={UserClasses.tag}>
-                        <button>{user.tag}</button>
+                        {user.tag.map((tagSkin, tagIndex) => (
+                          <button key={tagIndex}>{tagSkin}</button>
+                        ))}
                       </div>
                     </div>
                   </div>

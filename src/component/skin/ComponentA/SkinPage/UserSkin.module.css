@@ -64,6 +64,7 @@
 .tag button {
   font-size: 11px;
   color: rgba(0, 0, 0, 0.7);
+  margin: 0 5px 0 5px;
 }
 
 .hoverCard {
@@ -110,6 +111,7 @@
   height: auto;
   white-space: nowrap;
   color: rgba(255, 255, 255, 0.7);
+  margin-top: 7px;
 }
 
 .icon {
