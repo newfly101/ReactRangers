@@ -86,6 +86,7 @@ form {
 span {
   cursor: pointer;
   user-select: none;
+  color: #7e7e7e;
 }
 
 input[type="text"] {
@@ -125,4 +126,14 @@ input::placeholder {
 }
 a:visited {
   color: #666666;
+}
+
+.emailMethod:hover {
+  color: black;
+  text-decoration-line: underline;
+}
+
+.methodBold {
+  color: black;
+  text-decoration-line: underline;
 }
