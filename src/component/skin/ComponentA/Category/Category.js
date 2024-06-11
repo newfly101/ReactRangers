@@ -29,15 +29,25 @@ const Category = ({ handleCategoryButton }) => {
               </button>
             </div>
           </div>
-          <div className={classes.categoryTag}>
-            <button>#매거진</button>
-            <button>#미니멀</button>
-            <button>#반응형</button>
-            <button>#블로그형</button>
-            <button>#사이트</button>
-            <button>#초보</button>
-            <button>#커버 지원</button>
-          </div>
+          {isAActive ? (
+            <div className={classes.categoryTag}>
+              <button>#매거진</button>
+              <button>#미니멀</button>
+              <button>#반응형</button>
+              <button>#블로그형</button>
+              <button>#사이트</button>
+              <button>#초보</button>
+              <button>#커버 지원</button>
+            </div>
+          ) : (
+            <div className={classes.categoryTag}>
+              <button>#반응형</button>
+              <button>#심플형</button>
+              <button>#갤러리형</button>
+              <button>#그리드형</button>
+              <button>#일반형</button>
+            </div>
+          )}
         </div>
       </div>
     </>
