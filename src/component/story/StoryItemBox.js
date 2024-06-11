@@ -9,6 +9,7 @@ import { dummyItemSport } from "./DummyData/StoryDummyDataSport";
 import { dummyItemTravel } from "./DummyData/StoryDummyDataTravel";
 
 const StoryItemBox = ({ useTag }) => {
+  //Story.js에서 useTag props를 받아서 보여줄 정보를 items state에 업데이트
   const [items, setItems] = useState(dummyItemLife);
   const itemChanger = (useTag) => {
     if (useTag === "life") {
@@ -34,8 +35,10 @@ const StoryItemBox = ({ useTag }) => {
       {items.data.list.map((item, index) => (
         <div key={index}>
           <a href={item.link}>
+            {/*각 아이템 박스 전체를 섹션으로 감싼다*/}
             <section className={classes.itemBoxWrapper}>
               <div className={classes.bottomItemBox}>
+                {/*아이템 박스 앞부분*/}
                 <div className={classes.ItemBoxStart}>
                   <div className={classes.categoryName}>
                     {items.data.list[index].categoryName}
@@ -51,7 +54,7 @@ const StoryItemBox = ({ useTag }) => {
                     </label>
                   </div>
                 </div>
-
+                {/*아이템 박스 중간 부분*/}
                 <div className={classes.ItemBoxMid}>
                   <div className={classes.ItemBoxTitle}>
                     {items.data.list[index].title.substr(0, 35)}
@@ -75,7 +78,7 @@ const StoryItemBox = ({ useTag }) => {
                     <div className={classes.subscribeBtn}>구독하기</div>
                   </div>
                 </div>
-
+                {/*아이템 박스 오른쪽 끝 이미지 부분*/}
                 <div className={classes.ItemBoxEnd}>
                   <img
                     className={classes.itemBoxImg}
@@ -86,6 +89,7 @@ const StoryItemBox = ({ useTag }) => {
               </div>
             </section>
           </a>
+          {/*각 아이템 박스를 구분하는 선*/}
           <hr className={classes.mainBar} />
         </div>
       ))}

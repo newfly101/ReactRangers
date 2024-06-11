@@ -57,126 +57,15 @@
   cursor: pointer;
   user-select: none;
 }
-.tagHr0 {
-  opacity: 0.5;
-  margin: 0;
-  height: 0.35rem;
-  width: 4.6rem;
-  background-color: rgb(180, 180, 180);
-  position: absolute;
-  transform: translateY(-0.4rem);
-  border-color: none;
-}
-
-.tagHr1 {
-  opacity: 0.5;
-  margin: 0;
-  height: 0.35rem;
-  width: 6.5rem;
-  background-color: rgb(180, 180, 180);
-  position: absolute;
-  transform: translateY(-0.4rem);
-  border-color: none;
-}
-.tagHr2 {
-  opacity: 0.5;
-  margin: 0;
-  height: 0.35rem;
-  width: 6.5rem;
-  background-color: rgb(180, 180, 180);
-  position: absolute;
-  transform: translateY(-0.4rem);
-  border-color: none;
-}
-.tagHr3 {
-  opacity: 0.5;
-  margin: 0;
-  height: 0.35rem;
-  width: 1.3rem;
-  background-color: rgb(180, 180, 180);
-  position: absolute;
-  transform: translateY(-0.4rem);
-  border-color: none;
-}
-.tagHr4 {
-  opacity: 0.5;
-  margin: 0;
-  height: 0.35rem;
-  width: 4.6rem;
-  background-color: rgb(180, 180, 180);
-  position: absolute;
-  transform: translateY(-0.4rem);
-  border-color: none;
-}
-
-.tagHr5 {
-  opacity: 0.5;
-  margin: 0;
-  height: 0.35rem;
-  width: 3.2rem;
-  background-color: rgb(180, 180, 180);
-  position: absolute;
-  transform: translateY(-0.4rem);
-  border-color: none;
-}
-
-.tagHrView0 {
-  margin: 0;
-  height: 0.35rem;
-  width: 4.6rem;
-  background-color: #ff5544;
-  position: absolute;
-  transform: translateY(-0.4rem);
-  border-color: none;
-}
-
-.tagHrView1 {
-  margin: 0;
-  height: 0.35rem;
-  width: 6.5rem;
-  background-color: #ff5544;
-  position: absolute;
-  transform: translateY(-0.4rem);
-  border-color: none;
-}
-.tagHrView2 {
-  margin: 0;
-  height: 0.35rem;
-  width: 6.5rem;
-  background-color: #ff5544;
-  position: absolute;
-  transform: translateY(-0.4rem);
-  border-color: none;
-}
-.tagHrView3 {
-  margin: 0;
-  height: 0.35rem;
-  width: 1.3rem;
-  background-color: #ff5544;
-  position: absolute;
-  transform: translateY(-0.4rem);
-  border-color: none;
-}
-.tagHrView4 {
-  margin: 0;
-  height: 0.35rem;
-  width: 4.6rem;
-  background-color: #ff5544;
-  position: absolute;
-  transform: translateY(-0.4rem);
-  border-color: none;
-}
-
-.tagHrView5 {
-  margin: 0;
-  height: 0.35rem;
-  width: 3.2rem;
-  background-color: #ff5544;
-  position: absolute;
-  transform: translateY(-0.4rem);
-  border-color: none;
-}
 
 .textBold {
   font-weight: bold;
+  text-decoration: underline;
+  text-decoration-thickness: 0.35rem;
+  text-decoration-color: #ff5544;
+}
+.tagFocus:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 0.35rem;
+  text-decoration-color: rgb(180, 180, 180);
 }

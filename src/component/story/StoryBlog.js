@@ -8,8 +8,7 @@ import { dummyCardSport } from "./DummyData/StoryDummyDataSport";
 import { dummyCardTravel } from "./DummyData/StoryDummyDataTravel";
 
 const StoryBlog = ({ useTag }) => {
-  const [subFlag, setSubFlag] = useState([false, false, false]);
-
+  //story.js에서 props를 받아서 보여줄 정보를 carditems state에 업데이트
   const [carditems, setCardItems] = useState(dummyCardLife);
 
   const itemChanger = (useTag) => {
@@ -28,44 +27,22 @@ const StoryBlog = ({ useTag }) => {
     }
   };
 
-  const subBtnHandler = (key) => {
-    if (key === 0) {
-      setSubFlag([true, false, false]);
-    } else if (key === 1) {
-      setSubFlag([false, true, false]);
-    } else if (key === 2) {
-      setSubFlag([false, false, true]);
-    }
-  };
-
-  const subBtnHandlerOut = (key) => {
-    if (key === 0) {
-      setSubFlag([false, false, false]);
-    } else if (key === 1) {
-      setSubFlag([false, false, false]);
-    } else if (key === 2) {
-      setSubFlag([false, false, false]);
-    }
-  };
   useEffect(() => {
     itemChanger(useTag);
   });
 
   return (
     <div className={classes.storyMidSection}>
+      {/*화면 전체에 a태그를 감싼다*/}
       {carditems.data.list.map((item, index) => (
         <a href={item.blogUrl} key={index}>
-          <div
-            className={classes.blogWrapper}
-            onMouseOver={() => subBtnHandler(index)}
-            onMouseOut={() => subBtnHandlerOut(index)}
-          >
+          <div className={classes.blogWrapper}>
             <img
               src={`${item.blogImage}`}
               alt="스토리블로그 이미지"
               className={classes.blogImg}
             />
-
+            {/*화면 하단 Info를 구성*/}
             <div className={classes.blogTextWrapper}>
               <div className={classes.blogInfo}>
                 {item.serviceCategoryName} &nbsp;·&nbsp; 공감
@@ -78,7 +55,7 @@ const StoryBlog = ({ useTag }) => {
                   {item.commentCount}
                 </label>
               </div>
-
+              {/*카드 뉴스 최하단 저자와 블로그 제목*/}
               <div className={classes.blogTitle}>{item.entryTitle}</div>
               <div className={classes.blogFooter}>
                 <div>
@@ -87,9 +64,8 @@ const StoryBlog = ({ useTag }) => {
                   </div>
                   <div className={classes.blogAuthor}>by {item.authorName}</div>
                 </div>
-                {subFlag[index] && (
-                  <div className={classes.subscribeBtn}>구독하기</div>
-                )}
+
+                <div className={classes.subscribeBtn}>구독하기</div>
               </div>
             </div>
           </div>

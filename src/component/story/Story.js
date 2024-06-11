@@ -4,109 +4,33 @@ import StoryBlog from "./StoryBlog";
 import StoryItemBox from "./StoryItemBox";
 
 const Story = () => {
-  const [tagUp0, setTagUp0] = useState(false);
-  const [tagUp1, setTagUp1] = useState(false);
-  const [tagUp2, setTagUp2] = useState(false);
-  const [tagUp3, setTagUp3] = useState(false);
-  const [tagUp4, setTagUp4] = useState(false);
-  const [tagUp5, setTagUp5] = useState(false);
-
-  const [tagView0, setTagView0] = useState(true);
-  const [tagView1, setTagView1] = useState(false);
-  const [tagView2, setTagView2] = useState(false);
-  const [tagView3, setTagView3] = useState(false);
-  const [tagView4, setTagView4] = useState(false);
-  const [tagView5, setTagView5] = useState(false);
-
+  //현재 보여주고 있는 페이지를 결정하는 부분
   const [useTag, setUseTag] = useState("life");
 
-  const onHoverHandler = (num) => {
-    if (num === 0) {
-      setTagUp0(true);
-    } else if (num === 1) {
-      setTagUp1(true);
-    } else if (num === 2) {
-      setTagUp2(true);
-    } else if (num === 3) {
-      setTagUp3(true);
-    } else if (num === 4) {
-      setTagUp4(true);
-    } else if (num === 5) {
-      setTagUp5(true);
-    }
+  //tag클릭에 맞춰 state를 변경하는 함수
+  const onClickLife = () => {
+    setUseTag("life");
+  };
+  const onClickTravel = () => {
+    setUseTag("travel");
+  };
+  const onClickCulture = () => {
+    setUseTag("culture");
+  };
+  const onClickIt = () => {
+    setUseTag("it");
+  };
+  const onClickSport = () => {
+    setUseTag("sport");
+  };
+  const onClickCurrent = () => {
+    setUseTag("current");
   };
 
-  const onHoverOutHandler = (num) => {
-    if (num === 0) {
-      setTagUp0(false);
-    } else if (num === 1) {
-      setTagUp1(false);
-    } else if (num === 2) {
-      setTagUp2(false);
-    } else if (num === 3) {
-      setTagUp3(false);
-    } else if (num === 4) {
-      setTagUp4(false);
-    } else if (num === 5) {
-      setTagUp5(false);
-    }
-  };
-
-  const onClickHandler = (num) => {
-    if (num === 0) {
-      setTagView0(true);
-      setTagView1(false);
-      setTagView2(false);
-      setTagView3(false);
-      setTagView4(false);
-      setTagView5(false);
-
-      setUseTag("life");
-    } else if (num === 1) {
-      setTagView0(false);
-      setTagView1(true);
-      setTagView2(false);
-      setTagView3(false);
-      setTagView4(false);
-      setTagView5(false);
-      setUseTag("travel");
-    } else if (num === 2) {
-      setTagView0(false);
-      setTagView1(false);
-      setTagView2(true);
-      setTagView3(false);
-      setTagView4(false);
-      setTagView5(false);
-      setUseTag("culture");
-    } else if (num === 3) {
-      setTagView0(false);
-      setTagView1(false);
-      setTagView2(false);
-      setTagView3(true);
-      setTagView4(false);
-      setTagView5(false);
-      setUseTag("it");
-    } else if (num === 4) {
-      setTagView0(false);
-      setTagView1(false);
-      setTagView2(false);
-      setTagView3(false);
-      setTagView4(true);
-      setTagView5(false);
-      setUseTag("sport");
-    } else if (num === 5) {
-      setTagView0(false);
-      setTagView1(false);
-      setTagView2(false);
-      setTagView3(false);
-      setTagView4(false);
-      setTagView5(true);
-      setUseTag("current");
-    }
-  };
   return (
     <div className={classes.storyMain}>
       <section className={`${classes.storyTopSection} ${classes.storyWrapper}`}>
+        {/*상단 글자*/}
         <div className={classes.storyTopSectionInnertext}>
           <h4 className={classes.topSectionTitle}>Story</h4>
           <p className={classes.topSectionMessage}>
@@ -114,84 +38,69 @@ const Story = () => {
           </p>
         </div>
 
+        {/*태그*/}
         <div className={classes.topSectionWrapTag}>
-          <div
-            className={classes.tags}
-            onMouseOver={() => onHoverHandler(0)}
-            onMouseOut={() => onHoverOutHandler(0)}
-            onClick={() => onClickHandler(0)}
-          >
-            <div className={`${useTag === "life" ? classes.textBold : ""}`}>
+          <div className={classes.tags} onClick={() => onClickLife()}>
+            <div
+              className={`${classes.tagFocus} ${
+                useTag === "life" ? classes.textBold : ""
+              }`}
+            >
               라이프
             </div>
-            {tagUp0 && <div className={classes.tagHr0} />}
-            {tagView0 && <div className={classes.tagHrView0} />}
           </div>
-          <div
-            className={classes.tags}
-            onMouseOver={() => onHoverHandler(1)}
-            onMouseOut={() => onHoverOutHandler(1)}
-            onClick={() => onClickHandler(1)}
-          >
-            <div className={`${useTag === "travel" ? classes.textBold : ""}`}>
+          <div className={classes.tags} onClick={() => onClickTravel()}>
+            <div
+              className={`${classes.tagFocus} ${
+                useTag === "travel" ? classes.textBold : ""
+              }`}
+            >
               여행.맛집
-            </div>{" "}
-            {tagUp1 && <div className={classes.tagHr1} />}
-            {tagView1 && <div className={classes.tagHrView1} />}
+            </div>
           </div>
-          <div
-            className={classes.tags}
-            onMouseOver={() => onHoverHandler(2)}
-            onMouseOut={() => onHoverOutHandler(2)}
-            onClick={() => onClickHandler(2)}
-          >
-            <div className={`${useTag === "culture" ? classes.textBold : ""}`}>
+          <div className={classes.tags} onClick={() => onClickCulture()}>
+            <div
+              className={`${classes.tagFocus} ${
+                useTag === "culture" ? classes.textBold : ""
+              }`}
+            >
               문화.연예
-            </div>{" "}
-            {tagUp2 && <div className={classes.tagHr2} />}
-            {tagView2 && <div className={classes.tagHrView2} />}
+            </div>
           </div>
-          <div
-            className={classes.tags}
-            onMouseOver={() => onHoverHandler(3)}
-            onMouseOut={() => onHoverOutHandler(3)}
-            onClick={() => onClickHandler(3)}
-          >
-            <div className={`${useTag === "it" ? classes.textBold : ""}`}>
+          <div className={classes.tags} onClick={() => onClickIt()}>
+            <div
+              className={`${classes.tagFocus} ${
+                useTag === "it" ? classes.textBold : ""
+              }`}
+            >
               It
-            </div>{" "}
-            {tagUp3 && <div className={classes.tagHr3} />}
-            {tagView3 && <div className={classes.tagHrView3} />}
+            </div>
           </div>
-          <div
-            className={classes.tags}
-            onMouseOver={() => onHoverHandler(4)}
-            onMouseOut={() => onHoverOutHandler(4)}
-            onClick={() => onClickHandler(4)}
-          >
-            <div className={`${useTag === "sport" ? classes.textBold : ""}`}>
+          <div className={classes.tags} onClick={() => onClickSport()}>
+            <div
+              className={`${classes.tagFocus} ${
+                useTag === "sport" ? classes.textBold : ""
+              }`}
+            >
               스포츠
-            </div>{" "}
-            {tagUp4 && <div className={classes.tagHr4} />}
-            {tagView4 && <div className={classes.tagHrView4} />}
+            </div>
           </div>
-          <div
-            className={classes.tags}
-            onMouseOver={() => onHoverHandler(5)}
-            onMouseOut={() => onHoverOutHandler(5)}
-            onClick={() => onClickHandler(5)}
-          >
-            <div className={`${useTag === "current" ? classes.textBold : ""}`}>
+          <div className={classes.tags} onClick={() => onClickCurrent()}>
+            <div
+              className={`${classes.tagFocus} ${
+                useTag === "current" ? classes.textBold : ""
+              }`}
+            >
               시사
-            </div>{" "}
-            {tagUp5 && <div className={classes.tagHr5} />}
-            {tagView5 && <div className={classes.tagHrView5} />}
+            </div>
           </div>
         </div>
+        {/*하단 카드 형태 블로그 노출*/}
       </section>
       <section className={classes.storyMidSection}>
         <StoryBlog className={classes.storyBlog} useTag={useTag} />
       </section>
+      {/*하단 리스트 형태 블로그 노출*/}
       <div className={classes.storyWrapper}>
         <StoryItemBox useTag={useTag} />
       </div>
