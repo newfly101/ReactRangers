@@ -59,7 +59,7 @@ const Story = () => {
           <div className={classes.tags} onClick={() => onClickLife()}>
             <div
               className={`${classes.tagFocus} ${
-                dummyData[0] === "life" ? classes.textBold : ""
+                dummyData[0] === "life" ? classes.focusTag : ""
               }`}
             >
               라이프
@@ -68,7 +68,7 @@ const Story = () => {
           <div className={classes.tags} onClick={() => onClickTravel()}>
             <div
               className={`${classes.tagFocus} ${
-                dummyData[0] === "travel" ? classes.textBold : ""
+                dummyData[0] === "travel" ? classes.focusTag : ""
               }`}
             >
               여행.맛집
@@ -77,7 +77,7 @@ const Story = () => {
           <div className={classes.tags} onClick={() => onClickCulture()}>
             <div
               className={`${classes.tagFocus} ${
-                dummyData[0] === "culture" ? classes.textBold : ""
+                dummyData[0] === "culture" ? classes.focusTag : ""
               }`}
             >
               문화.연예
@@ -86,7 +86,7 @@ const Story = () => {
           <div className={classes.tags} onClick={() => onClickIt()}>
             <div
               className={`${classes.tagFocus} ${
-                dummyData[0] === "it" ? classes.textBold : ""
+                dummyData[0] === "it" ? classes.focusTag : ""
               }`}
             >
               It
@@ -95,7 +95,7 @@ const Story = () => {
           <div className={classes.tags} onClick={() => onClickSport()}>
             <div
               className={`${classes.tagFocus} ${
-                dummyData[0] === "sport" ? classes.textBold : ""
+                dummyData[0] === "sport" ? classes.focusTag : ""
               }`}
             >
               스포츠
@@ -104,7 +104,7 @@ const Story = () => {
           <div className={classes.tags} onClick={() => onClickCurrent()}>
             <div
               className={`${classes.tagFocus} ${
-                dummyData[0] === "current" ? classes.textBold : ""
+                dummyData[0] === "current" ? classes.focusTag : ""
               }`}
             >
               시사
@@ -113,7 +113,7 @@ const Story = () => {
         </div>
         {/*하단 카드 형태 블로그 노출*/}
       </section>
-      <section className={classes.storyMidSection}>
+      <section>
         <StoryBlog className={classes.storyBlog} dummyData={dummyData} />
       </section>
       {/*하단 리스트 형태 블로그 노출*/}

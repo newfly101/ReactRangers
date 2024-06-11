@@ -1,42 +1,51 @@
-@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
-
+/*아이템 박스 전체를 감싸는 css*/
 .itemBoxWrapper {
   margin-bottom: 0.8rem;
-  margin-top: 1.5rem;
+  margin-top: 2rem;
   cursor: pointer;
-}
-
-.bottomItemBox {
   display: flex;
   align-items: start;
   justify-content: start;
 }
 
+/*아이템 박스 앞부분*/
 .ItemBoxStart {
   font-size: 0.6rem;
   width: 6rem;
   margin-right: 2rem;
 }
-
 .publishedAgo {
   margin-bottom: 0.3rem;
   opacity: 0.6;
 }
-.itemBoxImg {
-  width: 6.5rem;
-  height: 6.5rem;
-}
-
 .likeCount {
   color: #ff5544;
 }
+.categoryName {
+  margin-bottom: 1.1rem;
+  opacity: 0.6;
+  position: relative;
+}
+.textHr {
+  width: 0.7rem;
+  height: 0.1rem;
+  background-color: gray;
+  position: absolute;
+  transform: translateY(-0.6rem) translateX(0.1rem);
+  opacity: 0.4;
+}
 
+/*아이템 박스 중간부분*/
+.ItemBoxMid {
+  width: 28rem;
+  font-size: 1.1rem;
+  margin-right: 2rem;
+}
 .ItemBoxdesc {
   font-size: 0.68rem;
   margin: 0.5rem 0 0.8rem 0;
   opacity: 0.6;
 }
-
 .ItemBoxAuthor {
   display: flex;
   justify-content: space-between;
@@ -48,6 +57,13 @@
   display: flex;
   padding-top: 0.6rem;
 }
+.ItemBoxAuthorImg {
+  border-radius: 1rem;
+  margin-right: 0.5rem;
+  width: 1.7rem;
+}
+
+/*구독버튼*/
 .subscribeBtn {
   display: none;
   border: 0.5px solid rgb(211, 211, 211);
@@ -55,53 +71,23 @@
   padding: 0.3rem 0.6rem 0.3rem 0.6rem;
   font-size: 0.7rem;
 }
-
 .itemBoxWrapper:hover .subscribeBtn {
   display: block;
 }
-.ItemBoxAuthorImg {
-  width: 1.7rem;
+
+/*아이템 박스 끝부분*/
+.itemBoxImg {
+  width: 6.5rem;
+  height: 6.5rem;
 }
 
-.ItemBoxAuthorImg {
-  border-radius: 1rem;
-  margin-right: 0.5rem;
-}
-
-.ItemBoxEnd {
-  margin-left: 2rem;
-}
-
-.categoryName {
-  margin-bottom: 1.1rem;
-  opacity: 0.6;
-  position: relative;
-}
-
-.textHr {
-  width: 0.7rem;
-  height: 0.1rem;
-  background-color: gray;
-  position: absolute;
-  transform: translateY(-0.6rem) translateX(0.1rem);
-  opacity: 0.4;
-}
-
+/*구분선 css*/
 .mainBar {
   opacity: 0.3;
   height: 0.5px;
 }
 
-.blogName {
-  margin-left: 0.3rem;
-  opacity: 0.5;
-}
-
-.ItemBoxMid {
-  width: 28rem;
-  font-size: 1.1rem;
-}
-
+/*a태그 css*/
 a {
   text-decoration-line: none;
   color: black;
