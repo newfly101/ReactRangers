@@ -7,6 +7,7 @@ import Follower from "./component/feed/Follower";
 import Admin from "./component/admin/Admin";
 import Story from "./component/story/Story";
 import "./App.css";
+import Footer from "./component/feed/Footer";
 import Skin from "./component/skin/TstorySkin";
 import TistoryMain from "../src/component/TistoryMain";
 import AccountRecovery from "./component/accountSreach/AccountRecovery";
@@ -31,11 +32,7 @@ function App() {
             <Route path="/" element={<TistoryMain />} /> // 여기에 page link 추가
           */}
       </Routes>
-      <footer>
-        <div>
-          <h2>Footer 입니다.</h2>
-        </div>
-      </footer>
+      <Footer />
     </Router>
   );
 }
