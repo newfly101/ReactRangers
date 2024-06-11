@@ -2,7 +2,11 @@
 슈퍼코딩 부트캠프02팀, 클론코딩 1차 프로젝트
 
 ## 배포 페이지
-[netlify 배포 링크](https://main--tistory-clone-team2.netlify.app/)
+[netlify 배포 링크](https://reactranger.netlify.app/)
+
+### 배포 상태 체크
+- 2024-06-10 (월요일) v0.2.1-demo 버전 배포
+- 2024-06-12 (수요일) v0.2.2-demo 버전 배포
 
 ## 1. 프로젝트 환경 동일화 작업
 
