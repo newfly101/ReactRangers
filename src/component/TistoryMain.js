@@ -27,7 +27,6 @@ const TistoryMain = () => {
     {
       src: 'https://img1.daumcdn.net/thumb/R1920x0/?scode=mtistory2&fname=https%3A%2F%2Ft1.daumcdn.net%2Fsection%2Foc%2F3b837b34cc814c7b9b3a12f772e2441f',
       buttonLabel: '자세히 보기',
-
       title1: 'Story로 뭉쳐',
       title2: '더 넓고 깊어집니다',
       description:
@@ -65,19 +64,19 @@ const TistoryMain = () => {
       buttonLabel: '자세히 보기',
       title1: '티스토리 앱 2.0',
       title2: '업데이트',
-
       description:
         '모바일에서도 편리한 블로그 관리를 위해 티스토리 앱이 새 옷을 입었습니다.',
       link: 'https://notice.tistory.com/2523',
     },
   ];
-  const CustomPrevArrow = (props) => (
+
+  const CustomPrevArrow = ({ currentSlide, slideCount, ...props }) => (
     <button {...props} className={`${styles.arrow} ${styles.prev}`}>
       {'◀'}
     </button>
   );
 
-  const CustomNextArrow = (props) => (
+  const CustomNextArrow = ({ currentSlide, slideCount, ...props }) => (
     <button {...props} className={`${styles.arrow} ${styles.next}`}>
       {'▶'}
     </button>
@@ -108,7 +107,6 @@ const TistoryMain = () => {
                   alt={`Slide ${index}`}
                   className={styles.image}
                 />
-
                 <div className={styles.CustomContainer}>
                   <h1 className={styles.title}>
                     <div className={styles.line}>{image.title1}</div>
@@ -134,24 +132,110 @@ const TistoryMain = () => {
         </div>
       </div>
       <div className="content">
-        <div className="section">
-          <h2>Section 2</h2>
-          <p>이미지4</p>
+        <div className={styles.wrapTit}>
+          <strong className={styles.titSection}>
+            이 놀라운 사이트들이
+            <br />
+            <em>
+              모두
+              <span className={styles.txtDa}>
+                <img
+                  src="https://t1.daumcdn.net/tistory_admin/static/top/pc/txt_da.png"
+                  alt=""
+                />
+              </span>
+              티스토리
+            </em>
+            라는 사실
+          </strong>
+          <p className={styles.descSection}>
+            티스토리는 그저 공간일 뿐이에요. 그 공간에 무슨일이 일어날지는
+            아무도 상상할 수 없죠.
+          </p>
+          <div className={styles.slideContainer}>
+            <div className={`${styles.imageWithText} ${styles.image1}`}>
+              <img
+                src="https://t1.daumcdn.net/tistory_admin/static/top/pc/txt_da.png"
+                alt=""
+              />
+              <div className={styles.overlay}>이미지 에 대한 설명</div>
+            </div>
+            <div className={`${styles.imageWithText} ${styles.image1}`}>
+              <img
+                src="https://t1.daumcdn.net/tistory_admin/static/top/pc/txt_da.png"
+                alt=""
+              />
+              <div className={styles.overlay}>이미지 에 대한 설명</div>
+            </div>
+            <div className={`${styles.imageWithText} ${styles.image1}`}>
+              <img
+                src="https://t1.daumcdn.net/tistory_admin/static/top/pc/txt_da.png"
+                alt=""
+              />
+              <div className={styles.overlay}>이미지 에 대한 설명</div>
+            </div>
+            <div className={`${styles.imageWithText} ${styles.image1}`}>
+              <img
+                src="https://t1.daumcdn.net/tistory_admin/static/top/pc/txt_da.png"
+                alt=""
+              />
+              <div className={styles.overlay}>이미지 에 대한 설명</div>
+            </div>
+            <div className={`${styles.imageWithText} ${styles.image1}`}>
+              <img
+                src="https://t1.daumcdn.net/tistory_admin/static/top/pc/txt_da.png"
+                alt=""
+              />
+              <div className={styles.overlay}>이미지 에 대한 설명</div>
+            </div>
+          </div>
+          <div className={styles.sponsorContainer}>
+            <div className={styles.sponsorImages}>
+              <a href="https://thehyundaiblog.com/">
+                <img
+                  src="https://img1.daumcdn.net/thumb/R300x100/?scode=mtistory2&fname=http%3A%2F%2Fcfile27.uf.tistory.com%2Fimage%2F99A6963C5BB2C5C32AB7FC"
+                  alt=""
+                />
+              </a>
+              <a href="https://blogdegalleria.tistory.com/">
+                <img
+                  src="https://img1.daumcdn.net/thumb/R300x100/?scode=mtistory2&fname=http%3A%2F%2Fcfile27.uf.tistory.com%2Fimage%2F9989ED3B5BB2C5D3287867"
+                  alt=""
+                />
+              </a>
+              <a href="https://blog.paradise.co.kr/">
+                <img
+                  src="https://img1.daumcdn.net/thumb/R300x100/?scode=mtistory2&fname=http%3A%2F%2Fcfile29.uf.tistory.com%2Fimage%2F9988F0395BB2C5B11F8B83"
+                  alt=""
+                />
+              </a>
+              <a href="https://www.witheverland.com/">
+                <img
+                  src="https://img1.daumcdn.net/thumb/R300x100/?scode=mtistory2&fname=http%3A%2F%2Fcfile23.uf.tistory.com%2Fimage%2F991B033C5BB2C59024121E"
+                  alt=""
+                />
+              </a>
+              <a href="https://www.witheverland.com/">
+                <img
+                  src="https://img1.daumcdn.net/thumb/R300x100/?scode=mtistory2&fname=http%3A%2F%2Fcfile24.uf.tistory.com%2Fimage%2F9950223C5BB2C57B2225FF"
+                  alt=""
+                />
+              </a>
+            </div>
+          </div>
         </div>
-        <div className="section">
-          <h2>Section 3</h2>
-
+        <div className={styles.section2}>
+          <h2>Section 2</h2>
           <p>제일 어려운거</p>
         </div>
-        <div className="section">
-          <h2>Section 4</h2>
+        <div className={styles.section3}>
+          <h2>Section 3</h2>
           <p>이미지4 애니교차2</p>
         </div>
-        <div className="section">
-          <h2>Section 5</h2>
+        <div className={styles.section4}>
+          <h2>Section 4</h2>
           <p>이미지2</p>
         </div>
-
         <div className={styles.section5}>
           <h5 className={styles.customH5}>더 잘 쓰고 싶어요?</h5>
           <p>

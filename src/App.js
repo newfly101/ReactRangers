@@ -2,6 +2,8 @@ import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import Navigation from "./component/Navigation";
 import ForumMain from "./component/forum/ForumMain";
 import Feed from "./component/feed/Feed";
+import Followimg from "./component/feed/Following";
+import Follower from "./component/feed/Follower";
 import Admin from "./component/admin/Admin";
 import Story from "./component/story/Story";
 import "./App.css";
@@ -18,6 +20,8 @@ function App() {
         <Route path="/" element={<TistoryMain />} />
         <Route path="/forum" element={<ForumMain />} />
         <Route path="/feed" element={<Feed />} />
+        <Route path="/following" element={<Followimg />} />
+        <Route path="/follower" element={<Follower />} />
         <Route path="/admin" element={<Admin />} />
         <Route path="/story" element={<Story />} />
         <Route path="/skin" element={<Skin />} />

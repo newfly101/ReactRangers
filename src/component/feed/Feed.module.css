@@ -55,6 +55,9 @@
 .subscribers {
   font-size: 13px;
   margin: 0 0 0 22px;
+  color: #909090;
+  line-height: 24px;
+  cursor: pointer;
 }
 
 .btn {
@@ -351,16 +354,4 @@ dd {
   color: #fff;
   background-color: #000;
   cursor: pointer;
-}
-
-button,
-dd,
-div,
-dl,
-dt,
-li,
-p,
-ul {
-  margin: 0;
-  padding: 0;
 }

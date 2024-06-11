@@ -4,10 +4,10 @@ import classes from "./Category.module.css";
 const Category = () => {
   return (
     <>
-      <div className={`${classes.allContainer} ${classes.buttonContainer}`}>
-        <div className={classes.ButtonWrapUp}>
-          <div className={`${classes.allButton} ${classes.buttonTitle}`}>
-            <div className={classes.activeSkinTitle}>
+      <div className={classes.container}>
+        <div>
+          <div className={classes.title}>
+            <div className={classes.titleAction}>
               <button>
                 <span>티스토리 스킨</span>
               </button>
@@ -18,9 +18,7 @@ const Category = () => {
               </button>
             </div>
           </div>
-          <div
-            className={`${classes.allButton} ${classes.hoverLine} ${classes.tagButtonContainer}`}
-          >
+          <div className={classes.categoryTag}>
             <button>#매거진</button>
             <button>#미니멀</button>
             <button>#반응형</button>

@@ -176,3 +176,7 @@
   transform: translateY(-0.4rem);
   border-color: none;
 }
+
+.textBold {
+  font-weight: bold;
+}

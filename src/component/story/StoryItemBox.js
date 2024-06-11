@@ -1,47 +1,73 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import classes from "./StoryItemBox.module.css";
-import { dummyCategory1 } from "./StoryDummyData";
-const storyItemBox = () => {
+
+import { dummyItemLife } from "./DummyData/StoryDummyDataLife";
+import { dummyItemCulture } from "./DummyData/StoryDummyDataCulture";
+import { dummyItemIt } from "./DummyData/StoryDummyDataIt";
+import { dummyItemCurrent } from "./DummyData/StoryDummyDataCurrent";
+import { dummyItemSport } from "./DummyData/StoryDummyDataSport";
+import { dummyItemTravel } from "./DummyData/StoryDummyDataTravel";
+
+const StoryItemBox = ({ useTag }) => {
+  const [items, setItems] = useState(dummyItemLife);
+  const itemChanger = (useTag) => {
+    if (useTag === "life") {
+      setItems(dummyItemLife);
+    } else if (useTag === "it") {
+      setItems(dummyItemIt);
+    } else if (useTag === "culture") {
+      setItems(dummyItemCulture);
+    } else if (useTag === "current") {
+      setItems(dummyItemCurrent);
+    } else if (useTag === "sport") {
+      setItems(dummyItemSport);
+    } else if (useTag === "travel") {
+      setItems(dummyItemTravel);
+    }
+  };
+  useEffect(() => {
+    itemChanger(useTag);
+  });
+
   return (
     <div>
-      {dummyCategory1.data.list.map((item, index) => (
+      {items.data.list.map((item, index) => (
         <div key={index}>
           <section className={classes.itemBoxWrapper}>
             <div className={classes.bottomItemBox}>
               <div className={classes.ItemBoxStart}>
                 <div className={classes.categoryName}>
-                  {dummyCategory1.data.list[index].categoryName}
+                  {items.data.list[index].categoryName}
                   <hr className={classes.textHr} />
                 </div>
                 <div className={classes.publishedAgo}>
-                  {dummyCategory1.data.list[index].publishedAgo}
+                  {items.data.list[index].publishedAgo}
                 </div>
                 <div>
                   공감{" "}
                   <label className={classes.likeCount}>
-                    {dummyCategory1.data.list[index].likeCount}
+                    {items.data.list[index].likeCount}
                   </label>
                 </div>
               </div>
 
               <div className={classes.ItemBoxMid}>
                 <div className={classes.ItemBoxTitle}>
-                  {dummyCategory1.data.list[index].title.substr(0, 35)}
+                  {items.data.list[index].title.substr(0, 35)}
                 </div>
                 <div className={classes.ItemBoxdesc}>
-                  {dummyCategory1.data.list[index].summary.substr(0, 100) +
-                    "..."}
+                  {items.data.list[index].summary.substr(0, 100) + "..."}
                 </div>
                 <div className={classes.ItemBoxAuthor}>
                   <img
                     className={classes.ItemBoxAuthorImg}
-                    src={`${dummyCategory1.data.list[index].userImage}`}
+                    src={`${items.data.list[index].userImage}`}
                     alt="아이템박스 저자 이미지"
                   />
-                  <div>{dummyCategory1.data.list[index].userName}</div>
+                  <div>{items.data.list[index].userName}</div>
 
                   <div className={classes.blogName}>
-                    by {dummyCategory1.data.list[index].blogTitle}
+                    by {items.data.list[index].blogTitle}
                   </div>
                 </div>
               </div>
@@ -49,7 +75,7 @@ const storyItemBox = () => {
               <div className={classes.ItemBoxEnd}>
                 <img
                   className={classes.itemBoxImg}
-                  src={`${dummyCategory1.data.list[index].thumbnail}`}
+                  src={`${items.data.list[index].thumbnail}`}
                   alt="아이템박스 이미지"
                 />
               </div>
@@ -62,4 +88,4 @@ const storyItemBox = () => {
   );
 };
 
-export default storyItemBox;
+export default StoryItemBox;

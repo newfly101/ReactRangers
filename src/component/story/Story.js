@@ -18,6 +18,8 @@ const Story = () => {
   const [tagView4, setTagView4] = useState(false);
   const [tagView5, setTagView5] = useState(false);
 
+  const [useTag, setUseTag] = useState("life");
+
   const onHoverHandler = (num) => {
     if (num === 0) {
       setTagUp0(true);
@@ -58,6 +60,8 @@ const Story = () => {
       setTagView3(false);
       setTagView4(false);
       setTagView5(false);
+
+      setUseTag("life");
     } else if (num === 1) {
       setTagView0(false);
       setTagView1(true);
@@ -65,6 +69,7 @@ const Story = () => {
       setTagView3(false);
       setTagView4(false);
       setTagView5(false);
+      setUseTag("travel");
     } else if (num === 2) {
       setTagView0(false);
       setTagView1(false);
@@ -72,6 +77,7 @@ const Story = () => {
       setTagView3(false);
       setTagView4(false);
       setTagView5(false);
+      setUseTag("culture");
     } else if (num === 3) {
       setTagView0(false);
       setTagView1(false);
@@ -79,6 +85,7 @@ const Story = () => {
       setTagView3(true);
       setTagView4(false);
       setTagView5(false);
+      setUseTag("it");
     } else if (num === 4) {
       setTagView0(false);
       setTagView1(false);
@@ -86,6 +93,7 @@ const Story = () => {
       setTagView3(false);
       setTagView4(true);
       setTagView5(false);
+      setUseTag("sport");
     } else if (num === 5) {
       setTagView0(false);
       setTagView1(false);
@@ -93,6 +101,7 @@ const Story = () => {
       setTagView3(false);
       setTagView4(false);
       setTagView5(true);
+      setUseTag("current");
     }
   };
   return (
@@ -112,7 +121,9 @@ const Story = () => {
             onMouseOut={() => onHoverOutHandler(0)}
             onClick={() => onClickHandler(0)}
           >
-            라이프
+            <div className={`${useTag === "life" ? classes.textBold : ""}`}>
+              라이프
+            </div>
             {tagUp0 && <div className={classes.tagHr0} />}
             {tagView0 && <div className={classes.tagHrView0} />}
           </div>
@@ -122,7 +133,10 @@ const Story = () => {
             onMouseOut={() => onHoverOutHandler(1)}
             onClick={() => onClickHandler(1)}
           >
-            여행.맛집 {tagUp1 && <div className={classes.tagHr1} />}
+            <div className={`${useTag === "travel" ? classes.textBold : ""}`}>
+              여행.맛집
+            </div>{" "}
+            {tagUp1 && <div className={classes.tagHr1} />}
             {tagView1 && <div className={classes.tagHrView1} />}
           </div>
           <div
@@ -131,7 +145,10 @@ const Story = () => {
             onMouseOut={() => onHoverOutHandler(2)}
             onClick={() => onClickHandler(2)}
           >
-            문화.연예 {tagUp2 && <div className={classes.tagHr2} />}
+            <div className={`${useTag === "culture" ? classes.textBold : ""}`}>
+              문화.연예
+            </div>{" "}
+            {tagUp2 && <div className={classes.tagHr2} />}
             {tagView2 && <div className={classes.tagHrView2} />}
           </div>
           <div
@@ -140,7 +157,10 @@ const Story = () => {
             onMouseOut={() => onHoverOutHandler(3)}
             onClick={() => onClickHandler(3)}
           >
-            IT {tagUp3 && <div className={classes.tagHr3} />}
+            <div className={`${useTag === "it" ? classes.textBold : ""}`}>
+              It
+            </div>{" "}
+            {tagUp3 && <div className={classes.tagHr3} />}
             {tagView3 && <div className={classes.tagHrView3} />}
           </div>
           <div
@@ -149,7 +169,10 @@ const Story = () => {
             onMouseOut={() => onHoverOutHandler(4)}
             onClick={() => onClickHandler(4)}
           >
-            스포츠 {tagUp4 && <div className={classes.tagHr4} />}
+            <div className={`${useTag === "sport" ? classes.textBold : ""}`}>
+              스포츠
+            </div>{" "}
+            {tagUp4 && <div className={classes.tagHr4} />}
             {tagView4 && <div className={classes.tagHrView4} />}
           </div>
           <div
@@ -158,16 +181,19 @@ const Story = () => {
             onMouseOut={() => onHoverOutHandler(5)}
             onClick={() => onClickHandler(5)}
           >
-            시사 {tagUp5 && <div className={classes.tagHr5} />}
+            <div className={`${useTag === "current" ? classes.textBold : ""}`}>
+              시사
+            </div>{" "}
+            {tagUp5 && <div className={classes.tagHr5} />}
             {tagView5 && <div className={classes.tagHrView5} />}
           </div>
         </div>
       </section>
       <section className={classes.storyMidSection}>
-        <StoryBlog className={classes.storyBlog} />
+        <StoryBlog className={classes.storyBlog} useTag={useTag} />
       </section>
       <div className={classes.storyWrapper}>
-        <StoryItemBox />
+        <StoryItemBox useTag={useTag} />
       </div>
     </div>
   );

@@ -57,7 +57,7 @@ const SkinPage = (props) => {
                     {item.data.img.map((imgSrc, imgIndex) => (
                       <img
                         key={imgIndex}
-                        src={`SkinImg/${item.data.title}/${imgSrc}`}
+                        src={`${process.env.PUBLIC_URL}/SkinImg/${item.data.title}/${imgSrc}`}
                         alt={`Image ${imgIndex}`}
                       />
                     ))}

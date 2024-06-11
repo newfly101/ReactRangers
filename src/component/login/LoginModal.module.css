@@ -1,0 +1,70 @@
+.loginModal {
+    display: flex;
+    flex-direction: row;
+    background: white;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 15;
+    border-radius: 8px;
+}
+.tistoryLogin {
+    display: flex;
+    width: 340px;
+    height: 504px;
+    padding: 96px 30px 64px 30px;
+
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.tistoryLogin img {
+    width: 280px;
+    height: 220px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+.tistoryLoginTitle {
+    font-size: 40px;
+    font-weight: bold;
+}
+.tistoryLoginTitle a {
+    text-decoration-line: none;
+    color: inherit;
+}
+.loginDescription {
+    margin: 8px 0 38px 0;
+    font-size: 14px;
+}
+
+.kakaoLoginBtn {
+    margin-top: 36px;
+    width: 340px;
+    height: 52px;
+    background: #ffe500;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 8px;
+}
+.kakaoLoginBtn img{
+    width: 260px;
+    height: 52px;
+}
+.closeIco {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+.tistoryLoginHelp {
+    font-size: 13px;
+    margin-top: 24px;
+    cursor: pointer;
+}

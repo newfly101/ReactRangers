@@ -1,22 +1,21 @@
+import React from "react";
 import classes from "./Follwing.module.css";
 
-import React from "react";
-
-const Following = () => {
+const Follower = () => {
   return (
     <div>
       <div className={classes.fMain}>
         <div className={classes.fMainFeed}>
           <div className={classes.fInnerFeed}>
-            <strong className={classes.fNameFeed}>Following</strong>
+            <strong className={classes.fNameFeed}>Follower</strong>
             <div className={classes.followingFont}>
-              0개의 블로그를 구독중입니다
+              0명이 내 블로그를 구독합니다
               <div className={classes.fBtn}>
                 <button type="button" className={classes.btnFollow}>
                   최신 구독순
                 </button>
                 <button type="button" className={classes.btnFollow}>
-                  블로그 이름순
+                  닉네임순
                 </button>
               </div>
             </div>
@@ -26,7 +25,7 @@ const Following = () => {
       <div className={classes.fBody}>
         <div className={classes.fList}>
           <p className={classes.fBlog}>
-            아직 구독하는 블로그가 없습니다. 피드에서 추천 블로그를 확인하세요
+            아직 내 블로그를 구독하는 사람이 없습니다.
           </p>
         </div>
       </div>
@@ -34,4 +33,4 @@ const Following = () => {
   );
 };
 
-export default Following;
+export default Follower;
