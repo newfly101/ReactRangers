@@ -30,10 +30,12 @@
   transform: translate(-46%, -210%);
   margin-bottom: -1010px;
 }
+
 .image {
   width: 100%;
   height: 650px;
 }
+
 .title {
   font-family: 'Arial', sans-serif;
   font-size: 44px;
@@ -74,14 +76,15 @@
   height: 80px;
 }
 
-.section1 {
-  background-color: aqua;
+.sectionOne {
+  margin-top: -60px;
+  margin-left: 19px;
+  text-align: left;
 }
 
 .section5 {
   font-size: 1.2em;
   font-weight: bold;
-
   display: inline-block;
   text-align: left;
 }
@@ -125,6 +128,7 @@
 
 .customH5 {
   padding: 20px 10px 0;
+  font-size: 30px;
 }
 
 p a {
@@ -134,4 +138,23 @@ p a {
 
 p a:hover {
   cursor: pointer;
+}
+
+.wrap_tit {
+  margin-top: 20px;
+}
+
+.tit_section {
+  font-size: 2.5em;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.desc_section {
+  font-size: 1.2em;
+  color: #666;
+}
+
+.txt_da {
+  color: #ff6600;
 }
