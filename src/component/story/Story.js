@@ -8,20 +8,23 @@ const Story = () => {
   const [useTag, setUseTag] = useState("life");
 
   //tag클릭에 맞춰 state를 변경하는 함수
-  const onClickHandler = (num) => {
-    if (num === 0) {
-      setUseTag("life");
-    } else if (num === 1) {
-      setUseTag("travel");
-    } else if (num === 2) {
-      setUseTag("culture");
-    } else if (num === 3) {
-      setUseTag("it");
-    } else if (num === 4) {
-      setUseTag("sport");
-    } else if (num === 5) {
-      setUseTag("current");
-    }
+  const onClickLife = () => {
+    setUseTag("life");
+  };
+  const onClickTravel = () => {
+    setUseTag("travel");
+  };
+  const onClickCulture = () => {
+    setUseTag("culture");
+  };
+  const onClickIt = () => {
+    setUseTag("it");
+  };
+  const onClickSport = () => {
+    setUseTag("sport");
+  };
+  const onClickCurrent = () => {
+    setUseTag("current");
   };
 
   return (
@@ -37,54 +40,54 @@ const Story = () => {
 
         {/*태그*/}
         <div className={classes.topSectionWrapTag}>
-          <div className={classes.tags} onClick={() => onClickHandler(0)}>
+          <div className={classes.tags} onClick={() => onClickLife()}>
             <div
-              className={`${classes.tagFocus} , ${
+              className={`${classes.tagFocus} ${
                 useTag === "life" ? classes.textBold : ""
               }`}
             >
               라이프
             </div>
           </div>
-          <div className={classes.tags} onClick={() => onClickHandler(1)}>
+          <div className={classes.tags} onClick={() => onClickTravel()}>
             <div
-              className={`${classes.tagFocus} , ${
+              className={`${classes.tagFocus} ${
                 useTag === "travel" ? classes.textBold : ""
               }`}
             >
               여행.맛집
             </div>
           </div>
-          <div className={classes.tags} onClick={() => onClickHandler(2)}>
+          <div className={classes.tags} onClick={() => onClickCulture()}>
             <div
-              className={`${classes.tagFocus} , ${
+              className={`${classes.tagFocus} ${
                 useTag === "culture" ? classes.textBold : ""
               }`}
             >
               문화.연예
             </div>
           </div>
-          <div className={classes.tags} onClick={() => onClickHandler(3)}>
+          <div className={classes.tags} onClick={() => onClickIt()}>
             <div
-              className={`${classes.tagFocus} , ${
+              className={`${classes.tagFocus} ${
                 useTag === "it" ? classes.textBold : ""
               }`}
             >
               It
             </div>
           </div>
-          <div className={classes.tags} onClick={() => onClickHandler(4)}>
+          <div className={classes.tags} onClick={() => onClickSport()}>
             <div
-              className={`${classes.tagFocus} , ${
+              className={`${classes.tagFocus} ${
                 useTag === "sport" ? classes.textBold : ""
               }`}
             >
               스포츠
             </div>
           </div>
-          <div className={classes.tags} onClick={() => onClickHandler(5)}>
+          <div className={classes.tags} onClick={() => onClickCurrent()}>
             <div
-              className={`${classes.tagFocus} , ${
+              className={`${classes.tagFocus} ${
                 useTag === "current" ? classes.textBold : ""
               }`}
             >

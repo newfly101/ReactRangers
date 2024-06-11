@@ -8,8 +8,6 @@ import { dummyCardSport } from "./DummyData/StoryDummyDataSport";
 import { dummyCardTravel } from "./DummyData/StoryDummyDataTravel";
 
 const StoryBlog = ({ useTag }) => {
-  const [subFlag, setSubFlag] = useState([false, false, false]);
-
   const [carditems, setCardItems] = useState(dummyCardLife);
 
   const itemChanger = (useTag) => {
@@ -28,25 +26,6 @@ const StoryBlog = ({ useTag }) => {
     }
   };
 
-  const subBtnHandler = (key) => {
-    if (key === 0) {
-      setSubFlag([true, false, false]);
-    } else if (key === 1) {
-      setSubFlag([false, true, false]);
-    } else if (key === 2) {
-      setSubFlag([false, false, true]);
-    }
-  };
-
-  const subBtnHandlerOut = (key) => {
-    if (key === 0) {
-      setSubFlag([false, false, false]);
-    } else if (key === 1) {
-      setSubFlag([false, false, false]);
-    } else if (key === 2) {
-      setSubFlag([false, false, false]);
-    }
-  };
   useEffect(() => {
     itemChanger(useTag);
   });
@@ -55,11 +34,7 @@ const StoryBlog = ({ useTag }) => {
     <div className={classes.storyMidSection}>
       {carditems.data.list.map((item, index) => (
         <a href={item.blogUrl} key={index}>
-          <div
-            className={classes.blogWrapper}
-            onMouseOver={() => subBtnHandler(index)}
-            onMouseOut={() => subBtnHandlerOut(index)}
-          >
+          <div className={classes.blogWrapper}>
             <img
               src={`${item.blogImage}`}
               alt="스토리블로그 이미지"
@@ -87,9 +62,8 @@ const StoryBlog = ({ useTag }) => {
                   </div>
                   <div className={classes.blogAuthor}>by {item.authorName}</div>
                 </div>
-                {subFlag[index] && (
-                  <div className={classes.subscribeBtn}>구독하기</div>
-                )}
+
+                <div className={classes.subscribeBtn}>구독하기</div>
               </div>
             </div>
           </div>
