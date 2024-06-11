@@ -69,7 +69,7 @@ const Story = () => {
       setTagView3(false);
       setTagView4(false);
       setTagView5(false);
-      setUseTag("trip");
+      setUseTag("travel");
     } else if (num === 2) {
       setTagView0(false);
       setTagView1(false);
@@ -101,7 +101,7 @@ const Story = () => {
       setTagView3(false);
       setTagView4(false);
       setTagView5(true);
-      setUseTag("news");
+      setUseTag("current");
     }
   };
   return (
@@ -173,7 +173,7 @@ const Story = () => {
         </div>
       </section>
       <section className={classes.storyMidSection}>
-        <StoryBlog className={classes.storyBlog} />
+        <StoryBlog className={classes.storyBlog} useTag={useTag} />
       </section>
       <div className={classes.storyWrapper}>
         <StoryItemBox useTag={useTag} />

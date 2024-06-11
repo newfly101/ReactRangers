@@ -2,6 +2,11 @@ import React, { useEffect, useState } from "react";
 import classes from "./StoryItemBox.module.css";
 
 import { dummyItemLife } from "./DummyData/StoryDummyDataLife";
+import { dummyItemCulture } from "./DummyData/StoryDummyDataCulture";
+import { dummyItemIt } from "./DummyData/StoryDummyDataIt";
+import { dummyItemCurrent } from "./DummyData/StoryDummyDataCurrent";
+import { dummyItemSport } from "./DummyData/StoryDummyDataSport";
+import { dummyItemTravel } from "./DummyData/StoryDummyDataTravel";
 
 const StoryItemBox = ({ useTag }) => {
   const [items, setItems] = useState(dummyItemLife);
@@ -9,8 +14,15 @@ const StoryItemBox = ({ useTag }) => {
     if (useTag === "life") {
       setItems(dummyItemLife);
     } else if (useTag === "it") {
-      //여기에 바뀔 데이터를 셋
-      setItems(dummyItemLife);
+      setItems(dummyItemIt);
+    } else if (useTag === "culture") {
+      setItems(dummyItemCulture);
+    } else if (useTag === "current") {
+      setItems(dummyItemCurrent);
+    } else if (useTag === "sport") {
+      setItems(dummyItemSport);
+    } else if (useTag === "travel") {
+      setItems(dummyItemTravel);
     }
   };
   useEffect(() => {
