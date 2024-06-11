@@ -1,5 +1,5 @@
 import React from "react";
-import classes from "./AccountRecovery.module.css";
+// import classes from "./AccountRecovery.module.css";
 
 const AccountRecovery = () => {
   return (
