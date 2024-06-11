@@ -1,9 +1,34 @@
-.forumHeader img{
+.forumImg{
     width: 100%;
     height: 365px;
     object-fit: cover;
-    position: relative;
+    /*position: relative;*/
     background-size: cover;
     background-repeat: no-repeat;
+    position: absolute;
+    z-index: -1;
+}
+.forumHeader {
+    width: 100%;
+    height: 365px;
+}
+.forumSearch {
+    width: 100%;
+    height: 135px;
+    justify-content: center;
+    align-items: center;
+    padding: 151px 92px 0 92px;
+    color: white;
+    cursor: default;
+}
+.forumTitle {
+    margin-left: 3px;
+    font-size: 18px;
+    font-weight: bold;
+
+}
+.forumDescription {
+    padding-top: 11px;
+    font-size: 24px;
 }
 
