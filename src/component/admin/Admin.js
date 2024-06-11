@@ -1,5 +1,8 @@
 import React from "react";
 import classes from "./Admin.module.css";
+import home from "./assets/home.svg";
+import user from "./assets/user.svg";
+import down from "./assets/down.svg";
 
 const Admin = () => {
   return (
@@ -22,11 +25,15 @@ const Admin = () => {
         <div id={classes.AdminList}>
           <div>
             <div className={classes.AdminMyblog}>
-              <div className={classes.AdminListHomeIcon}></div>
+              <div className={classes.AdminListHomeIcon}>
+                <img src={home} alt="home"></img>
+              </div>
               <div className={classes.AdminListMyblog}>내 블로그</div>
             </div>
             <div className={classes.AdminListLine}>
-              <div className={classes.AdminListUserIcon}></div>
+              <div className={classes.AdminListUserIcon}>
+                <img src={user} alt="user"></img>
+              </div>
               <div className={classes.AdminListUser}>내 계정</div>
               <div className={classes.AdminListMenu}>
                 <div className={classes.AdminListMenuFont}>프로필 레이어</div>
@@ -34,7 +41,9 @@ const Admin = () => {
                 <div className={classes.AdminListMenuFont}>카카오계정 관리</div>
               </div>
             </div>
-            <div className={classes.AdminLisLinkMenuIcon}></div>
+            <div className={classes.AdminLisLinkMenuIcon}>
+              <img src={down} alt="down"></img>
+            </div>
             <div className={classes.AdminListLinkMenu}>외부 기능</div>
           </div>
         </div>

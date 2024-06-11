@@ -46,13 +46,20 @@
   margin-top: 8px;
   background: #fff;
   font-size: 15px;
-  }
+}
+
+.AdminListHomeIcon {
+  width: 21px;
+  height: 21px;
+  position: absolute;
+  left: 110px;
+  bottom: 408px;
+}
 
 .AdminMyblog {
   border: 1px solid #e0e5ee;
   border-bottom: 0;
-  padding: 7px 0 9px 47px;
-  
+  padding: 12px 0 12px 47px;
 }
 
 .AdminListLine {
@@ -61,24 +68,39 @@
   padding: 12px 0 14px 47px;
 }
 
-.AdminListUser{
+.AdminListUserIcon {
+  width: 21px;
+  height: 21px;
+  position: absolute;
+  left: 110px;
+  bottom: 361px;
+}
+
+.AdminListUser {
   padding-bottom: 8px;
 }
 
-.AdminListMenu{
+.AdminListMenu {
   font-size: 13px;
   font-weight: 100;
-  color: #555
+  color: #555;
 }
 
-.AdminListMenuFont{
+.AdminListMenuFont {
   margin-top: 5px;
-  }
+}
 
-.AdminListLinkMenu{
+.AdminLisLinkMenuIcon {
+  width: 21px;
+  height: 21px;
+  position: absolute;
+  left: 110px;
+  bottom: 245px;
+}
+
+.AdminListLinkMenu {
   border: 1px solid #e0e5ee;
-  padding: 5px 0 9px 47px;
-
+  padding: 10px 0 14px 47px;
 }
 
 #AdminRight {
