@@ -103,12 +103,51 @@ const TstorySkin = () => {
     },
   ];
 
+  const usersSkin = [
+    {
+      image:
+        "https://i1.daumcdn.net/thumb/C560x420/?scode=mtistory2&fname=https%3A%2F%2Ftistory1.daumcdn.net%2Ftistory%2Ftop%2Fskin%2F3794bb2c-da69-4bef-9476-a016672313f1",
+      profile:
+        "https://i1.daumcdn.net/thumb/C240x240/?scode=mtistory2&fname=https%3A%2F%2Ftistory1.daumcdn.net%2Ftistory%2F5270084%2Fattach%2F5426e75dbcd84ab7afaf4b3aef811794",
+      name: "BiCute",
+      title: "BiCute 스킨",
+      tag: "#심플형",
+    },
+    {
+      image:
+        "https://i1.daumcdn.net/thumb/C560x420/?scode=mtistory2&fname=https%3A%2F%2Ftistory1.daumcdn.net%2Ftistory%2Ftop%2Fskin%2F8b585ce8-faec-4eb5-97e8-474e4a35a2df",
+      profile:
+        "https://i1.daumcdn.net/thumb/C560x420/?scode=mtistory2&fname=https%3A%2F%2Ftistory1.daumcdn.net%2Ftistory%2Ftop%2Fskin%2F8b585ce8-faec-4eb5-97e8-474e4a35a2df",
+      name: "ゼン",
+      title: "ZENN 스킨",
+      tag: "#심플형",
+    },
+    {
+      image:
+        "https://i1.daumcdn.net/thumb/C560x420/?scode=mtistory2&fname=https%3A%2F%2Ftistory1.daumcdn.net%2Ftistory%2Ftop%2Fskin%2Fab60282c-ba51-4d87-adb7-9c1ba2fc6a72",
+      profile:
+        "https://i1.daumcdn.net/thumb/C240x240/?scode=mtistory2&fname=https%3A%2F%2Ftistory1.daumcdn.net%2Ftistory%2F4614459%2Fattach%2F477161ae3b534b27a01981c0aee4369e",
+      name: "itcider",
+      title: "심플하고 빠른 Fi스킨 V10.0",
+      tag: "#심플형",
+    },
+    {
+      image:
+        "https://i1.daumcdn.net/thumb/C560x420/?scode=mtistory2&fname=https%3A%2F%2Ftistory1.daumcdn.net%2Ftistory%2Ftop%2Fskin%2F91dee687-da05-4a46-8809-b73ec5780eb1",
+      profile:
+        "https://i1.daumcdn.net/thumb/C240x240/?scode=mtistory2&fname=https%3A%2F%2Ftistory1.daumcdn.net%2Ftistory%2F6748845%2Fattach%2Fbd7dfd44524f427d97431317de2c1a21",
+      name: "booboo4055",
+      title: "tis98",
+      tag: "#심플형",
+    },
+  ];
+
   return (
     <>
       <div className={classes.main}>
         <Topimage />
         <Category handleCategoryButton={handleCategoryButton} />
-        <Skinpage items={items} isAVew={isAVew} />
+        <Skinpage items={items} isAVew={isAVew} usersSkin={usersSkin} />
       </div>
     </>
   );

@@ -1,9 +1,10 @@
 import React from "react";
 import { ReactComponent as LinkIcon } from "../SkinPage/link.svg";
 import classes from "../SkinPage/SkinPage.module.css";
+import UserClasses from "../SkinPage/UserSkin.module.css";
 
 const SkinPage = (props) => {
-  const { items, isAVew } = props;
+  const { items, isAVew, usersSkin } = props;
 
   return (
     <>
@@ -80,10 +81,21 @@ const SkinPage = (props) => {
         </div>
       ) : (
         <div id="이용자 제작 스킨">
-          <div>이용자 제작 스킨화면입니다.</div>
+          <div className={UserClasses.container}>
+            <div className={UserClasses.cardWrap}>
+              {usersSkin.map((user, index) => (
+                <div key={index}>
+                  <div className={UserClasses.cardItem}>
+                    <img src={user.image} alt="user.index" />
+                    <button>{user.title}</button>
+                    <button>{user.tag}</button>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
       )}
-      ;
     </>
   );
 };
