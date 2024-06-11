@@ -1,10 +1,10 @@
-import React, { useState } from "react";
+import React from "react";
 import Topimage from "./ComponentA/Main/Main";
 import Category from "./ComponentA/Category/Category";
 import Skinpage from "./ComponentA/SkinPage/SkinPage";
 
 const TstorySkin = () => {
-  const [items, setItems] = useState([
+  const items = [
     {
       type: "cardWhite",
       data: {
@@ -85,7 +85,7 @@ const TstorySkin = () => {
         img: ["Magazine0.jpg", "Magazine1.jpg", "Magazine2.jpg"],
       },
     },
-  ]);
+  ];
   return (
     <>
       <Topimage />

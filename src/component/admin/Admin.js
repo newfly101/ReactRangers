@@ -1,58 +1,73 @@
 import React from "react";
+import classes from "./Admin.module.css";
 
 const Admin = () => {
   return (
-    <div id="Admin">
-      <div id="profile">
-        <div className="left-profile">
-          <div className="profile__image">
-            <a href=""></a>
+    <div id={classes.Admin}>
+      <div id={classes.AdminLeft}>
+        <div id={classes.AdminProfile}>
+          <div className={classes.AdminProfileImage}>
+            <a href="">
+              <img src="" width="100" height="100" alt></img>
+            </a>
           </div>
-          <div className="profile__name">
-            <strong className="profile__name-pont">새벽감성개발자</strong>
-            <span className="profile__name-email">game@naver.com</span>
+          <div className={classes.AdminName}>
+            <div className={classes.AdminNameUser}>새벽감성개발자</div>
+            <div className={classes.AdminNameEmail}>game@naver.com</div>
           </div>
         </div>
-        <div id="profile__menu">
-          <div className="">
-            
+        <div id={classes.AdminList}>
+          <div>
+            <div>
+              <div className={classes.AdminListHomeIcon}></div>
+              <div className={classes.AdminListMyblog}>내 블로그</div>
+            </div>
+            <div>
+              <div className={classes.AdminListUserIcon}></div>
+              <div className={classes.AdminListMyUser}>내 계정</div>
+              <ul>
+                <li>프로필 레이어</li>
+                <li>응원내역보기</li>
+                <li>카카오계정 관리</li>
+              </ul>
+            </div>
+            <div className={classes.AdminListIcon}></div>
+            <div className={classes.AdminListLinkMenu}>외부 기능</div>
           </div>
         </div>
       </div>
-
-      <div id="blog">
-        <div className="blog__operation">
-          <h3 className="title__font">운영 중인 블로그</h3>
-          <ul className="myblog">
-            <li>
-              <div className="box">
-                <div className="myblog__name">
-                  <strong className="myblog__name-title">
-                    새벽의 이것저것
-                    <a href="" className="myblog__name-url"></a>
-                  </strong>
-                  <a href="" className="myblog__name-text">
-                    game.tistory.com
-                  </a>
-                  <button className="box-button">대표</button>
-                  <div className="box-text">
-                    대표 블로그는 방문한블로그/팀블로그 활동 시 사용됩니다.
-                  </div>
-                </div>
+      <div id={classes.AdminRight}>
+        <div className={classes.AdminMyblog}>
+          <h3 className={classes.AdminFont}>
+            운영 중인 블로그
+            <form className={classes.AdminBlock}>
+              <div className={classes.AdminBlockImage}>
+                <a href="">
+                  <img src=""></img>
+                </a>
               </div>
-            </li>
-          </ul>
+              <div className={classes.AdminBlockName}>
+                새벽의 이것저것
+                <div className={classes.AdminBlockEmail}>game.tistory.com</div>
+              </div>
+              <div className={classes.AdminBlockButton}>
+                <button>대표</button>
+              </div>
+            </form>
+            <div className={classes.Admin}>
+              대표 블로그는 방문한 블로그/팀블로그 활동시 사용됩니다.
+            </div>
+          </h3>
+          <h3 className={classes.AdminFont}>
+            운영∙개설 현황
+            <div className={classes.AdminBlock}></div>
+          </h3>
+          <h3 className={classes.AdminFont}>
+            이메일 알림
+            <div className={classes.AdminBlock}></div>
+          </h3>
         </div>
       </div>
-      <h3 className="title__font">운영∙개설 현황</h3>
-      <div className="box">
-        <div className=""></div>
-        <button className="box-button">새 블로그 만들기</button>
-      </div>
-      <h3 className="title__font">이메일 알림</h3>
-      <form className="box">
-        <button className="box-button">변경사항 저장</button>
-      </form>
     </div>
   );
 };

@@ -1,11 +1,36 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import classes from "./StoryBlog.module.css";
-import { dummyCard } from "./StoryDummyData";
+import { dummyCardLife } from "./DummyData/StoryDummyDataLife";
+import { dummyCardCulture } from "./DummyData/StoryDummyDataCulture";
+import { dummyCardIt } from "./DummyData/StoryDummyDataIt";
+import { dummyCardCurrent } from "./DummyData/StoryDummyDataCurrent";
+import { dummyCardSport } from "./DummyData/StoryDummyDataSport";
+import { dummyCardTravel } from "./DummyData/StoryDummyDataTravel";
 
-const StoryBlog = () => {
+const StoryBlog = ({ useTag }) => {
+  const [carditems, setCardItems] = useState(dummyCardLife);
+  const itemChanger = (useTag) => {
+    if (useTag === "life") {
+      setCardItems(dummyCardLife);
+    } else if (useTag === "it") {
+      setCardItems(dummyCardIt);
+    } else if (useTag === "culture") {
+      setCardItems(dummyCardCulture);
+    } else if (useTag === "current") {
+      setCardItems(dummyCardCurrent);
+    } else if (useTag === "sport") {
+      setCardItems(dummyCardSport);
+    } else if (useTag === "travel") {
+      setCardItems(dummyCardTravel);
+    }
+  };
+  useEffect(() => {
+    itemChanger(useTag);
+  });
+
   return (
     <div className={classes.storyMidSection}>
-      {dummyCard.data.list.map((item, index) => (
+      {carditems.data.list.map((item, index) => (
         <div className={classes.blogWrapper} key={index}>
           <img
             src={`${item.blogImage}`}

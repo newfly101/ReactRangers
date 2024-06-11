@@ -1,40 +1,35 @@
-.adminPage {
-  display: flex;
-  flex-direction: row;
-  margin-top: 72px;
-  background: #7b756b;
-/*  가로로 배치할지 세로로 배치할지 + @*/
-}
-.adminBlogCard {
+#Admin {
   display: flex;
   justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  margin: 0 auto;
+  background: #f3f5f7;
+  padding: 120px 0 100px 0;
+  margin: 120px 0 100px;
+}
+
+#AdminLeft {
+  float: left;
   width: 216px;
-  margin-left: 50px;
-  margin-right: 50px;
-}
-.adminCard {
-  width: 214px;
-  height: 214px;
-  background: white;
-  border: 1px solid black;
-  margin: 5px;
 }
 
-
-.adminBlogCardList {
-  display: flex;
-  flex-direction: column;
+.AdminProfile {
+  width: 216px;
+  background: #fff;
 }
 
-
-#Admin {
-  position: relative;
-  width: 1150px;
-  margin: auto;
+.AdminProfileImage {
+  width: 100px;
+  height: 100px;
+  background: #fff;
+  padding: 50px;
 }
 
-.li {
-  width: 50px;
+.AdminName {
+  background: #fff;
+}
+
+#AdminRight {
+  float: right;
+  width: 814px;
+  margin-left: 30px;
 }
