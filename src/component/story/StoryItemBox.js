@@ -4,7 +4,7 @@ import classes from "./StoryItemBox.module.css";
 const StoryItemBox = ({ dummyData }) => {
   return (
     <div>
-      {dummyData.itemData.data.list.map((item, index) => (
+      {dummyData.map((item, index) => (
         <div key={index}>
           <a href={item.link}>
             {/*각 아이템 박스 전체를 섹션으로 감싼다*/}
@@ -23,9 +23,9 @@ const StoryItemBox = ({ dummyData }) => {
               </div>
               {/*아이템 박스 중간 부분*/}
               <div className={classes.ItemBoxMid}>
-                <div>{item.title.substr(0, 35)}</div>
+                <div>{item.title.substring(0, 35)}</div>
                 <div className={classes.ItemBoxdesc}>
-                  {item.summary.substr(0, 100) + "..."}
+                  {item.summary.substring(0, 100) + "..."}
                 </div>
                 <div className={classes.ItemBoxAuthor}>
                   <div className={classes.ItemBoxAuthorDetali}>

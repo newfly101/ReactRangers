@@ -83,7 +83,7 @@ const Story = () => {
           <div className={classes.tags} onClick={() => onClickLife()}>
             <div
               className={`${classes.tagFocus} ${
-                dummyData.dataName === "life" ? classes.choiceTag : ""
+                dummyData.dataName === "life" && classes.choiceTag
               }`}
             >
               라이프
@@ -92,7 +92,7 @@ const Story = () => {
           <div className={classes.tags} onClick={() => onClickTravel()}>
             <div
               className={`${classes.tagFocus} ${
-                dummyData.dataName === "travel" ? classes.choiceTag : ""
+                dummyData.dataName === "travel" && classes.choiceTag
               }`}
             >
               여행.맛집
@@ -101,7 +101,7 @@ const Story = () => {
           <div className={classes.tags} onClick={() => onClickCulture()}>
             <div
               className={`${classes.tagFocus} ${
-                dummyData.dataName === "culture" ? classes.choiceTag : ""
+                dummyData.dataName === "culture" && classes.choiceTag
               }`}
             >
               문화.연예
@@ -110,7 +110,7 @@ const Story = () => {
           <div className={classes.tags} onClick={() => onClickIt()}>
             <div
               className={`${classes.tagFocus} ${
-                dummyData.dataName === "it" ? classes.choiceTag : ""
+                dummyData.dataName === "it" && classes.choiceTag
               }`}
             >
               It
@@ -119,7 +119,7 @@ const Story = () => {
           <div className={classes.tags} onClick={() => onClickSport()}>
             <div
               className={`${classes.tagFocus} ${
-                dummyData.dataName === "sport" ? classes.choiceTag : ""
+                dummyData.dataName === "sport" && classes.choiceTag
               }`}
             >
               스포츠
@@ -128,7 +128,7 @@ const Story = () => {
           <div className={classes.tags} onClick={() => onClickCurrent()}>
             <div
               className={`${classes.tagFocus} ${
-                dummyData.dataName === "current" ? classes.choiceTag : ""
+                dummyData.dataName === "current" && classes.choiceTag
               }`}
             >
               시사
@@ -138,11 +138,11 @@ const Story = () => {
         {/*하단 카드 형태 블로그 노출*/}
       </section>
       <section>
-        <StoryBlog className={classes.storyBlog} dummyData={dummyData} />
+        <StoryBlog dummyData={dummyData.cardData.data.list} />
       </section>
       {/*하단 리스트 형태 블로그 노출*/}
       <div className={classes.storyWrapper}>
-        <StoryItemBox dummyData={dummyData} />
+        <StoryItemBox dummyData={dummyData.itemData.data.list} />
       </div>
     </div>
   );

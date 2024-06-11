@@ -43,17 +43,14 @@
 .topSectionWrapTag {
   font-size: 1.8rem;
   display: flex;
-  align-items: end;
   justify-content: space-between;
   width: 40rem;
   font-weight: 300;
   opacity: 0.9;
-}
-.tags {
-  position: relative;
   cursor: pointer;
   user-select: none;
 }
+
 .tagFocus:hover {
   text-decoration: underline;
   text-decoration-thickness: 0.35rem;
