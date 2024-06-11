@@ -1,6 +1,7 @@
 #Admin {
   display: flex;
   justify-content: center;
+  align-items: center;
   margin: 0 auto;
   background: #f3f5f7;
   padding: 120px 0 100px 0;
@@ -13,23 +14,80 @@
 }
 
 .AdminProfile {
-  width: 216px;
   background: #fff;
+  text-align: center;
+  border: 1px solid #e0e5ee;
 }
 
 .AdminProfileImage {
-  width: 100px;
-  height: 100px;
-  background: #fff;
-  padding: 50px;
+  padding: 30px 0 25px;
+  border-radius: 0.5rem;
 }
 
-.AdminName {
+.AdminProfileImage img {
+  width: 100px;
+  height: 100px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 20px;
+}
+
+.AdminNameUser {
+  font-weight: bold;
+}
+
+.AdminNameEmail {
+  color: #888;
+  font-size: 13px;
+}
+
+#AdminList {
+  margin-top: 8px;
   background: #fff;
+  font-size: 15px;
+  }
+
+.AdminMyblog {
+  border: 1px solid #e0e5ee;
+  border-bottom: 0;
+  padding: 7px 0 9px 47px;
+  
+}
+
+.AdminListLine {
+  border: 1px solid #e0e5ee;
+  border-bottom: 0;
+  padding: 12px 0 14px 47px;
+}
+
+.AdminListUser{
+  padding-bottom: 8px;
+}
+
+.AdminListMenu{
+  font-size: 13px;
+  font-weight: 100;
+  color: #555
+}
+
+.AdminListMenuFont{
+  margin-top: 5px;
+  }
+
+.AdminListLinkMenu{
+  border: 1px solid #e0e5ee;
+  padding: 5px 0 9px 47px;
+
 }
 
 #AdminRight {
   float: right;
   width: 814px;
   margin-left: 30px;
+}
+
+.AdminBlockImage {
+  width: 80px;
+  height: 80px;
 }

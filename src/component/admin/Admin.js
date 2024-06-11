@@ -5,45 +5,51 @@ const Admin = () => {
   return (
     <div id={classes.Admin}>
       <div id={classes.AdminLeft}>
-        <div id={classes.AdminProfile}>
-          <div className={classes.AdminProfileImage}>
-            <a href="">
-              <img src="" width="100" height="100" alt></img>
-            </a>
-          </div>
-          <div className={classes.AdminName}>
-            <div className={classes.AdminNameUser}>새벽감성개발자</div>
-            <div className={classes.AdminNameEmail}>game@naver.com</div>
+        <div>
+          <div className={classes.AdminProfile}>
+            <div className={classes.AdminProfileImage}>
+              <a href="/admin">
+                <img
+                  src="https://img1.daumcdn.net/thumb/C100x100/?scode=mtistory2&fname=https%3A%2F%2Ft1.daumcdn.net%2Ftistory_admin%2Fstatic%2Fmanage%2Fimages%2Fr3%2Fdefault_S.png"
+                  alt="프로필이미지"
+                ></img>
+              </a>
+              <div className={classes.AdminNameUser}>새벽감성개발자</div>
+              <div className={classes.AdminNameEmail}>game@naver.com</div>
+            </div>
           </div>
         </div>
         <div id={classes.AdminList}>
           <div>
-            <div>
+            <div className={classes.AdminMyblog}>
               <div className={classes.AdminListHomeIcon}></div>
               <div className={classes.AdminListMyblog}>내 블로그</div>
             </div>
-            <div>
+            <div className={classes.AdminListLine}>
               <div className={classes.AdminListUserIcon}></div>
-              <div className={classes.AdminListMyUser}>내 계정</div>
-              <ul>
-                <li>프로필 레이어</li>
-                <li>응원내역보기</li>
-                <li>카카오계정 관리</li>
-              </ul>
+              <div className={classes.AdminListUser}>내 계정</div>
+              <div className={classes.AdminListMenu}>
+                <div className={classes.AdminListMenuFont}>프로필 레이어</div>
+                <div className={classes.AdminListMenuFont}>응원내역보기</div>
+                <div className={classes.AdminListMenuFont}>카카오계정 관리</div>
+              </div>
             </div>
-            <div className={classes.AdminListIcon}></div>
+            <div className={classes.AdminLisLinkMenuIcon}></div>
             <div className={classes.AdminListLinkMenu}>외부 기능</div>
           </div>
         </div>
       </div>
       <div id={classes.AdminRight}>
-        <div className={classes.AdminMyblog}>
+        <div className={classes.AdminBlog}>
           <h3 className={classes.AdminFont}>
             운영 중인 블로그
             <form className={classes.AdminBlock}>
               <div className={classes.AdminBlockImage}>
                 <a href="">
-                  <img src=""></img>
+                  <img
+                    src="https://img1.daumcdn.net/thumb/S180x180/?scode=mtistory2&fname=https%3A%2F%2Ft1.daumcdn.net%2Ftistory_admin%2Fstatic%2Fmanage%2Fimages%2Fr3%2Fdefault_S.png"
+                    alt="프로필 이미지"
+                  ></img>
                 </a>
               </div>
               <div className={classes.AdminBlockName}>
