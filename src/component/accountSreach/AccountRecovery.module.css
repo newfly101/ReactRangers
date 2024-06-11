@@ -1,0 +1,128 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
+
+/*페이지 전체에 폰트를 적용시킨다*/
+.AccountRecoveryWrapper {
+  font-family:
+    "Pretendard Variable",
+    Pretendard,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    Roboto,
+    "Helvetica Neue",
+    "Segoe UI",
+    "Apple SD Gothic Neo",
+    "Noto Sans KR",
+    "Malgun Gothic",
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
+}
+
+/* accountRecovery 전체를 감싸는 css*/
+.AccountRecoveryWrapper {
+  width: 37vw;
+  padding: 7rem 30vw 0 31vw;
+  white-space: nowrap;
+}
+
+.topText {
+  border-bottom: 2.1px solid black;
+  padding-bottom: 2rem;
+  margin-bottom: 1.7rem;
+}
+
+/*toptext css*/
+.textBold {
+  font-weight: bold;
+  margin-bottom: 0.4rem;
+  font-size: 0.9rem;
+}
+.textMessage {
+  font-size: 1.3rem;
+  font-weight: 300;
+}
+/*radio css*/
+.sreachMethodTab {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+.check1 {
+  width: 0.8rem;
+  transform: translateX(-5.5rem) translateY(0.22rem);
+}
+
+.check2 {
+  width: 0.8rem;
+  transform: translateX(-4.7rem) translateY(0.25rem);
+}
+
+[type="radio"] {
+  vertical-align: middle;
+  appearance: none;
+  border: max(2px, 0.1em) solid rgb(204, 204, 204);
+  border-radius: 50%;
+  width: 0.9rem;
+  height: 0.9rem;
+  cursor: pointer;
+  margin: 0;
+}
+
+.radio {
+  margin-right: 0.2rem;
+}
+
+[type="radio"]:checked {
+  border: max(2px, 0.1em) solid #ff5544;
+  background-color: #ff5544;
+}
+
+form {
+  font-size: 0.66rem;
+}
+
+span {
+  cursor: pointer;
+  user-select: none;
+}
+
+input[type="text"] {
+  width: 35.1rem;
+  height: 2.5rem;
+  margin-top: 1rem;
+  border: 1.5px solid rgb(214, 214, 214);
+  border-radius: 3px;
+}
+
+input::placeholder {
+  font-size: 0.6rem;
+  padding: 0.7rem;
+}
+
+.commitBtn {
+  display: flex;
+  padding: 0.6rem 1rem 0.7rem;
+  margin-top: 2rem;
+  background-color: #b9b9b9;
+  border-radius: 1rem;
+  color: white;
+  cursor: pointer;
+  justify-content: center;
+  width: 4rem;
+  margin-left: 15rem;
+  font-size: 0.6rem;
+}
+
+.loginNotion {
+  padding-top: 1rem;
+  margin-top: 4rem;
+  border-top: 1px solid rgb(207, 207, 207);
+  text-decoration-line: underline;
+  font-size: 0.65rem;
+  color: #636363;
+}
+a:visited {
+  color: #666666;
+}
