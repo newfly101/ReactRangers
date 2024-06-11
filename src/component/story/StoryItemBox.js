@@ -1,15 +1,28 @@
 import React, { useEffect, useState } from "react";
 import classes from "./StoryItemBox.module.css";
-import { dummyCategory1 } from "./StoryDummyData";
 
-import { dummyCategoryCurrent } from "./StoryDummyData";
+import { dummyItemLife } from "./DummyData/StoryDummyDataLife";
+import { dummyItemCulture } from "./DummyData/StoryDummyDataCulture";
+import { dummyItemIt } from "./DummyData/StoryDummyDataIt";
+import { dummyItemCurrent } from "./DummyData/StoryDummyDataCurrent";
+import { dummyItemSport } from "./DummyData/StoryDummyDataSport";
+import { dummyItemTravel } from "./DummyData/StoryDummyDataTravel";
+
 const StoryItemBox = ({ useTag }) => {
-  const [items, setItems] = useState(dummyCategory1);
+  const [items, setItems] = useState(dummyItemLife);
   const itemChanger = (useTag) => {
     if (useTag === "life") {
-      setItems(dummyCategory1);
+      setItems(dummyItemLife);
     } else if (useTag === "it") {
-      setItems(dummyCategoryCurrent);
+      setItems(dummyItemIt);
+    } else if (useTag === "culture") {
+      setItems(dummyItemCulture);
+    } else if (useTag === "current") {
+      setItems(dummyItemCurrent);
+    } else if (useTag === "sport") {
+      setItems(dummyItemSport);
+    } else if (useTag === "travel") {
+      setItems(dummyItemTravel);
     }
   };
   useEffect(() => {

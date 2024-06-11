@@ -153,41 +153,65 @@ const TistoryMain = () => {
             아무도 상상할 수 없죠.
           </p>
           <div className={styles.slideContainer}>
-            <div className={`${styles.imageWithText} ${styles.image1}`}>
+            <a href="https://hotel990.com/" className={styles.banner_link}>
               <img
-                src="https://t1.daumcdn.net/tistory_admin/static/top/pc/txt_da.png"
+                src="https://img1.daumcdn.net/thumb/C1200x900/?scode=mtistory2&fname=http%3A%2F%2Fcfile10.uf.tistory.com%2Fimage%2F99A81B3C5BB2C6EF2C9883"
                 alt=""
+                className={styles.banner_image}
               />
-              <div className={styles.overlay}>이미지 에 대한 설명</div>
-            </div>
-            <div className={`${styles.imageWithText} ${styles.image1}`}>
+              <p className={styles.banner_hover_text}>
+                마우스를 올리면 나타나는 텍스트
+              </p>
+            </a>
+            <a
+              href="https://leeheehoon.tistory.com/"
+              className={styles.banner_link}
+            >
               <img
-                src="https://t1.daumcdn.net/tistory_admin/static/top/pc/txt_da.png"
+                src="https://img1.daumcdn.net/thumb/C1200x900/?scode=mtistory2&fname=https%3A%2F%2Ft1.daumcdn.net%2Ftistory_admin%2Fassets%2Fpromotions%2F72a26c24396048fa9fb668442021a18b"
                 alt=""
+                className={styles.banner_image}
               />
-              <div className={styles.overlay}>이미지 에 대한 설명</div>
-            </div>
-            <div className={`${styles.imageWithText} ${styles.image1}`}>
+              <p className={styles.banner_hover_text}>
+                마우스를 올리면 나타나는 텍스트
+              </p>
+            </a>
+            <a
+              href="https://hygphoto.tistory.com/"
+              className={styles.banner_link}
+            >
               <img
-                src="https://t1.daumcdn.net/tistory_admin/static/top/pc/txt_da.png"
+                src="https://img1.daumcdn.net/thumb/C1200x900/?scode=mtistory2&fname=http%3A%2F%2Fcfile2.uf.tistory.com%2Fimage%2F99D6CF405BB2C6B824A969"
                 alt=""
+                className={styles.banner_image}
               />
-              <div className={styles.overlay}>이미지 에 대한 설명</div>
-            </div>
-            <div className={`${styles.imageWithText} ${styles.image1}`}>
+              <p className={styles.banner_hover_text}>
+                마우스를 올리면 나타나는 텍스트
+              </p>
+            </a>
+            <a
+              href="https://so-oh.tistory.com/category"
+              className={styles.banner_link}
+            >
               <img
-                src="https://t1.daumcdn.net/tistory_admin/static/top/pc/txt_da.png"
+                src="https://img1.daumcdn.net/thumb/C1200x900/?scode=mtistory2&fname=http%3A%2F%2Fcfile1.uf.tistory.com%2Fimage%2F99368F335BB2C64F29335D"
                 alt=""
+                className={styles.banner_image}
               />
-              <div className={styles.overlay}>이미지 에 대한 설명</div>
-            </div>
-            <div className={`${styles.imageWithText} ${styles.image1}`}>
+              <p className={styles.banner_hover_text}>
+                마우스를 올리면 나타나는 텍스트
+              </p>
+            </a>
+            <a href="https://mistyfriday.kr/" className={styles.banner_link}>
               <img
-                src="https://t1.daumcdn.net/tistory_admin/static/top/pc/txt_da.png"
+                src="https://img1.daumcdn.net/thumb/C1200x900/?scode=mtistory2&fname=http%3A%2F%2Fcfile2.uf.tistory.com%2Fimage%2F996CC03C5BB2C66823DA6C"
                 alt=""
+                className={styles.banner_image}
               />
-              <div className={styles.overlay}>이미지 에 대한 설명</div>
-            </div>
+              <p className={styles.banner_hover_text}>
+                마우스를 올리면 나타나는 텍스트
+              </p>
+            </a>
           </div>
           <div className={styles.sponsorContainer}>
             <div className={styles.sponsorImages}>
