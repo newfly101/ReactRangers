@@ -8,6 +8,7 @@ import { dummyCardSport } from "./DummyData/StoryDummyDataSport";
 import { dummyCardTravel } from "./DummyData/StoryDummyDataTravel";
 
 const StoryBlog = ({ useTag }) => {
+  //story.js에서 props를 받아서 보여줄 정보를 carditems state에 업데이트
   const [carditems, setCardItems] = useState(dummyCardLife);
 
   const itemChanger = (useTag) => {
@@ -32,6 +33,7 @@ const StoryBlog = ({ useTag }) => {
 
   return (
     <div className={classes.storyMidSection}>
+      {/*화면 전체에 a태그를 감싼다*/}
       {carditems.data.list.map((item, index) => (
         <a href={item.blogUrl} key={index}>
           <div className={classes.blogWrapper}>
@@ -40,7 +42,7 @@ const StoryBlog = ({ useTag }) => {
               alt="스토리블로그 이미지"
               className={classes.blogImg}
             />
-
+            {/*화면 하단 Info를 구성*/}
             <div className={classes.blogTextWrapper}>
               <div className={classes.blogInfo}>
                 {item.serviceCategoryName} &nbsp;·&nbsp; 공감
@@ -53,7 +55,7 @@ const StoryBlog = ({ useTag }) => {
                   {item.commentCount}
                 </label>
               </div>
-
+              {/*카드 뉴스 최하단 저자와 블로그 제목*/}
               <div className={classes.blogTitle}>{item.entryTitle}</div>
               <div className={classes.blogFooter}>
                 <div>
