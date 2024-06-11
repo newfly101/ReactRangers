@@ -1,10 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 import { ReactComponent as LinkIcon } from "../SkinPage/link.svg";
 import classes from "../SkinPage/SkinPage.module.css";
 import UserClasses from "../SkinPage/UserSkin.module.css";
 
 const SkinPage = (props) => {
   const { items, isAVew, usersSkin } = props;
+
+  const [isHoverd, setIsHovered] = useState(null);
+
+  const handleMouseEnter = (index) => {
+    setIsHovered(index);
+  };
+
+  const handleMouseLeave = () => {
+    setIsHovered(null);
+  };
 
   return (
     <>
@@ -86,8 +96,31 @@ const SkinPage = (props) => {
               {usersSkin.map((user, index) => (
                 <div key={index}>
                   <div className={UserClasses.item}>
-                    <div className={UserClasses.image}>
-                      <img src={user.image} alt="user.index" />
+                    <div
+                      key={index}
+                      className={UserClasses.image}
+                      onMouseEnter={() => handleMouseEnter(index)}
+                      onMouseLeave={handleMouseLeave}
+                    >
+                      <img src={user.image} alt={user.index} />
+                      {isHoverd === index && (
+                        <div className={UserClasses.hoverCard}>
+                          <div className={UserClasses.hoverProfile}>
+                            <img src={user.profile} alt={user.index} />
+                            <div className={UserClasses.name}>
+                              <button>{user.name}</button>
+                            </div>
+                            <div className={UserClasses.linkButton}>
+                              <button>
+                                배포 사이트 보기
+                                <span>
+                                  <LinkIcon className={UserClasses.icon} />
+                                </span>
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      )}
                     </div>
                     <div className={UserClasses.cardButton}>
                       <div className={UserClasses.title}>
