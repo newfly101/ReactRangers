@@ -78,7 +78,7 @@ const Navigation = () => {
             >
               <Link to="/">
                 <img
-                  src={process.env.PUBLIC_URL + "/tistoryLogo.webp"}
+                  src={'/tistoryLogo.webp'}
                   alt="TistoryLogo"
                 />
               </Link>
