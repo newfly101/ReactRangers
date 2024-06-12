@@ -23,11 +23,13 @@ const StoryItemBox = ({ dummyData }) => {
               </div>
               {/*아이템 박스 중간 부분*/}
               <div className={classes.ItemBoxMid}>
-                <div>{item.title.substring(0, 35)}</div>
+                <div className={classes.ItemBoxMidTitle}>
+                  {item.title.substring(0, 35)}
+                </div>
                 <div className={classes.ItemBoxdesc}>
-                  {item.summary.substring(0, 60)}
+                  {item.summary.substring(0, 55)}
                   <br />
-                  {item.summary.substring(60, 100) + "..."}
+                  {item.summary.substring(55, 100) + "..."}
                 </div>
                 <div className={classes.ItemBoxAuthor}>
                   <div className={classes.ItemBoxAuthorDetali}>
@@ -37,7 +39,9 @@ const StoryItemBox = ({ dummyData }) => {
                       alt="아이템박스 저자 이미지"
                     />
                     <div>{item.userName}</div>
-                    <div>by {item.blogTitle}</div>
+                    <div className={classes.authorBlogTitle}>
+                      by {item.blogTitle}
+                    </div>
                   </div>
                   <div className={classes.subscribeBtn}>구독하기</div>
                 </div>
