@@ -11,6 +11,7 @@ import Footer from "./component/feed/Footer";
 import Skin from "./component/skin/TstorySkin";
 import TistoryMain from "../src/component/TistoryMain";
 import AccountRecovery from "./component/accountSreach/AccountRecovery";
+import ConvertAccount from "./component/convertAccount/ConvertAccount";
 
 function App() {
   return (
@@ -27,7 +28,8 @@ function App() {
         <Route path="/admin" element={<Admin />} />
         <Route path="/story" element={<Story />} />
         <Route path="/skin" element={<Skin />} />
-        <Route path="/AccountRecovery" element={<AccountRecovery />} />
+        <Route path="/accountRecovery" element={<AccountRecovery />} />
+        <Route path="/convertAccount" element={<ConvertAccount />} />
         {/*
             <Route path="/" element={<TistoryMain />} /> // 여기에 page link 추가
           */}
