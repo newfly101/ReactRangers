@@ -38,10 +38,10 @@
 .textBold {
   font-weight: bold;
   margin-bottom: 0.4rem;
-  font-size: 0.9rem;
+  font-size: 1.2rem;
 }
 .textMessage {
-  font-size: 1.3rem;
+  font-size: 1.6rem;
   font-weight: 300;
 }
 /*radio css*/
@@ -49,15 +49,16 @@
   display: flex;
   align-items: center;
   justify-content: left;
+  font-size: 0.8rem;
 }
 .check1 {
   width: 0.8rem;
-  transform: translateX(-5.5rem) translateY(0.22rem);
+  transform: translateX(-6.43rem) translateY(0.2rem);
 }
 
 .check2 {
   width: 0.8rem;
-  transform: translateX(-4.7rem) translateY(0.25rem);
+  transform: translateX(-5.4rem) translateY(0.2rem);
 }
 
 [type="radio"] {
@@ -92,15 +93,15 @@ span {
 
 /*input text css*/
 input[type="text"] {
-  width: 35.1rem;
-  height: 2.5rem;
-  margin-top: 1rem;
+  width: 44.1rem;
+  height: 3.3rem;
+  margin-top: 1.8rem;
   border: 1.5px solid rgb(214, 214, 214);
   border-radius: 3px;
 }
 
 input::placeholder {
-  font-size: 0.6rem;
+  font-size: 0.75rem;
   padding: 0.7rem;
 }
 
@@ -109,13 +110,13 @@ input::placeholder {
   padding: 0.6rem 1rem 0.7rem;
   margin-top: 2rem;
   background-color: #b9b9b9;
-  border-radius: 1rem;
+  border-radius: 1.5rem;
   color: white;
   cursor: pointer;
   justify-content: center;
-  width: 4rem;
-  margin-left: 15rem;
-  font-size: 0.6rem;
+  width: 5rem;
+  margin-left: 18rem;
+  font-size: 0.8rem;
 }
 
 .loginNotion {
@@ -138,4 +139,8 @@ a:visited {
 .methodBold {
   color: black;
   text-decoration-line: underline;
+}
+
+.loginDetali {
+  font-size: 0.8rem;
 }
