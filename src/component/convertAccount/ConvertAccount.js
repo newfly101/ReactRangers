@@ -13,6 +13,7 @@ const ConvertAccount = () => {
           2020년 10월 27일 이전에 이메일 계정으로 가입하셨다면, 로그인 후
           카카오계정으로 전환해 주셔야 티스토리를 이용하실 수 있습니다.
           <a
+            className={classes.ATagClass}
             href="https://notice.tistory.com/2555"
             target="_blank"
             rel="noreferrer"

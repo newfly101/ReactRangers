@@ -14,7 +14,7 @@ div {
 .innerFoot {
   display: flex;
   overflow: hidden;
-  min-width: 1200px;
+  /* min-width: 1200px; */
   margin: 0 auto;
   padding: 0 0 51px 0;
   height: 275px;
