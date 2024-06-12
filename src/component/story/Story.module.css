@@ -1,71 +1,79 @@
 @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
+
+/*페이지 전체에 폰트를 적용시킨다*/
 .storyMain {
-  font-family: "Pretendard Variable", Pretendard, -apple-system,
-    BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI",
-    "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji",
-    "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  font-family:
+    "Pretendard Variable",
+    Pretendard,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    Roboto,
+    "Helvetica Neue",
+    "Segoe UI",
+    "Apple SD Gothic Neo",
+    "Noto Sans KR",
+    "Malgun Gothic",
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
 }
 
+/*페이지 규격에 맞추기 위해 사용 범위를 제한하는 css*/
 .storyWrapper {
-  width: 48vw;
-  padding: 0 26vw 0 26vw;
+  width: 56rem;
+  padding: 0 0 0 26.5vw;
 }
 
+/*상단 섹션의 css*/
 .storyTopSection {
   height: 11.1rem;
   display: flex;
   align-items: start;
   justify-content: center;
   flex-direction: column;
-  margin-top: 5rem;
+  margin-top: 6.7rem;
 }
 
 .storyTopSectionInnertext {
-  width: 21rem;
+  width: 26rem;
   text-align: left;
-  margin-top: 2.5rem;
-  margin-bottom: 4rem;
+  margin-top: 5rem;
+  margin-bottom: 4.5rem;
 }
 
 .topSectionTitle {
   margin: 0;
+  font-size: 1.2rem;
 }
 .topSectionMessage {
   margin: 0.4rem 0 0 0;
-  font-size: 1.1rem;
+  font-size: 1.5rem;
 }
 
+/*태그 부분 css*/
 .topSectionWrapTag {
-  font-size: 1.8rem;
+  font-size: 2.2rem;
   display: flex;
-  align-items: end;
   justify-content: space-between;
-  width: 40rem;
+  width: 50rem;
   font-weight: 300;
   opacity: 0.9;
-}
-
-.storyBlog {
-  width: 5rem;
-}
-.storyMidSection {
-  margin-bottom: 2rem;
-}
-
-.tags {
-  position: relative;
   cursor: pointer;
   user-select: none;
 }
 
-.textBold {
-  font-weight: bold;
-  text-decoration: underline;
-  text-decoration-thickness: 0.35rem;
-  text-decoration-color: #ff5544;
-}
 .tagFocus:hover {
   text-decoration: underline;
   text-decoration-thickness: 0.35rem;
   text-decoration-color: rgb(180, 180, 180);
+}
+
+/*태그가 선택되었을때 주황선을 표시하는 부분*/
+.choiceTag {
+  font-weight: bold;
+  text-decoration: underline;
+  text-decoration-thickness: 0.35rem;
+  text-decoration-color: #ff5544 !important;
 }

@@ -99,8 +99,8 @@
   font-weight: 500;
 }
 
-.section5 p:hover {
-  color: rgb(70, 70, 70);
+.section5 a:hover {
+  color: #000000;
 }
 
 .section5 p span {
@@ -207,61 +207,76 @@ em {
   height: auto;
 }
 
-.section2 {
-  background-color: #ff6600;
-  color: #554941;
-  width: auto;
-}
-
-.section3 {
-  background-color: #30016d;
-  color: #554941;
-  width: auto;
-}
-
-.section4 {
-  background-color: #0fc427;
-  color: #554941;
-  width: auto;
-}
-
-.banner_link {
-  display: inline-block;
+.slider {
+  width: 100%;
+  max-width: 1800px;
+  margin: 0 auto;
+  padding: 40px 20px;
   position: relative;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
-
-.banner_container {
+.slideRow {
+  display: flex;
+  justify-content: center;
+  margin: 0 5px 20px;
+}
+.slideContainer {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  height: 350px;
-  border: 1px solid #f0f0f0;
+  max-width: 1600px;
+}
+
+.banner_link {
+  display: block;
+  position: relative;
+  margin: 0 20px;
+  flex: 1;
   overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.banner_link:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
 }
 
 .banner_image {
-  display: block;
-  border: 1px solid #f0f0f0;
-  width: 96%;
-  height: 350px;
-  transition: transform 0.3s ease-in-out;
-}
-
-/* .banner_link:hover .banner_image {
-  transform: scale(1.1);
-} */
-
-.banner_hover_text {
-  position: absolute;
-  bottom: 0;
   width: 100%;
-  height: 100%;
-  margin-bottom: 0;
-  background-color: rgba(0, 0, 0, 0.7);
-  color: white;
-  opacity: 0;
-  transition: opacity 0.3s ease-in-out;
+  height: auto;
+  display: block;
+  transition: filter 0.3s ease;
 }
+.customParagraph {
+  padding-bottom: 77px;
+}
+/* .banner_link {
+  position: relative;
+  display: block;
+ 
+} */
+/* overflow: hidden; */
+/* .banner_hover_text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 120%;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  font-size: 1em;
+  text-align: center;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.3s ease;
+} */
+/* 
 .banner_link:hover .banner_hover_text {
   opacity: 1;
-}
+} */

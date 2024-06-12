@@ -1,7 +1,7 @@
 import React from "react";
 import { ReactComponent as LinkIcon } from "../SkinPage/link.svg";
 import classes from "../SkinPage/SkinPage.module.css";
-import UserClasses from "../SkinPage/UserSkin.module.css";
+import UserSkin from "./UserSkin";
 
 const SkinPage = (props) => {
   const { items, isAVew, usersSkin } = props;
@@ -41,8 +41,9 @@ const SkinPage = (props) => {
                       </button>
                     </div>
                     <div className={classes.innerText}>
-                      <div>{item.data.content}</div>
-                      <div>{item.data.content1}</div>
+                      {item.data.content.map((contentText, contentIndex) => (
+                        <div key={contentIndex}>{contentText}</div>
+                      ))}
                     </div>
                     <div className={classes.cardButton}>
                       <div className={classes.tagButton}>
@@ -61,9 +62,10 @@ const SkinPage = (props) => {
                       </div>
                     </div>
                     <div className={classes.imageContaner}>
-                      <div className={classes.imageWrap}>
+                      <div>
                         {item.data.img.map((imgSrc, imgIndex) => (
                           <div className={classes.image}>
+                            {/* eslint-disable-next-line jsx-a11y/img-redundant-alt */}
                             <img
                               key={imgIndex}
                               src={`${process.env.PUBLIC_URL}/SkinImg/${item.data.title}/${imgSrc}`}
@@ -80,27 +82,7 @@ const SkinPage = (props) => {
           ))}
         </div>
       ) : (
-        <div id="이용자 제작 스킨">
-          <div className={UserClasses.container}>
-            <div className={UserClasses.cardWrap}>
-              {usersSkin.map((user, index) => (
-                <div key={index}>
-                  <div className={UserClasses.item}>
-                    <div className={UserClasses.image}>
-                      <img src={user.image} alt="user.index" />
-                    </div>
-                    <div className={UserClasses.title}>
-                      <button>{user.title}</button>
-                    </div>
-                    <div className={UserClasses.tag}>
-                      <button>{user.tag}</button>
-                    </div>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
+        <UserSkin usersSkin={usersSkin} />
       )}
     </>
   );

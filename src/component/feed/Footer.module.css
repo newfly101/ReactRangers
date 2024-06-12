@@ -1,0 +1,231 @@
+div {
+  margin: 0;
+  padding: 0;
+}
+
+.footerComm {
+  bottom: 0;
+  width: 100%;
+  border-top: 1px solid #f0f0f0;
+  text-align: center;
+  height: 327px;
+}
+
+.innerFoot {
+  display: flex;
+  overflow: hidden;
+  min-width: 1200px;
+  margin: 0 auto;
+  padding: 0 0 51px 0;
+  height: 275px;
+  background-color: #fff;
+  justify-content: space-between;
+}
+
+.contTistory {
+  padding: 40px 0 0 60px;
+  float: left;
+  position: absolute;
+  height: 236px;
+  width: 400px;
+}
+
+.wrapDesc {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 36px;
+  transform: translate(-65px, 0px);
+}
+
+.tistroryImg {
+  width: 36px;
+  height: 36px;
+  display: block;
+}
+
+.descFooter {
+  padding-top: 0;
+  padding-left: 20px;
+  color: #333;
+  text-align: left;
+  font-size: 12px;
+
+  margin: 0;
+}
+.descFooter em {
+  color: #000;
+  font-style: normal;
+  font-weight: 400;
+  padding-left: 2px;
+}
+
+.txtFooter {
+  color: #333;
+  text-align: left;
+  font-size: 11px;
+}
+.innerFoot .corpInfo {
+  padding-top: 26px;
+  font-size: 12px;
+  line-height: 2;
+  color: #909090;
+  text-align: left;
+}
+
+.boxInfo {
+  display: flex;
+  align-items: center;
+  height: 12px;
+  margin-bottom: 12px;
+}
+
+.txtInfo {
+  display: flex;
+  align-items: center;
+  line-height: 12px;
+  margin-bottom: 12px;
+  flex-shrink: 0;
+  margin-right: 5px;
+}
+
+/* .txt_info {
+  display: flex;
+  align-items: center;
+  line-height: 12px;
+  margin-bottom: 12px;
+  flex-shrink: 0;
+} */
+
+/* .txtInfoBefore::before {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 12px;
+  margin: 0 7px;
+  background: #909090;
+} */
+
+.linkFooter {
+  color: #909090;
+  text-decoration: none;
+  margin-left: 5px;
+  display: inline-flex;
+  align-items: center;
+}
+
+/* .link_footer.has-before::before {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 12px;
+  margin: 0 7px;
+  background: #909090;
+} */
+
+.innerFoot .searchTistory {
+  margin-top: 50px;
+}
+
+.contTistory .searchTistory {
+  margin: 21px 0 0 -8px;
+}
+
+.searchTistory {
+  position: relative;
+  width: 119px;
+  height: 38px;
+  padding: 0 20px;
+  box-sizing: content-box;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+}
+
+.searchTistory .inputText {
+  width: 104px;
+  margin-top: -2px;
+  border: 0;
+}
+
+.inputText {
+  display: block;
+  width: 100%;
+  height: 100%;
+  font-size: 13px;
+  color: #000;
+  border: none;
+  outline: 0;
+  background-color: transparent;
+}
+
+.btnSearch {
+  position: absolute;
+  top: 11px;
+  right: 20px;
+  width: 16px;
+  height: 16px;
+}
+
+button {
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+  outline: none;
+}
+
+.btnSearch img {
+  width: 100%;
+  height: 100%;
+}
+
+.innerFoot .questionTistory {
+  flex: 0 0 736px;
+  width: 736px;
+  padding: 55px 60px 0 0;
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-left: auto;
+}
+
+@media (max-width: 1400px) {
+  .innerFoot .questionTistory {
+    margin-left: 550px;
+  }
+}
+
+.questionTistory .wrapQuestion {
+  float: left;
+  width: 160px;
+  padding-left: 24px;
+}
+
+.wrapQuestion {
+  text-align: left;
+  display: block;
+  font-size: 14px;
+  color: #000;
+  line-height: 1.5;
+  font-weight: 400;
+  font-family: Pretendard-SemiBold, AppleSDGothicNeo-Regular, Malgun Gothic,
+    ë§‘ì€ ê³ ë”•, dotum, ë‹ì›€, sans-serif;
+}
+
+.listQuestion {
+  padding: 11px 0 0;
+  margin: 0;
+}
+
+.listQuestion .linkTxt {
+  display: block;
+  font-size: 13px;
+  color: #777;
+  line-height: 30px;
+}
+
+.listQuestion .linkTxt {
+  height: 30px;
+  text-decoration: none;
+}

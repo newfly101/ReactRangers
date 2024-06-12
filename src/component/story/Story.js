@@ -18,29 +18,55 @@ import { dummyItemTravel } from "./DummyData/StoryDummyDataTravel";
 const Story = () => {
   //현재 보여주고 있는 페이지를 결정하는 부분
 
-  const [dummyData, setDummyData] = useState([
-    "life",
-    dummyCardLife,
-    dummyItemLife,
-  ]);
+  const [dummyData, setDummyData] = useState({
+    dataName: "life",
+    cardData: dummyCardLife,
+
+    itemData: dummyItemLife,
+  });
   //tag클릭에 맞춰 state를 변경하는 함수
   const onClickLife = () => {
-    setDummyData(["life", dummyCardLife, dummyItemLife]);
+    setDummyData({
+      dataName: "life",
+      cardData: dummyCardLife,
+
+      itemData: dummyItemLife,
+    });
   };
   const onClickTravel = () => {
-    setDummyData(["travel", dummyCardTravel, dummyItemTravel]);
+    setDummyData({
+      dataName: "travel",
+      cardData: dummyCardTravel,
+      itemData: dummyItemTravel,
+    });
   };
   const onClickCulture = () => {
-    setDummyData(["culture", dummyCardCulture, dummyItemCulture]);
+    setDummyData({
+      dataName: "culture",
+      cardData: dummyCardCulture,
+      itemData: dummyItemCulture,
+    });
   };
   const onClickIt = () => {
-    setDummyData(["it", dummyCardIt, dummyItemIt]);
+    setDummyData({
+      dataName: "it",
+      cardData: dummyCardIt,
+      itemData: dummyItemIt,
+    });
   };
   const onClickSport = () => {
-    setDummyData(["sport", dummyCardSport, dummyItemSport]);
+    setDummyData({
+      dataName: "sport",
+      cardData: dummyCardSport,
+      itemData: dummyItemSport,
+    });
   };
   const onClickCurrent = () => {
-    setDummyData(["current", dummyCardCurrent, dummyItemCurrent]);
+    setDummyData({
+      dataName: "current",
+      cardData: dummyCardCurrent,
+      itemData: dummyItemCurrent,
+    });
   };
 
   return (
@@ -59,7 +85,7 @@ const Story = () => {
           <div className={classes.tags} onClick={() => onClickLife()}>
             <div
               className={`${classes.tagFocus} ${
-                dummyData[0] === "life" ? classes.textBold : ""
+                dummyData.dataName === "life" && classes.choiceTag
               }`}
             >
               라이프
@@ -68,7 +94,7 @@ const Story = () => {
           <div className={classes.tags} onClick={() => onClickTravel()}>
             <div
               className={`${classes.tagFocus} ${
-                dummyData[0] === "travel" ? classes.textBold : ""
+                dummyData.dataName === "travel" && classes.choiceTag
               }`}
             >
               여행.맛집
@@ -77,7 +103,7 @@ const Story = () => {
           <div className={classes.tags} onClick={() => onClickCulture()}>
             <div
               className={`${classes.tagFocus} ${
-                dummyData[0] === "culture" ? classes.textBold : ""
+                dummyData.dataName === "culture" && classes.choiceTag
               }`}
             >
               문화.연예
@@ -86,7 +112,7 @@ const Story = () => {
           <div className={classes.tags} onClick={() => onClickIt()}>
             <div
               className={`${classes.tagFocus} ${
-                dummyData[0] === "it" ? classes.textBold : ""
+                dummyData.dataName === "it" && classes.choiceTag
               }`}
             >
               It
@@ -95,7 +121,7 @@ const Story = () => {
           <div className={classes.tags} onClick={() => onClickSport()}>
             <div
               className={`${classes.tagFocus} ${
-                dummyData[0] === "sport" ? classes.textBold : ""
+                dummyData.dataName === "sport" && classes.choiceTag
               }`}
             >
               스포츠
@@ -104,7 +130,7 @@ const Story = () => {
           <div className={classes.tags} onClick={() => onClickCurrent()}>
             <div
               className={`${classes.tagFocus} ${
-                dummyData[0] === "current" ? classes.textBold : ""
+                dummyData.dataName === "current" && classes.choiceTag
               }`}
             >
               시사
@@ -113,12 +139,12 @@ const Story = () => {
         </div>
         {/*하단 카드 형태 블로그 노출*/}
       </section>
-      <section className={classes.storyMidSection}>
-        <StoryBlog className={classes.storyBlog} dummyData={dummyData} />
+      <section>
+        <StoryBlog dummyData={dummyData.cardData.data.list} />
       </section>
       {/*하단 리스트 형태 블로그 노출*/}
       <div className={classes.storyWrapper}>
-        <StoryItemBox dummyData={dummyData} />
+        <StoryItemBox dummyData={dummyData.itemData.data.list} />
       </div>
     </div>
   );

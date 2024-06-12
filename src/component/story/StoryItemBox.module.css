@@ -1,85 +1,35 @@
-@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
-
+/*아이템 박스 전체를 감싸는 css*/
 .itemBoxWrapper {
   margin-bottom: 0.8rem;
-  margin-top: 1.5rem;
+  margin-top: 3rem;
   cursor: pointer;
-}
-
-.bottomItemBox {
   display: flex;
   align-items: start;
   justify-content: start;
+  white-space: nowrap;
+  width: 80rem;
 }
 
+/*아이템 박스 앞부분*/
 .ItemBoxStart {
-  font-size: 0.6rem;
+  font-size: 0.8rem;
   width: 6rem;
-  margin-right: 2rem;
+  margin-right: 3.3rem;
 }
-
 .publishedAgo {
   margin-bottom: 0.3rem;
   opacity: 0.6;
 }
-.itemBoxImg {
-  width: 6.5rem;
-  height: 6.5rem;
-}
-
 .likeCount {
   color: #ff5544;
 }
-
-.ItemBoxdesc {
-  font-size: 0.68rem;
-  margin: 0.5rem 0 0.8rem 0;
-  opacity: 0.6;
-}
-
-.ItemBoxAuthor {
-  display: flex;
-  justify-content: space-between;
-
-  align-items: center;
-  font-size: 0.6rem;
-}
-.ItemBoxAuthorDetali {
-  display: flex;
-  padding-top: 0.6rem;
-}
-.subscribeBtn {
-  display: none;
-  border: 0.5px solid rgb(211, 211, 211);
-  border-radius: 1rem;
-  padding: 0.3rem 0.6rem 0.3rem 0.6rem;
-  font-size: 0.7rem;
-}
-
-.itemBoxWrapper:hover .subscribeBtn {
-  display: block;
-}
-.ItemBoxAuthorImg {
-  width: 1.7rem;
-}
-
-.ItemBoxAuthorImg {
-  border-radius: 1rem;
-  margin-right: 0.5rem;
-}
-
-.ItemBoxEnd {
-  margin-left: 2rem;
-}
-
 .categoryName {
   margin-bottom: 1.1rem;
   opacity: 0.6;
   position: relative;
 }
-
 .textHr {
-  width: 0.7rem;
+  width: 1rem;
   height: 0.1rem;
   background-color: gray;
   position: absolute;
@@ -87,21 +37,70 @@
   opacity: 0.4;
 }
 
+/*아이템 박스 중간부분*/
+.ItemBoxMid {
+  width: 37.5rem;
+  font-weight: 600;
+  font-size: 1.3rem;
+  margin-right: 1.3rem;
+  height: 8rem;
+}
+.ItemBoxMidTitle {
+  padding-bottom: 0.8rem;
+}
+.ItemBoxdesc {
+  font-size: 0.9rem;
+  font-weight: 400;
+  margin: 0 0 0.8rem 0;
+  opacity: 0.8;
+}
+.ItemBoxAuthor {
+  display: flex;
+  justify-content: space-between;
+
+  align-items: center;
+  font-size: 0.8rem;
+}
+.ItemBoxAuthorDetali {
+  display: flex;
+  padding-top: 0.6rem;
+}
+.ItemBoxAuthorImg {
+  border-radius: 1rem;
+  margin-right: 0.5rem;
+  width: 2rem;
+}
+.authorBlogTitle {
+  opacity: 0.5;
+  margin-left: 0.5rem;
+}
+
+/*구독버튼*/
+.subscribeBtn {
+  display: none;
+  border: 0.5px solid rgb(211, 211, 211);
+  border-radius: 1rem;
+  padding: 0.3rem 0.6rem 0.3rem 0.6rem;
+  font-size: 0.9rem;
+  margin-right: 2rem;
+}
+.itemBoxWrapper:hover .subscribeBtn {
+  display: block;
+}
+
+/*아이템 박스 끝부분*/
+.itemBoxImg {
+  width: 7.7rem;
+  height: 7.7rem;
+}
+
+/*구분선 css*/
 .mainBar {
   opacity: 0.3;
   height: 0.5px;
 }
 
-.blogName {
-  margin-left: 0.3rem;
-  opacity: 0.5;
-}
-
-.ItemBoxMid {
-  width: 28rem;
-  font-size: 1.1rem;
-}
-
+/*a태그 css*/
 a {
   text-decoration-line: none;
   color: black;

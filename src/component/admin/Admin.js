@@ -50,8 +50,8 @@ const Admin = () => {
       </div>
       <div id={classes.AdminRight}>
         <div className={classes.AdminBlog}>
-          <h3 className={classes.AdminFont}>운영 중인 블로그</h3>
-          <div className={classes.AdminBlock}>
+          <div className={classes.AdminFont}> 운영 중인 블로그</div>
+          <form className={classes.AdminBlock}>
             <div className={classes.AdminBlockImage}>
               <a href="">
                 <img
@@ -67,20 +67,24 @@ const Admin = () => {
             <div>
               <button className={classes.AdminBlockButton}>대표</button>
             </div>
-          </div>
+          </form>
           <div className={classes.AdminBlockGuide}>
             대표 블로그는 방문한 블로그/팀블로그 활동 시 사용됩니다.
           </div>
         </div>
-        <h3 className={classes.AdminFont}>운영∙개설 현황</h3>
-        <div className={classes.AdminBlock2}></div>
-        <div className={classes.AdminBlock3}></div>
-        <div className={classes.AdminBlock4}></div>
-        <div className={classes.AdminBlock5}></div>
-        <div className={classes.AdminBlock6}></div>
-        <h3 className={classes.AdminFont}>이메일 알림</h3>
-        <div className={classes.AdminBlock7}></div>
-        <div className={classes.AdminBlock8}></div>
+        <div className={classes.AdminFont}>운영∙개설 현황</div>
+        <div>
+          <div className={classes.AdminBlock2}></div>
+          <div className={classes.AdminBlock3}></div>
+          <div className={classes.AdminBlock4}></div>
+          <div className={classes.AdminBlock5}></div>
+          <div className={classes.AdminBlock6}></div>
+        </div>
+        <div className={classes.AdminFont}>이메일 알림</div>
+        <div>
+          <div className={classes.AdminBlock7}></div>
+          <div className={classes.AdminBlock8}></div>
+        </div>
       </div>
     </div>
   );
