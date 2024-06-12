@@ -38,7 +38,7 @@ input::placeholder {
   border-radius: 0.25rem;
 }
 
-button {
+.loginBtn {
   color: white;
   font-size: 1rem;
   font-weight: bold;
