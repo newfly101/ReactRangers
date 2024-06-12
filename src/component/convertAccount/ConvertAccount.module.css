@@ -22,12 +22,12 @@
   font-weight: 500;
 }
 
-a {
+.ATagClass {
   margin-left: 0.3rem;
   text-decoration-line: underline;
 }
 
-a:visited {
+.ATagClass:visited {
   color: black;
 }
 
