@@ -226,13 +226,13 @@ em {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  max-width: 1100px;
+  max-width: 1600px;
 }
 
 .banner_link {
   display: block;
   position: relative;
-  margin: 0 10px;
+  margin: 0 20px;
   flex: 1;
   overflow: hidden;
   border-radius: 10px;
@@ -251,7 +251,9 @@ em {
   display: block;
   transition: filter 0.3s ease;
 }
-
+.customParagraph {
+  padding-bottom: 77px;
+}
 /* .banner_link {
   position: relative;
   display: block;

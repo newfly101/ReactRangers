@@ -280,7 +280,7 @@ const TistoryMain = () => {
               당신의 티스토리에 엣지가 생길거예요.
             </a>
           </p>
-          <p>
+          <p className={styles.customParagraph}>
             <a href="https://notice.tistory.com/2384">
               <span className={styles.customSpan}> 로그인 보안</span>기능으로
               당신의 정보와
