@@ -1,12 +1,31 @@
 import React, { useState } from "react";
 import { ReactComponent as LinkIcon } from "../SkinPage/link.svg";
-import classes from "../SkinPage/SkinPage.module.css";
+import classes from "./SkinPage.module.css";
 import UserSkin from "./UserSkin";
 
 const SkinPage = (props) => {
   const { items, isAVew, usersSkin } = props;
 
-  const [imageClick, setImageClick] = useState(false);
+  const [imageClick, setImageClick] = React.useState([{ 0: false }]);
+
+  const moveSkinAnimation = (index) => {
+    setImageClick((prevActiveIndex) => {
+      // Find if the index exists
+      const indexExists = prevActiveIndex.find((item) =>
+        item.hasOwnProperty(index)
+      );
+
+      // If index exists, toggle its value
+      if (indexExists) {
+        return prevActiveIndex.map((item) =>
+          item.hasOwnProperty(index) ? { [index]: !item[index] } : item
+        );
+      } else {
+        // If index does not exist, add it to the array
+        return [...prevActiveIndex, { [index]: true }];
+      }
+    });
+  };
 
   const clickLeftArrow = (event) => {
     setImageClick(false);
