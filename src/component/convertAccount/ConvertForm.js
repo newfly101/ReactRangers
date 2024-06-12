@@ -1,5 +1,6 @@
 import React from "react";
 import classes from "./ConvertForm.module.css";
+import { Link } from "react-router-dom";
 
 const ConvertForm = () => {
   return (
@@ -17,8 +18,8 @@ const ConvertForm = () => {
         </div>
       </form>
       <span className={classes.mainATags}>
-        <a href="http://localhost:3000/AccountRecovery">계정 /</a>
-        <a href="http://localhost:3000/AccountRecovery">비밀번호 찾기</a>
+        <Link to="/AccountRecovery">계정 /</Link>
+        <Link to="/AccountRecovery">비밀번호 찾기</Link>
       </span>
     </div>
   );
