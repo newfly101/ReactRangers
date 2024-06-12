@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Classes from "./UserSkin.module.css";
+import { ReactComponent as LinkIcon } from "../SkinPage/link.svg";
 
 const UserSkin = (props) => {
   const { usersSkin } = props;

@@ -2,7 +2,8 @@ import React, { useState } from "react";
 import { ReactComponent as LinkIcon } from "../SkinPage/link.svg";
 import classes from "../SkinPage/SkinPage.module.css";
 
-const SkinPage = (items) => {
+const SkinPage = (props) => {
+  const { items } = props;
   const [imageClick, setImageClick] = useState(false);
 
   const clickLeftArrow = (event) => {
