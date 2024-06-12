@@ -44,14 +44,6 @@
   line-height: 1.2;
 }
 
-/* @media (max-width: 1300px) {
-  .fInnerFeed {
-    max-width: calc(100% - 40px);
-    margin-left: 20px;
-    margin-right: 20px;
-  }
-} */
-
 .fBtn {
   display: flex;
   justify-content: flex-end;
@@ -76,8 +68,6 @@ button {
   width: 896px;
   margin: 8px auto 160px;
   padding: 0;
-
-  /* margin: 0 calc((100% - 1000px) / 2); */
 }
 
 .fBody {
@@ -100,14 +90,6 @@ button {
   word-wrap: break-word;
   white-space: nowrap;
 }
-
-/* @media (max-width: 1300px) {
-  .fList {
-    max-width: calc(100% - 40px);
-    margin-left: 20px;
-    margin-right: 20px;
-  }
-} */
 
 .checkImg {
   display: inline-block;

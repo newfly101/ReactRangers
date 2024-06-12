@@ -14,7 +14,6 @@ div {
 .innerFoot {
   display: flex;
   overflow: hidden;
-  /* min-width: 1200px; */
   margin: 0 auto;
   padding: 0 0 51px 0;
   height: 275px;
@@ -90,23 +89,6 @@ div {
   margin-right: 5px;
 }
 
-/* .txt_info {
-  display: flex;
-  align-items: center;
-  line-height: 12px;
-  margin-bottom: 12px;
-  flex-shrink: 0;
-} */
-
-/* .txtInfoBefore::before {
-  content: "";
-  display: block;
-  width: 1px;
-  height: 12px;
-  margin: 0 7px;
-  background: #909090;
-} */
-
 .linkFooter {
   color: #909090;
   text-decoration: none;
@@ -114,15 +96,6 @@ div {
   display: inline-flex;
   align-items: center;
 }
-
-/* .link_footer.has-before::before {
-  content: "";
-  display: block;
-  width: 1px;
-  height: 12px;
-  margin: 0 7px;
-  background: #909090;
-} */
 
 .innerFoot .searchTistory {
   margin-top: 50px;
@@ -140,11 +113,14 @@ div {
   box-sizing: content-box;
   border: 1px solid #ddd;
   border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .searchTistory .inputText {
   width: 104px;
-  margin-top: -2px;
+  margin: 0;
   border: 0;
 }
 
@@ -209,14 +185,8 @@ button {
   color: #000;
   line-height: 1.5;
   font-weight: 400;
-  font-family:
-    Pretendard-SemiBold,
-    AppleSDGothicNeo-Regular,
-    Malgun Gothic,
-    ë§‘ì€ ê³ ë”•,
-    dotum,
-    ë‹ì›€,
-    sans-serif;
+  font-family: Pretendard-SemiBold, AppleSDGothicNeo-Regular, Malgun Gothic,
+    ë§‘ì€ ê³ ë”•, dotum, ë‹ì›€, sans-serif;
 }
 
 .listQuestion {

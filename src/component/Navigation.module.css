@@ -1,178 +1,190 @@
 .backdrop {
-    display: block;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5);
-    z-index: 10;
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 10;
 }
 .noScroll {
-    overflow: hidden;
+  overflow: hidden;
 }
 
 .navBar {
-    position: fixed;
-    top: 0;
-    height: 72px;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    z-index: 1000;
-    transition: background 0.3s;
-    background: white;
+  position: fixed;
+  top: 0;
+  height: 72px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000;
+  transition: background 0.3s;
+  background: white;
+  padding: 0.8rem;
 }
 .navBarBlank {
-    position: fixed;
-    top: 0;
-    z-index: 1000;
-    height: 72px;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    transition: background 0.3s;
-    background: none;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  height: 72px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  transition: background 0.3s;
+  background: none;
+  padding: 0.8rem;
 }
 .pageTitle {
-    /*font-size: 1.3rem;*/
-    display: flex;
-    font-size: 1.4rem;
-    margin-right: 40px;
-    align-items: center;
-    justify-content: center;
-    color: black;
-    white-space: nowrap;
+  /*font-size: 1.3rem;*/
+  display: flex;
+  font-size: 1.4rem;
+  margin-right: 48px;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  white-space: nowrap;
+  width: 5rem;
 }
 .pageTitle a {
-    color: black;
-    text-decoration-line: none;
+  color: black;
+  text-decoration-line: none;
 }
 .pageTitleBlank {
-    /*font-size: 1.3rem;*/
-    display: flex;
-    font-size: 1.4rem;
-    color: white;
-    margin-right: 40px;
-    align-items: center;
-    justify-content: center;
-    white-space: nowrap;
+  /*font-size: 1.3rem;*/
+  display: flex;
+  font-size: 1.4rem;
+  color: white;
+  margin-right: 48px;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  width: 5rem;
+  filter: invert();
 }
 .pageTitleBlank a {
-    color: white;
-    text-decoration-line: none;
+  color: white;
+  text-decoration-line: none;
 }
 
 .navBarBox {
-    height: 72px;
-    display: flex;
-    align-items: center;
-    margin-left: 50px;
+  height: 72px;
+  display: flex;
+  align-items: center;
+  margin-left: 50px;
 }
 .navBarLogin {
-    height: 72px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  height: 72px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .navBarLogin button {
-    margin-right: 40px;
-    border: none;
-    background: black;
-    color: white;
-    padding: 13px 40px 13px 40px;
-    border-radius: 40px;
-    white-space: nowrap;
+  margin-right: 40px;
+  border: none;
+  background: black;
+  color: white;
+  padding: 13px 40px 13px 40px;
+  border-radius: 40px;
+  white-space: nowrap;
 }
-.navBarLogin button a{
-    color: white;
-    text-decoration-line: none;
+.navBarLogin button a {
+  color: white;
+  text-decoration-line: none;
 }
 .navBarLogin button:hover {
-    margin-right: 40px;
-    border: none;
-    background: red;
-    color: white;
-    padding: 13px 40px 13px 40px;
-    border-radius: 40px;
+  margin-right: 40px;
+  border: none;
+  background: red;
+  color: white;
+  padding: 13px 40px 13px 40px;
+  border-radius: 40px;
 }
 .navBarLogin2 button {
-    margin-right: 40px;
-    border: none;
-    background: rgb(165,137,120);
-    color: black;
-    padding: 13px 40px 13px 40px;
-    border-radius: 40px;
+  margin-right: 40px;
+  border: none;
+  background: rgb(165, 137, 120);
+  color: black;
+  padding: 13px 40px 13px 40px;
+  border-radius: 40px;
 }
 .navBarLogin2 button:hover {
-    margin-right: 40px;
-    border: none;
-    background: red;
-    color: white;
-    padding: 13px 40px 13px 40px;
-    border-radius: 40px;
+  margin-right: 40px;
+  border: none;
+  background: red;
+  color: white;
+  padding: 13px 40px 13px 40px;
+  border-radius: 40px;
 }
 
 .pageLinkBox {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    font-size: 1.3rem;
-    margin: 1rem;
-    white-space: nowrap;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 1rem;
+  margin: 0.6rem;
+  white-space: nowrap;
+  font-weight: bold;
 }
 .pageLinkBox a {
-    color: black;
-    text-decoration-line: none;
+  color: black;
+  text-decoration-line: none;
 }
 .pageLinkBox a:hover {
-    text-decoration-line: underline;
+  text-decoration-line: underline;
 }
 .pageLinkBoxBlank {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    font-size: 1.3rem;
-    color:white;
-    margin: 1rem;
-    white-space: nowrap;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 1rem;
+  color: white;
+  margin: 0.6rem;
+  white-space: nowrap;
+  font-weight: bold;
 }
 .pageLinkBoxBlank a {
-    color:white;
-    text-decoration-line: none;
+  color: white;
+  text-decoration-line: none;
 }
 .pageLinkBoxBlank a:hover {
-    text-decoration-line: underline;
+  text-decoration-line: underline;
 }
 
 .pageLinkedBox {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    font-size: 1.3rem;
-    margin: 1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 1.3rem;
+  margin: 1rem;
 }
 .pageLinkedBox a {
-    color: rgb(255,85,62);
-    text-decoration-line: none;
+  color: rgb(255, 85, 62);
+  text-decoration-line: none;
 }
 .pageLinkedBox a:hover {
-    text-decoration-line: underline;
+  text-decoration-line: underline;
 }
 .pageLinkedBox Link {
-    color: rgb(255,85,62);
-    text-decoration-line: none;
+  color: rgb(255, 85, 62);
+  text-decoration-line: none;
 }
 .pageLinkedBox Link:hover {
-    text-decoration-line: underline;
+  text-decoration-line: underline;
 }
 
 @media (max-width: 800px) {
-    .navBarLogin button {
-        display: none;
-    }
+  .navBarLogin button {
+    display: none;
+  }
+}
+
+.navBarLoginFlag {
+  filter: invert();
+  color: black;
 }
