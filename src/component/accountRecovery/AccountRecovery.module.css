@@ -76,23 +76,13 @@
   margin-right: 0.2rem;
 }
 
-[type="radio"]:checked {
+.radio[type="radio"]:checked {
   border: max(2px, 0.1em) solid #ff5544;
   background-color: #ff5544;
 }
 
-form {
-  font-size: 0.66rem;
-}
-
-span {
-  cursor: pointer;
-  user-select: none;
-  color: #7e7e7e;
-}
-
 /*input text css*/
-input[type="text"] {
+.inputTextBox[type="text"] {
   width: 36.8vw;
   height: 3.3rem;
   margin-top: 1.8rem;
@@ -100,7 +90,7 @@ input[type="text"] {
   border-radius: 3px;
 }
 
-input::placeholder {
+.inputTextBox::placeholder {
   font-size: 0.75rem;
   padding: 0.7rem;
 }
@@ -115,7 +105,7 @@ input::placeholder {
   cursor: pointer;
   justify-content: center;
   width: 5rem;
-  margin-left: 18rem;
+  margin-left: 15vw;
   font-size: 0.8rem;
 }
 
@@ -127,8 +117,14 @@ input::placeholder {
   font-size: 0.65rem;
   color: #636363;
 }
-a:visited {
+.loginDetali:visited {
   color: #666666;
+}
+
+.emailMethod {
+  cursor: pointer;
+  user-select: none;
+  color: #7e7e7e;
 }
 
 .emailMethod:hover {
