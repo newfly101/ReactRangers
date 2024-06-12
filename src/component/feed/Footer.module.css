@@ -144,7 +144,7 @@ div {
 
 .searchTistory .inputText {
   width: 104px;
-  margin-top: -2px;
+  margin-top: 10px;
   border: 0;
 }
 
@@ -209,14 +209,8 @@ button {
   color: #000;
   line-height: 1.5;
   font-weight: 400;
-  font-family:
-    Pretendard-SemiBold,
-    AppleSDGothicNeo-Regular,
-    Malgun Gothic,
-    ë§‘ì€ ê³ ë”•,
-    dotum,
-    ë‹ì›€,
-    sans-serif;
+  font-family: Pretendard-SemiBold, AppleSDGothicNeo-Regular, Malgun Gothic,
+    ë§‘ì€ ê³ ë”•, dotum, ë‹ì›€, sans-serif;
 }
 
 .listQuestion {
