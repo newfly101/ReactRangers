@@ -1,9 +1,10 @@
 .ConvertAccountWrapper {
   background-image: url(https://t1.daumcdn.net/tistory_admin/static/top/pc/bg_login_white.png);
   width: 100vw;
-  height: 100vh;
+
   background-size: 100vw;
   margin-top: 2rem;
+  background-repeat: no-repeat;
 }
 .headerText {
   padding: 2.5rem 0 3rem 3.2rem;

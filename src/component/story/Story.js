@@ -140,7 +140,11 @@ const Story = () => {
         {/*하단 카드 형태 블로그 노출*/}
       </section>
       <section>
-        <StoryBlog dummyData={dummyData.cardData.data.list} />
+        <div className={classes.blogBackGround}>
+          <div className={classes.storyWrapper}>
+            <StoryBlog dummyData={dummyData.cardData.data.list} />
+          </div>
+        </div>
       </section>
       {/*하단 리스트 형태 블로그 노출*/}
       <div className={classes.storyWrapper}>
