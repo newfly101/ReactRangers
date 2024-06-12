@@ -34,11 +34,13 @@
   padding-bottom: 20px;
 }
 
-.AdminNameUser {
+.AdminNameUser,
+.AdminBlockName {
   font-weight: bold;
 }
 
-.AdminNameEmail {
+.AdminNameEmail,
+.AdminBlockEmail {
   color: #888;
   font-size: 13px;
 }
@@ -115,11 +117,57 @@
 
 #AdminRight {
   float: right;
-  width: 814px;
   margin-left: 40px;
+  margin-top: -145px;
+}
+
+.AdminBlock {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+  background: #fff;
+  border: 1px solid #e0e5ee;
+}
+
+.AdminFont {
+  margin-bottom: 15px;
+  font-size: 20px;
+  font-weight: normal;
+}
+
+.AdminBlockEmail {
+  padding-top: 5px;
+}
+
+.AdminBlockMenu {
+  width: 650px;
 }
 
 .AdminBlockImage {
   width: 80px;
   height: 80px;
+  margin: 25px;
+}
+
+.AdminBlockButton {
+  margin-right: 30px;
+  padding: 5px 18px;
+  background: #333;
+  color: white;
+  cursor: pointer;
+  font-size: 11px;
+}
+
+.AdminBlockGuide {
+  padding: 25px 29px;
+  background: #fafbfc;
+  border: 1px solid #e0e5ee;
+  border-top: 0;
+  font-size: 11px;
+  color: gray;
+}
+
+.AdminBlock2{
+  
 }
