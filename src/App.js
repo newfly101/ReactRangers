@@ -10,8 +10,9 @@ import "./App.css";
 import Footer from "./component/feed/Footer";
 import Skin from "./component/skin/TstorySkin";
 import TistoryMain from "../src/component/TistoryMain";
-import AccountRecovery from "./component/accountSreach/AccountRecovery";
+import AccountRecovery from "./component/accountRecovery/AccountRecovery";
 import ConvertAccount from "./component/convertAccount/ConvertAccount";
+import { useState } from "react";
 
 function App() {
   return (
