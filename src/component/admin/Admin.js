@@ -50,37 +50,40 @@ const Admin = () => {
       </div>
       <div id={classes.AdminRight}>
         <div className={classes.AdminBlog}>
-          <h3 className={classes.AdminFont}>
-            운영 중인 블로그
-            <form className={classes.AdminBlock}>
-              <div className={classes.AdminBlockImage}>
-                <a href="/">
-                  <img
-                    src="https://img1.daumcdn.net/thumb/S180x180/?scode=mtistory2&fname=https%3A%2F%2Ft1.daumcdn.net%2Ftistory_admin%2Fstatic%2Fmanage%2Fimages%2Fr3%2Fdefault_S.png"
-                    alt="프로필 이미지"
-                  ></img>
-                </a>
-              </div>
-              <div className={classes.AdminBlockName}>
-                새벽의 이것저것
-                <div className={classes.AdminBlockEmail}>game.tistory.com</div>
-              </div>
-              <div className={classes.AdminBlockButton}>
-                <button>대표</button>
-              </div>
-            </form>
-            <div className={classes.Admin}>
-              대표 블로그는 방문한 블로그/팀블로그 활동시 사용됩니다.
+          <div className={classes.AdminFont}> 운영 중인 블로그</div>
+          <form className={classes.AdminBlock}>
+            <div className={classes.AdminBlockImage}>
+              <a href="">
+                <img
+                  src="https://img1.daumcdn.net/thumb/S180x180/?scode=mtistory2&fname=https%3A%2F%2Ft1.daumcdn.net%2Ftistory_admin%2Fstatic%2Fmanage%2Fimages%2Fr3%2Fdefault_S.png"
+                  alt="프로필 이미지"
+                ></img>
+              </a>
             </div>
-          </h3>
-          <h3 className={classes.AdminFont}>
-            운영∙개설 현황
-            <div className={classes.AdminBlock}></div>
-          </h3>
-          <h3 className={classes.AdminFont}>
-            이메일 알림
-            <div className={classes.AdminBlock}></div>
-          </h3>
+            <div className={classes.AdminBlockMenu}>
+              <div className={classes.AdminBlockName}>새벽의 이것저것</div>
+              <div className={classes.AdminBlockEmail}>game.tistory.com</div>
+            </div>
+            <div>
+              <button className={classes.AdminBlockButton}>대표</button>
+            </div>
+          </form>
+          <div className={classes.AdminBlockGuide}>
+            대표 블로그는 방문한 블로그/팀블로그 활동 시 사용됩니다.
+          </div>
+        </div>
+        <div className={classes.AdminFont}>운영∙개설 현황</div>
+        <div>
+          <div className={classes.AdminBlock2}></div>
+          <div className={classes.AdminBlock3}></div>
+          <div className={classes.AdminBlock4}></div>
+          <div className={classes.AdminBlock5}></div>
+          <div className={classes.AdminBlock6}></div>
+        </div>
+        <div className={classes.AdminFont}>이메일 알림</div>
+        <div>
+          <div className={classes.AdminBlock7}></div>
+          <div className={classes.AdminBlock8}></div>
         </div>
       </div>
     </div>
