@@ -8,13 +8,13 @@ const Footer = () => {
         <div className={classes.contTistory}>
           <div className={classes.wrapDesc}>
             <img src="tistory.ico" alt="" className={classes.tistroryImg} />
-            <p className={classes.descFooter}>
+            <span className={classes.descFooter}>
               <div className={classes.txtFooter}>
                 티스토리는 카카오에서
                 <em>❤</em>을 담아 만듭니다
               </div>
               <div>© Kakao Corp.</div>
-            </p>
+            </span>
           </div>
 
           <div className={classes.corpInfo}>
