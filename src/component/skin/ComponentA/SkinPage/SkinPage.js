@@ -1,10 +1,22 @@
-import React from "react";
+import React, { useState } from "react";
 import { ReactComponent as LinkIcon } from "../SkinPage/link.svg";
 import classes from "../SkinPage/SkinPage.module.css";
 import UserSkin from "./UserSkin";
 
 const SkinPage = (props) => {
   const { items, isAVew, usersSkin } = props;
+
+  const [imageClick, setImageClick] = useState(null);
+
+  const clickLeftArrow = (event) => {
+    setImageClick("left");
+    console.log(imageClick);
+  };
+
+  const clickRightArrow = (event) => {
+    setImageClick("right");
+    console.log(imageClick);
+  };
 
   return (
     <>
@@ -66,7 +78,11 @@ const SkinPage = (props) => {
                     <div className={classes.imageContaner}>
                       <div className={classes.imageWrap}>
                         {item.data.img.map((imgSrc, imgIndex) => (
-                          <div className={classes.image} key={imgIndex}>
+                          <div
+                            className={classes.image}
+                            key={imgIndex}
+                            id={`image${imgIndex}`}
+                          >
                             <img
                               key={imgIndex}
                               src={`${process.env.PUBLIC_URL}/SkinImg/${item.data.title}/${imgSrc}`}
@@ -76,7 +92,7 @@ const SkinPage = (props) => {
                         ))}
                         <div className={classes.arrow}>
                           <div className={classes.leftArrow}>
-                            <button>
+                            <button onClick={clickLeftArrow}>
                               <img
                                 src={"/SkinImg/arrow-left.svg"}
                                 alt="arrowLeft"
@@ -84,7 +100,7 @@ const SkinPage = (props) => {
                             </button>
                           </div>
                           <div className={classes.rightArrow}>
-                            <button>
+                            <button onClick={clickRightArrow}>
                               <img
                                 src={"/SkinImg/arrow-right.svg"}
                                 alt="arrowRight"
