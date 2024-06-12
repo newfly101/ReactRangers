@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Topimage from "./ComponentA/Main/Main";
 import Category from "./ComponentA/Category/Category";
 import Skinpage from "./ComponentA/SkinPage/SkinPage";
+import UserSkin from "./ComponentA/SkinPage/UserSkin";
 import classes from "./TstorySkin.module.css";
 import items from "./DummyData/Item.json";
 import usersSkin from "./DummyData/userSkin.json";
@@ -18,7 +19,11 @@ const TstorySkin = () => {
       <div className={classes.main}>
         <Topimage />
         <Category handleCategoryButton={handleCategoryButton} />
-        <Skinpage items={items} isAVew={isAVew} usersSkin={usersSkin} />
+        {isAVew ? (
+          <Skinpage items={items} />
+        ) : (
+          <UserSkin usersSkin={usersSkin} />
+        )}
       </div>
     </>
   );
