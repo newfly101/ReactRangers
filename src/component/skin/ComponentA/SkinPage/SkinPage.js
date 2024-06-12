@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { ReactComponent as LinkIcon } from "../SkinPage/link.svg";
 import classes from "../SkinPage/SkinPage.module.css";
 import UserSkin from "./UserSkin";
