@@ -8,18 +8,6 @@ const Following = () => {
     setListBox1(!isListBox1);
   };
 
-  // let followingList = (
-  //   <p className={classes.fBlog}>
-  //     아직 구독하는 블로그가 없습니다. 피드에서 추천 블로그를 확인하세요
-  //   </p>
-  // );
-
-  // if (FilerList.length > 0) {
-  //   followingList = FilerList.map((data) =>
-
-  //   );
-  // }
-
   const data = feedCardDummyData.data[0];
   return (
     <div>
@@ -75,13 +63,19 @@ const Following = () => {
       </div>
       <div className={classes.fBody}>
         <div className={classes.fList}>
-          {/* {followingList} */}
+          {/* <p className={classes.fBlog}>
+            아직 구독하는 블로그가 없습니다. 피드에서 추천 블로그를 확인하세요
+          </p> */}
           <ul className={classes.fListTistory}>
             <li>
               <div className={classes.fListTistoryBox}>
                 <a href={data.defaultUrl} className={classes.wrapThumb}>
                   <span className={classes.innerThumb}>
-                    <img src={data.image} className={classes.thumbProfile} alt="dataImage"/>
+                    <img
+                      src={data.image}
+                      className={classes.thumbProfile}
+                      alt="dataImage"
+                    />
                   </span>
                 </a>
                 <a href={data.defaultUrl} className={classes.wrapCont}>
