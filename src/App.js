@@ -7,8 +7,12 @@ import Follower from "./component/feed/Follower";
 import Admin from "./component/admin/Admin";
 import Story from "./component/story/Story";
 import "./App.css";
+import Footer from "./component/feed/Footer";
 import Skin from "./component/skin/TstorySkin";
 import TistoryMain from "../src/component/TistoryMain";
+import AccountRecovery from "./component/accountRecovery/AccountRecovery";
+import ConvertAccount from "./component/convertAccount/ConvertAccount";
+import { useState } from "react";
 
 function App() {
   return (
@@ -25,15 +29,13 @@ function App() {
         <Route path="/admin" element={<Admin />} />
         <Route path="/story" element={<Story />} />
         <Route path="/skin" element={<Skin />} />
+        <Route path="/accountRecovery" element={<AccountRecovery />} />
+        <Route path="/convertAccount" element={<ConvertAccount />} />
         {/*
             <Route path="/" element={<TistoryMain />} /> // 여기에 page link 추가
           */}
       </Routes>
-      <footer>
-        <div>
-          <h2>Footer 입니다.</h2>
-        </div>
-      </footer>
+      <Footer />
     </Router>
   );
 }

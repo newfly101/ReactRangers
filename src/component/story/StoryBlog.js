@@ -23,7 +23,11 @@ const StoryBlog = ({ dummyData }) => {
               <label className={classes.blogInfoNum}>{item.commentCount}</label>
             </div>
             {/*카드 뉴스 최하단 저자와 블로그 제목*/}
-            <div className={classes.blogTitle}>{item.entryTitle}</div>
+            <div className={classes.blogTitle}>
+              {item.entryTitle.substring(0, 14)}
+              <br />
+              {item.entryTitle.substring(14, 26)}
+            </div>
             <div className={classes.blogFooter}>
               <div>
                 <div className={classes.blogDesc}>

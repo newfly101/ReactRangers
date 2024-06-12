@@ -1,0 +1,38 @@
+.ConvertAccountWrapper {
+  background-image: url(https://t1.daumcdn.net/tistory_admin/static/top/pc/bg_login_white.png);
+  width: 100vw;
+  height: 100vh;
+  background-size: 100vw;
+  margin-top: 2rem;
+}
+.headerText {
+  padding: 2.5rem 0 3rem 3.2rem;
+  border-bottom: 1px solid rgb(223, 223, 223);
+}
+
+.headerTitle {
+  font-size: 1.5rem;
+}
+
+.headerDesc {
+  margin-top: 1.2rem;
+  font-size: 0.8rem;
+  opacity: 0.7;
+  font-weight: 500;
+}
+
+a {
+  margin-left: 0.3rem;
+  text-decoration-line: underline;
+}
+
+a:visited {
+  color: black;
+}
+
+.convertFormWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 58.5vh;
+}

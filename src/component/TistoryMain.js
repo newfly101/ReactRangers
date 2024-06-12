@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
@@ -131,7 +131,7 @@ const TistoryMain = () => {
           />
         </div>
       </div>
-      <div className="content">
+      <div className={styles.content}>
         <div className={styles.wrapTit}>
           <strong className={styles.titSection}>
             이 놀라운 사이트들이
@@ -153,57 +153,51 @@ const TistoryMain = () => {
             아무도 상상할 수 없죠.
           </p>
           <div className={styles.slider}>
-            <div className={styles.slideContainer}>
-              <a href="https://hotel990.com/" className={styles.banner_link}>
-                <img
-                  src="https://img1.daumcdn.net/thumb/C1200x900/?scode=mtistory2&fname=http%3A%2F%2Fcfile10.uf.tistory.com%2Fimage%2F99A81B3C5BB2C6EF2C9883"
-                  alt=""
-                  className={styles.banner_image}
-                />
-                <p className={styles.banner_hover_text}>
-                  마우스를 올리면 나타나는 텍스트
-                </p>
-              </a>
-              <a
-                href="https://leeheehoon.tistory.com/"
-                className={styles.banner_link}
-              >
-                <img
-                  src="https://img1.daumcdn.net/thumb/C1200x900/?scode=mtistory2&fname=https%3A%2F%2Ft1.daumcdn.net%2Ftistory_admin%2Fassets%2Fpromotions%2F72a26c24396048fa9fb668442021a18b"
-                  alt=""
-                  className={styles.banner_image}
-                />
-                <p className={styles.banner_hover_text}>
-                  마우스를 올리면 나타나는 텍스트
-                </p>
-              </a>
-              <a
-                href="https://hygphoto.tistory.com/"
-                className={styles.banner_link}
-              >
-                <img
-                  src="https://img1.daumcdn.net/thumb/C1200x900/?scode=mtistory2&fname=http%3A%2F%2Fcfile2.uf.tistory.com%2Fimage%2F99D6CF405BB2C6B824A969"
-                  alt=""
-                  className={styles.banner_image}
-                />
-                <p className={styles.banner_hover_text}>
-                  마우스를 올리면 나타나는 텍스트
-                </p>
-              </a>
-              <a
-                href="https://so-oh.tistory.com/category"
-                className={styles.banner_link}
-              >
-                <img
-                  src="https://img1.daumcdn.net/thumb/C1200x900/?scode=mtistory2&fname=http%3A%2F%2Fcfile1.uf.tistory.com%2Fimage%2F99368F335BB2C64F29335D"
-                  alt=""
-                  className={styles.banner_image}
-                />
-                <p className={styles.banner_hover_text}>
-                  마우스를 올리면 나타나는 텍스트
-                </p>
-              </a>
-              <a
+            <div className={styles.slideRow}>
+              <div className={styles.slideContainer}>
+                <a href="https://hotel990.com/" className={styles.banner_link}>
+                  <img
+                    src="https://img1.daumcdn.net/thumb/C1200x900/?scode=mtistory2&fname=http%3A%2F%2Fcfile10.uf.tistory.com%2Fimage%2F99A81B3C5BB2C6EF2C9883"
+                    alt=""
+                    className={styles.banner_image}
+                  />
+                </a>
+                <a
+                  href="https://leeheehoon.tistory.com/"
+                  className={styles.banner_link}
+                >
+                  <img
+                    src="https://img1.daumcdn.net/thumb/C1200x900/?scode=mtistory2&fname=https%3A%2F%2Ft1.daumcdn.net%2Ftistory_admin%2Fassets%2Fpromotions%2F72a26c24396048fa9fb668442021a18b"
+                    alt=""
+                    className={styles.banner_image}
+                  />
+                </a>
+              </div>
+            </div>
+            <div className={styles.slideRow}>
+              <div className={styles.slideContainer}>
+                <a
+                  href="https://hygphoto.tistory.com/"
+                  className={styles.banner_link}
+                >
+                  <img
+                    src="https://img1.daumcdn.net/thumb/C1200x900/?scode=mtistory2&fname=http%3A%2F%2Fcfile2.uf.tistory.com%2Fimage%2F99D6CF405BB2C6B824A969"
+                    alt=""
+                    className={styles.banner_image}
+                  />
+                </a>
+                <a
+                  href="https://so-oh.tistory.com/category"
+                  className={styles.banner_link}
+                >
+                  <img
+                    src="https://img1.daumcdn.net/thumb/C1200x900/?scode=mtistory2&fname=http%3A%2F%2Fcfile1.uf.tistory.com%2Fimage%2F99368F335BB2C64F29335D"
+                    alt=""
+                    className={styles.banner_image}
+                  />
+                </a>
+              </div>
+              {/* <a
                 href="https://mistyfriday.kr/#google_vignette"
                 className={styles.banner_link}
               >
@@ -215,10 +209,8 @@ const TistoryMain = () => {
                 <p className={styles.banner_hover_text}>
                   마우스를 올리면 나타나는 텍스트
                 </p>
-              </a>
+              </a> */}
             </div>
-            <button class="prevButton">이전</button>
-            <button class="nextButton">다음</button>
           </div>
           <div className={styles.sponsorContainer}>
             <div className={styles.sponsorImages}>
@@ -255,18 +247,7 @@ const TistoryMain = () => {
             </div>
           </div>
         </div>
-        <div className={styles.section2}>
-          <h2>Section 2</h2>
-          <p>제일 어려운거</p>
-        </div>
-        <div className={styles.section3}>
-          <h2>Section 3</h2>
-          <p>이미지4 애니교차2</p>
-        </div>
-        <div className={styles.section4}>
-          <h2>Section 4</h2>
-          <p>이미지2</p>
-        </div>
+
         <div className={styles.section5}>
           <h5 className={styles.customH5}>더 잘 쓰고 싶어요?</h5>
           <p>
@@ -299,7 +280,7 @@ const TistoryMain = () => {
               당신의 티스토리에 엣지가 생길거예요.
             </a>
           </p>
-          <p>
+          <p className={styles.customParagraph}>
             <a href="https://notice.tistory.com/2384">
               <span className={styles.customSpan}> 로그인 보안</span>기능으로
               당신의 정보와

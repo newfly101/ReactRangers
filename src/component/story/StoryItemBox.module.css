@@ -1,20 +1,20 @@
 /*아이템 박스 전체를 감싸는 css*/
 .itemBoxWrapper {
   margin-bottom: 0.8rem;
-  margin-top: 2rem;
+  margin-top: 3rem;
   cursor: pointer;
   display: flex;
   align-items: start;
   justify-content: start;
   white-space: nowrap;
-  width: 60rem;
+  width: 80rem;
 }
 
 /*아이템 박스 앞부분*/
 .ItemBoxStart {
-  font-size: 0.6rem;
+  font-size: 0.8rem;
   width: 6rem;
-  margin-right: 2rem;
+  margin-right: 3.3rem;
 }
 .publishedAgo {
   margin-bottom: 0.3rem;
@@ -29,7 +29,7 @@
   position: relative;
 }
 .textHr {
-  width: 0.7rem;
+  width: 1rem;
   height: 0.1rem;
   background-color: gray;
   position: absolute;
@@ -39,21 +39,27 @@
 
 /*아이템 박스 중간부분*/
 .ItemBoxMid {
-  width: 28rem;
-  font-size: 1.1rem;
-  margin-right: 2rem;
+  width: 37.5rem;
+  font-weight: 600;
+  font-size: 1.3rem;
+  margin-right: 1.3rem;
+  height: 8rem;
+}
+.ItemBoxMidTitle {
+  padding-bottom: 0.8rem;
 }
 .ItemBoxdesc {
-  font-size: 0.68rem;
-  margin: 0.5rem 0 0.8rem 0;
-  opacity: 0.6;
+  font-size: 0.9rem;
+  font-weight: 400;
+  margin: 0 0 0.8rem 0;
+  opacity: 0.8;
 }
 .ItemBoxAuthor {
   display: flex;
   justify-content: space-between;
 
   align-items: center;
-  font-size: 0.6rem;
+  font-size: 0.8rem;
 }
 .ItemBoxAuthorDetali {
   display: flex;
@@ -62,7 +68,11 @@
 .ItemBoxAuthorImg {
   border-radius: 1rem;
   margin-right: 0.5rem;
-  width: 1.7rem;
+  width: 2rem;
+}
+.authorBlogTitle {
+  opacity: 0.5;
+  margin-left: 0.5rem;
 }
 
 /*구독버튼*/
@@ -71,7 +81,8 @@
   border: 0.5px solid rgb(211, 211, 211);
   border-radius: 1rem;
   padding: 0.3rem 0.6rem 0.3rem 0.6rem;
-  font-size: 0.7rem;
+  font-size: 0.9rem;
+  margin-right: 2rem;
 }
 .itemBoxWrapper:hover .subscribeBtn {
   display: block;
@@ -79,8 +90,8 @@
 
 /*아이템 박스 끝부분*/
 .itemBoxImg {
-  width: 6.5rem;
-  height: 6.5rem;
+  width: 7.7rem;
+  height: 7.7rem;
 }
 
 /*구분선 css*/
