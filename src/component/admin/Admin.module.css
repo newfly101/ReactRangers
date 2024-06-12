@@ -108,7 +108,6 @@
   position: absolute;
   left: 15px;
   top: 500px;
-  
 }
 
 .AdminListLinkMenu {
@@ -212,4 +211,11 @@
   text-align: center;
   font-size: 14px;
   padding: 10px 35px;
+}
+
+.AdminBlock7 {
+  background: #fff;
+  padding: 30px 30px;
+  border: 1px solid #e0e5ee;
+  font-size: 13px;
 }
