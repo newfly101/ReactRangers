@@ -3,9 +3,14 @@ import classes from "./Feed.module.css";
 import { feedCardDummyData } from "./FeedCardDummyData";
 
 const Feed = () => {
-  const [isListBox, setListBox] = useState(true);
-  const handleListBoxTypeBtn = () => {
-    setListBox(!isListBox);
+  const [isListBox, setListBox] = useState(
+    feedCardDummyData.data.map(() => true)
+  );
+
+  const handleListBoxTypeBtn = (index) => {
+    const isListBoxIndex = { ...isListBox };
+    isListBoxIndex[index] = !isListBoxIndex[index];
+    setListBox(isListBoxIndex);
   };
 
   return (
@@ -69,13 +74,13 @@ const Feed = () => {
                 <button
                   type="button"
                   className={
-                    isListBox
+                    isListBox[index]
                       ? classes.listBoxTypeBtn
                       : classes.listBoxTypeChange
                   }
-                  onClick={handleListBoxTypeBtn}
+                  onClick={() => handleListBoxTypeBtn(index)}
                 >
-                  {isListBox ? "구독하기" : "구독중"}
+                  {isListBox[index] ? "구독하기" : "구독중"}
                 </button>
               </div>
             </li>
