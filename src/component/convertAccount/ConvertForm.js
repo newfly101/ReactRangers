@@ -8,10 +8,18 @@ const ConvertForm = () => {
       <h2 className={classes.formTitle}>티스토리에 로그인 하세요.</h2>
       <form>
         <div>
-          <input type="email" placeholder="이메일" />
+          <input
+            className={classes.emailInput}
+            type="email"
+            placeholder="이메일"
+          />
         </div>
         <div>
-          <input type="password" placeholder="비밀번호" />
+          <input
+            className={classes.passwordInput}
+            type="password"
+            placeholder="비밀번호"
+          />
         </div>
         <div className={classes.convertBtn}>
           <button className={classes.loginBtn} type="submit">

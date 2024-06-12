@@ -5,6 +5,7 @@
   background-size: 100vw;
   margin-top: 2rem;
   background-repeat: no-repeat;
+  height: 100vh;
 }
 .headerText {
   padding: 2.5rem 0 3rem 3.2rem;
