@@ -1,10 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
 import classes from "./Admin.module.css";
 import home from "./assets/home.svg";
 import user from "./assets/user.svg";
 import down from "./assets/down.svg";
+import AdminFilter from "./AdminFilter";
 
 const Admin = () => {
+  const [filteredReceive, setFilteredReceive] = useState();
+
+  const changeFilterHandler = (selectedValue) => {
+    setFilteredReceive(
+      selectedValue === "수신합니다." ? "수신합니다." : "수신하지 않습니다."
+    );
+  };
+
   return (
     <div id={classes.Admin}>
       <div id={classes.AdminLeft}>
@@ -97,7 +106,12 @@ const Admin = () => {
         <div>
           <div className={classes.AdminFont}>이메일 알림</div>
           <div>
-            <div className={classes.AdminBlock7}></div>
+            <div className={classes.AdminBlock7}>
+              <AdminFilter
+                selected={filteredReceive}
+                onChangeFilter={changeFilterHandler}
+              />
+            </div>
             <div className={classes.AdminBlock8}></div>
           </div>
         </div>
