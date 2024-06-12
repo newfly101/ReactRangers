@@ -81,9 +81,7 @@ const SkinPage = (props) => {
                         ))}
                       </div>
                       <div className={`${classes.roundButton}`}>
-                        <a href="링크주소">
-                          <button>자세히 보기</button>
-                        </a>
+                        <button>자세히 보기</button>
                         <button className={classes.buttonLinkIcon}>
                           적용 예시 보기
                           <span>
