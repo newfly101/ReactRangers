@@ -6,16 +6,14 @@ import UserSkin from "./UserSkin";
 const SkinPage = (props) => {
   const { items, isAVew, usersSkin } = props;
 
-  const [imageClick, setImageClick] = useState(null);
+  const [imageClick, setImageClick] = useState(false);
 
   const clickLeftArrow = (event) => {
-    setImageClick("left");
-    console.log(imageClick);
+    setImageClick(false);
   };
 
   const clickRightArrow = (event) => {
-    setImageClick("right");
-    console.log(imageClick);
+    setImageClick(true);
   };
 
   return (
@@ -76,7 +74,11 @@ const SkinPage = (props) => {
                       </div>
                     </div>
                     <div className={classes.imageContaner}>
-                      <div className={classes.imageWrap}>
+                      <div
+                        className={
+                          imageClick ? classes.animate : classes.animate1
+                        }
+                      >
                         {item.data.img.map((imgSrc, imgIndex) => (
                           <div
                             className={classes.image}
@@ -91,22 +93,25 @@ const SkinPage = (props) => {
                           </div>
                         ))}
                         <div className={classes.arrow}>
-                          <div className={classes.leftArrow}>
-                            <button onClick={clickLeftArrow}>
-                              <img
-                                src={"/SkinImg/arrow-left.svg"}
-                                alt="arrowLeft"
-                              />
-                            </button>
-                          </div>
-                          <div className={classes.rightArrow}>
-                            <button onClick={clickRightArrow}>
-                              <img
-                                src={"/SkinImg/arrow-right.svg"}
-                                alt="arrowRight"
-                              />
-                            </button>
-                          </div>
+                          {imageClick === false ? (
+                            <div className={classes.rightArrow}>
+                              <button onClick={clickRightArrow}>
+                                <img
+                                  src={"/SkinImg/arrow-right.svg"}
+                                  alt="arrowRight"
+                                />
+                              </button>
+                            </div>
+                          ) : (
+                            <div className={classes.leftArrow}>
+                              <button onClick={clickLeftArrow}>
+                                <img
+                                  src={"/SkinImg/arrow-left.svg"}
+                                  alt="arrowLeft"
+                                />
+                              </button>
+                            </div>
+                          )}
                         </div>
                       </div>
                     </div>
