@@ -1,7 +1,7 @@
-import React from "react";
-import { ReactComponent as LinkIcon } from "../SkinPage/link.svg";
-import classes from "../SkinPage/SkinPage.module.css";
-import UserSkin from "./UserSkin";
+import React from 'react';
+import { ReactComponent as LinkIcon } from '../SkinPage/link.svg';
+import classes from '../SkinPage/SkinPage.module.css';
+import UserSkin from './UserSkin';
 
 const SkinPage = (props) => {
   const { items, isAVew, usersSkin } = props;
@@ -12,7 +12,7 @@ const SkinPage = (props) => {
         <div id="티스토리 스킨">
           {items.map((item, index) => (
             <div key={index}>
-              {item.type === "label" ? (
+              {item.type === 'label' ? (
                 <div className={classes.labelContainer}>
                   <div className={classes.cardWrap}>
                     <div className={classes.labelTitle}>
@@ -52,7 +52,9 @@ const SkinPage = (props) => {
                         ))}
                       </div>
                       <div className={`${classes.roundButton}`}>
-                        <button>자세히 보기</button>
+                        <a href="링크주소">
+                          <button>자세히 보기</button>
+                        </a>
                         <button className={classes.buttonLinkIcon}>
                           적용 예시 보기
                           <span>
