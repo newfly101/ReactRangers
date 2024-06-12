@@ -96,9 +96,9 @@ div {
   line-height: 12px;
   margin-bottom: 12px;
   flex-shrink: 0;
-}
+} */
 
-.has_before::before {
+/* .txtInfoBefore::before {
   content: "";
   display: block;
   width: 1px;
@@ -115,14 +115,14 @@ div {
   align-items: center;
 }
 
-.link_footer.has-before::before {
+/* .link_footer.has-before::before {
   content: "";
   display: block;
   width: 1px;
   height: 12px;
   margin: 0 7px;
   background: #909090;
-}
+} */
 
 .innerFoot .searchTistory {
   margin-top: 50px;
@@ -189,6 +189,13 @@ button {
   align-items: flex-start;
   margin-left: auto;
 }
+
+@media (max-width: 1400px) {
+  .innerFoot .questionTistory {
+    margin-left: 550px;
+  }
+}
+
 .questionTistory .wrapQuestion {
   float: left;
   width: 160px;
