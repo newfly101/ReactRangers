@@ -22,6 +22,7 @@
 }
 
 .cardWrap {
+  position: relative;
   max-width: 700px;
   width: 100%;
   margin: auto;
@@ -103,13 +104,35 @@
   justify-content: space-around;
   align-items: center;
   margin-top: 10px;
+  width: 800px;
+  max-width: 85vw;
+  height: 253.5px;
 }
 
-.imageWrap {
-  position: relative;
-  z-index: 1;
-  width: 800px;
-  height: 253.5px;
+.animate {
+  animation: slideLeft 0.5s ease-in-out forwards;
+}
+
+.animate1 {
+  animation: slideRight 0.5s ease-in-out forwards;
+}
+
+@keyframes slideLeft {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-25%);
+  }
+}
+
+@keyframes slideRight {
+  from {
+    transform: translateX(-25%);
+  }
+  to {
+    transform: translateX(0);
+  }
 }
 
 .image {
@@ -130,17 +153,6 @@
   animation: shadowAnimation 0.4s ease forwards;
 }
 
-.arrow {
-  position: absolute;
-  top: 0;
-  right: -22%;
-  width: 1000px;
-  height: 100%;
-  display: flex;
-  justify-content: space-between;
-  z-index: 2;
-}
-
 .arrow button {
   opacity: 0.5;
 }
@@ -151,13 +163,15 @@
 }
 
 .leftArrow {
-  position: relative;
+  position: absolute;
+  top: 0;
+  left: 0;
   display: flex;
   justify-content: flex-start;
-  align-items: center;
   width: 120px;
   height: 253.5px;
   opacity: 0;
+  z-index: 100;
 }
 
 .leftArrow:hover {
@@ -165,13 +179,15 @@
 }
 
 .rightArrow {
-  position: relative;
+  position: absolute;
   display: flex;
   justify-content: flex-end;
-  align-items: center;
+  top: 0;
+  right: 0;
   width: 120px;
   height: 253.5px;
   opacity: 0;
+  z-index: 100;
 }
 
 .rightArrow:hover {
@@ -194,7 +210,6 @@
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
-
   margin: auto;
 }
 .labelWrap {
@@ -218,10 +233,15 @@
 .labelItem {
   display: flex;
   margin-right: 30px;
+  white-space: nowrap;
 }
 
 .labelButton {
   cursor: pointer;
+}
+
+.labelButton button {
+  color: black;
 }
 
 .labelButton button:hover {
