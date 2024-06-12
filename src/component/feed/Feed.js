@@ -33,14 +33,6 @@ const Feed = () => {
     setListBox6(!isListBox6);
   };
 
-  const subscriptionBtn = () => {
-    console.log(subscriptionBtn);
-  };
-
-  const subscribersBtn = () => {
-    console.log(subscribersBtn);
-  };
-
   const data1 = feedCardDummyData.data[0];
   const data2 = feedCardDummyData.data[1];
   const data3 = feedCardDummyData.data[2];
@@ -57,18 +49,10 @@ const Feed = () => {
             <div className={classes.pFont}>
               내가 구독하는 글입니다
               <div className={classes.btn}>
-                <a
-                  href="/following"
-                  onClick={subscriptionBtn}
-                  className={classes.subscription}
-                >
+                <a href="/following" className={classes.subscription}>
                   구독중
                 </a>
-                <a
-                  href="/follower"
-                  onClick={subscribersBtn}
-                  className={classes.subscribers}
-                >
+                <a href="/follower" className={classes.subscribers}>
                   구독자
                 </a>
               </div>

@@ -6,6 +6,16 @@ import UserSkin from "./UserSkin";
 const SkinPage = (props) => {
   const { items, isAVew, usersSkin } = props;
 
+  const [imageClick, setImageClick] = useState(false);
+
+  const clickLeftArrow = (event) => {
+    setImageClick(false);
+  };
+
+  const clickRightArrow = (event) => {
+    setImageClick(true);
+  };
+
   return (
     <>
       {isAVew ? (
@@ -52,7 +62,9 @@ const SkinPage = (props) => {
                         ))}
                       </div>
                       <div className={`${classes.roundButton}`}>
-                        <button>자세히 보기</button>
+                        <a href="링크주소">
+                          <button>자세히 보기</button>
+                        </a>
                         <button className={classes.buttonLinkIcon}>
                           적용 예시 보기
                           <span>
@@ -62,9 +74,17 @@ const SkinPage = (props) => {
                       </div>
                     </div>
                     <div className={classes.imageContaner}>
-                      <div className={classes.imageWrap}>
+                      <div
+                        className={
+                          imageClick ? classes.animate : classes.animate1
+                        }
+                      >
                         {item.data.img.map((imgSrc, imgIndex) => (
-                          <div className={classes.image} key={imgIndex}>
+                          <div
+                            className={classes.image}
+                            key={imgIndex}
+                            id={`image${imgIndex}`}
+                          >
                             <img
                               key={imgIndex}
                               src={`${process.env.PUBLIC_URL}/SkinImg/${item.data.title}/${imgSrc}`}
@@ -73,22 +93,25 @@ const SkinPage = (props) => {
                           </div>
                         ))}
                         <div className={classes.arrow}>
-                          <div className={classes.leftArrow}>
-                            <button>
-                              <img
-                                src={"/SkinImg/arrow-left.svg"}
-                                alt="arrowLeft"
-                              />
-                            </button>
-                          </div>
-                          <div className={classes.rightArrow}>
-                            <button>
-                              <img
-                                src={"/SkinImg/arrow-right.svg"}
-                                alt="arrowRight"
-                              />
-                            </button>
-                          </div>
+                          {imageClick === false ? (
+                            <div className={classes.rightArrow}>
+                              <button onClick={clickRightArrow}>
+                                <img
+                                  src={"/SkinImg/arrow-right.svg"}
+                                  alt="arrowRight"
+                                />
+                              </button>
+                            </div>
+                          ) : (
+                            <div className={classes.leftArrow}>
+                              <button onClick={clickLeftArrow}>
+                                <img
+                                  src={"/SkinImg/arrow-left.svg"}
+                                  alt="arrowLeft"
+                                />
+                              </button>
+                            </div>
+                          )}
                         </div>
                       </div>
                     </div>

@@ -118,6 +118,10 @@
   text-decoration: none;
 }
 
+.feedStoryBtn:visited {
+  color: #fff;
+}
+
 .feedStoryBtn:hover {
   border-color: #f54;
   background-color: #f54;
@@ -146,27 +150,12 @@
   margin: 0 auto;
   padding: 34px 0 0;
 }
-/* .infoBlogList {
-  overflow: hidden;
-  width: 896px;
-  height: 50px;
-  margin: 0 auto;
-  padding: 34px 0 0;
-} */
 
 .blogInfoDesc {
   padding: 6px 0 0;
   font-size: 16px;
   line-height: 16px;
 }
-
-/* .listTistory {
-  width: 912px;
-  margin: 0 auto;
-  padding: 0 0 40px 0;
-  border-bottom: 0;
-  list-style: none;
-} */
 
 .listTistory li {
   position: relative;

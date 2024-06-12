@@ -184,12 +184,15 @@ em {
 .sponsorImages {
   display: flex;
   justify-content: space-between;
+  width: 95%;
+  max-width: 85vw;
+  margin: 0 auto;
 }
 
 .sponsorImages img {
-  width: 200px;
+  /* width: 200px; */
   height: auto;
-  padding: 90px 15px;
+  padding: 90px 0px;
 }
 
 .slideContainer {
@@ -209,7 +212,7 @@ em {
 
 .slider {
   width: 100%;
-  max-width: 1800px;
+  max-width: 90vw;
   margin: 0 auto;
   padding: 40px 20px;
   position: relative;
@@ -232,7 +235,7 @@ em {
 .banner_link {
   display: block;
   position: relative;
-  margin: 0 20px;
+  margin: 0 30px;
   flex: 1;
   overflow: hidden;
   border-radius: 10px;

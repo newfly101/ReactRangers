@@ -10,7 +10,7 @@
   margin-bottom: 2rem;
 }
 
-input[type="email"] {
+.emailInput[type="email"] {
   width: 19.5rem;
   height: 3rem;
   border: 1px solid rgb(226, 226, 226);
@@ -18,14 +18,14 @@ input[type="email"] {
   border-bottom: none;
 }
 
-input[type="password"] {
+.passwordInput[type="password"] {
   width: 19.5rem;
   height: 3rem;
   border: 1px solid rgb(226, 226, 226);
   border-radius: 0.2rem;
 }
 
-input::placeholder {
+.passwordInput::placeholder .emailInput::placeholder {
   font-size: 0.8rem;
 }
 .convertBtn {
@@ -38,7 +38,7 @@ input::placeholder {
   border-radius: 0.25rem;
 }
 
-button {
+.loginBtn {
   color: white;
   font-size: 1rem;
   font-weight: bold;
@@ -46,9 +46,4 @@ button {
 .mainATags {
   margin-left: 13rem;
   margin-top: 0.4rem;
-}
-
-a {
-  font-size: 0.7rem;
-  text-decoration: none;
 }
