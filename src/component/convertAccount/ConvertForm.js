@@ -14,7 +14,9 @@ const ConvertForm = () => {
           <input type="password" placeholder="비밀번호" />
         </div>
         <div className={classes.convertBtn}>
-          <button type="submit">로그인</button>
+          <button className={classes.loginBtn} type="submit">
+            로그인
+          </button>
         </div>
       </form>
       <span className={classes.mainATags}>
