@@ -99,8 +99,8 @@
   font-weight: 500;
 }
 
-.section5 p:hover {
-  color: rgb(70, 70, 70);
+.section5 a:hover {
+  color: #000000;
 }
 
 .section5 p span {
@@ -209,7 +209,7 @@ em {
 
 .slider {
   width: 100%;
-  max-width: 2200px;
+  max-width: 1800px;
   margin: 0 auto;
   padding: 40px 20px;
   position: relative;
@@ -217,12 +217,16 @@ em {
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
-
+.slideRow {
+  display: flex;
+  justify-content: center;
+  margin: 0 5px 20px;
+}
 .slideContainer {
   display: flex;
   justify-content: space-between;
-  overflow: hidden;
-  position: relative;
+  width: 100%;
+  max-width: 1100px;
 }
 
 .banner_link {
@@ -248,13 +252,13 @@ em {
   transition: filter 0.3s ease;
 }
 
-.banner_link {
+/* .banner_link {
   position: relative;
   display: block;
-  /* overflow: hidden; */
-}
-
-.banner_hover_text {
+ 
+} */
+/* overflow: hidden; */
+/* .banner_hover_text {
   position: absolute;
   top: 0;
   left: 0;
@@ -269,8 +273,8 @@ em {
   justify-content: center;
   align-items: center;
   transition: opacity 0.3s ease;
-}
-
+} */
+/* 
 .banner_link:hover .banner_hover_text {
   opacity: 1;
-}
+} */
