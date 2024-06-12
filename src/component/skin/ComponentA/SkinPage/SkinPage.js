@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { ReactComponent as LinkIcon } from "../SkinPage/link.svg";
 import classes from "../SkinPage/SkinPage.module.css";
 import UserSkin from "./UserSkin";
@@ -62,10 +62,9 @@ const SkinPage = (props) => {
                       </div>
                     </div>
                     <div className={classes.imageContaner}>
-                      <div>
+                      <div className={classes.imageWrap}>
                         {item.data.img.map((imgSrc, imgIndex) => (
-                          <div className={classes.image}>
-                            {/* eslint-disable-next-line jsx-a11y/img-redundant-alt */}
+                          <div className={classes.image} key={imgIndex}>
                             <img
                               key={imgIndex}
                               src={`${process.env.PUBLIC_URL}/SkinImg/${item.data.title}/${imgSrc}`}
@@ -73,6 +72,24 @@ const SkinPage = (props) => {
                             />
                           </div>
                         ))}
+                        <div className={classes.arrow}>
+                          <div className={classes.leftArrow}>
+                            <button>
+                              <img
+                                src={"/SkinImg/arrow-left.svg"}
+                                alt="arrowLeft"
+                              />
+                            </button>
+                          </div>
+                          <div className={classes.rightArrow}>
+                            <button>
+                              <img
+                                src={"/SkinImg/arrow-right.svg"}
+                                alt="arrowRight"
+                              />
+                            </button>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>

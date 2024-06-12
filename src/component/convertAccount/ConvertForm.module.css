@@ -1,0 +1,54 @@
+.convertFormWrapper {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.formTitle {
+  font-size: 1.4rem;
+  margin-bottom: 2rem;
+}
+
+input[type="email"] {
+  width: 19.5rem;
+  height: 3rem;
+  border: 1px solid rgb(226, 226, 226);
+  border-radius: 0.2rem;
+  border-bottom: none;
+}
+
+input[type="password"] {
+  width: 19.5rem;
+  height: 3rem;
+  border: 1px solid rgb(226, 226, 226);
+  border-radius: 0.2rem;
+}
+
+input::placeholder {
+  font-size: 0.8rem;
+}
+.convertBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #b9b9b9;
+  margin-top: 1.2rem;
+  height: 3rem;
+  border-radius: 0.25rem;
+}
+
+button {
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+}
+.mainATags {
+  margin-left: 13rem;
+  margin-top: 0.4rem;
+}
+
+a {
+  font-size: 0.7rem;
+  text-decoration: none;
+}
