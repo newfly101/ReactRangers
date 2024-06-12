@@ -253,18 +253,7 @@ const TistoryMain = () => {
             </div>
           </div>
         </div>
-        <div className={styles.section2}>
-          <h2>Section 2</h2>
-          <p>제일 어려운거</p>
-        </div>
-        <div className={styles.section3}>
-          <h2>Section 3</h2>
-          <p>이미지4 애니교차2</p>
-        </div>
-        <div className={styles.section4}>
-          <h2>Section 4</h2>
-          <p>이미지2</p>
-        </div>
+
         <div className={styles.section5}>
           <h5 className={styles.customH5}>더 잘 쓰고 싶어요?</h5>
           <p>
