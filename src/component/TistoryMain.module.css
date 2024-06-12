@@ -184,13 +184,15 @@ em {
 .sponsorImages {
   display: flex;
   justify-content: space-between;
-  width: 100vw;
+  width: 95%;
+  max-width: 85vw;
+  margin: 0 auto;
 }
 
 .sponsorImages img {
-  width: 200px;
+  /* width: 200px; */
   height: auto;
-  padding: 90px 15px;
+  padding: 90px 0px;
 }
 
 .slideContainer {

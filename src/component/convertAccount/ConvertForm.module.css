@@ -10,7 +10,7 @@
   margin-bottom: 2rem;
 }
 
-input[type="email"] {
+input[type='email'] {
   width: 19.5rem;
   height: 3rem;
   border: 1px solid rgb(226, 226, 226);
@@ -18,7 +18,7 @@ input[type="email"] {
   border-bottom: none;
 }
 
-input[type="password"] {
+input[type='password'] {
   width: 19.5rem;
   height: 3rem;
   border: 1px solid rgb(226, 226, 226);
@@ -48,7 +48,7 @@ button {
   margin-top: 0.4rem;
 }
 
-a {
+/* a {
   font-size: 0.7rem;
   text-decoration: none;
-}
+} */
