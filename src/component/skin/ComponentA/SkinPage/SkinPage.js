@@ -1,14 +1,7 @@
-<<<<<<< HEAD
 import React from "react";
 import { ReactComponent as LinkIcon } from "../SkinPage/link.svg";
 import classes from "../SkinPage/SkinPage.module.css";
 import UserSkin from "./UserSkin";
-=======
-import React from 'react';
-import { ReactComponent as LinkIcon } from '../SkinPage/link.svg';
-import classes from '../SkinPage/SkinPage.module.css';
-import UserSkin from './UserSkin';
->>>>>>> 4f3adf0a3df63765487e384f9f25b7a6ed7e794c
 
 const SkinPage = (props) => {
   const { items, isAVew, usersSkin } = props;
@@ -19,7 +12,7 @@ const SkinPage = (props) => {
         <div id="티스토리 스킨">
           {items.map((item, index) => (
             <div key={index}>
-              {item.type === 'label' ? (
+              {item.type === "label" ? (
                 <div className={classes.labelContainer}>
                   <div className={classes.cardWrap}>
                     <div className={classes.labelTitle}>
@@ -85,7 +78,7 @@ const SkinPage = (props) => {
                           <div className={classes.leftArrow}>
                             <button>
                               <img
-                                src={'/SkinImg/arrow-left.svg'}
+                                src={"/SkinImg/arrow-left.svg"}
                                 alt="arrowLeft"
                               />
                             </button>
@@ -93,7 +86,7 @@ const SkinPage = (props) => {
                           <div className={classes.rightArrow}>
                             <button>
                               <img
-                                src={'/SkinImg/arrow-right.svg'}
+                                src={"/SkinImg/arrow-right.svg"}
                                 alt="arrowRight"
                               />
                             </button>
