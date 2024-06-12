@@ -32,10 +32,18 @@ class LoginModal extends Component {
               <button className={classes.kakaoLoginBtn}>
                 <img src={"/kakao_login_medium_narrow.png"} alt="kakaologin" />
               </button>
-              <Link to="/AccountRecovery" className={classes.tistoryLoginHelp}>
+              <Link
+                to="/AccountRecovery"
+                className={classes.tistoryLoginHelp}
+                onClick={close}
+              >
                 내 티스토리 계정을 모르겠어요
               </Link>
-              <Link to="/convertAccount" className={classes.tistoryLoginHelp}>
+              <Link
+                to="/convertAccount"
+                className={classes.tistoryLoginHelp}
+                onClick={close}
+              >
                 티스토리 이메일 계정으로 가입했었나요?
               </Link>
             </div>
