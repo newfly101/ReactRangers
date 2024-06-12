@@ -7,7 +7,7 @@ import Follower from "./component/feed/Follower";
 import Admin from "./component/admin/Admin";
 import Story from "./component/story/Story";
 import "./App.css";
-import Footer from "./component/feed/Footer";
+import Footer from "./component/footer/Footer";
 import Skin from "./component/skin/TstorySkin";
 import TistoryMain from "../src/component/TistoryMain";
 import AccountRecovery from "./component/accountRecovery/AccountRecovery";
