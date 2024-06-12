@@ -51,10 +51,7 @@ const Navigation = () => {
           <div className={classes.navBarBox}>
             <div className={classes.pageTitle} onClick={onClickScrollUp}>
               <Link to="/">
-                <img
-                  src={process.env.PUBLIC_URL + "/tistoryLogo.webp"}
-                  alt="TistoryLogo"
-                />
+                <img src={"/tistoryLogo.webp"} alt="TistoryLogo" />
               </Link>
             </div>
             <div className={classes.pageLinkBox} onClick={onClickScrollUp}>
@@ -77,10 +74,7 @@ const Navigation = () => {
               onClick={onClickScrollUp}
             >
               <Link to="/">
-                <img
-                  src={process.env.PUBLIC_URL + "/tistoryLogo.webp"}
-                  alt="TistoryLogo"
-                />
+                <img src={"/tistoryLogo.webp"} alt="TistoryLogo" />
               </Link>
             </div>
             <div

@@ -2,16 +2,19 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0 auto;
   background: #f3f5f7;
-  padding: 60px 40px 100px 0;
-  margin: 80px 0 100px;
+  padding-left: 40px;
+  height: 100vh;
+  width: 100vw;
+  margin-top: 120px;
 }
 
 #AdminLeft {
   float: left;
   width: 216px;
   position: relative;
+  height: 100vh;
+  padding-top: 100px;
 }
 
 .AdminProfile {
@@ -34,8 +37,7 @@
   padding-bottom: 20px;
 }
 
-.AdminNameUser,
-.AdminBlockName {
+.AdminNameUser {
   font-weight: bold;
 }
 
@@ -59,7 +61,6 @@
   height: 21px;
   position: absolute;
   left: 15px;
-  bottom: 176px;
 }
 
 .AdminMyblog {
@@ -82,7 +83,6 @@
   height: 21px;
   position: absolute;
   left: 15px;
-  bottom: 131px;
 }
 
 .AdminListUser {
@@ -107,7 +107,8 @@
   height: 21px;
   position: absolute;
   left: 15px;
-  bottom: 14px;
+  top: 500px;
+  
 }
 
 .AdminListLinkMenu {
@@ -118,7 +119,7 @@
 #AdminRight {
   float: right;
   margin-left: 40px;
-  margin-top: -145px;
+  height: 100vh;
 }
 
 .AdminBlock {
@@ -166,4 +167,49 @@
   border-top: 0;
   font-size: 11px;
   color: gray;
+}
+
+.AdminBlockName {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.AdminSituation1,
+.AdminSituation2 {
+  display: flex;
+  justify-content: space-between;
+  background: #fff;
+  border: 1px solid #e0e5ee;
+  padding: 30px 30px;
+}
+
+.AdminSituation1 {
+  border-bottom: 0;
+}
+
+.AdminBlock2,
+.AdminBlock4 {
+  font-size: 15px;
+}
+
+.AdminBlock3,
+.AdminBlock5 {
+  font-size: 11px;
+}
+
+.AdminBlockBtn {
+  background: #fafbfc;
+  border: 1px solid #e0e5ee;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.AdminBlockBtnWindow {
+  border-color: #333;
+  background: #333;
+  color: white;
+  text-align: center;
+  font-size: 14px;
+  padding: 10px 35px;
 }
