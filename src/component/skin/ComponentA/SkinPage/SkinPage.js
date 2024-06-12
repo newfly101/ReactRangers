@@ -1,11 +1,8 @@
 import React, { useState } from "react";
 import { ReactComponent as LinkIcon } from "../SkinPage/link.svg";
 import classes from "../SkinPage/SkinPage.module.css";
-import UserSkin from "./UserSkin";
 
-const SkinPage = (props) => {
-  const { items, isAVew, usersSkin } = props;
-
+const SkinPage = (items) => {
   const [imageClick, setImageClick] = useState(false);
 
   const clickLeftArrow = (event) => {
@@ -84,8 +81,8 @@ const SkinPage = (props) => {
                         >
                           <img
                             key={imgIndex}
-                            src={`${process.env.PUBLIC_URL}/SkinImg/${item.data.title}/${imgSrc}`}
-                            alt={`Image ${imgIndex}`}
+                            src={`/SkinImg/${item.data.title}/${imgSrc}`}
+                            alt={imgIndex}
                           />
                         </div>
                       ))}
