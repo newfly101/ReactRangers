@@ -72,18 +72,34 @@ const Admin = () => {
             대표 블로그는 방문한 블로그/팀블로그 활동 시 사용됩니다.
           </div>
         </div>
-        <div className={classes.AdminFont}>운영∙개설 현황</div>
         <div>
-          <div className={classes.AdminBlock2}></div>
-          <div className={classes.AdminBlock3}></div>
-          <div className={classes.AdminBlock4}></div>
-          <div className={classes.AdminBlock5}></div>
-          <div className={classes.AdminBlock6}></div>
+          <div className={classes.AdminFont}>운영∙개설 현황</div>
+          <div>
+            <div className={classes.AdminSituation1}>
+              <div className={classes.AdminBlock2}>
+                4개의 블로그를 더 운영할 수 있습니다.
+              </div>
+              <div className={classes.AdminBlock3}>운영 중인 블로그 1개</div>
+            </div>
+            <div className={classes.AdminSituation2}>
+              <div className={classes.AdminBlock4}>
+                블로그 개설 가능 횟수가 8회 남았습니다.
+              </div>
+              <div className={classes.AdminBlock5}>과거 개설 횟수 2회</div>
+            </div>
+            <div className={classes.AdminBlockBtn}>
+              <button className={classes.AdminBlockBtnWindow}>
+                새 블로그 만들기
+              </button>
+            </div>
+          </div>
         </div>
-        <div className={classes.AdminFont}>이메일 알림</div>
         <div>
-          <div className={classes.AdminBlock7}></div>
-          <div className={classes.AdminBlock8}></div>
+          <div className={classes.AdminFont}>이메일 알림</div>
+          <div>
+            <div className={classes.AdminBlock7}></div>
+            <div className={classes.AdminBlock8}></div>
+          </div>
         </div>
       </div>
     </div>
