@@ -62,9 +62,9 @@ const SkinPage = (props) => {
                       </div>
                     </div>
                     <div className={classes.imageContaner}>
-                      <div>
+                      <div className={classes.imageWrap}>
                         {item.data.img.map((imgSrc, imgIndex) => (
-                          <div className={classes.image}>
+                          <div className={classes.image} key={imgIndex}>
                             <img
                               key={imgIndex}
                               src={`${process.env.PUBLIC_URL}/SkinImg/${item.data.title}/${imgSrc}`}
@@ -72,6 +72,24 @@ const SkinPage = (props) => {
                             />
                           </div>
                         ))}
+                        <div className={classes.arrow}>
+                          <div className={classes.leftArrow}>
+                            <button>
+                              <img
+                                src={"/SkinImg/arrow-left.svg"}
+                                alt="arrowLeft"
+                              />
+                            </button>
+                          </div>
+                          <div className={classes.rightArrow}>
+                            <button>
+                              <img
+                                src={"/SkinImg/arrow-right.svg"}
+                                alt="arrowRight"
+                              />
+                            </button>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
