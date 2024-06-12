@@ -40,7 +40,7 @@ const StoryItemBox = ({ dummyData }) => {
                     />
                     <div>{item.userName}</div>
                     <div className={classes.authorBlogTitle}>
-                      by {item.blogTitle}
+                      by {item.blogTitle.substring(0, 30)}
                     </div>
                   </div>
                   <div className={classes.subscribeBtn}>구독하기</div>
