@@ -1,5 +1,33 @@
+![image](https://github.com/newfly101/ReactRangers/assets/62008619/2d3adb36-5c95-4aa4-b17e-0edc08750b9c)
+
+
 # ReactRangers
 슈퍼코딩 부트캠프02팀, 클론코딩 1차 프로젝트
+
+목차
+Ⅰ) 기술 스택
+Ⅱ) 프로젝트 사용해보기
+Ⅲ) 주요 기능
+Ⅳ) UI/UX
+Ⅴ) 프로젝트 구현 기술
+
+#Ⅰ) 기술 스택
+## 사용 언어
+- 
+TypeScript
+Client
+React V16
+React Router V5
+Redux
+Redux-saga
+Styled-components
+Socket.io-client
+Webpack
+Server
+Node.js - Express
+Sequelize
+Socket.io
+MySQL
 
 ## 배포 페이지
 [netlify 배포 링크](https://reactranger.netlify.app/)

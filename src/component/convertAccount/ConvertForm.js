@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import classes from "./ConvertForm.module.css";
 import { Link } from "react-router-dom";
 
 const ConvertForm = () => {
+  const [checkedMethod, setCheckedMethod] = useState(null);
   return (
     <div className={classes.convertFormWrapper}>
       <h2 className={classes.formTitle}>티스토리에 로그인 하세요.</h2>
@@ -26,8 +27,20 @@ const ConvertForm = () => {
         </div>
       </form>
       <span className={classes.mainATags}>
-        <Link to="/AccountRecovery">계정 /</Link>
-        <Link to="/AccountRecovery">비밀번호 찾기</Link>
+        <Link
+          to="/AccountRecovery"
+          onMouseOver={() => setCheckedMethod(true)}
+          state={{ checkedMethod }}
+        >
+          계정 /{" "}
+        </Link>
+        <Link
+          to="/AccountRecovery"
+          onMouseOver={() => setCheckedMethod(false)}
+          state={{ checkedMethod }}
+        >
+          비밀번호 찾기
+        </Link>
       </span>
     </div>
   );
