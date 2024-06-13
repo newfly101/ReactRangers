@@ -3,12 +3,17 @@ import classes from "./AccountRecovery.module.css";
 
 import AccountRecoveryTopText from "./AccountRecoveryTopText";
 import AccountRecoveryBottomInput from "./AccountRecoveryBottomInput";
+import { useLocation } from "react-router-dom";
 
 const AccountRecovery = () => {
+  const location = useLocation();
+  const checkedMethod = location.state;
+  console.log(checkedMethod);
+
   return (
     <div className={classes.AccountRecoveryContainer}>
       <AccountRecoveryTopText />
-      <AccountRecoveryBottomInput />
+      <AccountRecoveryBottomInput checkedMethod={checkedMethod} />
       <div className={classes.loginNotion}>
         <a
           className={classes.loginDetali}

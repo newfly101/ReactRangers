@@ -2,11 +2,14 @@ import React, { useState } from "react";
 import classes from "./AccountRecoveryBottomInput.module.css";
 import check from "./check.svg";
 
-const AccountRecoveryBottomInput = () => {
-  const [boldFlag, setBoldFlag] = useState(true);
+const AccountRecoveryBottomInput = ({ checkedMethod }) => {
+  const [boldFlag, setBoldFlag] = useState(checkedMethod);
 
-  const methodClickHandler = () => {
-    setBoldFlag((prevState) => !prevState);
+  const methodClickHandlerTrue = () => {
+    setBoldFlag(true);
+  };
+  const methodClickHandlerFalse = () => {
+    setBoldFlag(false);
   };
   return (
     <div>
@@ -16,22 +19,27 @@ const AccountRecoveryBottomInput = () => {
             <input
               type="radio"
               name="method"
-              checked
               className={classes.radio}
-              readOnly
+              checked={boldFlag}
             />
             <span
-              onClick={methodClickHandler}
+              onClick={methodClickHandlerTrue}
               className={`${classes.emailMethod} ${boldFlag && classes.methodBold}`}
             >
               계정(이메일)찾기
             </span>
             <img src={check} className={classes.check1} alt="체크표시" />
           </label>
+
           <label>
-            <input type="radio" name="method" className={classes.radio} />
+            <input
+              type="radio"
+              name="method"
+              className={classes.radio}
+              check={!boldFlag}
+            />
             <span
-              onClick={methodClickHandler}
+              onClick={methodClickHandlerFalse}
               className={`${classes.emailMethod} ${!boldFlag && classes.methodBold}`}
             >
               비밀번호 찾기

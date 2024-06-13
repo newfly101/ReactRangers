@@ -14,7 +14,7 @@
   transform: translateX(-5.4rem) translateY(0.2rem);
 }
 
-[type="radio"] {
+.radio[type="radio"] {
   vertical-align: middle;
   appearance: none;
   border: max(2px, 0.1em) solid rgb(204, 204, 204);
@@ -23,9 +23,6 @@
   height: 0.9rem;
   cursor: pointer;
   margin: 0;
-}
-
-.radio {
   margin-right: 0.2rem;
 }
 
