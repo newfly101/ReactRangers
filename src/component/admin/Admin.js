@@ -117,7 +117,8 @@ const Admin = () => {
             </div>
           </div>
         </div>
-        <div className={classes.AdminWithdraw}>{"티스토리에서 "}
+        <div className={classes.AdminWithdraw}>
+          {"티스토리에서 "}
           <a href="">탈퇴하기</a>
         </div>
       </div>
