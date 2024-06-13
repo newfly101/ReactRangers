@@ -20,9 +20,10 @@
     sans-serif;
 }
 
-/*페이지 규격에 맞추기 위해 사용 범위를 제한하는 css*/
 .storyWrapper {
-  margin: 0 26.5vw 0 26.5vw;
+  margin: 0 auto;
+  max-width: 1200px;
+  width: 90%;
 }
 
 /*상단 섹션의 css*/

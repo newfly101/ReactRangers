@@ -3,7 +3,7 @@ import classes from "./StoryItemBox.module.css";
 
 const StoryItemBox = ({ dummyData }) => {
   return (
-    <div>
+    <div className={classes.asdf}>
       {dummyData.map((item, index) => (
         <div key={index}>
           <a className={classes.itemBoxContainer} href={item.link}>
