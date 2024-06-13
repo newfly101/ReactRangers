@@ -1,6 +1,5 @@
 .main {
   width: 100%;
-
   padding: 151px 0 0 0;
   background-size: cover;
   background-position: 50% 50%;
@@ -79,7 +78,6 @@
   white-space: nowrap;
   font-size: 36px;
   line-height: 46px;
-
   color: #000;
   font-family: Pretendard-SemiBold, AppleSDGothicNeo-Regular, "Malgun Gothic",
     "맑은 고딕", dotum, "돋움", sans-serif;

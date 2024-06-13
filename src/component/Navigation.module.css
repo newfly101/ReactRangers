@@ -113,6 +113,7 @@
   padding: 13px 40px 13px 40px;
   border-radius: 40px;
 }
+
 .navBarLogin2 button:hover {
   margin-right: 40px;
   border: none;
@@ -121,7 +122,12 @@
   padding: 13px 40px 13px 40px;
   border-radius: 40px;
 }
-
+.navBarLoginFlag button {
+  filter: invert();
+}
+.navBarLoginFlag button:hover {
+  filter: none;
+}
 .pageLinkBox {
   display: flex;
   flex-direction: row;
@@ -178,13 +184,13 @@
   text-decoration-line: underline;
 }
 
+.loginedImg {
+  cursor: pointer;
+  margin-right: 20px;
+}
+
 @media (max-width: 800px) {
   .navBarLogin button {
     display: none;
   }
-}
-
-.navBarLoginFlag {
-  filter: invert();
-  color: black;
 }

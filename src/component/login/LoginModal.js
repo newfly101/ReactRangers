@@ -26,12 +26,14 @@ class LoginModal extends Component {
                 당신의 이야기가 값진 수익이 됩니다.
               </div>
               <img
-                src="https://t1.daumcdn.net/tistory_admin/static/top/pc/img_login.png"
-                alt="loginImg"
+                  src="https://t1.daumcdn.net/tistory_admin/static/top/pc/img_login.png"
+                  alt="loginImg"
               />
-              <button className={classes.kakaoLoginBtn}>
-                <img src={"/kakao_login_medium_narrow.png"} alt="kakaologin" />
-              </button>
+              <Link to="/admin" onClick={close}>
+                <button className={classes.kakaoLoginBtn}>
+                  <img src={"/kakao_login_medium_narrow.png"} alt="kakaologin" />
+                </button>
+              </Link>
               <Link
                 to="/AccountRecovery"
                 className={classes.tistoryLoginHelp}
