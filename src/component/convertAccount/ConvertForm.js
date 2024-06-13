@@ -22,9 +22,7 @@ const ConvertForm = () => {
           />
         </div>
         <div className={classes.convertBtn}>
-          <button className={classes.loginBtn} type="submit">
-            로그인
-          </button>
+          <button className={classes.loginBtn}>로그인</button>
         </div>
       </form>
       <span className={classes.mainATags}>

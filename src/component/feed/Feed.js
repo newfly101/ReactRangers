@@ -3,42 +3,15 @@ import classes from "./Feed.module.css";
 import { feedCardDummyData } from "./FeedCardDummyData";
 
 const Feed = () => {
-  const [isListBox1, setListBox1] = useState(true);
-  const handleListBoxTypeBtn1 = () => {
-    setListBox1(!isListBox1);
-  };
+  const [isListBox, setListBox] = useState(
+    feedCardDummyData.data.map(() => true)
+  );
 
-  const [isListBox2, setListBox2] = useState(true);
-  const handleListBoxTypeBtn2 = () => {
-    setListBox2(!isListBox2);
+  const handleListBoxTypeBtn = (index) => {
+    const isListBoxIndex = { ...isListBox };
+    isListBoxIndex[index] = !isListBoxIndex[index];
+    setListBox(isListBoxIndex);
   };
-
-  const [isListBox3, setListBox3] = useState(true);
-  const handleListBoxTypeBtn3 = () => {
-    setListBox3(!isListBox3);
-  };
-
-  const [isListBox4, setListBox4] = useState(true);
-  const handleListBoxTypeBtn4 = () => {
-    setListBox4(!isListBox4);
-  };
-
-  const [isListBox5, setListBox5] = useState(true);
-  const handleListBoxTypeBtn5 = () => {
-    setListBox5(!isListBox5);
-  };
-
-  const [isListBox6, setListBox6] = useState(true);
-  const handleListBoxTypeBtn6 = () => {
-    setListBox6(!isListBox6);
-  };
-
-  const data1 = feedCardDummyData.data[0];
-  const data2 = feedCardDummyData.data[1];
-  const data3 = feedCardDummyData.data[2];
-  const data4 = feedCardDummyData.data[3];
-  const data5 = feedCardDummyData.data[4];
-  const data6 = feedCardDummyData.data[5];
 
   return (
     <div>
@@ -80,186 +53,38 @@ const Feed = () => {
           </p>
         </div>
         <ul className={classes.listTistory}>
-          <li>
-            <a href={data1.defaultUrl} className={classes.listBoxType1}>
-              <span className={classes.wrapListBox}>
-                <img
-                  src={data1.image}
-                  className={classes.wrapListBoxProfile}
-                  alt={data1.nickname}
-                />
-              </span>
-              <strong className={classes.blogSubName}>{data1.title}</strong>
-              <dl className={classes.listData}>
-                <dt>구독자</dt>
-                <dd>{data1.subscribers}</dd>
-              </dl>
-              <p className={classes.blogInfoDesc}>{data1.description}</p>
-            </a>
-            <div className={classes.infoSubscribe}>
-              <button
-                type="button"
-                className={
-                  isListBox1
-                    ? classes.listBoxTypeBtn
-                    : classes.listBoxTypeChange
-                }
-                onClick={handleListBoxTypeBtn1}
-              >
-                {isListBox1 ? "구독하기" : "구독중"}
-              </button>
-            </div>
-          </li>
-          <li>
-            <a href={data2.defaultUrl} className={classes.listBoxType}>
-              <span className={classes.wrapListBox}>
-                <img
-                  src={data2.image}
-                  className={classes.wrapListBoxProfile}
-                  alt={data2.nickname}
-                />
-              </span>
-              <strong className={classes.blogSubName}>{data2.title}</strong>
-              <dl className={classes.listData}>
-                <dt>구독자</dt>
-                <dd>{data2.subscribers}</dd>
-              </dl>
-              <p className={classes.blogInfoDesc}>{data2.description}</p>
-            </a>
-            <div className={classes.infoSubscribe}>
-              <button
-                type="button"
-                className={
-                  isListBox2
-                    ? classes.listBoxTypeBtn
-                    : classes.listBoxTypeChange
-                }
-                onClick={handleListBoxTypeBtn2}
-              >
-                {isListBox2 ? "구독하기" : "구독중"}
-              </button>
-            </div>
-          </li>
-          <li>
-            <a href={data3.defaultUrl} className={classes.listBoxType}>
-              <span className={classes.wrapListBox}>
-                <img
-                  src={data3.image}
-                  className={classes.wrapListBoxProfile}
-                  alt={data3.nickname}
-                />
-              </span>
-              <strong className={classes.blogSubName}>{data3.title}</strong>
-              <dl className={classes.listData}>
-                <dt>구독자</dt>
-                <dd>{data3.subscribers}</dd>
-              </dl>
-              <p className={classes.blogInfoDesc}>{data3.description}</p>
-            </a>
-            <div className={classes.infoSubscribe}>
-              <button
-                type="button"
-                className={
-                  isListBox3
-                    ? classes.listBoxTypeBtn
-                    : classes.listBoxTypeChange
-                }
-                onClick={handleListBoxTypeBtn3}
-              >
-                {isListBox3 ? "구독하기" : "구독중"}
-              </button>
-            </div>
-          </li>
-          <li>
-            <a href={data4.defaultUrl} className={classes.listBoxType}>
-              <span className={classes.wrapListBox}>
-                <img
-                  src={data4.image}
-                  className={classes.wrapListBoxProfile}
-                  alt={data4.nickname}
-                />
-              </span>
-              <strong className={classes.blogSubName}>{data4.title}</strong>
-              <dl className={classes.listData}>
-                <dt>구독자</dt>
-                <dd>{data4.subscribers}</dd>
-              </dl>
-              <p className={classes.blogInfoDesc}>{data4.description}</p>
-            </a>
-            <div className={classes.infoSubscribe}>
-              <button
-                type="button"
-                className={
-                  isListBox4
-                    ? classes.listBoxTypeBtn
-                    : classes.listBoxTypeChange
-                }
-                onClick={handleListBoxTypeBtn4}
-              >
-                {isListBox4 ? "구독하기" : "구독중"}
-              </button>
-            </div>
-          </li>
-          <li>
-            <a href={data5.defaultUrl} className={classes.listBoxType}>
-              <span className={classes.wrapListBox}>
-                <img
-                  src={data5.image}
-                  className={classes.wrapListBoxProfile}
-                  alt={data5.nickname}
-                />
-              </span>
-              <strong className={classes.blogSubName}>{data5.title}</strong>
-              <dl className={classes.listData}>
-                <dt>구독자</dt>
-                <dd>{data5.subscribers}</dd>
-              </dl>
-              <p className={classes.blogInfoDesc}>{data5.description}</p>
-            </a>
-            <div className={classes.infoSubscribe}>
-              <button
-                type="button"
-                className={
-                  isListBox5
-                    ? classes.listBoxTypeBtn
-                    : classes.listBoxTypeChange
-                }
-                onClick={handleListBoxTypeBtn5}
-              >
-                {isListBox5 ? "구독하기" : "구독중"}
-              </button>
-            </div>
-          </li>
-          <li>
-            <a href={data6.defaultUrl} className={classes.listBoxType}>
-              <span className={classes.wrapListBox}>
-                <img
-                  src={data6.image}
-                  className={classes.wrapListBoxProfile}
-                  alt={data6.nickname}
-                />
-              </span>
-              <strong className={classes.blogSubName}>{data6.title}</strong>
-              <dl className={classes.listData}>
-                <dt>구독자</dt>
-                <dd>{data6.subscribers}</dd>
-              </dl>
-              <p className={classes.blogInfoDesc}>{data6.description}</p>
-            </a>
-            <div className={classes.infoSubscribe}>
-              <button
-                type="button"
-                className={
-                  isListBox6
-                    ? classes.listBoxTypeBtn
-                    : classes.listBoxTypeChange
-                }
-                onClick={handleListBoxTypeBtn6}
-              >
-                {isListBox6 ? "구독하기" : "구독중"}
-              </button>
-            </div>
-          </li>
+          {feedCardDummyData.data.map((item, index) => (
+            <li key={index}>
+              <a href={item.defaultUrl} className={classes.listBoxType}>
+                <span className={classes.wrapListBox}>
+                  <img
+                    src={item.image}
+                    className={classes.wrapListBoxProfile}
+                    alt={item.nickname}
+                  />
+                </span>
+                <strong className={classes.blogSubName}>{item.title}</strong>
+                <dl className={classes.listData}>
+                  <dt>구독자</dt>
+                  <dd>{item.subscribers}</dd>
+                </dl>
+                <p className={classes.blogInfoDesc}>{item.description}</p>
+              </a>
+              <div className={classes.infoSubscribe}>
+                <button
+                  type="button"
+                  className={
+                    isListBox[index]
+                      ? classes.listBoxTypeBtn
+                      : classes.listBoxTypeChange
+                  }
+                  onClick={() => handleListBoxTypeBtn(index)}
+                >
+                  {isListBox[index] ? "구독하기" : "구독중"}
+                </button>
+              </div>
+            </li>
+          ))}
         </ul>
       </div>
     </div>

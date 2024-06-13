@@ -246,7 +246,9 @@ const TistoryMain = () => {
             </div>
           </div>
         </div>
-
+        {/* <div className={styles.section2}></div>
+<div className={styles.section3}></div>
+<div className={styles.section4}></div> */}
         <div className={styles.section5}>
           <h5 className={styles.customH5}>더 잘 쓰고 싶어요?</h5>
           <p>

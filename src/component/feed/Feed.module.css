@@ -165,7 +165,6 @@
   border-bottom: 0;
 }
 
-.listBoxType1,
 .listBoxType {
   width: 288px;
   height: 288px;
@@ -179,9 +178,6 @@
   cursor: pointer;
 }
 
-.listBoxType1:hover {
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
-}
 .listBoxType:hover {
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
 }
@@ -271,18 +267,6 @@ dd {
   padding-left: 4px;
 }
 
-.listBoxType1 .blogInfoDesc {
-  margin: 0;
-  width: 100%;
-  max-height: 36px;
-  padding: 2px 40px 0 40px;
-  font-size: 13px;
-  line-height: 18px;
-  text-align: center;
-  overflow: hidden;
-  color: #777;
-  box-sizing: border-box;
-}
 .listBoxType .blogInfoDesc {
   margin: 0;
   width: 100%;
