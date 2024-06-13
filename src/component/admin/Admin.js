@@ -112,8 +112,13 @@ const Admin = () => {
                 onChangeFilter={changeFilterHandler}
               />
             </div>
-            <div className={classes.AdminBlock8}></div>
+            <div className={classes.AdminBlock8}>
+              <button className={classes.button}>변경사항 저장</button>
+            </div>
           </div>
+        </div>
+        <div className={classes.AdminWithdraw}>{"티스토리에서 "}
+          <a href="">탈퇴하기</a>
         </div>
       </div>
     </div>
