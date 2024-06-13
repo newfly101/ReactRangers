@@ -37,23 +37,31 @@ const Admin = () => {
               <div className={classes.AdminListHomeIcon}>
                 <img src={home} alt="home"></img>
               </div>
-              <div className={classes.AdminListMyblog}>내 블로그</div>
+              <div className={classes.AdminListMyBlog}>내 블로그</div>
             </div>
             <div className={classes.AdminListLine}>
               <div className={classes.AdminListUserIcon}>
                 <img src={user} alt="user"></img>
               </div>
-              <div className={classes.AdminListUser}>내 계정</div>
-              <div className={classes.AdminListMenu}>
-                <div className={classes.AdminListMenuFont}>프로필 레이어</div>
-                <div className={classes.AdminListMenuFont}>응원내역보기</div>
-                <div className={classes.AdminListMenuFont}>카카오계정 관리</div>
+              <div>
+                <div>
+                  <div className={classes.AdminListUser}>내 계정</div>
+                </div>
+                <div className={classes.AdminListMenu}>
+                  <div className={classes.AdminListMenuFont}>프로필 레이어</div>
+                  <div className={classes.AdminListMenuFont}>응원내역보기</div>
+                  <div className={classes.AdminListMenuFont}>
+                    카카오계정 관리
+                  </div>
+                </div>
               </div>
             </div>
-            <div className={classes.AdminLisLinkMenuIcon}>
-              <img src={down} alt="down"></img>
+            <div>
+              <div className={classes.AdminLisLinkMenuIcon}>
+                <img src={down} alt="down"></img>
+              </div>
+              <div className={classes.AdminListLinkMenu}>외부 기능</div>
             </div>
-            <div className={classes.AdminListLinkMenu}>외부 기능</div>
           </div>
         </div>
       </div>
@@ -117,7 +125,8 @@ const Admin = () => {
             </div>
           </div>
         </div>
-        <div className={classes.AdminWithdraw}>{"티스토리에서 "}
+        <div className={classes.AdminWithdraw}>
+          {"티스토리에서 "}
           <a href="">탈퇴하기</a>
         </div>
       </div>

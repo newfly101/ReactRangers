@@ -4,7 +4,7 @@
   align-items: center;
   background: #f3f5f7;
   height: 100vh;
-  width: 100vw;
+  width: 100%;
   margin-top: 120px;
 }
 
@@ -47,9 +47,11 @@
 }
 
 #AdminList {
-  margin-top: 8px;
+  margin-top: 6px;
   background: #fff;
   font-size: 15px;
+  padding-bottom: 7px;
+  border: 1px solid #e0e5ee;
 }
 
 .AdminListHomeIcon {
@@ -63,15 +65,22 @@
 }
 
 .AdminMyblog {
-  border: 1px solid #e0e5ee;
+  
   border-bottom: 0;
   padding: 12px 0 12px 47px;
 }
 
+.AdminMyblog:hover,
+.AdminListMenuFont:hover,
+.AdminListLinkMenu:hover {
+  background: #e0e5ee;
+  cursor: pointer;
+}
+
 .AdminListLine {
-  border: 1px solid #e0e5ee;
+  border-top: 1px solid #e0e5ee;
   border-bottom: 0;
-  padding: 12px 0 14px 47px;
+  padding: 12px 0 14px;
 }
 
 .AdminListUserIcon {
@@ -86,6 +95,7 @@
 
 .AdminListUser {
   padding-bottom: 8px;
+  padding-left: 47px;
 }
 
 .AdminListMenu {
@@ -96,6 +106,7 @@
 
 .AdminListMenuFont {
   margin-top: 5px;
+  padding-left: 47px;
 }
 
 .AdminLisLinkMenuIcon {
@@ -110,7 +121,7 @@
 }
 
 .AdminListLinkMenu {
-  border: 1px solid #e0e5ee;
+  border-top: 1px solid #e0e5ee;
   padding: 10px 0 14px 47px;
 }
 
@@ -174,6 +185,12 @@
   font-weight: bold;
 }
 
+.AdminBlockName:hover,
+.AdminBlockEmail:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
 .AdminSituation1,
 .AdminSituation2 {
   display: flex;
@@ -215,6 +232,10 @@
   padding: 10px 35px;
 }
 
+.AdminBlockBtnWindow:hover{
+  background: #505050;
+}
+
 .AdminBlock7 {
   background: #fff;
   padding: 30px 30px;
@@ -246,9 +267,11 @@
   margin-left: 10px;
   font-size: 13px;
   color: gray;
+  letter-spacing:-2px
 }
 
 .AdminWithdraw a {
   color: gray;
   text-decoration: underline;
+  margin-left: 3px;
 }
