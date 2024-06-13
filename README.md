@@ -8,7 +8,7 @@
 |:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|
 |FS DEV|FE DEV|FS DEV|FS DEV|FS DEV|FS DEV|
 |![image](https://github.com/newfly101/ReactRangers/assets/62008619/c6e7016a-fb84-4651-937e-3e7e00967527)|ㅇ|![image](https://github.com/newfly101/ReactRangers/assets/62008619/0d293840-f0d6-45e5-8d03-dd89782ca79d)|![image](https://github.com/newfly101/ReactRangers/assets/62008619/ee61335f-6c18-4596-b3cb-7f98c553ead2)|![image](https://github.com/newfly101/ReactRangers/assets/62008619/14376342-0ba4-40f9-b921-3a0175d7aa60)|ㅇ|
-
+|[newfly101](https://github.com/newfly101)|[rose_](https://github.com/ros-e2)|[KRjasoncho](https://github.com/KRjasoncho)|[chochohee](https://github.com/chochohee)|[brandysh](https://github.com/brandysh)|[inagi94](https://github.com/inagi94)|
 
 
 
