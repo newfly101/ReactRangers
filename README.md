@@ -140,26 +140,36 @@
 > - firebase 연동해서 실제 작업 데이터 추가/삭제 구현 *(2024/07/12 ~ 2024/08/02)*
 > - 프로젝트에 백엔드 추가 (Database 및 spring boot) 적용 *(2024/08/02 ~ 2024/08/30)*
 > - aws 서버를 활용한 배포 및 연동 작업 (dns, proxy 적용 등 실제 웹페이처럼 구동) *(2024/08/30 ~ )*
->
-> 
+>              
+>      
 
 
 # VI) 배포 상태
 [netlify 배포 링크](https://reactranger.netlify.app/)
+<label text-decoration-line="none">(https://reactranger.netlify.app/)</label>
 <div>
-  <img src="https://github.com/newfly101/ReactRangers/assets/62008619/f66bca86-ee81-4eb4-a5bd-02f4b4082d53" height="22" align-item="bottom" />
+  <a href="https://github.com/newfly101/ReactRangers/releases/tag/v0.2.1-demo" alt="version_v0.2.1-demo">
+    <img src="https://github.com/newfly101/ReactRangers/assets/62008619/f66bca86-ee81-4eb4-a5bd-02f4b4082d53" height="22" align-item="bottom" />
+  </a>
   <label>2024-06-10 (월요일) 배포</label>
 </div>
 <div>
-  <img src="https://github.com/newfly101/ReactRangers/assets/62008619/574dadd7-ec3d-4033-aea6-2a708605a2d1" height="22" align-item="bottom" />
+  <a href="https://github.com/newfly101/ReactRangers/releases/tag/v0.2.2-demo" alt="version_v0.2.2-demo">
+    <img src="https://github.com/newfly101/ReactRangers/assets/62008619/574dadd7-ec3d-4033-aea6-2a708605a2d1" height="22" align-item="bottom" />
+  </a>
   <label>2024-06-12 (수요일) 배포</label>
 </div>
 <div>
-  <img src="https://github.com/newfly101/ReactRangers/assets/62008619/1dd7c9ca-cff2-4696-a3e0-0d717e3bb44b" height="22" align-item="bottom" />
+  <a href="https://github.com/newfly101/ReactRangers/releases/tag/v0.2.3-demo" alt="version_v0.2.3-demo">
+    <img src="https://github.com/newfly101/ReactRangers/assets/62008619/1dd7c9ca-cff2-4696-a3e0-0d717e3bb44b" height="22" align-item="bottom" />
+  </a>
   <label>2024-06-13 (목요일) 배포</label>
 </div>
 <div>
-  <img src="https://github.com/newfly101/ReactRangers/assets/62008619/b5626b52-6acc-40d5-b92e-3ba3cfbe3ec1" height="22" align-item="bottom" />
+  <a href="https://github.com/newfly101/ReactRangers/releases/tag/v1.0.0" alt="version_v1.0.0">
+    <img src="https://github.com/newfly101/ReactRangers/assets/62008619/b5626b52-6acc-40d5-b92e-3ba3cfbe3ec1" height="22" align-item="bottom" />
+  </a>
+  <img src="https://github.com/newfly101/ReactRangers/assets/62008619/4f307489-5682-4d8e-9a70-9e95a6681805" width="22" height="22" />
   <label>2024-06-14 (금요일) 최종 버전 배포</label>
 </div>
 
