@@ -73,11 +73,11 @@ button {
 .fBody {
   display: flex;
   justify-content: center;
+  margin-bottom: 100px;
 }
 
 .fBlog {
-  padding: 41px 0 0;
-  margin: 0;
+  padding: 41px 0 41px 0;
   font-size: 20px;
   line-height: 20px;
   color: #777;
