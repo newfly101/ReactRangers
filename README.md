@@ -87,47 +87,61 @@
 |스킨|포럼|어드민|
 |![image](https://github.com/newfly101/ReactRangers/assets/62008619/56a31654-2584-42c8-bd73-7baa7edfb3aa)|![image](https://github.com/newfly101/ReactRangers/assets/62008619/78122cdd-c8f2-47c5-89b1-4af209712ec2)|![image](https://github.com/newfly101/ReactRangers/assets/62008619/9f41086c-60b3-4d39-b294-72ae1ed12177)|
 |로그인모달|계정찾기|로그인|
-|![image](https://github.com/newfly101/ReactRangers/assets/62008619/f4769223-2618-459c-92f7-ff2fda125043)|![image](https://github.com/newfly101/ReactRangers/assets/62008619/dc34554b-10ee-4f70-9032-f32f2c19efae)|![image](https://github.com/newfly101/ReactRangers/assets/62008619/04bf9b88-5b00-4b95-a35b-8a61a454592f)|
+|![image](https://github.com/newfly101/ReactRangers/assets/62008619/f4769223-2618-459c-92f7-ff2fda125043)|![image](https://github.com/newfly101/ReactRangers/assets/62008619/dc34554b-10ee-4f70-9032-f32f2c19efae)|![image](https://github.com/newfly101/ReactRangers/assets/62008619/04bf9b88-5b00-4b95-a35b-8a61a454592f)|   
 
-> 담당자 : 조승환
-
-|피드|Following|Follower|footer|
-|:---:|:---:|:---:|:---:|
-|![image](https://github.com/newfly101/ReactRangers/assets/62008619/1171bd10-f6f2-449b-8793-c4b99858cea2)|![image](https://github.com/newfly101/ReactRangers/assets/62008619/c7c899f4-5217-4c99-bff0-112c39e7f9f7)|![image](https://github.com/newfly101/ReactRangers/assets/62008619/17ee7d29-bc51-4479-adc2-9b51f91ad1b9)|![image](https://github.com/newfly101/ReactRangers/assets/62008619/7f92af18-698b-41ce-a18e-5d5227a3c716)|
-
-> 담당자 : 조일문
-
+> 🔥담당자 : 김국봉   
+      
+|메인페이지|slider카드뷰|
+|:---:|:---:|
+|![image](https://github.com/newfly101/ReactRangers/assets/62008619/c4027d91-9a40-4bf9-b119-542a0954ee5c)|![image](https://github.com/newfly101/ReactRangers/assets/62008619/f3680d84-0b93-4be2-bfc3-cbf42070def4)|
+|hover카드뷰|hoverText|
+|![image](https://github.com/newfly101/ReactRangers/assets/62008619/516a49e9-6a80-4329-b233-a4066af44c3e)|![image](https://github.com/newfly101/ReactRangers/assets/62008619/c94cfc4f-234a-41be-a83f-6af889b4b6a6)|
+         
+> 🔥담당자 : 조승환   
+           
+|피드|Following|
+|:---:|:---:|
+|![image](https://github.com/newfly101/ReactRangers/assets/62008619/1171bd10-f6f2-449b-8793-c4b99858cea2)|![image](https://github.com/newfly101/ReactRangers/assets/62008619/c7c899f4-5217-4c99-bff0-112c39e7f9f7)|
+|Follower|footer|
+|![image](https://github.com/newfly101/ReactRangers/assets/62008619/17ee7d29-bc51-4479-adc2-9b51f91ad1b9)|![image](https://github.com/newfly101/ReactRangers/assets/62008619/7f92af18-698b-41ce-a18e-5d5227a3c716)|
+        
+> 🔥담당자 : 조일문   
+           
 |스토리|계정찾기|로그인|
 |:---:|:---:|:---:|
 |![image](https://github.com/newfly101/ReactRangers/assets/62008619/70b90751-5a16-463f-b233-114074cf28a2)|![image](https://github.com/newfly101/ReactRangers/assets/62008619/85b6a3eb-0b15-4a59-91c0-a8a831ac4125)|![image](https://github.com/newfly101/ReactRangers/assets/62008619/e4594165-46a8-4b52-9e01-9119a2fc4258)|
 
-> 담당자 : 황초희
+> 🔥담당자 : 황초희   
 
 |티스토리스킨|유저스킨|
 |:---:|:---:|
 |![image](https://github.com/newfly101/ReactRangers/assets/62008619/4bcb1f35-0f4c-4a85-ba2d-8210e0a3835c)|![image](https://github.com/newfly101/ReactRangers/assets/62008619/3cdc359b-3f16-4062-8456-d34b6b290865)|
-
-> 담당자 : 정인학
-
+          
+> 🔥담당자 : 정인학   
+            
 |어드민페이지|
 |:---:|
 |![image](https://github.com/newfly101/ReactRangers/assets/62008619/e122829c-51e4-45b4-81b5-e1f5a6390f51)|
-
-> 담당자 : 김재홍
-
-|포럼페이지|댓글추가|Navigation|로그인modal|
-|:---:|:---:|:---:|:---:|
-|![image](https://github.com/newfly101/ReactRangers/assets/62008619/31c60f23-671c-4e99-b234-3739f4c9b568)|![image](https://github.com/newfly101/ReactRangers/assets/62008619/f892ec33-8f52-4659-b682-aaa836ec6b13)|![image](https://github.com/newfly101/ReactRangers/assets/62008619/c1906eef-b808-4812-badd-c7919a3a9b04)|![image](https://github.com/newfly101/ReactRangers/assets/62008619/c5126052-4611-40f9-9ef3-6442232556d1)|
-
+          
+> 🔥담당자 : 김재홍   
+          
+|포럼페이지|댓글추가|
+|:---:|:---:|
+|![image](https://github.com/newfly101/ReactRangers/assets/62008619/31c60f23-671c-4e99-b234-3739f4c9b568)|![image](https://github.com/newfly101/ReactRangers/assets/62008619/f892ec33-8f52-4659-b682-aaa836ec6b13)|
+|Navigation|로그인modal|
+|![image](https://github.com/newfly101/ReactRangers/assets/62008619/c1906eef-b808-4812-badd-c7919a3a9b04)|![image](https://github.com/newfly101/ReactRangers/assets/62008619/c5126052-4611-40f9-9ef3-6442232556d1)|
+       
 # V) 앞으로의 추가 과제
 > [!IMPORTANT]
-> - 추가 디테일 페이지 구현
-> - kakaotalk, google, apple 로그인 api 구현
-> - firebase 연동해서 실제 작업 데이터 추가/삭제 구현
-> - 다양한 animation 추가 작업 진행
-> - 프로젝트에 백엔드 추가 (Database 및 spring boot) 적용
-> - aws 서버를 활용한 배포 및 연동 작업 (dns, proxy 적용 등 실제 웹페이처럼 구동)
-
+> - 추가 디테일 페이지 구현 *(2024/06/14 ~ 2024/06/28)*
+> - 다양한 animation 추가 작업 진행 *(2024/06/14 ~ 2024/07/05)*
+> - kakaotalk, google, apple 로그인 api 구현 *(2024/06/14 ~ 2024/07/05)*
+> - redux(store) 및 고급hook 적용 *(2024/06/28 ~ 2024/07/12)*
+> - firebase 연동해서 실제 작업 데이터 추가/삭제 구현 *(2024/07/12 ~ 2024/08/02)*
+> - 프로젝트에 백엔드 추가 (Database 및 spring boot) 적용 *(2024/08/02 ~ 2024/08/30)*
+> - aws 서버를 활용한 배포 및 연동 작업 (dns, proxy 적용 등 실제 웹페이처럼 구동) *(2024/08/30 ~ )*
+>
+> 
 
 
 # VI) 배포 상태
