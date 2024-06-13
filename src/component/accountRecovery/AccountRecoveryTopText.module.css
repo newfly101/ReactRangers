@@ -1,0 +1,15 @@
+.topTextWrapper {
+  border-bottom: 2.1px solid black;
+  padding-bottom: 2rem;
+  margin-bottom: 1.7rem;
+}
+
+.topTextTitle {
+  font-weight: bold;
+  margin-bottom: 0.4rem;
+  font-size: 1.2rem;
+}
+.topTextMessage {
+  font-size: 1.6rem;
+  font-weight: 300;
+}
