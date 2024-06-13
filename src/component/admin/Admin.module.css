@@ -252,7 +252,6 @@
 }
 
 .AdminBlock8 {
-  border-color: #e0e5ee;
   background: #fff;
   color: #959595;
   text-align: center;
@@ -267,6 +266,7 @@
   font-size: 13px;
   color: gray;
   letter-spacing: -2px;
+  cursor: pointer;
 }
 
 .AdminWithdraw a {
@@ -276,7 +276,6 @@
 }
 
 .button {
-  border-color: #e0e5ee;
   background: #fff;
   color: #959595;
   text-align: center;
