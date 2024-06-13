@@ -27,9 +27,9 @@ const StoryItemBox = ({ dummyData }) => {
                   {item.title.substring(0, 35)}
                 </div>
                 <div className={classes.ItemBoxdesc}>
-                  {item.summary.substring(0, 55)}
+                  {item.summary.substring(0, 50)}
                   <br />
-                  {item.summary.substring(55, 100) + "..."}
+                  {item.summary.substring(50, 100) + "..."}
                 </div>
                 <div className={classes.ItemBoxAuthor}>
                   <div className={classes.ItemBoxAuthorDetali}>
