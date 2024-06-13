@@ -7,9 +7,7 @@
 |김재홍|김국봉|정일문|황초희|조승환|정인학|
 |:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|
 |FS DEV|FE DEV|FS DEV|FS DEV|FS DEV|FS DEV|
-|![image](https://github.com/newfly101/ReactRangers/assets/62008619/c6e7016a-fb84-4651-937e-3e7e00967527)
-|ㅇ|![image](https://github.com/newfly101/ReactRangers/assets/62008619/0d293840-f0d6-45e5-8d03-dd89782ca79d)
-|![image](https://github.com/newfly101/ReactRangers/assets/62008619/77c1398f-13e5-4cc4-bb43-d41db1577906)|![image](https://github.com/newfly101/ReactRangers/assets/62008619/14376342-0ba4-40f9-b921-3a0175d7aa60)|ㅇ|
+|![image](https://github.com/newfly101/ReactRangers/assets/62008619/c6e7016a-fb84-4651-937e-3e7e00967527)|ㅇ|![image](https://github.com/newfly101/ReactRangers/assets/62008619/0d293840-f0d6-45e5-8d03-dd89782ca79d)|![image](https://github.com/newfly101/ReactRangers/assets/62008619/77c1398f-13e5-4cc4-bb43-d41db1577906)|![image](https://github.com/newfly101/ReactRangers/assets/62008619/14376342-0ba4-40f9-b921-3a0175d7aa60)|ㅇ|
 
 
 
