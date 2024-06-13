@@ -6,7 +6,7 @@ const StoryItemBox = ({ dummyData }) => {
     <div>
       {dummyData.map((item, index) => (
         <div key={index}>
-          <a href={item.link}>
+          <a className={classes.itemBoxContainer} href={item.link}>
             {/*각 아이템 박스 전체를 섹션으로 감싼다*/}
             <section className={classes.itemBoxWrapper}>
               {/*아이템 박스 앞부분*/}
@@ -57,7 +57,6 @@ const StoryItemBox = ({ dummyData }) => {
             </section>
           </a>
           {/*각 아이템 박스를 구분하는 선*/}
-          <hr className={classes.mainBar} />
         </div>
       ))}
     </div>

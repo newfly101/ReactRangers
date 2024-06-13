@@ -22,7 +22,6 @@
 
 /*페이지 규격에 맞추기 위해 사용 범위를 제한하는 css*/
 .storyWrapper {
-  width: 45%;
   margin: 0 26.5vw 0 26.5vw;
 }
 
