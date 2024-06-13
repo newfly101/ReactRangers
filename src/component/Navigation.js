@@ -112,13 +112,21 @@ const Navigation = () => {
           </div>
         )}
 
-        <div
-          className={`${classes.navBarLogin} ${!scrolled && (url === "/forum" || url === "/skin") ? classes.navBarLoginFlag : ""}`}
-        >
-          <button onClick={openLoginModal}>
-            <Link to="/admin">시작하기</Link>
-          </button>
-        </div>
+        {window.location.pathname !== '/admin' ?
+          <div
+            className={`${classes.navBarLogin} ${!scrolled && (url === "/forum" || url === "/skin") ? classes.navBarLoginFlag : ""}`}
+          >
+            <button onClick={openLoginModal}>
+              시작하기
+            </button>
+          </div>
+            :
+            <div
+                className={`${classes.navBarLogin} ${!scrolled && (url === "/forum" || url === "/skin") ? classes.navBarLoginFlag : ""}`}
+            >
+              <img className={classes.loginedImg} src="https://www.webfx.com/wp-content/uploads/2022/08/github-logo.png" alt="logined" />
+            </div>
+        }
         {isOpen && <LoginModal isOpen={isOpen} close={closeLoginModal} />}
       </nav>
     </div>

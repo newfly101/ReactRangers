@@ -185,6 +185,11 @@
   text-decoration-line: underline;
 }
 
+.loginedImg {
+  cursor: pointer;
+  margin-right: 20px;
+}
+
 @media (max-width: 800px) {
   .navBarLogin button {
     display: none;
