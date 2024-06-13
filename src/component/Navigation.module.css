@@ -113,6 +113,7 @@
   padding: 13px 40px 13px 40px;
   border-radius: 40px;
 }
+
 .navBarLogin2 button:hover {
   margin-right: 40px;
   border: none;
@@ -121,7 +122,13 @@
   padding: 13px 40px 13px 40px;
   border-radius: 40px;
 }
-
+.navBarLoginFlag {
+  filter: invert();
+  color: black;
+}
+.navBarLoginFlag:hover {
+  filter: none;
+}
 .pageLinkBox {
   display: flex;
   flex-direction: row;
@@ -182,9 +189,4 @@
   .navBarLogin button {
     display: none;
   }
-}
-
-.navBarLoginFlag {
-  filter: invert();
-  color: black;
 }
