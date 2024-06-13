@@ -7,7 +7,7 @@
 |김재홍|김국봉|정일문|황초희|조승환|정인학|
 |:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|
 |FS DEV|FE DEV|FS DEV|FS DEV|FS DEV|FS DEV|
-|![image](https://github.com/newfly101/ReactRangers/assets/62008619/959b13db-cfce-49d5-b3ce-d2214baf1b41)|![image](https://github.com/newfly101/ReactRangers/assets/62008619/ade00b15-8ee5-4803-a3f2-eda6419dfd71)|![image](https://github.com/newfly101/ReactRangers/assets/62008619/c481e5c3-046d-4883-a550-df55e3f57c68)|![image](https://github.com/newfly101/ReactRangers/assets/62008619/aeaf57ee-7b6d-48cc-a4fd-5c39840f01b7)|![image](https://github.com/newfly101/ReactRangers/assets/62008619/7c229f2a-4944-419e-9c9e-435b7042ae54)|![image](https://github.com/newfly101/ReactRangers/assets/62008619/8d9842d6-6af5-40ad-9c56-a5d6153aa259)|
+|<img src="https://github.com/newfly101/ReactRangers/assets/62008619/959b13db-cfce-49d5-b3ce-d2214baf1b41" width="150px" height="150px" />|<img src="https://github.com/newfly101/ReactRangers/assets/62008619/ade00b15-8ee5-4803-a3f2-eda6419dfd71" width="150px" height="150px" />|<img src="https://github.com/newfly101/ReactRangers/assets/62008619/c481e5c3-046d-4883-a550-df55e3f57c68" width="150px" height="150px" />|<img src="https://github.com/newfly101/ReactRangers/assets/62008619/aeaf57ee-7b6d-48cc-a4fd-5c39840f01b7" width="150px" height="150px" />|<img src="https://github.com/newfly101/ReactRangers/assets/62008619/7c229f2a-4944-419e-9c9e-435b7042ae54" width="150px" height="150px" />|<img src="https://github.com/newfly101/ReactRangers/assets/62008619/8d9842d6-6af5-40ad-9c56-a5d6153aa259" width="150px" height="150px" />|
 |[newfly101](https://github.com/newfly101)|[rose_](https://github.com/ros-e2)|[KRjasoncho](https://github.com/KRjasoncho)|[chochohee](https://github.com/chochohee)|[brandysh](https://github.com/brandysh)|[inagi94](https://github.com/inagi94)|
 
 # 목차
@@ -48,12 +48,39 @@
 
 
 # III) 역할 분담
-
 - 개인의 수행 능력에 따라서 페이지 배정 차등 분배
-- 
+- Project Develop 부분을 염두에 두고, 최대한의 view를 구현하거나, 기능을 중점으로 구현
+- 배포 기준으로 bug test 및 fix
+- git hub issue/milestone을 사용해서 협업 및 소통 진행
 
+
+## 김국봉
+- 메인 페이지 css 및 고급 animation 설정
+
+## 조승환
+- feed 페이지, feed와 연관된 following /follower page 구현
+- footer 페이지 구현
+
+## 정일문
+- 스토리 페이지 구현
+- 회원정보 찾기 페이지 구현
+- 로그인 페이지 구현
+- 배포 버전 버그 fix 담당 및 전역 페이지 수정
+
+## 황초희
+- 스킨 페이지 css 및 고급 animation 설정
+
+## 정인학
+- 어드민 페이지 구현
+
+## 김재홍
+- 포럼 페이지 구현
+- 프로젝트 배포 및 버그 fix 담당
+- common component 구현 (Navigation, modal)
 
 # IV) UI/UX
+> 전체 구성
+
 |메인|피드|스토리|
 |:---:|:---:|:---:|
 |![image](https://github.com/newfly101/ReactRangers/assets/62008619/31102af9-6a3b-443d-87df-04e3f40c83d2)|![image](https://github.com/newfly101/ReactRangers/assets/62008619/1171bd10-f6f2-449b-8793-c4b99858cea2)|![image](https://github.com/newfly101/ReactRangers/assets/62008619/6e6c18ff-fa09-4211-ac56-34afbc00ccc7)|
@@ -62,9 +89,36 @@
 |로그인모달|계정찾기|로그인|
 |![image](https://github.com/newfly101/ReactRangers/assets/62008619/f4769223-2618-459c-92f7-ff2fda125043)|![image](https://github.com/newfly101/ReactRangers/assets/62008619/dc34554b-10ee-4f70-9032-f32f2c19efae)|![image](https://github.com/newfly101/ReactRangers/assets/62008619/04bf9b88-5b00-4b95-a35b-8a61a454592f)|
 
-|피드|Following|Follower|
+> 담당자 : 조승환
+
+|피드|Following|Follower|footer|
+|:---:|:---:|:---:|:---:|
+|![image](https://github.com/newfly101/ReactRangers/assets/62008619/1171bd10-f6f2-449b-8793-c4b99858cea2)|![image](https://github.com/newfly101/ReactRangers/assets/62008619/c7c899f4-5217-4c99-bff0-112c39e7f9f7)|![image](https://github.com/newfly101/ReactRangers/assets/62008619/17ee7d29-bc51-4479-adc2-9b51f91ad1b9)|![image](https://github.com/newfly101/ReactRangers/assets/62008619/7f92af18-698b-41ce-a18e-5d5227a3c716)|
+
+> 담당자 : 조일문
+
+|스토리|계정찾기|로그인|
 |:---:|:---:|:---:|
-|![image](https://github.com/newfly101/ReactRangers/assets/62008619/1171bd10-f6f2-449b-8793-c4b99858cea2)|![image](https://github.com/newfly101/ReactRangers/assets/62008619/c7c899f4-5217-4c99-bff0-112c39e7f9f7)||
+|![image](https://github.com/newfly101/ReactRangers/assets/62008619/70b90751-5a16-463f-b233-114074cf28a2)|![image](https://github.com/newfly101/ReactRangers/assets/62008619/85b6a3eb-0b15-4a59-91c0-a8a831ac4125)|![image](https://github.com/newfly101/ReactRangers/assets/62008619/e4594165-46a8-4b52-9e01-9119a2fc4258)|
+
+> 담당자 : 황초희
+
+|티스토리스킨|유저스킨|
+|:---:|:---:|
+|![image](https://github.com/newfly101/ReactRangers/assets/62008619/4bcb1f35-0f4c-4a85-ba2d-8210e0a3835c)|![image](https://github.com/newfly101/ReactRangers/assets/62008619/3cdc359b-3f16-4062-8456-d34b6b290865)|
+
+> 담당자 : 정인학
+
+|어드민페이지|
+|:---:|
+|![image](https://github.com/newfly101/ReactRangers/assets/62008619/e122829c-51e4-45b4-81b5-e1f5a6390f51)|
+
+> 담당자 : 김재홍
+
+|포럼페이지|댓글추가|Navigation|로그인modal|
+|:---:|:---:|:---:|:---:|
+|![image](https://github.com/newfly101/ReactRangers/assets/62008619/31c60f23-671c-4e99-b234-3739f4c9b568)|![image](https://github.com/newfly101/ReactRangers/assets/62008619/f892ec33-8f52-4659-b682-aaa836ec6b13)|![image](https://github.com/newfly101/ReactRangers/assets/62008619/c1906eef-b808-4812-badd-c7919a3a9b04)|![image](https://github.com/newfly101/ReactRangers/assets/62008619/c5126052-4611-40f9-9ef3-6442232556d1)|
+
 # V) 앞으로의 추가 과제
 > [!IMPORTANT]
 > - 추가 디테일 페이지 구현
