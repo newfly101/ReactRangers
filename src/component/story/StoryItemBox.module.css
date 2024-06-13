@@ -3,11 +3,11 @@
   margin-bottom: 0.8rem;
   margin-top: 3rem;
   cursor: pointer;
-  display: flex;
-  align-items: start;
-  justify-content: start;
   white-space: nowrap;
-  width: 80rem;
+  width: 45vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /*아이템 박스 앞부분*/

@@ -1,33 +1,59 @@
+# ReactRangers
 ![image](https://github.com/newfly101/ReactRangers/assets/62008619/2d3adb36-5c95-4aa4-b17e-0edc08750b9c)
 
 
-# ReactRangers
-슈퍼코딩 부트캠프02팀, 클론코딩 1차 프로젝트
+# 👨‍👨‍👧 Team 소개
 
-목차
-Ⅰ) 기술 스택
-Ⅱ) 프로젝트 사용해보기
-Ⅲ) 주요 기능
-Ⅳ) UI/UX
-Ⅴ) 프로젝트 구현 기술
+|김재홍|김국봉|정일문|황초희|조승환|정인학|
+|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|
+|FS DEV|FE DEV|FS DEV|FS DEV|FS DEV|FS DEV|
+|![image](https://github.com/newfly101/ReactRangers/assets/62008619/c6e7016a-fb84-4651-937e-3e7e00967527)|ㅇ|![image](https://github.com/newfly101/ReactRangers/assets/62008619/0d293840-f0d6-45e5-8d03-dd89782ca79d)|![image](https://github.com/newfly101/ReactRangers/assets/62008619/ee61335f-6c18-4596-b3cb-7f98c553ead2)|![image](https://github.com/newfly101/ReactRangers/assets/62008619/14376342-0ba4-40f9-b921-3a0175d7aa60)|ㅇ|
+|[newfly101](https://github.com/newfly101)|[rose_](https://github.com/ros-e2)|[KRjasoncho](https://github.com/KRjasoncho)|[chochohee](https://github.com/chochohee)|[brandysh](https://github.com/brandysh)|[inagi94](https://github.com/inagi94)|
 
-#Ⅰ) 기술 스택
-## 사용 언어
+# 목차
+### I) 🛠기술 스택
+### II) 프로젝트 진행 순서
+### III) 역할 분담
+### IV) UI/UX
+### V) 앞으로의 추가 과제
+
+# I) 🛠기술 스택
+### 사용 언어
+- JavaScript (ES6)
+
+### Client
+- React V18
+- React Router V5
+- Redux
+- css-module
+- slick
+- dayjs
+
+### Server
+- netlify
+
+
+# II) 프로젝트 진행 순서
+![image](https://github.com/newfly101/ReactRangers/assets/62008619/013aeeef-a59a-4968-90b5-40ea056283b8)
+
+### 1일차 : 기획
+### 2-4일차 : 페이지 구현 
+### 5일차 : QA/QC 페이지 TEST
+### 6일차 : 배포 버전 최종 TEST
+### 7일차 : 발표
+
+
+# III) 역할 분담
+
+- 개인의 수행 능력에 따라서 페이지 배정 차등 분배
 - 
-TypeScript
-Client
-React V16
-React Router V5
-Redux
-Redux-saga
-Styled-components
-Socket.io-client
-Webpack
-Server
-Node.js - Express
-Sequelize
-Socket.io
-MySQL
+
+
+
+
+
+
+
 
 ## 배포 페이지
 [netlify 배포 링크](https://reactranger.netlify.app/)
