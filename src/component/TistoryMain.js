@@ -3,6 +3,9 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import styles from './TistoryMain.module.css';
+import ImageSlider from './main/Cardshow.js';
+import Sponsor from './main/TeamSponsor.js';
+import Bottom from './main/BottomText.js';
 
 const TistoryMain = () => {
   const images = [
@@ -291,6 +294,8 @@ const TistoryMain = () => {
           </p>
         </div>
       </div>
+      <Sponsor />
+      <Bottom />
     </div>
   );
 };
