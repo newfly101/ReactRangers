@@ -1,5 +1,4 @@
 import React from "react";
-import "./AdminFilter.css"
 
 const AdminFilter = (props) => {
   const receiveChangeHandler = (event) => {
