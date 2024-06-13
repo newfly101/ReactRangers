@@ -294,8 +294,8 @@ const TistoryMain = () => {
           </p>
         </div>
       </div>
-      <Sponsor />
-      <Bottom />
+      {/* <Sponsor />
+      <Bottom /> */}
     </div>
   );
 };
