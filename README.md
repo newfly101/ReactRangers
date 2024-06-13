@@ -16,6 +16,9 @@
 ### III) 역할 분담
 ### IV) UI/UX
 ### V) 앞으로의 추가 과제
+### VI) 배포 상태
+
+
 
 # I) 🛠기술 스택
 ### 공통
@@ -29,6 +32,9 @@
 
 ### Server
 ![image](https://img.shields.io/badge/Netlify-FFE500?style=flat-square&logo=Java&logoColor=white)
+
+![ReactRangers github stats](https://github-readme-stats.vercel.app/api?username=newfly101&theme=radical)
+[![사용 언어 통계](https://github-readme-stats.vercel.app/api/top-langs/?username=newfly101&layout=compact&hide=svelte,python,dockerfile&theme=radical)](https://github.com/newfly101/ReactRangers/github-readme-stats)
 
 
 # II) 프로젝트 진행 순서
@@ -60,18 +66,39 @@
 |:---:|:---:|:---:|
 |![image](https://github.com/newfly101/ReactRangers/assets/62008619/1171bd10-f6f2-449b-8793-c4b99858cea2)|![image](https://github.com/newfly101/ReactRangers/assets/62008619/c7c899f4-5217-4c99-bff0-112c39e7f9f7)||
 # V) 앞으로의 추가 과제
+> [!IMPORTANT]
+> - 추가 디테일 페이지 구현
+> - kakaotalk, google, apple 로그인 api 구현
+> - firebase 연동해서 실제 작업 데이터 추가/삭제 구현
+> - 다양한 animation 추가 작업 진행
+> - 프로젝트에 백엔드 추가 (Database 및 spring boot) 적용
+> - aws 서버를 활용한 배포 및 연동 작업 (dns, proxy 적용 등 실제 웹페이처럼 구동)
 
 
 
-
-
-## 배포 페이지
+# VI) 배포 상태
 [netlify 배포 링크](https://reactranger.netlify.app/)
+<div>
+  <img src="https://github.com/newfly101/ReactRangers/assets/62008619/f66bca86-ee81-4eb4-a5bd-02f4b4082d53" height="22" align-item="bottom" />
+  <label>2024-06-10 (월요일) 배포</label>
+</div>
+<div>
+  <img src="https://github.com/newfly101/ReactRangers/assets/62008619/574dadd7-ec3d-4033-aea6-2a708605a2d1" height="22" align-item="bottom" />
+  <label>2024-06-12 (수요일) 배포</label>
+</div>
+<div>
+  <img src="https://github.com/newfly101/ReactRangers/assets/62008619/1dd7c9ca-cff2-4696-a3e0-0d717e3bb44b" height="22" align-item="bottom" />
+  <label>2024-06-13 (목요일) 배포</label>
+</div>
+<div>
+  <img src="https://github.com/newfly101/ReactRangers/assets/62008619/b5626b52-6acc-40d5-b92e-3ba3cfbe3ec1" height="22" align-item="bottom" />
+  <label>2024-06-14 (금요일) 최종 버전 배포</label>
+</div>
 
-### 배포 상태 체크
-- 2024-06-10 (월요일) v0.2.1-demo 버전 배포
-- 2024-06-12 (수요일) v0.2.2-demo 버전 배포
 
+
+
+<!-- 
 ## 1. 프로젝트 환경 동일화 작업
 
 1) project pull 받기
@@ -91,3 +118,4 @@
 ### Navigation.js 에
 각 페이지로 이동하는 `<a>` 태그에 App.js에 작성한 url 추가해주시면 페이지 연동이 됩니다.
 
+ -->
