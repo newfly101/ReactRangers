@@ -73,7 +73,7 @@ button {
 .fBody {
   font-size: 0;
   line-height: 0;
-  margin: 0;
+  margin: 0 0 200px 0;
   padding: 0;
   display: flex;
   justify-content: center;
