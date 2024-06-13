@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import classes from "./AccountRecovery.module.css";
 
 import AccountRecoveryTopText from "./AccountRecoveryTopText";
@@ -7,13 +7,21 @@ import { useLocation } from "react-router-dom";
 
 const AccountRecovery = () => {
   const location = useLocation();
-  const checkedMethod = location.state;
-  console.log(checkedMethod);
-
+  const [boldFlag, setBoldFlag] = useState(location.state.checkedMethod);
+  const methodClickHandlerTrue = () => {
+    setBoldFlag(true);
+  };
+  const methodClickHandlerFalse = () => {
+    setBoldFlag(false);
+  };
   return (
     <div className={classes.AccountRecoveryContainer}>
       <AccountRecoveryTopText />
-      <AccountRecoveryBottomInput checkedMethod={checkedMethod} />
+      <AccountRecoveryBottomInput
+        boldFlag={boldFlag}
+        methodClickHandlerTrue={methodClickHandlerTrue}
+        methodClickHandlerFalse={methodClickHandlerFalse}
+      />
       <div className={classes.loginNotion}>
         <a
           className={classes.loginDetali}

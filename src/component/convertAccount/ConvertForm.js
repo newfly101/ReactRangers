@@ -30,14 +30,14 @@ const ConvertForm = () => {
         <Link
           to="/AccountRecovery"
           onMouseOver={() => setCheckedMethod(true)}
-          state={{ clickMethod: checkedMethod }}
+          state={{ checkedMethod }}
         >
           계정 /{" "}
         </Link>
         <Link
           to="/AccountRecovery"
           onMouseOver={() => setCheckedMethod(false)}
-          state={{ clickMethod: checkedMethod }}
+          state={{ checkedMethod }}
         >
           비밀번호 찾기
         </Link>

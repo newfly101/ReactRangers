@@ -1,16 +1,12 @@
-import React, { useState } from "react";
+import React from "react";
 import classes from "./AccountRecoveryBottomInput.module.css";
 import check from "./check.svg";
 
-const AccountRecoveryBottomInput = ({ checkedMethod }) => {
-  const [boldFlag, setBoldFlag] = useState(checkedMethod);
-
-  const methodClickHandlerTrue = () => {
-    setBoldFlag(true);
-  };
-  const methodClickHandlerFalse = () => {
-    setBoldFlag(false);
-  };
+const AccountRecoveryBottomInput = ({
+  boldFlag,
+  methodClickHandlerTrue,
+  methodClickHandlerFalse,
+}) => {
   return (
     <div>
       <div>
@@ -20,6 +16,7 @@ const AccountRecoveryBottomInput = ({ checkedMethod }) => {
               type="radio"
               name="method"
               className={classes.radio}
+              onChange={methodClickHandlerTrue}
               checked={boldFlag}
             />
             <span
@@ -36,7 +33,8 @@ const AccountRecoveryBottomInput = ({ checkedMethod }) => {
               type="radio"
               name="method"
               className={classes.radio}
-              check={!boldFlag}
+              onChange={methodClickHandlerFalse}
+              checked={!boldFlag}
             />
             <span
               onClick={methodClickHandlerFalse}
