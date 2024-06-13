@@ -45,14 +45,6 @@
   line-height: 1.2;
 }
 
-/* @media (max-width: 1300px) {
-  .fInnerFeed {
-    max-width: calc(100% - 40px);
-    margin-left: 20px;
-    margin-right: 20px;
-  }
-} */
-
 .fBtn {
   display: flex;
   justify-content: flex-end;
@@ -94,14 +86,6 @@ button {
   word-wrap: break-word;
   white-space: nowrap;
 }
-
-/* @media (max-width: 1300px) {
-  .fList {
-    max-width: calc(100% - 40px);
-    margin-left: 20px;
-    margin-right: 20px;
-  }
-} */
 
 .checkImg {
   display: inline-block;
