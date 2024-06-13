@@ -1,12 +1,11 @@
 # ReactRangers
----
 ![image](https://github.com/newfly101/ReactRangers/assets/62008619/2d3adb36-5c95-4aa4-b17e-0edc08750b9c)
 
 
 # Team 소개
----
-|:---:|:---:|:---:|:---:|:---:|:---:|
+
 |김재홍|김국봉|정일문|황초희|조승환|정인학|
+|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|
 |FS DEV|FE DEV|FS DEV|FS DEV|FS DEV|FS DEV|
 |![image](https://github.com/newfly101/ReactRangers/assets/62008619/c6e7016a-fb84-4651-937e-3e7e00967527)
 |ㅇ|![image](https://github.com/newfly101/ReactRangers/assets/62008619/0d293840-f0d6-45e5-8d03-dd89782ca79d)
