@@ -1,4 +1,5 @@
-![image](https://github.com/newfly101/ReactRangers/assets/62008619/c221fefe-ad13-4336-b53e-f9ec4837511b)
+![image](https://github.com/newfly101/ReactRangers/assets/62008619/2d3adb36-5c95-4aa4-b17e-0edc08750b9c)
+
 
 # ReactRangers
 슈퍼코딩 부트캠프02팀, 클론코딩 1차 프로젝트
