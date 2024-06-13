@@ -7,7 +7,9 @@ import { useLocation } from "react-router-dom";
 
 const AccountRecovery = () => {
   const location = useLocation();
-  const [boldFlag, setBoldFlag] = useState(location.state.checkedMethod);
+  const [boldFlag, setBoldFlag] = useState(
+    location.state?.checkedMethod || true
+  );
   const methodClickHandlerTrue = () => {
     setBoldFlag(true);
   };
