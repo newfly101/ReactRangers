@@ -7,7 +7,7 @@
 |김재홍|김국봉|정일문|황초희|조승환|정인학|
 |:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|
 |FS DEV|FE DEV|FS DEV|FS DEV|FS DEV|FS DEV|
-|![image](https://github.com/newfly101/ReactRangers/assets/62008619/c6e7016a-fb84-4651-937e-3e7e00967527)|ㅇ|![image](https://github.com/newfly101/ReactRangers/assets/62008619/0d293840-f0d6-45e5-8d03-dd89782ca79d)|![image](https://github.com/newfly101/ReactRangers/assets/62008619/ee61335f-6c18-4596-b3cb-7f98c553ead2)|![image](https://github.com/newfly101/ReactRangers/assets/62008619/14376342-0ba4-40f9-b921-3a0175d7aa60)|ㅇ|
+|![image](https://github.com/newfly101/ReactRangers/assets/62008619/959b13db-cfce-49d5-b3ce-d2214baf1b41)|![image](https://github.com/newfly101/ReactRangers/assets/62008619/ade00b15-8ee5-4803-a3f2-eda6419dfd71)|![image](https://github.com/newfly101/ReactRangers/assets/62008619/c481e5c3-046d-4883-a550-df55e3f57c68)|![image](https://github.com/newfly101/ReactRangers/assets/62008619/aeaf57ee-7b6d-48cc-a4fd-5c39840f01b7)|![image](https://github.com/newfly101/ReactRangers/assets/62008619/7c229f2a-4944-419e-9c9e-435b7042ae54)|![image](https://github.com/newfly101/ReactRangers/assets/62008619/8d9842d6-6af5-40ad-9c56-a5d6153aa259)|
 |[newfly101](https://github.com/newfly101)|[rose_](https://github.com/ros-e2)|[KRjasoncho](https://github.com/KRjasoncho)|[chochohee](https://github.com/chochohee)|[brandysh](https://github.com/brandysh)|[inagi94](https://github.com/inagi94)|
 
 # 목차
@@ -21,19 +21,14 @@
 ### 공통
 ![image](https://camo.githubusercontent.com/ccbdc29329afff39a4b077da431827477c1c0b3b8546e2ec570e8acd88bcc0fb/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f6769742d4630353033323f7374796c653d666f722d7468652d6261646765266c6f676f3d676974266c6f676f436f6c6f723d7768697465)
 
+### IDE
+![image](https://camo.githubusercontent.com/fd2e8e83472645cd2b998d60168763bb7d8346ecb7f180076617eac3f7bcb6de/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f496e74656c6c694a494445412d3030303030302e7376673f7374796c653d666f722d7468652d6261646765266c6f676f3d696e74656c6c696a2d69646561266c6f676f436f6c6f723d7768697465) ![image](https://camo.githubusercontent.com/998382ebc9a32162128b00b597ea488192df024fd015e5edec001fe29fcb93a6/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f56697375616c25323053747564696f253230436f64652d3030373864372e7376673f7374796c653d666f722d7468652d6261646765266c6f676f3d76697375616c2d73747564696f2d636f6465266c6f676f436f6c6f723d7768697465)
+
 ### 사용 언어
 ![image](https://camo.githubusercontent.com/7ede6d21b6aec3947375e33c2e9c620fa0c1af65bad223b32f01f915ef132755/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f68746d6c352d4544374433313f7374796c653d666f722d7468652d6261646765266c6f676f3d68746d6c35266c6f676f436f6c6f723d7768697465) ![image](https://camo.githubusercontent.com/16fea79fb97d299ed1e8821f36586055821b8795f0329f5debee7392e6e5c617/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f72656163742d3631444146423f7374796c653d666f722d7468652d6261646765266c6f676f3d7265616374266c6f676f436f6c6f723d626c61636b) ![image](https://camo.githubusercontent.com/4e29793ad0c38bc181efe8c11cfd2f1dd2bcd5403953be3845737a154b7fec9c/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f4a6176615363726970742d4646433030303f7374796c653d666f722d7468652d6261646765266c6f676f3d4a617661536372697074266c6f676f436f6c6f723d626c61636b) ![image](https://camo.githubusercontent.com/74dc049c7e749808146ebaaaeeced90ba567453d1cc008b3e08c27cc20234e4d/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f72656475782d3736344142433f7374796c653d666f722d7468652d6261646765266c6f676f3d7265647578266c6f676f436f6c6f723d7768697465) ![image](https://camo.githubusercontent.com/2d97277bab3501304936c98c236225fbe7ab81d026d92c824ba75b58bba316c5/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f435353332d3030413745323f7374796c653d666f722d7468652d6261646765266c6f676f3d63737333266c6f676f436f6c6f723d7768697465) ![image](https://camo.githubusercontent.com/d53346d6e23c6bad0d4379480a6a3e2c0249543c2d1b0dddd60dd6da35d82990/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f7374796c6564636f6d706f6e656e74732d4442373039333f7374796c653d666f722d7468652d6261646765266c6f676f3d7374796c6564636f6d706f6e656e7473266c6f676f436f6c6f723d7768697465)
 
-### Client
-- React V18
-- React Router V5
-- Redux
-- css-module
-- slick
-- dayjs
-
 ### Server
-- netlify
+![image](https://img.shields.io/badge/Netlify-FFE500?style=flat-square&logo=Java&logoColor=white)
 
 
 # II) 프로젝트 진행 순서
@@ -52,7 +47,19 @@
 - 
 
 
+# IV) UI/UX
+|메인|피드|스토리|
+|:---:|:---:|:---:|
+|![image](https://github.com/newfly101/ReactRangers/assets/62008619/31102af9-6a3b-443d-87df-04e3f40c83d2)|![image](https://github.com/newfly101/ReactRangers/assets/62008619/1171bd10-f6f2-449b-8793-c4b99858cea2)|![image](https://github.com/newfly101/ReactRangers/assets/62008619/6e6c18ff-fa09-4211-ac56-34afbc00ccc7)|
+|스킨|포럼|어드민|
+|![image](https://github.com/newfly101/ReactRangers/assets/62008619/56a31654-2584-42c8-bd73-7baa7edfb3aa)|![image](https://github.com/newfly101/ReactRangers/assets/62008619/78122cdd-c8f2-47c5-89b1-4af209712ec2)|![image](https://github.com/newfly101/ReactRangers/assets/62008619/9f41086c-60b3-4d39-b294-72ae1ed12177)|
+|로그인모달|계정찾기|로그인|
+|![image](https://github.com/newfly101/ReactRangers/assets/62008619/f4769223-2618-459c-92f7-ff2fda125043)|![image](https://github.com/newfly101/ReactRangers/assets/62008619/dc34554b-10ee-4f70-9032-f32f2c19efae)|![image](https://github.com/newfly101/ReactRangers/assets/62008619/04bf9b88-5b00-4b95-a35b-8a61a454592f)|
 
+|피드|Following|Follower|
+|:---:|:---:|:---:|
+|![image](https://github.com/newfly101/ReactRangers/assets/62008619/1171bd10-f6f2-449b-8793-c4b99858cea2)|![image](https://github.com/newfly101/ReactRangers/assets/62008619/c7c899f4-5217-4c99-bff0-112c39e7f9f7)||
+# V) 앞으로의 추가 과제
 
 
 
