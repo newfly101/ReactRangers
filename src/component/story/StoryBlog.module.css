@@ -75,3 +75,8 @@
 .blogWrapper:hover .subscribeBtn {
   display: block;
 }
+
+.blogWrapper {
+  text-decoration-line: none;
+  color: black;
+}

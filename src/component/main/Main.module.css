@@ -99,14 +99,14 @@
   font-weight: 500;
 }
 
+.section5 a:hover {
+  color: #000000;
+}
+
 .section5 p span {
   position: relative;
 }
 
-.section5 p:hover {
-  color: #000000;
-  cursor: pointer;
-}
 .section5 p span::before {
   content: '';
   position: absolute;

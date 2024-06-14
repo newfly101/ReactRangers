@@ -20,17 +20,18 @@
     sans-serif;
 }
 
-/*페이지 규격에 맞추기 위해 사용 범위를 제한하는 css*/
 .storyWrapper {
-  width: 56rem;
-  padding: 0 0 0 26.5vw;
+  margin: 0 auto;
+  max-width: 1200px;
+  min-width: 1200px;
+  width: 90%;
 }
 
 /*상단 섹션의 css*/
 .storyTopSection {
   height: 11.1rem;
   display: flex;
-  align-items: start;
+  align-items: center;
   justify-content: center;
   flex-direction: column;
   margin-top: 6.7rem;
@@ -41,6 +42,7 @@
   text-align: left;
   margin-top: 5rem;
   margin-bottom: 4.5rem;
+  margin-right: 25rem;
 }
 
 .topSectionTitle {

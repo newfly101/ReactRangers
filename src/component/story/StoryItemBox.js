@@ -3,10 +3,10 @@ import classes from "./StoryItemBox.module.css";
 
 const StoryItemBox = ({ dummyData }) => {
   return (
-    <div>
+    <div className={classes.asdf}>
       {dummyData.map((item, index) => (
         <div key={index}>
-          <a href={item.link}>
+          <a className={classes.itemBoxContainer} href={item.link}>
             {/*각 아이템 박스 전체를 섹션으로 감싼다*/}
             <section className={classes.itemBoxWrapper}>
               {/*아이템 박스 앞부분*/}
@@ -27,9 +27,9 @@ const StoryItemBox = ({ dummyData }) => {
                   {item.title.substring(0, 35)}
                 </div>
                 <div className={classes.ItemBoxdesc}>
-                  {item.summary.substring(0, 55)}
+                  {item.summary.substring(0, 50)}
                   <br />
-                  {item.summary.substring(55, 100) + "..."}
+                  {item.summary.substring(50, 100) + "..."}
                 </div>
                 <div className={classes.ItemBoxAuthor}>
                   <div className={classes.ItemBoxAuthorDetali}>
@@ -40,7 +40,7 @@ const StoryItemBox = ({ dummyData }) => {
                     />
                     <div>{item.userName}</div>
                     <div className={classes.authorBlogTitle}>
-                      by {item.blogTitle}
+                      by {item.blogTitle.substring(0, 30)}
                     </div>
                   </div>
                   <div className={classes.subscribeBtn}>구독하기</div>
@@ -57,7 +57,6 @@ const StoryItemBox = ({ dummyData }) => {
             </section>
           </a>
           {/*각 아이템 박스를 구분하는 선*/}
-          <hr className={classes.mainBar} />
         </div>
       ))}
     </div>

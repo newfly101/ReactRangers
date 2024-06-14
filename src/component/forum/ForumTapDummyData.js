@@ -928,7 +928,7 @@ export const blogTipDetailData = {
             "userId": 6706535,
             "userName": "btcgraduation",
             "userDefaultUrl": "https://btcgraduation.tistory.com",
-            "userImage": "https://tistory1.daumcdn.net/tistory/7118771/attach/7ef49d0103454e4ebe34cf6018da7d28"
+            "userImage": "https://t1.daumcdn.net/tistory_admin/static/manage/images/r3/default_S.png"
         }, {
             "entryId": 304124,
             "id": 218707,

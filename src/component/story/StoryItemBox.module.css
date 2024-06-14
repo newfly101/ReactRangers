@@ -3,11 +3,11 @@
   margin-bottom: 0.8rem;
   margin-top: 3rem;
   cursor: pointer;
-  display: flex;
-  align-items: start;
-  justify-content: start;
   white-space: nowrap;
-  width: 80rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid rgb(224, 224, 224);
 }
 
 /*아이템 박스 앞부분*/
@@ -57,18 +57,19 @@
 .ItemBoxAuthor {
   display: flex;
   justify-content: space-between;
-
   align-items: center;
   font-size: 0.8rem;
 }
 .ItemBoxAuthorDetali {
   display: flex;
   padding-top: 0.6rem;
+  height: 2rem;
 }
 .ItemBoxAuthorImg {
   border-radius: 1rem;
   margin-right: 0.5rem;
   width: 2rem;
+  transform: translateY(-0.4rem);
 }
 .authorBlogTitle {
   opacity: 0.5;
@@ -92,16 +93,23 @@
 .itemBoxImg {
   width: 7.7rem;
   height: 7.7rem;
+  padding-bottom: 1rem;
 }
 
 /*구분선 css*/
 .mainBar {
   opacity: 0.3;
   height: 0.5px;
+  margin: 0px;
+  width: 54rem;
 }
 
 /*a태그 css*/
-a {
+.itemBoxContainer {
   text-decoration-line: none;
   color: black;
+}
+.asdf {
+  width: 70%;
+  margin-left: 11rem;
 }

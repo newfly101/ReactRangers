@@ -1,0 +1,75 @@
+.sreachMethodTab {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  font-size: 0.8rem;
+}
+.check1 {
+  width: 0.8rem;
+  transform: translateX(-6.43rem) translateY(0.2rem);
+}
+
+.check2 {
+  width: 0.8rem;
+  transform: translateX(-5.4rem) translateY(0.2rem);
+}
+
+.radio[type="radio"] {
+  vertical-align: middle;
+  appearance: none;
+  border: max(2px, 0.1em) solid rgb(204, 204, 204);
+  border-radius: 50%;
+  width: 0.9rem;
+  height: 0.9rem;
+  cursor: pointer;
+  margin: 0;
+  margin-right: 0.2rem;
+}
+
+.radio[type="radio"]:checked {
+  border: max(2px, 0.1em) solid #ff5544;
+  background-color: #ff5544;
+}
+
+.inputTextBox[type="text"] {
+  width: 36.8vw;
+  height: 3.3rem;
+  margin-top: 1.8rem;
+  border: 1.5px solid rgb(214, 214, 214);
+  border-radius: 3px;
+}
+
+.inputTextBox::placeholder {
+  font-size: 0.75rem;
+  padding: 0.7rem;
+}
+
+.commitBtn {
+  display: flex;
+  padding: 0.6rem 1rem 0.7rem;
+  margin-top: 2rem;
+  background-color: #b9b9b9;
+  border-radius: 1.5rem;
+  color: white;
+  cursor: pointer;
+  justify-content: center;
+  width: 5rem;
+  margin-left: 15vw;
+  font-size: 0.8rem;
+}
+
+.emailMethod {
+  cursor: pointer;
+  user-select: none;
+  color: #7e7e7e;
+}
+
+.emailMethod:hover {
+  color: black;
+  text-decoration-line: underline;
+}
+
+.methodBold {
+  color: black;
+  text-decoration-line: underline;
+}

@@ -37,23 +37,31 @@ const Admin = () => {
               <div className={classes.AdminListHomeIcon}>
                 <img src={home} alt="home"></img>
               </div>
-              <div className={classes.AdminListMyblog}>내 블로그</div>
+              <div className={classes.AdminListMyBlog}>내 블로그</div>
             </div>
             <div className={classes.AdminListLine}>
               <div className={classes.AdminListUserIcon}>
                 <img src={user} alt="user"></img>
               </div>
-              <div className={classes.AdminListUser}>내 계정</div>
-              <div className={classes.AdminListMenu}>
-                <div className={classes.AdminListMenuFont}>프로필 레이어</div>
-                <div className={classes.AdminListMenuFont}>응원내역보기</div>
-                <div className={classes.AdminListMenuFont}>카카오계정 관리</div>
+              <div>
+                <div>
+                  <div className={classes.AdminListUser}>내 계정</div>
+                </div>
+                <div className={classes.AdminListMenu}>
+                  <div className={classes.AdminListMenuFont}>프로필 레이어</div>
+                  <div className={classes.AdminListMenuFont}>응원내역보기</div>
+                  <div className={classes.AdminListMenuFont}>
+                    카카오계정 관리
+                  </div>
+                </div>
               </div>
             </div>
-            <div className={classes.AdminLisLinkMenuIcon}>
-              <img src={down} alt="down"></img>
+            <div>
+              <div className={classes.AdminLisLinkMenuIcon}>
+                <img src={down} alt="down"></img>
+              </div>
+              <div className={classes.AdminListLinkMenu}>외부 기능</div>
             </div>
-            <div className={classes.AdminListLinkMenu}>외부 기능</div>
           </div>
         </div>
       </div>
@@ -62,7 +70,7 @@ const Admin = () => {
           <div className={classes.AdminFont}> 운영 중인 블로그</div>
           <form className={classes.AdminBlock}>
             <div className={classes.AdminBlockImage}>
-              <a href="">
+              <a href="https://github.com/newfly101/ReactRangers">
                 <img
                   src="https://img1.daumcdn.net/thumb/S180x180/?scode=mtistory2&fname=https%3A%2F%2Ft1.daumcdn.net%2Ftistory_admin%2Fstatic%2Fmanage%2Fimages%2Fr3%2Fdefault_S.png"
                   alt="프로필 이미지"
@@ -112,8 +120,13 @@ const Admin = () => {
                 onChangeFilter={changeFilterHandler}
               />
             </div>
-            <div className={classes.AdminBlock8}></div>
+            <div className={classes.AdminBlock8}>
+              <button className={classes.button}>변경사항 저장</button>
+            </div>
           </div>
+        </div>
+        <div className={classes.AdminWithdraw}>
+          탈퇴하기
         </div>
       </div>
     </div>

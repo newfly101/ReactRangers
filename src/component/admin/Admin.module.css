@@ -3,9 +3,8 @@
   justify-content: center;
   align-items: center;
   background: #f3f5f7;
-  padding-left: 40px;
   height: 100vh;
-  width: 100vw;
+  width: 100%;
   margin-top: 120px;
 }
 
@@ -48,9 +47,11 @@
 }
 
 #AdminList {
-  margin-top: 8px;
+  margin-top: 6px;
   background: #fff;
   font-size: 15px;
+  padding-bottom: 7px;
+  border: 1px solid #e0e5ee;
 }
 
 .AdminListHomeIcon {
@@ -64,15 +65,21 @@
 }
 
 .AdminMyblog {
-  border: 1px solid #e0e5ee;
   border-bottom: 0;
   padding: 12px 0 12px 47px;
 }
 
+.AdminMyblog:hover,
+.AdminListMenuFont:hover,
+.AdminListLinkMenu:hover {
+  background: #e0e5ee;
+  cursor: pointer;
+}
+
 .AdminListLine {
-  border: 1px solid #e0e5ee;
+  border-top: 1px solid #e0e5ee;
   border-bottom: 0;
-  padding: 12px 0 14px 47px;
+  padding: 12px 0 14px;
 }
 
 .AdminListUserIcon {
@@ -87,6 +94,7 @@
 
 .AdminListUser {
   padding-bottom: 8px;
+  padding-left: 47px;
 }
 
 .AdminListMenu {
@@ -97,6 +105,7 @@
 
 .AdminListMenuFont {
   margin-top: 5px;
+  padding-left: 47px;
 }
 
 .AdminLisLinkMenuIcon {
@@ -111,11 +120,12 @@
 }
 
 .AdminListLinkMenu {
-  border: 1px solid #e0e5ee;
+  border-top: 1px solid #e0e5ee;
   padding: 10px 0 14px 47px;
 }
 
 #AdminRight {
+  margin-top: 20px;
   float: right;
   margin-left: 40px;
   height: 100vh;
@@ -131,8 +141,9 @@
 }
 
 .AdminFont {
+  margin-top: 35px;
   margin-bottom: 15px;
-  font-size: 20px;
+  font-size: 17px;
   font-weight: normal;
 }
 
@@ -173,6 +184,12 @@
   font-weight: bold;
 }
 
+.AdminBlockName:hover,
+.AdminBlockEmail:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
 .AdminSituation1,
 .AdminSituation2 {
   display: flex;
@@ -202,6 +219,7 @@
   padding: 15px 30px;
   display: flex;
   justify-content: flex-end;
+  border-top: 0;
 }
 
 .AdminBlockBtnWindow {
@@ -213,9 +231,55 @@
   padding: 10px 35px;
 }
 
+.AdminBlockBtnWindow:hover {
+  background: #505050;
+}
+
 .AdminBlock7 {
   background: #fff;
   padding: 30px 30px;
   border: 1px solid #e0e5ee;
   font-size: 13px;
+  border-bottom: 0;
+}
+
+.AdminBlock8 {
+  background: #fafbfc;
+  border: 1px solid #e0e5ee;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.AdminBlock8 {
+  background: #fff;
+  color: #959595;
+  text-align: center;
+  font-size: 14px;
+  padding: 10px 35px;
+  border: 1px solid #e0e5ee;
+}
+
+.AdminWithdraw {
+  margin-top: 20px;
+  margin-left: 10px;
+  font-size: 13px;
+  color: gray;
+  letter-spacing: -2px;
+  cursor: pointer;
+}
+
+.AdminWithdraw a {
+  color: gray;
+  text-decoration: underline;
+  margin-left: 3px;
+}
+
+.button {
+  background: #fff;
+  color: #959595;
+  text-align: center;
+  font-size: 14px;
+  padding: 10px 35px;
+  border: 1px solid #e0e5ee;
 }

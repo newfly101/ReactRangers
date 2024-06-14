@@ -81,7 +81,7 @@ const Story = () => {
         </div>
 
         {/*태그*/}
-        <div className={classes.topSectionWrapTag}>
+        <div className={`${classes.topSectionWrapTag}`}>
           <div className={classes.tags} onClick={() => onClickLife()}>
             <div
               className={`${classes.tagFocus} ${

@@ -3,6 +3,7 @@
   display: flex;
   align-items: center;
   flex-direction: column;
+  height: 58.5vh;
 }
 
 .formTitle {
@@ -25,8 +26,10 @@
   border-radius: 0.2rem;
 }
 
-.passwordInput::placeholder .emailInput::placeholder {
-  font-size: 0.8rem;
+.passwordInput::placeholder,
+.emailInput::placeholder {
+  font-size: 0.9rem;
+  padding-left: 0.6rem;
 }
 .convertBtn {
   display: flex;
@@ -46,4 +49,9 @@
 .mainATags {
   margin-left: 13rem;
   margin-top: 0.4rem;
+}
+
+.mainLink {
+  text-decoration-line: none;
+  color: inherit;
 }
