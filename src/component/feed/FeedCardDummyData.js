@@ -3,18 +3,18 @@ export const feedCardDummyData = {
   desc: "OK",
   data: [
     {
-      image: "https://avatars.githubusercontent.com/u/62008619?v=4",
-      subscribers: 235,
+      image: "https://private-user-images.githubusercontent.com/62008619/339298055-959b13db-cfce-49d5-b3ce-d2214baf1b41.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTgzNDcyNzEsIm5iZiI6MTcxODM0Njk3MSwicGF0aCI6Ii82MjAwODYxOS8zMzkyOTgwNTUtOTU5YjEzZGItY2ZjZS00OWQ1LWIzY2UtZDIyMTRiYWYxYjQxLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDA2MTQlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwNjE0VDA2MzYxMVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWJkZGY5YjRiZWI1ZmUwN2EyMGMwZGI1OTExOTBkYWY1NWFiNzMzNmJiZGQ0NTQ3MmFkMmViMmFiYmI5NWU5NWMmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.FIJo6YdyTFNpo7HJvDATCS1oJZ785IABiPX6DUttQAI",
+      subscribers: "999,999",
       nickname: "김재홍",
       description: "김재홍님의 github입니다.",
       subscribing: false,
       id: 2838667,
-      title: "프로젝트 매니저 김재홍",
+      title: "김재홍님의 github",
       followerCount: "245",
       defaultUrl: "https://github.com/newfly101",
     },
     {
-      image: "https://avatars.githubusercontent.com/u/113295030?v=4",
+      image: "https://private-user-images.githubusercontent.com/62008619/339298032-ade00b15-8ee5-4803-a3f2-eda6419dfd71.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTgzNDcyNzEsIm5iZiI6MTcxODM0Njk3MSwicGF0aCI6Ii82MjAwODYxOS8zMzkyOTgwMzItYWRlMDBiMTUtOGVlNS00ODAzLWEzZjItZWRhNjQxOWRmZDcxLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDA2MTQlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwNjE0VDA2MzYxMVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWExY2JjZDcyNjQzZGU4ZDNmZDliNDNkZTcwZDcwMDg2YmQ3NDliMWM5NGZiNTliZjlmMzk4NzRjZWU0ZTNkYTUmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0._b4-32cQ8BQ3OyWqO9qYqaktnhvKyT7TW9uhYyyzJIg",
       subscribers: 502,
       nickname: "김국봉",
       description: "김국봉님의 github입니다.",
@@ -25,7 +25,7 @@ export const feedCardDummyData = {
       defaultUrl: "https://github.com/ros-e2",
     },
     {
-      image: "https://avatars.githubusercontent.com/u/168400614?v=4",
+      image: "https://private-user-images.githubusercontent.com/62008619/339297986-aeaf57ee-7b6d-48cc-a4fd-5c39840f01b7.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTgzNDcyNzEsIm5iZiI6MTcxODM0Njk3MSwicGF0aCI6Ii82MjAwODYxOS8zMzkyOTc5ODYtYWVhZjU3ZWUtN2I2ZC00OGNjLWE0ZmQtNWMzOTg0MGYwMWI3LnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDA2MTQlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwNjE0VDA2MzYxMVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTQ5Y2IwZGY2ZGMxNGQ1YWNlMDE4NWI4MmJlZTFmOTc1NWZlYzQxNzZjYjA4N2ExZjk4ZTI1OWE0NWZmZjQ0OTkmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.FHSUdKK4-no_2pUAHXOjuxyWMEnHkQWkGPrCr9VcWXo",
       subscribers: 1011,
       nickname: "황초희",
       description: "황초희님의 github입니다.",
@@ -36,7 +36,7 @@ export const feedCardDummyData = {
       defaultUrl: "https://github.com/chochohee",
     },
     {
-      image: "https://avatars.githubusercontent.com/u/166813835?v=4",
+      image: "https://private-user-images.githubusercontent.com/62008619/339297921-c481e5c3-046d-4883-a550-df55e3f57c68.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTgzNDcyNzEsIm5iZiI6MTcxODM0Njk3MSwicGF0aCI6Ii82MjAwODYxOS8zMzkyOTc5MjEtYzQ4MWU1YzMtMDQ2ZC00ODgzLWE1NTAtZGY1NWUzZjU3YzY4LnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDA2MTQlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwNjE0VDA2MzYxMVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWZmNzM5ZDU2M2M0YjdiMGMxMWQ5MDNjZWQyMzc0N2E3NTM1OGJiOWI1ODZlNDYwYTgxOTk4MGJiZDliZDEwM2EmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.WJ5KpihiC-kP02JQzkKEhlxN1EjaVqcLQ5xvyHuic4k",
       subscribers: 239,
       nickname: "조일문",
       description: "조일문님의 github입니다.",
@@ -47,7 +47,7 @@ export const feedCardDummyData = {
       defaultUrl: "https://github.com/KRjasoncho",
     },
     {
-      image: "https://avatars.githubusercontent.com/u/168623956?v=4",
+      image: "https://private-user-images.githubusercontent.com/62008619/339298108-8d9842d6-6af5-40ad-9c56-a5d6153aa259.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTgzNDcyNzEsIm5iZiI6MTcxODM0Njk3MSwicGF0aCI6Ii82MjAwODYxOS8zMzkyOTgxMDgtOGQ5ODQyZDYtNmFmNS00MGFkLTljNTYtYTVkNjE1M2FhMjU5LnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDA2MTQlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwNjE0VDA2MzYxMVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTY3MDBlYTgzOTNlNjgxMjA0ZTgwMDY4MmExNTAyZWExNmE5MTJkY2UyN2JlNzMxOGU1YWVhMDE2NTU2ZTAzMjcmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.kaTggMlF_gLb1248Z3F1SZwcnezA2GRN9xJXaOieG-w",
       subscribers: 715,
       nickname: "정인학",
       description: "정인학님의 github입니다.",
@@ -59,7 +59,7 @@ export const feedCardDummyData = {
     },
     {
       image:
-        "https://media.discordapp.net/attachments/1250413786544869388/1250478076802895902/KakaoTalk_20240430_101107516.jpg?ex=666bbeb6&is=666a6d36&hm=5e9b1c768c0d1e3f5f5593edb5b1ee3ee4c9c51781db0458452e5270ec0c68b4&=&format=webp&width=364&height=576",
+        "https://private-user-images.githubusercontent.com/62008619/339298135-7c229f2a-4944-419e-9c9e-435b7042ae54.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTgzNDcyNzEsIm5iZiI6MTcxODM0Njk3MSwicGF0aCI6Ii82MjAwODYxOS8zMzkyOTgxMzUtN2MyMjlmMmEtNDk0NC00MTllLTljOWUtNDM1YjcwNDJhZTU0LnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDA2MTQlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwNjE0VDA2MzYxMVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWEwYzQ2ZDJkMDM1ZGYwNTAzZGFjMDA1ZDNlNDJhYjA5ZDg1MjRiYTY5MTMzM2ExMjFhY2RkZTNjNDBkY2FjZmYmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.WbH9zuhXChbizseSjMeTlFIUcJf23BwcS-023b-6k_c",
       subscribers: 572,
       nickname: "또기아범",
       description: "조승환님의 github입니다.",
