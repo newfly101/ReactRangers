@@ -61,7 +61,7 @@
 - feed 페이지, feed와 연관된 following /follower page 구현
 - footer 페이지 구현
 
-## 정일문
+## 조일문
 - 스토리 페이지 구현
 - 회원정보 찾기 페이지 구현
 - 로그인 페이지 구현
