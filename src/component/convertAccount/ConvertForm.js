@@ -28,6 +28,7 @@ const ConvertForm = () => {
       </form>
       <span className={classes.mainATags}>
         <Link
+          className={classes.mainLink}
           to="/AccountRecovery"
           onMouseOver={() => setCheckedMethod(true)}
           state={{ checkedMethod }}
@@ -35,6 +36,7 @@ const ConvertForm = () => {
           계정 /{" "}
         </Link>
         <Link
+          className={classes.mainLink}
           to="/AccountRecovery"
           onMouseOver={() => setCheckedMethod(false)}
           state={{ checkedMethod }}

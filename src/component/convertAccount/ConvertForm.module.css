@@ -50,3 +50,8 @@
   margin-left: 13rem;
   margin-top: 0.4rem;
 }
+
+.mainLink {
+  text-decoration-line: none;
+  color: inherit;
+}
