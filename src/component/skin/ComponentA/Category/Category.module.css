@@ -10,7 +10,7 @@
 .title {
   display: flex;
   border-bottom: 1.5px solid rgba(0, 0, 0, 0.2);
-  width: 70vw;
+  width: 60vw;
   padding-bottom: 10px;
 }
 .title button {

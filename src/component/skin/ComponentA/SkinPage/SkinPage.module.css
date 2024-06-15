@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 70%;
+  width: 60%;
   max-width: 100%;
   height: auto;
   white-space: nowrap;
@@ -25,7 +25,7 @@
 
 .cardWrap {
   position: relative;
-  max-width: 72%;
+  max-width: 60%;
   width: 100%;
   height: auto;
   margin: 0;
@@ -107,7 +107,8 @@
   justify-content: space-around;
   align-items: center;
   margin-top: 1%;
-  width: 36vw;
+  width: 31vw;
+  max-width: 100vw;
   max-width: 100%;
 
   height: auto;
@@ -126,13 +127,13 @@
     transform: translateX(0);
   }
   to {
-    transform: translateX(-25%);
+    transform: translateX(-100%);
   }
 }
 
 @keyframes slideRight {
   from {
-    transform: translateX(-25%);
+    transform: translateX(-100%);
   }
   to {
     transform: translateX(0);
@@ -172,7 +173,7 @@
   justify-content: flex-start;
   padding-left: 5%;
   top: 0;
-  left: -15%;
+  left: 37%;
   width: 120px;
   height: 100%;
   opacity: 0;
@@ -184,15 +185,16 @@
 }
 
 .rightArrow {
+  background-color: #ff5f4f;
   position: absolute;
   display: flex;
   justify-content: flex-end;
   padding-right: 5%;
   top: 0%;
-  right: -135%;
+  right: -155%;
   width: 120px;
   height: 100%;
-  opacity: 0;
+  /* opacity: 0; */
   z-index: 100;
 }
 
