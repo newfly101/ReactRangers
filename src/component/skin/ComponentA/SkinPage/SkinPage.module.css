@@ -144,7 +144,7 @@
   display: inline-block;
   vertical-align: middle;
   margin-top: 1%;
-  margin-right: 2%;
+  margin-right: 8%;
 }
 
 .image img {
@@ -185,7 +185,7 @@
 }
 
 .rightArrow {
-  background-color: #ff5f4f;
+  /* background-color: #ff5f4f; */
   position: absolute;
   display: flex;
   justify-content: flex-end;
@@ -194,7 +194,7 @@
   right: -155%;
   width: 120px;
   height: 100%;
-  /* opacity: 0; */
+  opacity: 0;
   z-index: 100;
 }
 
