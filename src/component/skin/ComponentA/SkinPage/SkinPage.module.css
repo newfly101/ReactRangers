@@ -168,12 +168,13 @@
 
 .leftArrow {
   position: absolute;
-  top: 0;
-  left: 0;
   display: flex;
   justify-content: flex-start;
+  padding-left: 5%;
+  top: 0;
+  left: -15%;
   width: 120px;
-  height: 253.5px;
+  height: 100%;
   opacity: 0;
   z-index: 100;
 }
@@ -186,10 +187,11 @@
   position: absolute;
   display: flex;
   justify-content: flex-end;
-  top: 0;
-  right: 0;
+  padding-right: 5%;
+  top: 0%;
+  right: -135%;
   width: 120px;
-  height: 253.5px;
+  height: 100%;
   opacity: 0;
   z-index: 100;
 }
