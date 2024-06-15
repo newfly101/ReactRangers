@@ -172,7 +172,7 @@
   justify-content: flex-start;
   padding-left: 5%;
   top: 0;
-  left: 37%;
+  left: 5%;
   width: 120px;
   height: 100%;
   opacity: 0;
@@ -184,13 +184,12 @@
 }
 
 .rightArrow {
-  /* background-color: #ff5f4f; */
   position: absolute;
   display: flex;
   justify-content: flex-end;
   padding-right: 5%;
   top: 0%;
-  right: -155%;
+  right: -190%;
   width: 120px;
   height: 100%;
   opacity: 0;
