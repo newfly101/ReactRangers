@@ -30,7 +30,7 @@ const AdminPage = () => {
                     <div style={{background: "white"}}>
                         <div>
                             <div>
-                                {/*<img>*/}
+                                <img src="" alt="blogMain" />
                             </div>
                             <div>
                                 <div>새벽의 이것저것</div>
