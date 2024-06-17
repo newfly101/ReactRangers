@@ -1,5 +1,5 @@
 import React from "react";
-import { storyMainImages } from "./StoryMainImagesDummy";
+import { storyMainImages } from "./data/StoryMainImagesDummy";
 import Slider from "react-slick";
 import classes from "./StoryMainHeader.module.css";
 
