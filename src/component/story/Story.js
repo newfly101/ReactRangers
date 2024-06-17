@@ -76,7 +76,7 @@ const Story = () => {
           </p>
         </div>
         <div className={`${classes.topSectionWrapTag}`}>
-          <div className={classes.tags} onClick={() => onClickLife()}>
+          <div className={classes.tags} onClick={onClickLife}>
             <div
               className={`${classes.tagFocus} ${
                 dummyData.dataName === "life" && classes.choiceTag
@@ -85,7 +85,7 @@ const Story = () => {
               라이프
             </div>
           </div>
-          <div className={classes.tags} onClick={() => onClickTravel()}>
+          <div className={classes.tags} onClick={onClickTravel}>
             <div
               className={`${classes.tagFocus} ${
                 dummyData.dataName === "travel" && classes.choiceTag
@@ -94,7 +94,7 @@ const Story = () => {
               여행.맛집
             </div>
           </div>
-          <div className={classes.tags} onClick={() => onClickCulture()}>
+          <div className={classes.tags} onClick={onClickCulture}>
             <div
               className={`${classes.tagFocus} ${
                 dummyData.dataName === "culture" && classes.choiceTag
@@ -103,7 +103,7 @@ const Story = () => {
               문화.연예
             </div>
           </div>
-          <div className={classes.tags} onClick={() => onClickIt()}>
+          <div className={classes.tags} onClick={onClickIt}>
             <div
               className={`${classes.tagFocus} ${
                 dummyData.dataName === "it" && classes.choiceTag
@@ -112,7 +112,7 @@ const Story = () => {
               It
             </div>
           </div>
-          <div className={classes.tags} onClick={() => onClickSport()}>
+          <div className={classes.tags} onClick={onClickSport}>
             <div
               className={`${classes.tagFocus} ${
                 dummyData.dataName === "sport" && classes.choiceTag
@@ -121,7 +121,7 @@ const Story = () => {
               스포츠
             </div>
           </div>
-          <div className={classes.tags} onClick={() => onClickCurrent()}>
+          <div className={classes.tags} onClick={onClickCurrent}>
             <div
               className={`${classes.tagFocus} ${
                 dummyData.dataName === "current" && classes.choiceTag

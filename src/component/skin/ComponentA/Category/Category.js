@@ -2,38 +2,56 @@ import React, { useState } from "react";
 import classes from "./Category.module.css";
 
 const Category = ({ handleCategoryButton }) => {
-  const [isActive, setIsActive] = useState(true);
+  const [isActive, setIsActive] = useState(0);
 
   const handleAButton = () => {
-    setIsActive(true);
-    handleCategoryButton(true);
+    setIsActive(0);
+    handleCategoryButton(0);
   };
 
   const handleBButton = () => {
-    setIsActive(false);
-    handleCategoryButton(false);
+    setIsActive(1);
+    handleCategoryButton(1);
+  };
+  const handleCButton = () => {
+    setIsActive(2);
+    handleCategoryButton(2);
+  };
+  const handleDButton = () => {
+    setIsActive(3);
+    handleCategoryButton(3);
   };
   return (
     <>
       <div className={classes.container}>
         <div>
           <div className={classes.title}>
-            <div className={isActive ? classes.titleAction : ""}>
+            <div className={isActive === 0 ? classes.titleAction : ""}>
               <button onClick={handleAButton}>
                 <span>티스토리 스킨</span>
               </button>
             </div>
-            <div className={!isActive ? classes.titleAction : ""}>
+            <div className={isActive === 1 ? classes.titleAction : ""}>
               <button onClick={handleBButton}>
                 <span>이용자 제작 스킨</span>
               </button>
             </div>
+            <div className={isActive === 2 ? classes.titleAction : ""}>
+              <button onClick={handleCButton}>
+                <span>티스토리 스킨 김재홍</span>
+              </button>
+            </div>
+            <div className={isActive === 3 ?classes.titleAction : ""}>
+              <button onClick={handleDButton}>
+                <span>티스토리 스킨 조일문</span>
+              </button>
+            </div>
           </div>
-          {isActive ? (
-            <div className={classes.userTag}>
-              <div className={classes.categoryTag}>
-                <button>#매거진</button>
-                <button>#미니멀</button>
+          {isActive !== 1 ? (
+              <div className={classes.userTag}>
+                <div className={classes.categoryTag}>
+                  <button>#매거진</button>
+                  <button>#미니멀</button>
                 <button>#반응형</button>
                 <button>#블로그형</button>
                 <button>#사이트</button>

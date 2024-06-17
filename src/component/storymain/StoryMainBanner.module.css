@@ -3,25 +3,14 @@
   font-weight: bold;
   display: inline-block;
   text-align: left;
+  margin-bottom: 77px;
 }
 
-.section5 p {
-  position: relative;
-  font-size: 2.5em;
-  margin-bottom: 5px;
-  color: rgb(144, 144, 144);
-  font-weight: 500;
-}
-
-.section5 p span {
-  position: relative;
-}
-
-.section5 p:hover {
+.section5 .MainBannerPTag:hover {
   color: #000000;
   cursor: pointer;
 }
-.section5 p span::before {
+.section5 .customSpan::before {
   content: "";
   position: absolute;
   left: 0;
@@ -33,16 +22,21 @@
   z-index: -1;
 }
 
-.section5 p:hover span::before {
+.MainBannerPTag:hover .customSpan::before {
   width: 100%;
 }
 
-p a {
+.MainBannerPTag {
   text-decoration: none;
   color: inherit;
+  position: relative;
+  font-size: 2.5em;
+  margin-bottom: 5px;
+  color: rgb(144, 144, 144);
+  font-weight: 500;
 }
 
-p a:hover {
+.MainBannerPTag:hover {
   cursor: pointer;
 }
 
@@ -53,7 +47,5 @@ p a:hover {
 .customSpan {
   color: #000000;
   font-weight: 700;
-}
-.customParagraph {
-  padding-bottom: 77px;
+  position: relative;
 }

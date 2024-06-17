@@ -1,5 +1,5 @@
 import React from "react";
-import { storyMainImages } from "./StoryMainImagesDummy";
+import { storyMainImages } from "./data/StoryMainImagesDummy";
 import Slider from "react-slick";
 import classes from "./StoryMainHeader.module.css";
 
@@ -56,6 +56,11 @@ const StoryMainHeader = () => {
           </div>
         ))}
       </Slider>
+      <img
+        src="https://t1.daumcdn.net/tistory_admin/static/top/pc/img_light.png"
+        alt="TistoryLight"
+        className={classes.tistoryLight}
+      />
     </div>
   );
 };
