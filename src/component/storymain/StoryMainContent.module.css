@@ -1,0 +1,74 @@
+.wrapTit {
+  margin-top: 20px;
+  text-align: left;
+  margin-top: -135px;
+}
+.titSection {
+  font-size: 2.2em;
+  font-weight: 300;
+  margin-bottom: 110px;
+  padding-left: 100px;
+}
+.txtDa {
+  width: 50px;
+  height: 50px;
+  vertical-align: middle;
+  padding: 7px 5px;
+  margin-top: -5px;
+}
+.descSection {
+  font-size: 1em;
+  color: #666;
+  font-weight: 3001;
+  padding-left: 100px;
+}
+.titsectionEm {
+  font-style: normal;
+  font-weight: bold;
+  padding-left: 100px;
+}
+.slider {
+  width: 100%;
+  max-width: 100vw;
+  padding: 3rem 0 3rem 0;
+  position: relative;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.banner_link {
+  display: block;
+  position: relative;
+  margin: 0 30px;
+  flex: 1;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+.banner_link:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+}
+.banner_image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.sponsorImages {
+  display: flex;
+  justify-content: space-between;
+  width: 95%;
+  max-width: 85vw;
+  margin: 0 auto;
+  height: auto;
+  padding: 90px 0px;
+  cursor: pointer;
+}
