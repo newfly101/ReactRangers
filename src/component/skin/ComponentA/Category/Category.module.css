@@ -11,8 +11,10 @@
   display: flex;
   border-bottom: 1.5px solid rgba(0, 0, 0, 0.2);
   width: 50vw;
+  min-width: 800px;
   padding-bottom: 10px;
 }
+
 .title button {
   background-color: transparent;
   border: none;
@@ -40,6 +42,7 @@
   letter-spacing: -0.5px;
   cursor: pointer;
 }
+
 .roundButton button:hover {
   background-color: transparent;
   border: 1px solid #ff5f4f;
