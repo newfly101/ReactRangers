@@ -25,11 +25,12 @@
 
 .cardWrap {
   position: relative;
-  max-width: 50%;
+  max-width: 50vw;
+  min-width: 800px;
   width: 100%;
   height: auto;
-  margin: 0;
-  padding: 2% 0 3% 0;
+  margin-left: 1%;
+  padding: 2% 0% 3% 0;
 }
 
 .title {
