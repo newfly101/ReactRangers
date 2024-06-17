@@ -6,11 +6,11 @@ const SkinPage = (props) => {
   const { items } = props;
   const [imageClick, setImageClick] = useState(false);
 
-  const clickLeftArrow = (event) => {
+  const clickLeftArrow = () => {
     setImageClick(false);
   };
 
-  const clickRightArrow = (event) => {
+  const clickRightArrow = () => {
     setImageClick(true);
   };
 
