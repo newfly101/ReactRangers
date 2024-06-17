@@ -4,14 +4,20 @@ import classes from "../SkinPage/SkinPage.module.css";
 
 const SkinPage = (props) => {
   const { items } = props;
-  const [imageClick, setImageClick] = useState(false);
 
-  const clickLeftArrow = () => {
-    setImageClick(false);
+  const initiaImageClick = items.map(() => false);
+  const [imageClick, setImageClick] = useState(initiaImageClick);
+
+  const clickLeftArrow = (index) => {
+    const updatedImageClicks = [...imageClick];
+    updatedImageClicks[index] = false;
+    setImageClick(updatedImageClicks);
   };
 
-  const clickRightArrow = () => {
-    setImageClick(true);
+  const clickRightArrow = (index) => {
+    const updatedImageClicks = [...imageClick];
+    updatedImageClicks[index] = true;
+    setImageClick(updatedImageClicks);
   };
 
   return (
@@ -71,7 +77,7 @@ const SkinPage = (props) => {
                   <div className={classes.imageContaner}>
                     <div
                       className={
-                        imageClick ? classes.animate : classes.animate1
+                        imageClick[index] ? classes.animate : classes.animate1
                       }
                     >
                       {item.data.img.map((imgSrc, imgIndex) => (
@@ -88,9 +94,9 @@ const SkinPage = (props) => {
                         </div>
                       ))}
                       <div className={classes.arrow}>
-                        {imageClick === false ? (
+                        {imageClick[index] === false ? (
                           <div className={classes.rightArrow}>
-                            <button onClick={clickRightArrow}>
+                            <button onClick={() => clickRightArrow(index)}>
                               <img
                                 src={"/SkinImg/arrow-right.svg"}
                                 alt="arrowRight"
@@ -99,7 +105,7 @@ const SkinPage = (props) => {
                           </div>
                         ) : (
                           <div className={classes.leftArrow}>
-                            <button onClick={clickLeftArrow}>
+                            <button onClick={() => clickLeftArrow(index)}>
                               <img
                                 src={"/SkinImg/arrow-left.svg"}
                                 alt="arrowLeft"
