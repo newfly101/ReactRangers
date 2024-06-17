@@ -38,3 +38,97 @@
     color: red;
     font-size: 20px;
 }
+/* card View */
+.container {
+    display: flex;
+    flex-direction: column;
+}
+.CardTextBox {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 50vw;
+    min-width: 800px;
+    max-width: 100vw;
+}
+.title {
+    display: flex;
+    font-weight: bold;
+    font-size: 36px;
+    margin-top: 20px;
+}
+.content {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin-top: 20px;
+}
+.tagButtonBox {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.tagBox {
+    display: flex;
+    flex-direction: row;
+    white-space: nowrap;
+}
+.buttonBox {
+    display: flex;
+    flex-direction: row;
+}
+.buttonBox button{
+    background: white;
+    border: 1px solid gray;
+    border-radius: 50px;
+    height: 40px;
+    width: 150px;
+}
+.buttonBox button:hover{
+    background: #ff5f4f;
+    border: 1px solid #ff5f4f;
+    border-radius: 50px;
+}
+.cardTag {
+    margin: 0 10px 0 0;
+}
+
+.buttonLinkIcon {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+}
+
+.icon {
+    margin-left: 4px;
+    width: 14px;
+}
+/* Card Image Container */
+.imageContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 50vw;
+    min-width: 800px;
+    max-width: 100vw;
+}
+.imageContainer img{
+    margin: 10px;
+    width: 25vw;
+}
+
+.cardWhite {
+    background-color: white;
+    width: 100%;
+    height: auto;
+}
+
+.cardGray {
+    background-color: rgba(0, 0, 0, 0.1);
+    width: 100%;
+    height: auto;
+}
