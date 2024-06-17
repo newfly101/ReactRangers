@@ -112,7 +112,6 @@
     align-items: center;
     margin: auto;
     min-width: 800px;
-    max-width: 800px;
 }
 .imageContainer img{
     margin: 12px;
@@ -153,5 +152,31 @@
     pointer-events: auto;
 }
 .ArrowButton img {
-    width: 40px;
+    width: 50px;
+}
+
+@keyframes slideLeft {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes slideRight {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+.animate {
+    animation: slideLeft 0.5s ease-in-out forwards;
+}
+
+.animate1 {
+    animation: slideRight 0.5s ease-in-out forwards;
 }

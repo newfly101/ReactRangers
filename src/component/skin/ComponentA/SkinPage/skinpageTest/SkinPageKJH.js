@@ -1,19 +1,22 @@
-import React, {useEffect} from "react";
+import React, {useEffect, useState} from "react";
 import { ReactComponent as LinkIcon } from "../link.svg";
 import classes from "./SkinPageKJH.module.css";
 
 const SkinPageKJH = ({items}) => {
-    const [imageClick, setImageClick] = React.useState(false);
-    const [listindex, setListIndex] = React.useState(0);
+    const initiaImageClick = items.map(() => false);
+    const [imageClick, setImageClick] = useState(initiaImageClick);
 
-    console.log(items);
-    const labelData = items.filter((item) => item.type === "label");
-    const cardsData = items.filter((item) => item.type !== "label");
-    console.log("cardsData",cardsData);
+    const clickLeftArrow = (index) => {
+        const updatedImageClicks = [...imageClick];
+        updatedImageClicks[index] = false;
+        setImageClick(updatedImageClicks);
+    };
 
-    useEffect(() => {
-
-    }, [listindex]);
+    const clickRightArrow = (index) => {
+        const updatedImageClicks = [...imageClick];
+        updatedImageClicks[index] = true;
+        setImageClick(updatedImageClicks);
+    };
 
     return (
         <>
@@ -69,26 +72,31 @@ const SkinPageKJH = ({items}) => {
 
                         <div className={classes.imageContainer}>
                             {img.map((imgSrc, index) => (
-                                <div key={`cardImg-${index}`}>
+                                <div key={`cardImg-${index}`}
+                                    className={imageClick[index] ? classes.animate : classes.animate1}
+                                >
                                     <img src={`/SkinImg/${item.data.title}/${imgSrc}`} alt={`cardImg-${index}`}/>
                                 </div>
                             ))}
+                            {imageClick[index] === false ? (
                             <div className={classes.ArrowButtonRight}>
-                                <button className={classes.ArrowButton}>
+                                <button className={classes.ArrowButton} onClick={() => clickRightArrow}>
                                     <img
                                         src={"/SkinImg/arrow-right.svg"}
                                         alt="arrowRight"
                                     />
                                 </button>
                             </div>
+                                ):(
                             <div className={classes.ArrowButtonLeft}>
-                                <button className={classes.ArrowButton}>
+                                <button className={classes.ArrowButton} onClick={() => clickLeftArrow}>
                                     <img
                                         src={"/SkinImg/arrow-left.svg"}
                                         alt="arrowLeft"
                                     />
                                 </button>
                             </div>
+                                )}
                         </div>
                     </div>
                 )
