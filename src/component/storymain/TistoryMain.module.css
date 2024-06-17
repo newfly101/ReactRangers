@@ -4,73 +4,14 @@
 .app {
   overflow-x: hidden;
 }
-.arrow {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-197%);
-  background-color: transparent;
-  color: #ffffff;
-  border: none;
-  font-size: 50px;
-  padding: 10px;
-  cursor: pointer;
-  z-index: 1;
-}
-
-.prev {
-  left: 20px;
-}
-
-.next {
-  right: 20px;
-}
-
-.CustomContainer {
-  position: relative;
-  top: 80%;
-  left: 20%;
-  transform: translate(-46%, -210%);
-  margin-bottom: -1010px;
-}
-
-.image {
-  width: 100%;
-  height: 650px;
-}
-
-.title {
-  font-family: 'Arial', sans-serif;
-  font-size: 44px;
-  font-weight: bold;
-  color: #807a7a;
-}
 
 .text {
-  font-family: 'Arial', sans-serif;
+  font-family: "Arial", sans-serif;
   font-size: 16px;
   color: #666;
 }
 
-.buttonTop {
-  background-color: #ffffff;
-  border: none;
-  color: rgb(10, 10, 10);
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 12px;
-  margin-top: 30px;
-  cursor: pointer;
-  border-radius: 20px;
-  transition: background-color 0.3s;
-}
-
-.buttonTop:hover {
-  background-color: #cfcdd1;
-}
-
-.imageNo {
+.tistoryLight {
   position: absolute;
   top: 650px;
   right: 480px;
@@ -108,7 +49,7 @@
   cursor: pointer;
 }
 .section5 p span::before {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   bottom: 8px;
@@ -240,7 +181,9 @@ em {
   overflow: hidden;
   border-radius: 10px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
 .banner_link:hover {
@@ -257,29 +200,3 @@ em {
 .customParagraph {
   padding-bottom: 77px;
 }
-/* .banner_link {
-  position: relative;
-  display: block;
- 
-} */
-/* overflow: hidden; */
-/* .banner_hover_text {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 120%;
-  background: rgba(0, 0, 0, 0.6);
-  color: #fff;
-  font-size: 1em;
-  text-align: center;
-  opacity: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: opacity 0.3s ease;
-} */
-/* 
-.banner_link:hover .banner_hover_text {
-  opacity: 1;
-} */

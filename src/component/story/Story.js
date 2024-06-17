@@ -16,23 +16,20 @@ import { dummyItemSport } from "./DummyData/StoryDummyDataSport";
 import { dummyItemTravel } from "./DummyData/StoryDummyDataTravel";
 
 const Story = () => {
-  //현재 보여주고 있는 페이지를 결정하는 부분
-
   const [dummyData, setDummyData] = useState({
     dataName: "life",
     cardData: dummyCardLife,
-
     itemData: dummyItemLife,
   });
-  //tag클릭에 맞춰 state를 변경하는 함수
+
   const onClickLife = () => {
     setDummyData({
       dataName: "life",
       cardData: dummyCardLife,
-
       itemData: dummyItemLife,
     });
   };
+
   const onClickTravel = () => {
     setDummyData({
       dataName: "travel",
@@ -72,15 +69,12 @@ const Story = () => {
   return (
     <div className={classes.storyMain}>
       <section className={`${classes.storyTopSection} ${classes.storyWrapper}`}>
-        {/*상단 글자*/}
         <div className={classes.storyTopSectionInnertext}>
           <h4 className={classes.topSectionTitle}>Story</h4>
           <p className={classes.topSectionMessage}>
             티스토리의 다양한 이야기들을 만나보세요
           </p>
         </div>
-
-        {/*태그*/}
         <div className={`${classes.topSectionWrapTag}`}>
           <div className={classes.tags} onClick={() => onClickLife()}>
             <div
@@ -137,7 +131,6 @@ const Story = () => {
             </div>
           </div>
         </div>
-        {/*하단 카드 형태 블로그 노출*/}
       </section>
       <section>
         <div className={classes.blogBackGround}>
@@ -146,7 +139,7 @@ const Story = () => {
           </div>
         </div>
       </section>
-      {/*하단 리스트 형태 블로그 노출*/}
+
       <div className={classes.storyWrapper}>
         <StoryItemBox dummyData={dummyData.itemData.data.list} />
       </div>
