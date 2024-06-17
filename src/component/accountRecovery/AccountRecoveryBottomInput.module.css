@@ -6,12 +6,16 @@
 }
 .check1 {
   width: 0.8rem;
-  transform: translateX(-6.43rem) translateY(0.2rem);
+  height: 0.8rem;
+  transform: translateX(-6.45rem) translateY(0.15rem);
+  position: absolute;
 }
 
 .check2 {
   width: 0.8rem;
-  transform: translateX(-5.4rem) translateY(0.2rem);
+  height: 0.8rem;
+  position: absolute;
+  transform: translateX(-5.93rem) translateY(0.15rem);
 }
 
 .radio[type="radio"] {
@@ -29,6 +33,7 @@
 .radio[type="radio"]:checked {
   border: max(2px, 0.1em) solid #ff5544;
   background-color: #ff5544;
+  position: relative;
 }
 
 .inputTextBox[type="text"] {
@@ -62,6 +67,7 @@
   cursor: pointer;
   user-select: none;
   color: #7e7e7e;
+  margin-right: 0.5rem;
 }
 
 .emailMethod:hover {
