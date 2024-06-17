@@ -1,123 +1,46 @@
-import React, { useState } from "react";
-import { ReactComponent as LinkIcon } from "../../SkinPage/link.svg";
-import classes from "../SkinPage.module.css";
+import React from "react";
+// import classes from "../SkinPage.module.css";
+import classes from "./SkinPageKJH.module.css";
 
-const SkinPageKJH = (props) => {
-  const { items } = props;
-  const [imageClick, setImageClick] = useState(false);
+const SkinPageKJH = ({items}) => {
 
-  const clickLeftArrow = (event) => {
-    setImageClick(false);
-  };
+    // {
+    //   "type": "cardWhite",
+    //   "data": {
+    //       "title": "Odyssey",
+    //       "content": [
+    //         "글과 사진, 그리고 영상을 담아",
+    //         "당신의 블로그 여행에 함께합니다."
+    //          ],
+    //       "tag": ["#반응형", "#블로그형", "#커버 지원"],
+    //       "img": ["Odyssey0.jpg", "Odyssey1.jpg", "Odyssey2.jpg"]
+    //    }
+    // },
+    console.log(items);
+    const labelData = items.filter((item) => item.type === "label");
+    console.log(labelData);
 
-  const clickRightArrow = (event) => {
-    setImageClick(true);
-  };
-
-  return (
-    <>
-      <div id="티스토리 스킨">
-        {items.map((item, index) => (
-          <div key={index}>
-            {item.type === "label" ? (
-              <div className={classes.labelContainer}>
-                <div className={classes.cardWrap}>
-                  <div className={classes.labelTitle}>
-                    <h1>Skin FAQ</h1>
-                  </div>
-                  <div className={classes.labelWrap}>
-                    {item.data.question.map((taglabel) => (
-                      <div key={taglabel} className={classes.labelItem}>
-                        <span className={classes.labelQuestion}>Q.</span>
-                        <div className={classes.labelButton}>
-                          <button>
-                            <span>{taglabel}</span>
-                          </button>
+    return (
+        <>
+            {labelData.map((item, index) => {
+                console.log("item.data",item.data);
+                return (
+                    <div key={`label${index}`} className={classes.labelContainer}>
+                        <div className={classes.labelWrap}>
+                            <div className={classes.labelTitle}>Skin FAQ</div>
+                            <div className={classes.labelRowComponent}>
+                            {item.data.question.map((quData, index) => (
+                                <div key={index} className={classes.labelItem}>
+                                    <span className={classes.labelQuestion}>Q. </span>{quData}
+                                </div>
+                            ))}
+                            </div>
                         </div>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-              </div>
-            ) : (
-              <div className={`${classes.container} ${classes[item.type]}`}>
-                <div className={classes.cardWrap}>
-                  <div className={classes.title}>
-                    <button>
-                      <h1>{item.data.title}</h1>
-                    </button>
-                  </div>
-                  <div className={classes.innerText}>
-                    {item.data.content.map((contentText, contentIndex) => (
-                      <div key={contentIndex}>{contentText}</div>
-                    ))}
-                  </div>
-                  <div className={classes.cardButton}>
-                    <div className={classes.tagButton}>
-                      {item.data.tag.map((tagItem, tagIndex) => (
-                        <button key={tagIndex}>{tagItem}</button>
-                      ))}
                     </div>
-                    <div className={`${classes.roundButton}`}>
-                      <button>자세히 보기</button>
-                      <button className={classes.buttonLinkIcon}>
-                        적용 예시 보기
-                        <span>
-                          <LinkIcon className={classes.icon} />
-                        </span>
-                      </button>
-                    </div>
-                  </div>
-                  <div className={classes.imageContaner}>
-                    <div
-                      className={
-                        imageClick ? classes.animate : classes.animate1
-                      }
-                    >
-                      {item.data.img.map((imgSrc, imgIndex) => (
-                        <div
-                          className={classes.image}
-                          key={imgIndex}
-                          id={`image${imgIndex}`}
-                        >
-                          <img
-                            key={imgIndex}
-                            src={`/SkinImg/${item.data.title}/${imgSrc}`}
-                            alt={imgIndex}
-                          />
-                        </div>
-                      ))}
-                      <div className={classes.arrow}>
-                        {imageClick === false ? (
-                          <div className={classes.rightArrow}>
-                            <button onClick={clickRightArrow}>
-                              <img
-                                src={"/SkinImg/arrow-right.svg"}
-                                alt="arrowRight"
-                              />
-                            </button>
-                          </div>
-                        ) : (
-                          <div className={classes.leftArrow}>
-                            <button onClick={clickLeftArrow}>
-                              <img
-                                src={"/SkinImg/arrow-left.svg"}
-                                alt="arrowLeft"
-                              />
-                            </button>
-                          </div>
-                        )}
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            )}
-          </div>
-        ))}
-      </div>
-    </>
-  );
+                )
+            })}
+        </>
+    );
 };
 
 export default SkinPageKJH;
