@@ -53,6 +53,12 @@ em {
   justify-content: space-between;
   width: 100%;
   max-width: 1600px;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+.slideContainer img {
+  transition: filter 0.3s ease;
 }
 
 .banner_link {
