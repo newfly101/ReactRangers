@@ -54,3 +54,10 @@
 .buttonTop:hover {
   background-color: #cfcdd1;
 }
+.tistoryLight {
+  position: absolute;
+  top: 650px;
+  right: 480px;
+  width: 80px;
+  height: 80px;
+}

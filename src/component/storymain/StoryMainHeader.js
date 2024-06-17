@@ -56,6 +56,11 @@ const StoryMainHeader = () => {
           </div>
         ))}
       </Slider>
+      <img
+        src="https://t1.daumcdn.net/tistory_admin/static/top/pc/img_light.png"
+        alt="TistoryLight"
+        className={classes.tistoryLight}
+      />
     </div>
   );
 };
