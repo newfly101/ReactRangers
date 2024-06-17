@@ -69,16 +69,12 @@
   text-decoration-line: underline;
 }
 
-.roundButton {
-  margin-right: 13%;
-}
-
 .roundButton button {
   background-color: transparent;
   border: 0.5px solid rgba(0, 0, 0, 0.5);
   color: rgba(0, 0, 0, 0.7);
   border-radius: 20px;
-  margin-right: 0.5rem;
+  margin-right: 10px;
   font-size: 11px;
   padding: 8px 15px 8px 15px;
   font-weight: 500;
@@ -110,7 +106,7 @@
   margin-top: 1%;
   width: 52%;
   max-width: 100vw;
-  max-width: 100%;
+  min-width: 400px;
   height: auto;
 }
 
