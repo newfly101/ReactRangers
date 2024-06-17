@@ -93,24 +93,28 @@ const SkinPage = (props) => {
                           />
                         </div>
                       ))}
-                      <div className={classes.arrow}>
+                      <div>
                         {imageClick[index] === false ? (
-                          <div className={classes.rightArrow}>
-                            <button onClick={() => clickRightArrow(index)}>
-                              <img
-                                src={"/SkinImg/arrow-right.svg"}
-                                alt="arrowRight"
-                              />
-                            </button>
+                          <div className={classes.arrow}>
+                            <div className={classes.rightArrow}>
+                              <button onClick={() => clickRightArrow(index)}>
+                                <img
+                                  src={"/SkinImg/arrow-right.svg"}
+                                  alt="arrowRight"
+                                />
+                              </button>
+                            </div>
                           </div>
                         ) : (
-                          <div className={classes.leftArrow}>
-                            <button onClick={() => clickLeftArrow(index)}>
-                              <img
-                                src={"/SkinImg/arrow-left.svg"}
-                                alt="arrowLeft"
-                              />
-                            </button>
+                          <div className={classes.arrow}>
+                            <div className={classes.leftArrow}>
+                              <button onClick={() => clickLeftArrow(index)}>
+                                <img
+                                  src={"/SkinImg/arrow-left.svg"}
+                                  alt="arrowLeft"
+                                />
+                              </button>
+                            </div>
                           </div>
                         )}
                       </div>
