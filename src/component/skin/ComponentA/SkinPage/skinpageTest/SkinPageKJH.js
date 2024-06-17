@@ -6,18 +6,6 @@ const SkinPageKJH = ({items}) => {
     const [imageClick, setImageClick] = React.useState(false);
     const [listindex, setListIndex] = React.useState(0);
 
-    // {
-    //   "type": "cardWhite",
-    //   "data": {
-    //       "title": "Odyssey",
-    //       "content": [
-    //         "글과 사진, 그리고 영상을 담아",
-    //         "당신의 블로그 여행에 함께합니다."
-    //          ],
-    //       "tag": ["#반응형", "#블로그형", "#커버 지원"],
-    //       "img": ["Odyssey0.jpg", "Odyssey1.jpg", "Odyssey2.jpg"]
-    //    }
-    // },
     console.log(items);
     const labelData = items.filter((item) => item.type === "label");
     const cardsData = items.filter((item) => item.type !== "label");
@@ -29,7 +17,7 @@ const SkinPageKJH = ({items}) => {
 
     return (
         <>
-            {labelData.map((item, index) => {
+            {items.filter((item) => item.type === "label").map((item, index) => {
                 // console.log("item.data",item.data);
                 return (
                     <div key={`label${index}`} className={classes.labelContainer}>
@@ -46,7 +34,8 @@ const SkinPageKJH = ({items}) => {
                     </div>
                 )
             })}
-            {cardsData.map((item, index) => {
+
+            {items.filter((item) => item.type !== "label").map((item, index) => {
                 // console.log("cardsData map:",item);
                 const content = item.data.content;
                 const img = item.data.img;
@@ -81,31 +70,26 @@ const SkinPageKJH = ({items}) => {
                         <div className={classes.imageContainer}>
                             {img.map((imgSrc, index) => (
                                 <div key={`cardImg-${index}`}>
-                                    <img src={`/SkinImg/${item.data.title}/${imgSrc}`} alt={`cardImg-${index}`} />
+                                    <img src={`/SkinImg/${item.data.title}/${imgSrc}`} alt={`cardImg-${index}`}/>
                                 </div>
                             ))}
-                                <div >
-                                    {/*{imageClick === false ? (*/}
-                                    {/*    <div className={classes.rightArrow}>*/}
-                                    {/*        <button onClick={clickRightArrow}>*/}
-                                    {/*            <img*/}
-                                    {/*                src={"/SkinImg/arrow-right.svg"}*/}
-                                    {/*                alt="arrowRight"*/}
-                                    {/*            />*/}
-                                    {/*        </button>*/}
-                                    {/*    </div>*/}
-                                    {/*) : (*/}
-                                    {/*    <div className={classes.leftArrow}>*/}
-                                    {/*        <button onClick={clickLeftArrow}>*/}
-                                    {/*            <img*/}
-                                    {/*                src={"/SkinImg/arrow-left.svg"}*/}
-                                    {/*                alt="arrowLeft"*/}
-                                    {/*            />*/}
-                                    {/*        </button>*/}
-                                    {/*    </div>*/}
-                                    {/*)}*/}
-                                </div>
+                            <div className={classes.ArrowButtonRight}>
+                                <button className={classes.ArrowButton}>
+                                    <img
+                                        src={"/SkinImg/arrow-right.svg"}
+                                        alt="arrowRight"
+                                    />
+                                </button>
                             </div>
+                            <div className={classes.ArrowButtonLeft}>
+                                <button className={classes.ArrowButton}>
+                                    <img
+                                        src={"/SkinImg/arrow-left.svg"}
+                                        alt="arrowLeft"
+                                    />
+                                </button>
+                            </div>
+                        </div>
                     </div>
                 )
             })}
