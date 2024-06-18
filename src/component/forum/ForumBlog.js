@@ -2,10 +2,13 @@ import React from 'react';
 import classes from './ForumBlog.module.css';
 import ForumBlogTap from "./forumTap/ForumBlogTap";
 import {Observer, useLocalObservable} from "mobx-react";
-import ForumStore from "../../stores/ForumStore";
+import ForumStore2 from "../../stores/ForumStore2";
+// import ForumStore from "../../stores/ForumStore";
+
 
 const ForumBlog = () => {
-    const forumStore = useLocalObservable(ForumStore);
+    // const forumStore = useLocalObservable(ForumStore);
+    const forumStore = useLocalObservable(() => new ForumStore2());
     const inputRef = React.useRef(null);
     const onClickTapChange = (data, index) => {
         forumStore.changeForumDummy(data, index);
