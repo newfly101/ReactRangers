@@ -64,7 +64,7 @@ const ForumBlogTap = (props) => {
 
     const response = props.response;
 
-    console.dir("response",response);
+    // console.dir("response",response);
 
     return (
         <>

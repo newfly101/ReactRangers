@@ -2,13 +2,14 @@ import React from 'react';
 import classes from './ForumBlog.module.css';
 import ForumBlogTap from "./forumTap/ForumBlogTap";
 import {Observer, useLocalObservable} from "mobx-react";
-import ForumStore2 from "../../stores/ForumStore2";
-// import ForumStore from "../../stores/ForumStore";
+// import ForumStore from "../../stores/ForumStore"; // [1]const형 store 구현
+import ForumStore2 from "../../stores/ForumStore2"; // [2]class형 store 구현
 
 
 const ForumBlog = () => {
-    // const forumStore = useLocalObservable(ForumStore);
-    const forumStore = useLocalObservable(() => new ForumStore2());
+    // const forumStore = useLocalObservable(ForumStore); // [1]const형 store 구현
+    const forumStore = useLocalObservable(() => new ForumStore2()); // [2]class형 store 구현
+
     const inputRef = React.useRef(null);
     const onClickTapChange = (data, index) => {
         forumStore.changeForumDummy(data, index);
