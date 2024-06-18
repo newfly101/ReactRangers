@@ -1,4 +1,4 @@
-import React, {useContext, useEffect} from "react";
+import React, {useEffect} from "react";
 import classes from "./Navigation.module.css";
 import { Link, useLocation } from "react-router-dom";
 import LoginModal from "./login/LoginModal";
