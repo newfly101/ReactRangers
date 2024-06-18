@@ -1,6 +1,5 @@
 import React from "react";
 import classes from "./AccountRecoveryBottomInput.module.css";
-import check from "./check.svg";
 
 const AccountRecoveryBottomInput = ({
   boldFlag,
@@ -25,7 +24,7 @@ const AccountRecoveryBottomInput = ({
             >
               계정(이메일)찾기
             </span>
-            <img src={check} className={classes.check1} alt="체크표시" />
+            <img src={`check.svg`} className={classes.check1} alt="체크표시" />
           </label>
 
           <label>
@@ -42,7 +41,7 @@ const AccountRecoveryBottomInput = ({
             >
               비밀번호 찾기
             </span>
-            <img src={check} className={classes.check2} alt="체크표시" />
+            <img src={`check.svg`} className={classes.check2} alt="체크표시" />
           </label>
         </form>
         <input
