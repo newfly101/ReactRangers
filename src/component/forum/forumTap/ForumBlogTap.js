@@ -30,7 +30,6 @@ const ForumBlogTap = (props) => {
         });
     }
 
-
     const getLocalStorageUserId = () => {
         setUserId(window.localStorage.getItem("user"));
     }
@@ -61,7 +60,7 @@ const ForumBlogTap = (props) => {
 
     const response = props.response;
 
-    // console.log("response",response);
+    console.log("response",response);
 
     return (
         <>

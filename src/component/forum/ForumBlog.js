@@ -1,41 +1,18 @@
-import React, {useRef} from 'react';
+import React from 'react';
 import classes from './ForumBlog.module.css';
-import {
-  blogEntryData,
-  blogEtcData,
-  blogIntroData,
-  blogSkinData,
-  blogTipData,
-} from "./ForumTapDummyData";
 import ForumBlogTap from "./forumTap/ForumBlogTap";
+import {Observer, useLocalObservable} from "mobx-react";
+import ForumStore from "../../stores/ForumStore";
 
 const ForumBlog = () => {
-    const [response, setResponse] = React.useState(blogEntryData);
-    const [tapState, setTapState] = React.useState('all');
+    const forumStore = useLocalObservable(ForumStore);
 
-    const inputRef = useRef(null);
+    const inputRef = React.useRef(null);
 
-    const onClickTapEntry = () => {
-        setResponse(blogEntryData);
-        setTapState("all");
+    const onClickTapChange = (data) => {
+        console.log(data);
+        forumStore.changeForumDummy(data);
     }
-    const onClickTapIntro = () => {
-        setResponse(blogIntroData);
-        setTapState("intro");
-    }
-    const onClickTapEtc = () => {
-        setResponse(blogEtcData);
-        setTapState("etc");
-    }
-    const onClickTapSkin = () => {
-        setResponse(blogSkinData);
-        setTapState("skin");
-    }
-    const onClickTapTip = () => {
-        setResponse(blogTipData);
-        setTapState("tip");
-    }
-
     // view에서 보여질 때 공용으로 쓰이는 부분
     // ----------------- 공용 ----------------------
     const shortedString = (str, num) => {
@@ -58,34 +35,37 @@ const ForumBlog = () => {
         <>
             <div className={classes.forumBlogBox}>
                 <div className={classes.forumBlogTitle}>
-                    <div className={classes.forumBlogTap}>
-                        <button className={tapState === 'all' ? classes.forumTapActive : classes.forumTapInActive}
-                                onClick={onClickTapEntry}>전체
-                        </button>
-                        <button className={tapState === 'intro' ? classes.forumTapActive : classes.forumTapInActive}
-                                onClick={onClickTapIntro}>블로그 소개
-                        </button>
-                        <button className={tapState === 'tip' ? classes.forumTapActive : classes.forumTapInActive}
-                                onClick={onClickTapTip}>블로그 운영팁
-                        </button>
-                        <button className={tapState === 'skin' ? classes.forumTapActive : classes.forumTapInActive}
-                                onClick={onClickTapSkin}>스킨
-                        </button>
-                        <button className={tapState === 'etc' ? classes.forumTapActive : classes.forumTapInActive}
-                                onClick={onClickTapEtc}>질문/기타
-                        </button>
-                    </div>
+                    <Observer>
+                        {() => (
+                            <div className={classes.forumBlogTap}>
+                                {forumStore.forumTap.map((tab, index) => {
+                                    console.log("map1",tab.key);
+                                    console.log("map2",forumStore.forumUrl);
+                                return (
+                                    <button
+                                        key={tab.key}
+                                        className={forumStore.forumUrl === tab.key ? classes.forumTapActive : classes.forumTapInActive}
+                                        onClick={() => onClickTapChange(tab.key)}>
+                                        {tab.label}
+                                    </button>
+                                )})}
+                            </div>
+                        )}
+                    </Observer>
                     <div className={classes.forumWriteBtn}>
                         <button onClick={scrollToInput}>글쓰기</button>
                     </div>
                 </div>
-                <ForumBlogTap
-                    response={response}
-                    shortedString={shortedString}
-                    scrollToInput={scrollToInput}
-                />
+                <Observer>
+                    {() => (
+                        <ForumBlogTap
+                            response={forumStore.forumDummy}
+                            shortedString={shortedString}
+                            scrollToInput={scrollToInput}
+                        />
+                    )}
+                </Observer>
             </div>
-            {/*<input ref={inputRef}/>*/}
         </>
     );
 };
