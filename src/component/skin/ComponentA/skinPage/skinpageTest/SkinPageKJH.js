@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from "react";
+import React, {useState} from "react";
 import { ReactComponent as LinkIcon } from "../link.svg";
 import classes from "./SkinPageKJH.module.css";
 
