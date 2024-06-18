@@ -1,7 +1,8 @@
-import {observable} from "mobx";
+import {makeObservable} from "mobx";
 
-const ForumStore = observable({
+const ForumStore = () => {
+    return makeObservable({
 
-});
-
+    })
+}
 export default ForumStore;
