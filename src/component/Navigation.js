@@ -7,7 +7,6 @@ import AuthStore from "../stores/AuthStore";
 
 const Navigation = () => {
   const authStore = useLocalObservable(AuthStore);
-  const [isOpen, setIsOpen] = React.useState(false);
   const [scrolled, setScrolled] = React.useState(false);
   const [url, setUrl] = React.useState("/");
   const location = useLocation();
@@ -34,7 +33,7 @@ const Navigation = () => {
       }
     };
     const changeUrl = (url) => {
-      console.log(location.pathname);
+      // console.log(location.pathname);
       setUrl(url);
     };
 
