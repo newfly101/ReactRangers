@@ -1,8 +1,8 @@
 import React from 'react';
 import classes from "../ForumBlog.module.css";
 import {blogTipDetailData} from "../ForumTapDummyData";
-import TapComment from "./Comment/TapComment";
-import TapAddComment from "./Comment/TapAddComment";
+import TapComment from "./comment/TapComment";
+import TapAddComment from "./comment/TapAddComment";
 import dayjs from "dayjs";
 
 const ForumBlogTap = (props) => {

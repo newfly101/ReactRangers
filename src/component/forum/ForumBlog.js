@@ -7,7 +7,7 @@ import {
   blogSkinData,
   blogTipData,
 } from "./ForumTapDummyData";
-import ForumBlogTap from "./Tap/ForumBlogTap";
+import ForumBlogTap from "./forumTap/ForumBlogTap";
 
 const ForumBlog = () => {
     const [response, setResponse] = React.useState(blogEntryData);
