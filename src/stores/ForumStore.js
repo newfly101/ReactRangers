@@ -1,11 +1,7 @@
-import React from 'react';
+import {observable} from "mobx";
 
-const ForumStore = () => {
-    return (
-        <div>
+const ForumStore = observable({
 
-        </div>
-    );
-};
+});
 
 export default ForumStore;
