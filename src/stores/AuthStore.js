@@ -1,4 +1,4 @@
-import {action, observable} from 'mobx';
+import {observable} from 'mobx';
 
 export const State = {
     Authenticated: 'Authenticated',
@@ -21,7 +21,14 @@ const EmptyUser = {
 }
 
 const AuthStore = observable({
-
+    // state
+    login : Object.assign({}, EmptyLogin),
+    loginState: State.NotAuthenticated,
+    loginToken : '',
+    loginUser : Object.assign({}, EmptyUser),
+    checkLogin() {
+      console.log('Check Login');
+    },
 });
 
 export default AuthStore;

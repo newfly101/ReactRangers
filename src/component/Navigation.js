@@ -1,7 +1,8 @@
-import React, { useEffect } from "react";
+import React, {useContext, useEffect} from "react";
 import classes from "./Navigation.module.css";
 import { Link, useLocation } from "react-router-dom";
 import LoginModal from "./login/LoginModal";
+import authStore from "../stores/AuthStore";
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = React.useState(false);
@@ -11,6 +12,7 @@ const Navigation = () => {
 
   const openLoginModal = () => {
     setIsOpen(true);
+    authStore.checkLogin();
     onClickScrollUp();
   };
   const closeLoginModal = () => {
