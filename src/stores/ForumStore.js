@@ -1,4 +1,4 @@
-import {makeAutoObservable, makeObservable} from "mobx";
+import {action, makeAutoObservable, makeObservable, toJS} from "mobx";
 import {
     blogEntryData,
     blogEtcData,
@@ -6,6 +6,7 @@ import {
     blogSkinData,
     blogTipData
 } from "../component/forum/ForumTapDummyData";
+import {useLocalObservable} from "mobx-react";
 
 export const forumData = {
     all : blogEntryData,
@@ -15,33 +16,32 @@ export const forumData = {
     tip : blogTipData,
 }
 export const tabs = [
-    { key: 'all', label: '전체' },
-    { key: 'intro', label: '블로그 소개' },
-    { key: 'tip', label: '블로그 운영팁' },
-    { key: 'skin', label: '스킨' },
-    { key: 'etc', label: '질문/기타' },
+    { key: 'all', label: '전체', id: 0 },
+    { key: 'intro', label: '블로그 소개', id: 1 },
+    { key: 'tip', label: '블로그 운영팁', id: 2 },
+    { key: 'skin', label: '스킨', id: 3 },
+    { key: 'etc', label: '질문/기타', id: 4 },
 ]
 
 const ForumStore = () => {
-
-    return makeObservable({
-        constructor() {
-            makeAutoObservable(this);
-        },
+    const store = useLocalObservable(() => ({
+        // observable state
         forumDummy : forumData.all,
         forumUrl : 'all',
+        forumTapIndex : 0,
         forumTap : Object.assign([], tabs),
 
-        changeForumDummy(data) {
-            this.forumUrl = data;
-            for (let key in forumData) {
-                if (key === data) {
-                    this.forumDummy = forumData[key];
-                }
-            }
-            console.log("store dummy", this.forumDummy);
-            console.log("store url", this.forumUrl);
-        }
-    });
+        // actions
+        // 변수명: action(() => {
+        //  store.변수명
+        // })
+        changeForumDummy: action((data, index) => {
+            store.forumUrl = data.toString();
+            store.forumDummy = forumData[data];
+            store.forumTapIndex = index;
+            console.log("store dummy",store.forumUrl, "index:", store.forumTapIndex, toJS(store.forumDummy));
+        }),
+    }));
+    return store;
 }
 export default ForumStore;

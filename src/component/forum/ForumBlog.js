@@ -6,12 +6,9 @@ import ForumStore from "../../stores/ForumStore";
 
 const ForumBlog = () => {
     const forumStore = useLocalObservable(ForumStore);
-
     const inputRef = React.useRef(null);
-
-    const onClickTapChange = (data) => {
-        console.log(data);
-        forumStore.changeForumDummy(data);
+    const onClickTapChange = (data, index) => {
+        forumStore.changeForumDummy(data, index);
     }
     // view에서 보여질 때 공용으로 쓰이는 부분
     // ----------------- 공용 ----------------------
@@ -39,13 +36,11 @@ const ForumBlog = () => {
                         {() => (
                             <div className={classes.forumBlogTap}>
                                 {forumStore.forumTap.map((tab, index) => {
-                                    console.log("map1",tab.key);
-                                    console.log("map2",forumStore.forumUrl);
                                 return (
                                     <button
                                         key={tab.key}
                                         className={forumStore.forumUrl === tab.key ? classes.forumTapActive : classes.forumTapInActive}
-                                        onClick={() => onClickTapChange(tab.key)}>
+                                        onClick={() => onClickTapChange(tab.key, index)}>
                                         {tab.label}
                                     </button>
                                 )})}
