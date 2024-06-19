@@ -9,7 +9,7 @@ const stores = () => ({
     authStore: AuthStore,
     forumStore: ForumStore(),
     forum2Store: new ForumStore2(),
-    StoryStore: StoryStore()
+    StoryStore: new StoryStore(),
 });
 
 
