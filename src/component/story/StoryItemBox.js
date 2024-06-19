@@ -5,14 +5,17 @@ import StoryStore from "../../stores/StoryStore";
 
 const StoryItemBox = () => {
     const storyStore = useLocalObservable(StoryStore);
-    const itemData = storyStore.dummyData.itemData.data.list;
+    const checklog = ()=>{
+      console.log(storyStore.dummyData.itemData.data.list[1].blogId);
+    }
   return (
 
-    <div className={classes.asdf}>
+    <div className={classes.itemboxesContainer}>
         <Observer>
             {()=>(
                 <>
-                {itemData.map((item, index) => (
+                  <div onClick={checklog}>나나난</div>
+                {storyStore.dummyData.itemData.data.list.map((item, index) => (
                         <div key={index}>
                             <a className={classes.itemBoxContainer} href={item.link}>
                                 <section className={classes.itemBoxWrapper}>
@@ -62,11 +65,8 @@ const StoryItemBox = () => {
                             </a>
                             </div>
                     ))}
-
                         </>
-
             )}
-
         </Observer>
     </div>
 

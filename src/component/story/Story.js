@@ -20,14 +20,15 @@ const Story = () => {
                                 </p>
                             </div>
                             <div className={`${classes.topSectionWrapTag}`}>
-                                {storyStore.tagsName.map((item) => (
+                                {storyStore.tagsName.map((item, index) => (
                                     <div
+                                        key={index}
                                         className={classes.tags}
                                         onClick={() => storyStore.convertData(item.dataName)}
                                     >
                                         <div
                                             className={`${classes.tagFocus} ${
-                                                storyStore.tagsName.dataName === item.dataName && classes.choiceTag
+                                                storyStore.dummyData.dataName === item.dataName && classes.choiceTag
                                             }`}
                                         >
                                             {item.tagName}

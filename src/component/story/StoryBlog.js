@@ -3,16 +3,15 @@ import classes from "./StoryBlog.module.css";
 import {Observer, useLocalObservable} from "mobx-react";
 import StoryStore from "../../stores/StoryStore";
 
+
 const StoryBlog = () => {
   const storyStore = useLocalObservable(StoryStore);
-  const cardData = storyStore.dummyData.cardData.data.list;
   return (
-
     <div className={classes.storyMidSection}>
       <Observer>
         {()=>(
             <>
-            {cardData.map((item, index) => (
+            {storyStore.dummyData.cardData.data.list.map((item, index) => (
                   <a href={item.blogUrl} key={index} className={classes.blogWrapper}>
                     <img
                         src={`${item.blogImage}`}
