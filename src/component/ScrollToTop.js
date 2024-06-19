@@ -14,6 +14,7 @@ const ScrollToTop = () => {
             } else {
                 commonStore.changeScrolled(false);
             }
+            console.log("현재 화면 Y축 스크롤 : ", window.scrollY);
           };
           const changeUrl = (url) => {
             // console.log(location.pathname);
@@ -25,7 +26,9 @@ const ScrollToTop = () => {
           return () => {
             window.removeEventListener("scroll", handleScroll);
           };
-    }, [location.pathname]);
+    }, [location.pathname, commonStore.topRef]);
+
+    return null;
 
 };
 
