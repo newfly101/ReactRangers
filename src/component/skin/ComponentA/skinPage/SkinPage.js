@@ -1,17 +1,23 @@
 import React, { useState } from "react";
-import { ReactComponent as LinkIcon } from "../SkinPage/link.svg";
-import classes from "../SkinPage/SkinPage.module.css";
+import { ReactComponent as LinkIcon } from ".//link.svg";
+import classes from ".//SkinPage.module.css";
 
 const SkinPage = (props) => {
   const { items } = props;
-  const [imageClick, setImageClick] = useState(false);
 
-  const clickLeftArrow = (event) => {
-    setImageClick(false);
+  const initiaImageClick = items.map(() => false);
+  const [imageClick, setImageClick] = useState(initiaImageClick);
+
+  const clickLeftArrow = (index) => {
+    const updatedImageClicks = [...imageClick];
+    updatedImageClicks[index] = false;
+    setImageClick(updatedImageClicks);
   };
 
-  const clickRightArrow = (event) => {
-    setImageClick(true);
+  const clickRightArrow = (index) => {
+    const updatedImageClicks = [...imageClick];
+    updatedImageClicks[index] = true;
+    setImageClick(updatedImageClicks);
   };
 
   return (
@@ -71,7 +77,7 @@ const SkinPage = (props) => {
                   <div className={classes.imageContaner}>
                     <div
                       className={
-                        imageClick ? classes.animate : classes.animate1
+                        imageClick[index] ? classes.animate : classes.animate1
                       }
                     >
                       {item.data.img.map((imgSrc, imgIndex) => (
@@ -87,24 +93,28 @@ const SkinPage = (props) => {
                           />
                         </div>
                       ))}
-                      <div className={classes.arrow}>
-                        {imageClick === false ? (
-                          <div className={classes.rightArrow}>
-                            <button onClick={clickRightArrow}>
-                              <img
-                                src={"/SkinImg/arrow-right.svg"}
-                                alt="arrowRight"
-                              />
-                            </button>
+                      <div>
+                        {imageClick[index] === false ? (
+                          <div className={classes.arrow}>
+                            <div className={classes.rightArrow}>
+                              <button onClick={() => clickRightArrow(index)}>
+                                <img
+                                  src={"/SkinImg/arrow-right.svg"}
+                                  alt="arrowRight"
+                                />
+                              </button>
+                            </div>
                           </div>
                         ) : (
-                          <div className={classes.leftArrow}>
-                            <button onClick={clickLeftArrow}>
-                              <img
-                                src={"/SkinImg/arrow-left.svg"}
-                                alt="arrowLeft"
-                              />
-                            </button>
+                          <div className={classes.arrow}>
+                            <div className={classes.leftArrow}>
+                              <button onClick={() => clickLeftArrow(index)}>
+                                <img
+                                  src={"/SkinImg/arrow-left.svg"}
+                                  alt="arrowLeft"
+                                />
+                              </button>
+                            </div>
                           </div>
                         )}
                       </div>

@@ -2,16 +2,16 @@ import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import Navigation from "./component/Navigation";
 import ForumMain from "./component/forum/ForumMain";
 import Feed from "./component/feed/Feed";
-import Followimg from "./component/feed/Following";
+import Following from "./component/feed/Following";
 import Follower from "./component/feed/Follower";
 import Admin from "./component/admin/Admin";
 import Story from "./component/story/Story";
 import "./App.css";
 import Footer from "./component/footer/Footer";
 import Skin from "./component/skin/TstorySkin";
-import TistoryMain from "../src/component/TistoryMain";
 import AccountRecovery from "./component/accountRecovery/AccountRecovery";
 import ConvertAccount from "./component/convertAccount/ConvertAccount";
+import TistoryMain from "./component/storymain/TistoryMain";
 import NewBlog from "./component/admin/NewBlog";
 
 function App() {
@@ -24,7 +24,7 @@ function App() {
         <Route path="/" element={<TistoryMain />} />
         <Route path="/forum" element={<ForumMain />} />
         <Route path="/feed" element={<Feed />} />
-        <Route path="/following" element={<Followimg />} />
+        <Route path="/following" element={<Following />} />
         <Route path="/follower" element={<Follower />} />
         <Route path="/admin" element={<Admin />} />
         <Route path="/story" element={<Story />} />

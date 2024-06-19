@@ -1,0 +1,51 @@
+.section5 {
+  font-size: 1.2em;
+  font-weight: bold;
+  display: inline-block;
+  text-align: left;
+  margin-bottom: 77px;
+}
+
+.section5 .MainBannerPTag:hover {
+  color: #000000;
+  cursor: pointer;
+}
+.section5 .customSpan::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 8px;
+  width: 0;
+  height: 11px;
+  background-color: rgb(227, 92, 110);
+  transition: width 0.3s ease-in-out;
+  z-index: -1;
+}
+
+.MainBannerPTag:hover .customSpan::before {
+  width: 100%;
+}
+
+.MainBannerPTag {
+  text-decoration: none;
+  color: inherit;
+  position: relative;
+  font-size: 2.5em;
+  margin-bottom: 5px;
+  color: rgb(144, 144, 144);
+  font-weight: 500;
+}
+
+.MainBannerPTag:hover {
+  cursor: pointer;
+}
+
+.customH5 {
+  padding: 20px 10px 0;
+  font-size: 30px;
+}
+.customSpan {
+  color: #000000;
+  font-weight: 700;
+  position: relative;
+}
