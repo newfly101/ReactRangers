@@ -15,12 +15,15 @@ import TistoryMain from "./component/storymain/TistoryMain";
 import NewBlog from "./component/admin/NewBlog";
 import ProfileLayer from "./component/admin/userNameList/ProfileLayer";
 import TistoryContextProvider from "./stores/TistoryContext";
+import ScrollToTop from "./component/ScrollToTop";
 
 
 function App() {
   return (
     <TistoryContextProvider>
     <Router>
+      {/* location.pathname 전역 저장 및 자동 스크롤 기능 : <ScrollToTop /> */}
+      <ScrollToTop />
       <div>
         <Navigation />
       </div>
