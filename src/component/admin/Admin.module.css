@@ -40,8 +40,7 @@
   font-weight: bold;
 }
 
-.AdminNameEmail,
-.AdminBlockEmail {
+.AdminNameEmail {
   color: #888;
   font-size: 13px;
 }
