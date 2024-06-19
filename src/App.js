@@ -13,6 +13,7 @@ import AccountRecovery from "./component/accountRecovery/AccountRecovery";
 import ConvertAccount from "./component/convertAccount/ConvertAccount";
 import TistoryMain from "./component/storymain/TistoryMain";
 import NewBlog from "./component/admin/NewBlog";
+import ProfileLayer from "./component/admin/userNameList/ProfileLayer";
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
         <Route path="/accountRecovery" element={<AccountRecovery />} />
         <Route path="/convertAccount" element={<ConvertAccount />} />
         <Route path="/newBlog" element={<NewBlog />} />
+        <Route path="/profileLayer" element={<ProfileLayer />} />
         {/*
             <Route path="/" element={<TistoryMain />} /> // 여기에 page link 추가
           */}

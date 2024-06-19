@@ -1,8 +1,5 @@
 import React, { useState } from "react";
 import classes from "./NewBlog.module.css";
-import home from "./assets/home.svg";
-import user from "./assets/user.svg";
-import down from "./assets/down.svg";
 import MyProfile from "./MyProfile";
 
 const NewBlog = () => {

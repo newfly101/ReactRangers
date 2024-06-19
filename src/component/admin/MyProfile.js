@@ -8,18 +8,16 @@ import { Link } from "react-router-dom";
 const MyProfile = () => {
   return (
     <>
-      <div>
-        <div className={classes.profile}>
-          <div className={classes.profileImage}>
-            <a href="/admin">
-              <img
-                src="https://img1.daumcdn.net/thumb/C100x100/?scode=mtistory2&fname=https%3A%2F%2Ft1.daumcdn.net%2Ftistory_admin%2Fstatic%2Fmanage%2Fimages%2Fr3%2Fdefault_S.png"
-                alt="프로필이미지"
-              />
-            </a>
-            <div className={classes.user}>새벽감성개발자</div>
-            <div className={classes.email}>game@naver.com</div>
-          </div>
+      <div className={classes.profile}>
+        <div className={classes.profileImage}>
+          <a href="/admin">
+            <img
+              src="https://img1.daumcdn.net/thumb/C100x100/?scode=mtistory2&fname=https%3A%2F%2Ft1.daumcdn.net%2Ftistory_admin%2Fstatic%2Fmanage%2Fimages%2Fr3%2Fdefault_S.png"
+              alt="프로필이미지"
+            />
+          </a>
+          <div className={classes.user}>새벽감성개발자</div>
+          <div className={classes.email}>game@naver.com</div>
         </div>
       </div>
       <div id={classes.list}>
@@ -40,10 +38,12 @@ const MyProfile = () => {
               <div>
                 <div className={classes.userName}>내 계정</div>
               </div>
-              <div className={classes.userNameMenu}>
-                <div className={classes.MenuTitle}>프로필 레이어</div>
-                <div className={classes.MenuTitle}>응원내역보기</div>
-                <div className={classes.MenuTitle}>카카오계정 관리</div>
+              <div className={classes.userNameList}>
+                <Link to={"/profileLayer"} className={classes.myBlogLink}>
+                  <div className={classes.listTitle}>프로필 레이어</div>
+                </Link>
+                <div className={classes.listTitle}>응원내역보기</div>
+                <div className={classes.listTitle}>카카오계정 관리</div>
               </div>
             </div>
           </div>
