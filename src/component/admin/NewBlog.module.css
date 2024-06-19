@@ -24,7 +24,7 @@
 }
 
 .newBlogInputBox {
-  width: 892px;
+  width: 860px;
   padding: 20px;
   border: 1px solid #e0e5ee;
   background-color: #fff;
@@ -70,7 +70,7 @@
 
 .newBlogButton {
   width: 150px;
-  padding: 10px;
+  padding: 8px;
   margin-top: 10px;
   background-color: #fff;
   border: 1px solid #e0e5ee;

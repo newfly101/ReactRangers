@@ -74,13 +74,13 @@
   padding-left: 47px;
 }
 
-.userNameMenu {
+.userNameList {
   font-size: 13px;
   font-weight: 100;
   color: #555;
 }
 
-.MenuTitle {
+.listTitle {
   margin-top: 5px;
   padding-left: 47px;
 }
@@ -102,7 +102,7 @@
 }
 
 .myBlog:hover,
-.MenuTitle:hover,
+.listTitle:hover,
 .link:hover {
   background: #e0e5ee;
   cursor: pointer;

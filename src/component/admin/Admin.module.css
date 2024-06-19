@@ -10,7 +10,7 @@
 
 #AdminLeft {
   float: left;
-  width: 216px;
+  width: 220px;
   position: relative;
   height: 100vh;
   padding-top: 100px;
@@ -138,18 +138,9 @@
 .AdminBlock8 {
   background: #fafbfc;
   border: 1px solid #e0e5ee;
-  padding: 15px 30px;
+  padding: 10px 35px;
   display: flex;
   justify-content: flex-end;
-}
-
-.AdminBlock8 {
-  background: #fff;
-  color: #959595;
-  text-align: center;
-  font-size: 14px;
-  padding: 10px 35px;
-  border: 1px solid #e0e5ee;
 }
 
 .AdminWithdraw {
@@ -159,12 +150,6 @@
   color: gray;
   letter-spacing: -2px;
   cursor: pointer;
-}
-
-.AdminWithdraw a {
-  color: gray;
-  text-decoration: underline;
-  margin-left: 3px;
 }
 
 .button {
