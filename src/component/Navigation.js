@@ -4,9 +4,11 @@ import { Link, useLocation } from "react-router-dom";
 import LoginModal from "./login/LoginModal";
 import {Observer, useLocalObservable} from "mobx-react";
 import AuthStore from "../stores/AuthStore";
+import CommonStore from "../stores/CommonStore";
 
 const Navigation = () => {
   const authStore = useLocalObservable(AuthStore);
+  const commonStore = useLocalObservable(CommonStore);
   const [scrolled, setScrolled] = React.useState(false);
   const [url, setUrl] = React.useState("/");
   const location = useLocation();
@@ -15,34 +17,36 @@ const Navigation = () => {
     authStore.changeLoginModalState(true);
     authStore.checkLogin();
     onClickScrollUp();
+    commonStore.onClickScrollTop();
   };
   const closeLoginModal = () => {
     authStore.changeLoginModalState(false);
     onClickScrollUp();
   };
   const onClickScrollUp = () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
+    // window.scrollTo({ top: 0, behavior: "smooth" });
+    console.log("ScrollUp");
   };
+  //
+  // useEffect(() => {
+  //   const handleScroll = () => {
+  //     if (window.scrollY > 150) {
+  //       setScrolled(true);
+  //     } else {
+  //       setScrolled(false);
+  //     }
+  //   };
+  //   const changeUrl = (url) => {
+  //     // console.log(location.pathname);
+  //     setUrl(url);
+  //   };
 
-  useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 150) {
-        setScrolled(true);
-      } else {
-        setScrolled(false);
-      }
-    };
-    const changeUrl = (url) => {
-      // console.log(location.pathname);
-      setUrl(url);
-    };
-
-    changeUrl(location.pathname);
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, [location.pathname]);
+    // changeUrl(location.pathname);
+    // window.addEventListener("scroll", handleScroll);
+  //   return () => {
+  //     window.removeEventListener("scroll", handleScroll);
+  //   };
+  // }, [location.pathname]);
 
   return (
     <div>
