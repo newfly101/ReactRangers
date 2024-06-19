@@ -1,12 +1,13 @@
-import React from "react";
+import React, {useContext} from "react";
 import classes from "./Story.module.css";
 import StoryBlog from "./StoryBlog";
 import StoryItemBox from "./StoryItemBox";
-import {Observer, useLocalObservable} from "mobx-react";
-import StoryStore from "../../stores/StoryStore";
+import {Observer} from "mobx-react";
+
+import {TistoryContext} from "../../stores/TistoryContext";
 
 const Story = () => {
-    const storyStore = useLocalObservable(StoryStore);
+    const storyStore = useContext(TistoryContext);
     return (
         <div className={classes.storyMain}>
             <Observer>
@@ -20,7 +21,7 @@ const Story = () => {
                                 </p>
                             </div>
                             <div className={`${classes.topSectionWrapTag}`}>
-                                {storyStore.tagsName.map((item, index) => (
+                                {storyStore.tagsName?.map((item, index) => (
                                     <div
                                         key={index}
                                         className={classes.tags}

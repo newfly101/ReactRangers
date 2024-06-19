@@ -1,20 +1,17 @@
-import React from "react";
+import React, {useContext} from "react";
 import classes from "./StoryItemBox.module.css";
-import {Observer, useLocalObservable} from "mobx-react";
-import StoryStore from "../../stores/StoryStore";
+import {Observer} from "mobx-react";
+import {TistoryContext} from "../../stores/TistoryContext";
 
 const StoryItemBox = () => {
-    const storyStore = useLocalObservable(StoryStore);
-    const checklog = ()=>{
-      console.log(storyStore.dummyData.itemData.data.list[1].blogId);
-    }
+    const storyStore = useContext(TistoryContext);
+
   return (
 
     <div className={classes.itemboxesContainer}>
         <Observer>
             {()=>(
                 <>
-                  <div onClick={checklog}>나나난</div>
                 {storyStore.dummyData.itemData.data.list.map((item, index) => (
                         <div key={index}>
                             <a className={classes.itemBoxContainer} href={item.link}>

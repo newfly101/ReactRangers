@@ -14,9 +14,12 @@ import ConvertAccount from "./component/convertAccount/ConvertAccount";
 import TistoryMain from "./component/storymain/TistoryMain";
 import NewBlog from "./component/admin/NewBlog";
 import ProfileLayer from "./component/admin/userNameList/ProfileLayer";
+import TistoryContextProvider from "./stores/TistoryContext";
+
 
 function App() {
   return (
+    <TistoryContextProvider>
     <Router>
       <div>
         <Navigation />
@@ -40,6 +43,7 @@ function App() {
       </Routes>
       <Footer />
     </Router>
+      </TistoryContextProvider>
   );
 }
 

@@ -1,11 +1,11 @@
-import React from "react";
+import React, {useContext} from "react";
 import classes from "./StoryBlog.module.css";
-import {Observer, useLocalObservable} from "mobx-react";
-import StoryStore from "../../stores/StoryStore";
+import {Observer} from "mobx-react";
+import {TistoryContext} from "../../stores/TistoryContext";
 
 
 const StoryBlog = () => {
-  const storyStore = useLocalObservable(StoryStore);
+  const storyStore = useContext(TistoryContext);
   return (
     <div className={classes.storyMidSection}>
       <Observer>
