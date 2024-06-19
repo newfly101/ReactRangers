@@ -1,9 +1,8 @@
 import React, { useState } from "react";
 import classes from "./Admin.module.css";
-import home from "./assets/home.svg";
-import user from "./assets/user.svg";
-import down from "./assets/down.svg";
 import AdminFilter from "./AdminFilter";
+import { Link } from "react-router-dom";
+import MyProfile from "./MyProfile";
 
 const Admin = () => {
   const [filteredReceive, setFilteredReceive] = useState();
@@ -17,53 +16,7 @@ const Admin = () => {
   return (
     <div id={classes.Admin}>
       <div id={classes.AdminLeft}>
-        <div>
-          <div className={classes.AdminProfile}>
-            <div className={classes.AdminProfileImage}>
-              <a href="/admin">
-                <img
-                  src="https://img1.daumcdn.net/thumb/C100x100/?scode=mtistory2&fname=https%3A%2F%2Ft1.daumcdn.net%2Ftistory_admin%2Fstatic%2Fmanage%2Fimages%2Fr3%2Fdefault_S.png"
-                  alt="프로필이미지"
-                />
-              </a>
-              <div className={classes.AdminNameUser}>새벽감성개발자</div>
-              <div className={classes.AdminNameEmail}>game@naver.com</div>
-            </div>
-          </div>
-        </div>
-        <div id={classes.AdminList}>
-          <div>
-            <div className={classes.AdminMyblog}>
-              <div className={classes.AdminListHomeIcon}>
-                <img src={home} alt="home" />
-              </div>
-              <div className={classes.AdminListMyBlog}>내 블로그</div>
-            </div>
-            <div className={classes.AdminListLine}>
-              <div className={classes.AdminListUserIcon}>
-                <img src={user} alt="user" />
-              </div>
-              <div>
-                <div>
-                  <div className={classes.AdminListUser}>내 계정</div>
-                </div>
-                <div className={classes.AdminListMenu}>
-                  <div className={classes.AdminListMenuFont}>프로필 레이어</div>
-                  <div className={classes.AdminListMenuFont}>응원내역보기</div>
-                  <div className={classes.AdminListMenuFont}>
-                    카카오계정 관리
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div>
-              <div className={classes.AdminLisLinkMenuIcon}>
-                <img src={down} alt="down"></img>
-              </div>
-              <div className={classes.AdminListLinkMenu}>외부 기능</div>
-            </div>
-          </div>
-        </div>
+        <MyProfile />
       </div>
       <div id={classes.AdminRight}>
         <div className={classes.AdminBlog}>
@@ -105,9 +58,11 @@ const Admin = () => {
               <div className={classes.AdminBlock5}>과거 개설 횟수 2회</div>
             </div>
             <div className={classes.AdminBlockBtn}>
-              <button className={classes.AdminBlockBtnWindow}>
-                새 블로그 만들기
-              </button>
+              <Link to={"/newBlog"}>
+                <button className={classes.AdminBlockBtnWindow}>
+                  새 블로그 만들기
+                </button>
+              </Link>
             </div>
           </div>
         </div>
