@@ -1,6 +1,6 @@
-import React, {useEffect} from "react";
+import React from "react";
 import classes from "./Navigation.module.css";
-import { Link, useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
 import LoginModal from "./login/LoginModal";
 import {Observer, useLocalObservable} from "mobx-react";
 import AuthStore from "../stores/AuthStore";
@@ -9,24 +9,20 @@ import CommonStore from "../stores/CommonStore";
 const Navigation = () => {
   const authStore = useLocalObservable(AuthStore);
   const commonStore = useLocalObservable(CommonStore);
-  const [scrolled, setScrolled] = React.useState(false);
-  const [url, setUrl] = React.useState("/");
-  const location = useLocation();
+  // const location = useLocation();
+
+
 
   const openLoginModal = () => {
     authStore.changeLoginModalState(true);
     authStore.checkLogin();
-    onClickScrollUp();
     commonStore.onClickScrollTop();
   };
   const closeLoginModal = () => {
     authStore.changeLoginModalState(false);
-    onClickScrollUp();
+    commonStore.onClickScrollTop();
   };
-  const onClickScrollUp = () => {
-    // window.scrollTo({ top: 0, behavior: "smooth" });
-    console.log("ScrollUp");
-  };
+
   //
   // useEffect(() => {
   //   const handleScroll = () => {
@@ -55,32 +51,32 @@ const Navigation = () => {
           <div className={classes.backdrop} onClick={closeLoginModal}></div>
       )}
       </Observer>
-      <nav className={scrolled ? classes.navBar : classes.navBarBlank}>
-        {url !== "/forum" && url !== "/skin" ? (
+      <nav className={commonStore.scrolled ? classes.navBar : classes.navBarBlank}>
+        {commonStore.topRef !== "/forum" && commonStore.topRef !== "/skin" ? (
           <div className={classes.navBarBox}>
-            <div className={classes.pageTitle} onClick={onClickScrollUp}>
+            <div className={classes.pageTitle} onClick={commonStore.onClickScrollTop}>
               <Link to="/">
                 <img src={"/tistoryLogo.webp"} alt="TistoryLogo" />
               </Link>
             </div>
-            <div className={classes.pageLinkBox} onClick={onClickScrollUp}>
+            <div className={classes.pageLinkBox} onClick={commonStore.onClickScrollTop}>
               <Link to="/feed">피드</Link>
             </div>
-            <div className={classes.pageLinkBox} onClick={onClickScrollUp}>
+            <div className={classes.pageLinkBox} onClick={commonStore.onClickScrollTop}>
               <Link to="/story">스토리</Link>
             </div>
-            <div className={classes.pageLinkBox} onClick={onClickScrollUp}>
+            <div className={classes.pageLinkBox} onClick={commonStore.onClickScrollTop}>
               <Link to="/skin">스킨</Link>
             </div>
-            <div className={classes.pageLinkBox} onClick={onClickScrollUp}>
+            <div className={classes.pageLinkBox} onClick={commonStore.onClickScrollTop}>
               <Link to="/forum">포럼</Link>
             </div>
           </div>
         ) : (
           <div className={classes.navBarBox}>
             <div
-              className={scrolled ? classes.pageTitle : classes.pageTitleBlank}
-              onClick={onClickScrollUp}
+              className={commonStore.scrolled ? classes.pageTitle : classes.pageTitleBlank}
+              onClick={commonStore.onClickScrollTop}
             >
               <Link to="/">
                 <img src={"/tistoryLogo.webp"} alt="TistoryLogo" />
@@ -88,33 +84,33 @@ const Navigation = () => {
             </div>
             <div
               className={
-                scrolled ? classes.pageLinkBox : classes.pageLinkBoxBlank
+                commonStore.scrolled ? classes.pageLinkBox : classes.pageLinkBoxBlank
               }
-              onClick={onClickScrollUp}
+              onClick={commonStore.onClickScrollTop}
             >
               <Link to="/feed">피드</Link>
             </div>
             <div
               className={
-                scrolled ? classes.pageLinkBox : classes.pageLinkBoxBlank
+                commonStore.scrolled ? classes.pageLinkBox : classes.pageLinkBoxBlank
               }
-              onClick={onClickScrollUp}
+              onClick={commonStore.onClickScrollTop}
             >
               <Link to="/story">스토리</Link>
             </div>
             <div
               className={
-                scrolled ? classes.pageLinkBox : classes.pageLinkBoxBlank
+                commonStore.scrolled ? classes.pageLinkBox : classes.pageLinkBoxBlank
               }
-              onClick={onClickScrollUp}
+              onClick={commonStore.onClickScrollTop}
             >
               <Link to="/skin">스킨</Link>
             </div>
             <div
               className={
-                scrolled ? classes.pageLinkBox : classes.pageLinkBoxBlank
+                commonStore.scrolled ? classes.pageLinkBox : classes.pageLinkBoxBlank
               }
-              onClick={onClickScrollUp}
+              onClick={commonStore.onClickScrollTop}
             >
               <Link to="/forum">포럼</Link>
             </div>
@@ -123,7 +119,7 @@ const Navigation = () => {
 
         {window.location.pathname !== '/admin' ?
           <div
-            className={`${classes.navBarLogin} ${!scrolled && (url === "/forum" || url === "/skin") ? classes.navBarLoginFlag : ""}`}
+            className={`${classes.navBarLogin} ${!commonStore.scrolled && (commonStore.topRef === "/forum" || commonStore.topRef === "/skin") ? classes.navBarLoginFlag : ""}`}
           >
             <button onClick={openLoginModal}>
               시작하기
@@ -131,7 +127,7 @@ const Navigation = () => {
           </div>
             :
             <div
-                className={`${classes.navBarLogin} ${!scrolled && (url === "/forum" || url === "/skin") ? classes.navBarLoginFlag : ""}`}
+                className={`${classes.navBarLogin} ${!commonStore.scrolled && (commonStore.topRef === "/forum" || commonStore.topRef === "/skin") ? classes.navBarLoginFlag : ""}`}
             >
               <img className={classes.loginedImg} src="https://www.webfx.com/wp-content/uploads/2022/08/github-logo.png" alt="logined" />
             </div>
