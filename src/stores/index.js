@@ -1,6 +1,7 @@
 import ForumStore from "./ForumStore";
 import AuthStore from "./AuthStore";
 import ForumStore2 from "./ForumStore2";
+import StoryStore from "./StoryStore";
 
 
 const stores = () => ({
@@ -8,6 +9,7 @@ const stores = () => ({
     authStore: AuthStore,
     forumStore: ForumStore(),
     forum2Store: new ForumStore2(),
+    StoryStore: StoryStore()
 });
 
 
