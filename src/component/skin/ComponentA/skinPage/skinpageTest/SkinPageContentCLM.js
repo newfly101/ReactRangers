@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { ReactComponent as LinkIcon } from "../../SkinPage/link.svg";
+import { ReactComponent as LinkIcon } from "../link.svg";
 import classes from "../SkinPage.module.css";
 
 const SkinPageContentCLM = ({ item, index }) => {

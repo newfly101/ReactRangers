@@ -2,18 +2,18 @@ import React, { useState } from "react";
 import classes from "./Story.module.css";
 import StoryBlog from "./StoryBlog";
 import StoryItemBox from "./StoryItemBox";
-import { dummyCardLife } from "./DummyData/StoryDummyDataLife";
-import { dummyCardCulture } from "./DummyData/StoryDummyDataCulture";
-import { dummyCardIt } from "./DummyData/StoryDummyDataIt";
-import { dummyCardCurrent } from "./DummyData/StoryDummyDataCurrent";
-import { dummyCardSport } from "./DummyData/StoryDummyDataSport";
-import { dummyCardTravel } from "./DummyData/StoryDummyDataTravel";
-import { dummyItemLife } from "./DummyData/StoryDummyDataLife";
-import { dummyItemCulture } from "./DummyData/StoryDummyDataCulture";
-import { dummyItemIt } from "./DummyData/StoryDummyDataIt";
-import { dummyItemCurrent } from "./DummyData/StoryDummyDataCurrent";
-import { dummyItemSport } from "./DummyData/StoryDummyDataSport";
-import { dummyItemTravel } from "./DummyData/StoryDummyDataTravel";
+import { dummyCardLife } from "./dummyData/StoryDummyDataLife";
+import { dummyCardCulture } from "./dummyData/StoryDummyDataCulture";
+import { dummyCardIt } from "./dummyData/StoryDummyDataIt";
+import { dummyCardCurrent } from "./dummyData/StoryDummyDataCurrent";
+import { dummyCardSport } from "./dummyData/StoryDummyDataSport";
+import { dummyCardTravel } from "./dummyData/StoryDummyDataTravel";
+import { dummyItemLife } from "./dummyData/StoryDummyDataLife";
+import { dummyItemCulture } from "./dummyData/StoryDummyDataCulture";
+import { dummyItemIt } from "./dummyData/StoryDummyDataIt";
+import { dummyItemCurrent } from "./dummyData/StoryDummyDataCurrent";
+import { dummyItemSport } from "./dummyData/StoryDummyDataSport";
+import { dummyItemTravel } from "./dummyData/StoryDummyDataTravel";
 
 const Story = () => {
   const tagsName = [

@@ -1,20 +1,23 @@
-import React, { useEffect } from "react";
+import React, {useEffect} from "react";
 import classes from "./Navigation.module.css";
 import { Link, useLocation } from "react-router-dom";
 import LoginModal from "./login/LoginModal";
+import {Observer, useLocalObservable} from "mobx-react";
+import AuthStore from "../stores/AuthStore";
 
 const Navigation = () => {
-  const [isOpen, setIsOpen] = React.useState(false);
+  const authStore = useLocalObservable(AuthStore);
   const [scrolled, setScrolled] = React.useState(false);
   const [url, setUrl] = React.useState("/");
   const location = useLocation();
 
   const openLoginModal = () => {
-    setIsOpen(true);
+    authStore.changeLoginModalState(true);
+    authStore.checkLogin();
     onClickScrollUp();
   };
   const closeLoginModal = () => {
-    setIsOpen(false);
+    authStore.changeLoginModalState(false);
     onClickScrollUp();
   };
   const onClickScrollUp = () => {
@@ -30,7 +33,7 @@ const Navigation = () => {
       }
     };
     const changeUrl = (url) => {
-      console.log(location.pathname);
+      // console.log(location.pathname);
       setUrl(url);
     };
 
@@ -43,9 +46,11 @@ const Navigation = () => {
 
   return (
     <div>
-      {isOpen && (
-        <div className={classes.backdrop} onClick={closeLoginModal}></div>
+      <Observer>
+      {() => (authStore.loginModal &&
+          <div className={classes.backdrop} onClick={closeLoginModal}></div>
       )}
+      </Observer>
       <nav className={scrolled ? classes.navBar : classes.navBarBlank}>
         {url !== "/forum" && url !== "/skin" ? (
           <div className={classes.navBarBox}>
@@ -127,10 +132,15 @@ const Navigation = () => {
               <img className={classes.loginedImg} src="https://www.webfx.com/wp-content/uploads/2022/08/github-logo.png" alt="logined" />
             </div>
         }
-        {isOpen && <LoginModal isOpen={isOpen} close={closeLoginModal} />}
+        <Observer>
+          {() => (authStore.loginModal &&
+              <LoginModal isOpen={authStore.loginModal} close={closeLoginModal} />
+          )}
+        </Observer>
       </nav>
+
     </div>
-  );
+  )
 };
 
 export default Navigation;

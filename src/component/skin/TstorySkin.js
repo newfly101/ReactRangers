@@ -1,13 +1,13 @@
 import React, { useState } from "react";
-import Topimage from "./ComponentA/Main/Main";
-import Category from "./ComponentA/Category/Category";
-import Skinpage from "./ComponentA/SkinPage/SkinPage";
-import UserSkin from "./ComponentA/SkinPage/UserSkin";
+import Topimage from "./ComponentA/skinMain/Main";
+import Category from "./ComponentA/category/Category";
+import Skinpage from "./ComponentA/skinPage/SkinPage";
+import UserSkin from "./ComponentA/skinPage/UserSkin";
 import classes from "./TstorySkin.module.css";
-import items from "./DummyData/Item.json";
-import usersSkin from "./DummyData/userSkin.json";
-import SkinPageKJH from "./ComponentA/SkinPage/skinpageTest/SkinPageKJH";
-import SkinPageCLM from "./ComponentA/SkinPage/skinpageTest/SkinPageCLM";
+import items from "./dummyData/Item.json";
+import usersSkin from "./dummyData/userSkin.json";
+import SkinPageKJH from "./ComponentA/skinPage/skinpageTest/SkinPageKJH";
+import SkinPageCLM from "./ComponentA/skinPage/skinpageTest/SkinPageCLM";
 
 const TstorySkin = () => {
   const [isAVew, setIsAVew] = useState(0);

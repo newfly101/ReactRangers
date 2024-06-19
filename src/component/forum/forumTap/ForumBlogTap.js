@@ -1,11 +1,15 @@
 import React from 'react';
 import classes from "../ForumBlog.module.css";
 import {blogTipDetailData} from "../ForumTapDummyData";
-import TapComment from "./Comment/TapComment";
-import TapAddComment from "./Comment/TapAddComment";
+import TapComment from "./comment/TapComment";
+import TapAddComment from "./comment/TapAddComment";
 import dayjs from "dayjs";
+// import {toJS} from "mobx";
+// import {useLocalObservable} from "mobx-react";
+// import ForumStore from "../../../stores/ForumStore";
 
 const ForumBlogTap = (props) => {
+    // const forumStore = useLocalObservable(ForumStore);
     const [activeIndex, setActiveIndex] = React.useState([{0: false}]);
     const [userId, setUserId] = React.useState(null);
     const [userName, setUserName] = React.useState(null);
@@ -29,7 +33,6 @@ const ForumBlogTap = (props) => {
             }
         });
     }
-
 
     const getLocalStorageUserId = () => {
         setUserId(window.localStorage.getItem("user"));
@@ -61,7 +64,7 @@ const ForumBlogTap = (props) => {
 
     const response = props.response;
 
-    // console.log("response",response);
+    // console.dir("response",response);
 
     return (
         <>
