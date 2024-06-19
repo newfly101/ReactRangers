@@ -4,7 +4,7 @@ import {Link} from "react-router-dom";
 import LoginModal from "./login/LoginModal";
 import {Observer, useLocalObservable} from "mobx-react";
 import AuthStore from "../stores/AuthStore";
-import CommonStore from "../stores/CommonStore";
+import CommonStore, {PathUrl} from "../stores/CommonStore";
 
 const Navigation = () => {
     const authStore = useLocalObservable(AuthStore);
@@ -18,6 +18,7 @@ const Navigation = () => {
         authStore.changeLoginModalState(false);
     };
 
+    /*   스킨 페이지, 포럼 페이지 인 경우 css 조정 해야 되니 DO NOT touch source - 김재홍   */
     return (
         <Observer>
             {() => (
@@ -26,10 +27,10 @@ const Navigation = () => {
                         <div className={classes.backdrop} onClick={closeLoginModal}></div>
                     }
                     <nav className={commonStore.scrolled ? classes.navBar : classes.navBarBlank}>
-                        {commonStore.locationPath.current !== "/forum" && commonStore.locationPath.current !== "/skin" ? (
+                        {commonStore.locationPath.current !== PathUrl.FORUM && commonStore.locationPath.current !== PathUrl.SKIN ? (
                             <div className={classes.navBarBox}>
                                 <div className={classes.pageTitle} onClick={() => commonStore.onClickScrollTop()}>
-                                    <Link to={commonStore.MAIN}>
+                                    <Link to={PathUrl.MAIN}>
                                         <img src={"/tistoryLogo.webp"} alt="TistoryLogo"/>
                                     </Link>
                                 </div>
@@ -42,7 +43,7 @@ const Navigation = () => {
                         ) : (
                             <div className={classes.navBarBox}>
                                 <div className={commonStore.scrolled ? classes.pageTitle : classes.pageTitleBlank} onClick={commonStore.onClickScrollTop}>
-                                    <Link to={commonStore.MAIN}>
+                                    <Link to={PathUrl.MAIN}>
                                         <img src={"/tistoryLogo.webp"} alt="TistoryLogo"/>
                                     </Link>
                                 </div>
@@ -55,12 +56,12 @@ const Navigation = () => {
                                 ))}
                             </div>
                         )}
-                        {commonStore.locationPath.current !== '/admin' ?
-                            <div className={`${classes.navBarLogin} ${!commonStore.scrolled && (commonStore.locationPath.current === "/forum" || commonStore.locationPath.current === "/skin") ? classes.navBarLoginFlag : ""}`}>
+                        {commonStore.locationPath.current !== PathUrl.ADMIN ?
+                            <div className={`${classes.navBarLogin} ${!commonStore.scrolled && (commonStore.locationPath.current === PathUrl.FORUM || commonStore.locationPath.current === PathUrl.SKIN) ? classes.navBarLoginFlag : ""}`}>
                                 <button onClick={openLoginModal}>시작하기</button>
                             </div>
                             :
-                            <div className={`${classes.navBarLogin} ${!commonStore.scrolled && (commonStore.locationPath.current === "/forum" || commonStore.locationPath.current === "/skin") ? classes.navBarLoginFlag : ""}`}>
+                            <div className={`${classes.navBarLogin} ${!commonStore.scrolled && (commonStore.locationPath.current === PathUrl.FORUM || commonStore.locationPath.current === PathUrl.SKIN) ? classes.navBarLoginFlag : ""}`}>
                                 <img className={classes.loginedImg} src="https://www.webfx.com/wp-content/uploads/2022/08/github-logo.png" alt="logined"/>
                             </div>
                         }
