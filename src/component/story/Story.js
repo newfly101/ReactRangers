@@ -21,7 +21,7 @@ const Story = () => {
                                 </p>
                             </div>
                             <div className={`${classes.topSectionWrapTag}`}>
-                                {storyStore.tagsName?.map((item, index) => (
+                                {storyStore.tagsName.map((item, index) => (
                                     <div
                                         key={index}
                                         className={classes.tags}
