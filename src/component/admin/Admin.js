@@ -24,7 +24,7 @@ const Admin = () => {
                 <img
                   src="https://img1.daumcdn.net/thumb/C100x100/?scode=mtistory2&fname=https%3A%2F%2Ft1.daumcdn.net%2Ftistory_admin%2Fstatic%2Fmanage%2Fimages%2Fr3%2Fdefault_S.png"
                   alt="프로필이미지"
-                ></img>
+                />
               </a>
               <div className={classes.AdminNameUser}>새벽감성개발자</div>
               <div className={classes.AdminNameEmail}>game@naver.com</div>
@@ -35,13 +35,13 @@ const Admin = () => {
           <div>
             <div className={classes.AdminMyblog}>
               <div className={classes.AdminListHomeIcon}>
-                <img src={home} alt="home"></img>
+                <img src={home} alt="home" />
               </div>
               <div className={classes.AdminListMyBlog}>내 블로그</div>
             </div>
             <div className={classes.AdminListLine}>
               <div className={classes.AdminListUserIcon}>
-                <img src={user} alt="user"></img>
+                <img src={user} alt="user" />
               </div>
               <div>
                 <div>
@@ -125,9 +125,7 @@ const Admin = () => {
             </div>
           </div>
         </div>
-        <div className={classes.AdminWithdraw}>
-          탈퇴하기
-        </div>
+        <div className={classes.AdminWithdraw}>탈퇴하기</div>
       </div>
     </div>
   );
