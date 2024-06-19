@@ -176,7 +176,6 @@
 }
 
 .leftArrow {
-  background-color: violet;
   position: absolute;
   display: flex;
   justify-content: flex-start;
@@ -185,7 +184,7 @@
   left: 10vw;
   width: 120px;
   height: 100%;
-  /* opacity: 0; */
+  opacity: 0;
   z-index: 100;
 }
 
@@ -194,7 +193,6 @@
 }
 
 .rightArrow {
-  background-color: #ff5f4f;
   position: absolute;
   display: flex;
   justify-content: flex-end;
@@ -203,7 +201,7 @@
   right: -160%;
   width: 120px;
   height: 100%;
-  /* opacity: 0; */
+  opacity: 0;
   z-index: 100;
 }
 
