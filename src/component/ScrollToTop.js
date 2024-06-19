@@ -14,19 +14,14 @@ const ScrollToTop = () => {
             } else {
                 commonStore.changeScrolled(false);
             }
-            console.log("현재 화면 Y축 스크롤 : ", window.scrollY);
-          };
-          const changeUrl = (url) => {
-            // console.log(location.pathname);
-            //   commonStore.scrollToTop(url);
           };
 
-        changeUrl(location.pathname);
+        commonStore.changeLocation(location.pathname);
         window.addEventListener("scroll", handleScroll);
           return () => {
             window.removeEventListener("scroll", handleScroll);
           };
-    }, [location.pathname, commonStore.topRef]);
+    }, [location.pathname, commonStore]);
 
     return null;
 
