@@ -21,6 +21,11 @@ const Category = ({ handleCategoryButton }) => {
     setIsActive(3);
     handleCategoryButton(3);
   };
+
+  const handleCreateSkinButton = () => {
+    setIsActive(4);
+    handleCategoryButton(4);
+  }
   return (
     <>
       <div className={classes.container}>
@@ -69,7 +74,9 @@ const Category = ({ handleCategoryButton }) => {
                 <button>#일반형</button>
               </div>
               <div className={classes.roundButton}>
-                <button>스킨 등록하기</button>
+                <button
+                onClick={handleCreateSkinButton}
+                >스킨 등록하기</button>
               </div>
             </div>
           )}
