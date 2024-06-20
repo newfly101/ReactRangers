@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 import classes from "./NewBlog.module.css";
-import home from "./assets/home.svg";
-import user from "./assets/user.svg";
-import down from "./assets/down.svg";
+import MyProfile from "./MyProfile";
 
 const NewBlog = () => {
   const [blogName, setBlogName] = useState("");
@@ -34,57 +32,7 @@ const NewBlog = () => {
   return (
     <div id={classes.newBlog}>
       <div id={classes.newBlogLeft}>
-        <div>
-          <div className={classes.newBlogProfile}>
-            <div className={classes.newBlogProfileImage}>
-              <a href="/admin">
-                <img
-                  src="https://img1.daumcdn.net/thumb/C100x100/?scode=mtistory2&fname=https%3A%2F%2Ft1.daumcdn.net%2Ftistory_admin%2Fstatic%2Fmanage%2Fimages%2Fr3%2Fdefault_S.png"
-                  alt="프로필이미지"
-                />
-              </a>
-              <div className={classes.newBlogNameUser}>새벽감성개발자</div>
-              <div className={classes.newBlogNameEmail}>game@naver.com</div>
-            </div>
-          </div>
-        </div>
-        <div id={classes.newBlogList}>
-          <div>
-            <div className={classes.newBlogMyblog}>
-              <div className={classes.newBlogListHomeIcon}>
-                <img src={home} alt="home" />
-              </div>
-              <div className={classes.newBlogListMyBlog}>내 블로그</div>
-            </div>
-            <div className={classes.newBlogListLine}>
-              <div className={classes.newBlogListUserIcon}>
-                <img src={user} alt="user" />
-              </div>
-              <div>
-                <div>
-                  <div className={classes.newBlogListUser}>내 계정</div>
-                </div>
-                <div className={classes.newBlogListMenu}>
-                  <div className={classes.newBlogListMenuFont}>
-                    프로필 레이어
-                  </div>
-                  <div className={classes.newBlogListMenuFont}>
-                    응원내역보기
-                  </div>
-                  <div className={classes.newBlogListMenuFont}>
-                    카카오계정 관리
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div>
-              <div className={classes.newBlogLisLinkMenuIcon}>
-                <img src={down} alt="down"></img>
-              </div>
-              <div className={classes.newBlogListLinkMenu}>외부 기능</div>
-            </div>
-          </div>
-        </div>
+        <MyProfile />
       </div>
       <div id={classes.newBlogRight}>
         <h3>새 블로그 만들기</h3>

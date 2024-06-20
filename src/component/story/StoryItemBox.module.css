@@ -99,8 +99,8 @@
 /*구분선 css*/
 .mainBar {
   opacity: 0.3;
-  height: 0.5px;
-  margin: 0px;
+  height: 0.5rem;
+  margin: 0;
   width: 54rem;
 }
 
@@ -109,7 +109,7 @@
   text-decoration-line: none;
   color: black;
 }
-.asdf {
+.itemboxesContainer {
   width: 70%;
   margin-left: 11rem;
 }

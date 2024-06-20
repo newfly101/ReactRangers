@@ -16,113 +16,6 @@
   padding-top: 100px;
 }
 
-.newBlogProfile {
-  background: #fff;
-  text-align: center;
-  border: 1px solid #e0e5ee;
-}
-
-.newBlogProfileImage {
-  padding: 30px 0 25px;
-  border-radius: 0.5rem;
-}
-
-.newBlogProfileImage img {
-  width: 100px;
-  height: 100px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  padding-bottom: 20px;
-}
-
-.newBlogNameUser {
-  font-weight: bold;
-}
-
-.newBlogNameEmail {
-  color: #888;
-  font-size: 13px;
-}
-
-#newBlogList {
-  margin-top: 6px;
-  background: #fff;
-  font-size: 15px;
-  padding-bottom: 7px;
-  border: 1px solid #e0e5ee;
-}
-
-.newBlogListHomeIcon {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 21px;
-  height: 21px;
-  position: absolute;
-  left: 15px;
-}
-
-.newBlogMyblog {
-  border-bottom: 0;
-  padding: 12px 0 12px 47px;
-}
-
-.newBlogMyblog:hover,
-.newBlogListMenuFont:hover,
-.newBlogListLinkMenu:hover {
-  background: #e0e5ee;
-  cursor: pointer;
-}
-
-.newBlogListLine {
-  border-top: 1px solid #e0e5ee;
-  border-bottom: 0;
-  padding: 12px 0 14px;
-}
-
-.newBlogListUserIcon {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 21px;
-  height: 21px;
-  position: absolute;
-  left: 15px;
-}
-
-.newBlogListUser {
-  padding-bottom: 8px;
-  padding-left: 47px;
-}
-
-.newBlogListMenu {
-  font-size: 13px;
-  font-weight: 100;
-  color: #555;
-}
-
-.newBlogListMenuFont {
-  margin-top: 5px;
-  padding-left: 47px;
-}
-
-.newBlogLisLinkMenuIcon {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 21px;
-  height: 21px;
-  position: absolute;
-  left: 15px;
-  top: 500px;
-}
-
-.newBlogListLinkMenu {
-  border-top: 1px solid #e0e5ee;
-  padding: 10px 0 14px 47px;
-}
-
 #newBlogRight {
   margin-top: 20px;
   float: right;
@@ -131,7 +24,7 @@
 }
 
 .newBlogInputBox {
-  width: 892px;
+  width: 860px;
   padding: 20px;
   border: 1px solid #e0e5ee;
   background-color: #fff;
@@ -177,7 +70,7 @@
 
 .newBlogButton {
   width: 150px;
-  padding: 10px;
+  padding: 8px;
   margin-top: 10px;
   background-color: #fff;
   border: 1px solid #e0e5ee;

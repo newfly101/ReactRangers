@@ -1,0 +1,109 @@
+.profile {
+  background: #fff;
+  text-align: center;
+  border: 1px solid #e0e5ee;
+}
+
+.profileImage {
+  padding: 30px 0 25px;
+  border-radius: 0.5rem;
+}
+
+.profileImage img {
+  width: 100px;
+  height: 100px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 20px;
+}
+
+.user {
+  font-weight: bold;
+}
+
+.email {
+  color: #888;
+  font-size: 13px;
+}
+
+#list {
+  margin-top: 6px;
+  background: #fff;
+  font-size: 15px;
+  padding-bottom: 7px;
+  border: 1px solid #e0e5ee;
+}
+
+.myBlogBox {
+  border-bottom: 0;
+  padding: 12px 0 12px 47px;
+}
+
+.myBlogIcon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 21px;
+  height: 21px;
+  position: absolute;
+  left: 15px;
+}
+.myBlogLink {
+  text-decoration-line: none;
+  color: black;
+}
+.userNameBox {
+  border-top: 1px solid #e0e5ee;
+  border-bottom: 0;
+  padding: 12px 0 14px;
+}
+
+.userNameIcon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 21px;
+  height: 21px;
+  position: absolute;
+  left: 15px;
+}
+
+.userName {
+  padding-bottom: 8px;
+  padding-left: 47px;
+}
+
+.userNameList {
+  font-size: 13px;
+  font-weight: 100;
+  color: #555;
+}
+
+.listTitle {
+  margin-top: 5px;
+  padding-left: 47px;
+}
+
+.linkIcon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 21px;
+  height: 21px;
+  position: absolute;
+  left: 15px;
+  top: 500px;
+}
+
+.link {
+  border-top: 1px solid #e0e5ee;
+  padding: 10px 0 14px 47px;
+}
+
+.myBlog:hover,
+.listTitle:hover,
+.link:hover {
+  background: #e0e5ee;
+  cursor: pointer;
+}
