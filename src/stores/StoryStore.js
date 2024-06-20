@@ -3,7 +3,7 @@ import { dummyCardLife } from "../component/story/dummyData/StoryDummyDataLife"
 import { dummyCardCulture } from "../component/story/dummyData/StoryDummyDataCulture";
 import { dummyCardIt } from "../component/story/dummyData/StoryDummyDataIt";
 import { dummyCardCurrent } from "../component/story/dummyData/StoryDummyDataCurrent";
-import {dummyCardSport, dummyItemSport2} from "../component/story/dummyData/StoryDummyDataSport";
+import { dummyCardSport } from "../component/story/dummyData/StoryDummyDataSport";
 import { dummyCardTravel } from "../component/story/dummyData/StoryDummyDataTravel";
 import { dummyItemLife } from "../component/story/dummyData/StoryDummyDataLife";
 import { dummyItemCulture } from "../component/story/dummyData/StoryDummyDataCulture";
@@ -30,7 +30,6 @@ const dummyDataMapping = {
     sport: { dataName: 'sport',cardData: dummyCardSport, itemData: dummyItemSport },
     current: {dataName: 'current', cardData: dummyCardCurrent, itemData: dummyItemCurrent },
 };
-
 
 // 함수형 store
 // const StoryStore = () => {
@@ -69,9 +68,6 @@ class StoryStore {
             this.dummyData = dummyDataMapping[clickTag];
         }
         };
-    addItemData() {
-        this.dummyData.itemData.data.list = [...this.dummyData.itemData.data.list, ...dummyItemSport2.data.list];
-    }
 }
 
 

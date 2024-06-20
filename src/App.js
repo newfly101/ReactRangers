@@ -21,6 +21,7 @@ import {PathUrl} from "./stores/CommonStore";
 
 function App() {
   return (
+
     <Router>
       {/* location.pathname 전역 저장 및 자동 스크롤 기능 : <ScrollToTop /> */}
       <ScrollToTop />
@@ -41,6 +42,7 @@ function App() {
       </Routes>
       <Footer />
     </Router>
+
   );
 }
 
