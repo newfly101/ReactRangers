@@ -4,35 +4,37 @@ import {blogTipDetailData} from "../ForumTapDummyData";
 import TapComment from "./comment/TapComment";
 import TapAddComment from "./comment/TapAddComment";
 import dayjs from "dayjs";
+import {useLocalObservable} from "mobx-react";
+import ForumStore2 from "../../../stores/ForumStore2";
 // import {toJS} from "mobx";
 // import {useLocalObservable} from "mobx-react";
 // import ForumStore from "../../../stores/ForumStore";
 
 const ForumBlogTap = (props) => {
-    // const forumStore = useLocalObservable(ForumStore);
+    const forumStore = useLocalObservable(() => new ForumStore2);
     const [activeIndex, setActiveIndex] = React.useState([{0: false}]);
     const [userId, setUserId] = React.useState(null);
     const [userName, setUserName] = React.useState(null);
     const [addData, setAddData] = React.useState('');
 
-    const showBlogDetail = (index) => {
-        setActiveIndex((prevActiveIndex) => {
-            // Find if the index exists
-            const indexExists = prevActiveIndex.find((item) => item.hasOwnProperty(index));
-
-            console.log("indexExists", indexExists);
-
-            // If index exists, toggle its value
-            if (indexExists) {
-                return prevActiveIndex.map((item) =>
-                    item.hasOwnProperty(index) ? {[index]: !item[index]} : item
-                );
-            } else {
-                // If index does not exist, add it to the array
-                return [...prevActiveIndex, {[index]: true}];
-            }
-        });
-    }
+    // const showBlogDetail = (index) => {
+    //     setActiveIndex((prevActiveIndex) => {
+    //         // Find if the index exists
+    //         const indexExists = prevActiveIndex.find((item) => item.hasOwnProperty(index));
+    //
+    //         console.log("indexExists", indexExists);
+    //
+    //         // If index exists, toggle its value
+    //         if (indexExists) {
+    //             return prevActiveIndex.map((item) =>
+    //                 item.hasOwnProperty(index) ? {[index]: !item[index]} : item
+    //             );
+    //         } else {
+    //             // If index does not exist, add it to the array
+    //             return [...prevActiveIndex, {[index]: true}];
+    //         }
+    //     });
+    // }
 
     const getLocalStorageUserId = () => {
         setUserId(window.localStorage.getItem("user"));
@@ -94,7 +96,8 @@ const ForumBlogTap = (props) => {
                                             </div>
                                         </div>
                                         <div className={classes.forumContextTitle}
-                                             onClick={() => showBlogDetail(index)}>
+                                             // onClick={() => showBlogDetail(index)}>
+                                             onClick={() => forumStore.addDetailOpen(index)}>
                                             {item.title}
                                         </div>
                                         <div className={classes.forumContext}>
