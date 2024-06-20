@@ -11,8 +11,10 @@ const ScrollToTop = () => {
         const handleScroll = () => {
             if (window.scrollY > 150) {
                 commonStore.changeScrolled(true);
+                // console.log("scrolled value : ",commonStore.scrolled);
             } else {
                 commonStore.changeScrolled(false);
+                // console.log("scrolled value : ",commonStore.scrolled);
             }
           };
 

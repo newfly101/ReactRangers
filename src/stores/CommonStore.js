@@ -35,6 +35,7 @@ const CommonStore = () => {
             this.scrolled = state;
         },
         changeLocation(location) {
+            // console.log("store locationPath : ",this.locationPath);
             this.locationPath.current = location;
             console.log("current",this.locationPath.current, "location", location);
         },
