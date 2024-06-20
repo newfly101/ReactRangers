@@ -24,9 +24,7 @@ function App() {
     <Router>
       {/* location.pathname 전역 저장 및 자동 스크롤 기능 : <ScrollToTop /> */}
       <ScrollToTop />
-      <div>
-        <Navigation />
-      </div>
+      <Navigation />
       <Routes>
         <Route path="/" element={<TistoryMain />} />
         <Route path="/forum" element={<ForumMain />} />
@@ -40,9 +38,6 @@ function App() {
         <Route path="/convertAccount" element={<ConvertAccount />} />
         <Route path="/newBlog" element={<NewBlog />} />
         <Route path="/profileLayer" element={<ProfileLayer />} />
-        {/*
-            <Route path="/" element={<TistoryMain />} /> // 여기에 page link 추가
-          */}
       </Routes>
       <Footer />
     </Router>
