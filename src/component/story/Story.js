@@ -1,13 +1,12 @@
-import React, {useContext} from "react";
+import React from "react";
 import classes from "./Story.module.css";
 import StoryBlog from "./StoryBlog";
 import StoryItemBox from "./StoryItemBox";
 import {Observer} from "mobx-react";
-
-import {TistoryContext} from "../../stores/TistoryContext";
+import StoryStore from "../../stores/StoryStore";
 
 const Story = () => {
-    const storyStore = useContext(TistoryContext);
+    const storyStore = new StoryStore()
     return (
         <div className={classes.storyMain}>
             <Observer>
@@ -41,12 +40,12 @@ const Story = () => {
                         <section>
                             <div className={classes.blogBackGround}>
                                 <div className={classes.storyWrapper}>
-                                    <StoryBlog/>
+                                    <StoryBlog storyStore={storyStore}/>
                                 </div>
                             </div>
                         </section>
                         <div className={classes.storyWrapper}>
-                            <StoryItemBox/>
+                            <StoryItemBox storyStore={storyStore}/>
                         </div>
                     </div>
                 )}

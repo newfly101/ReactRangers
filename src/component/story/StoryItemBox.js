@@ -1,13 +1,9 @@
-import React, {useContext} from "react";
+import React from "react";
 import classes from "./StoryItemBox.module.css";
 import {Observer} from "mobx-react";
-import {TistoryContext} from "../../stores/TistoryContext";
 
-const StoryItemBox = () => {
-    const storyStore = useContext(TistoryContext);
-
+const StoryItemBox = ({storyStore}) => {
   return (
-
     <div className={classes.itemboxesContainer}>
         <Observer>
             {()=>(

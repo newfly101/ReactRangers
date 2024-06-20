@@ -14,14 +14,14 @@ import ConvertAccount from "./component/convertAccount/ConvertAccount";
 import TistoryMain from "./component/storymain/TistoryMain";
 import NewBlog from "./component/admin/NewBlog";
 import ProfileLayer from "./component/admin/userNameList/ProfileLayer";
-import TistoryContextProvider from "./stores/TistoryContext";
+
 import ScrollToTop from "./component/ScrollToTop";
 import {PathUrl} from "./stores/CommonStore";
 
 
 function App() {
   return (
-    <TistoryContextProvider>
+
     <Router>
       {/* location.pathname 전역 저장 및 자동 스크롤 기능 : <ScrollToTop /> */}
       <ScrollToTop />
@@ -42,7 +42,7 @@ function App() {
       </Routes>
       <Footer />
     </Router>
-      </TistoryContextProvider>
+
   );
 }
 
