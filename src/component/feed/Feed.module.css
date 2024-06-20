@@ -22,3 +22,10 @@
     flex-direction: column;
 
 }
+
+.followText{
+
+    margin: 4rem 0 19.5rem 0;
+    font-size: 1.3rem;
+    color: #7e7e7e;
+}

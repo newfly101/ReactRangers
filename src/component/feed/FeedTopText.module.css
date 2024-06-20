@@ -24,13 +24,17 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
+    user-select: none;
 }
 .subscribeNum{
     font-size: 1.4rem;
-    padding: 0.5rem;
+    margin-left: 0.3rem;
+
 }
 .subscribingNum{
     display: flex;
     align-items: center;
     font-size: 0.78rem;
+    margin-left: 1rem;
 }
