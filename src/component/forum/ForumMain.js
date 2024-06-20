@@ -1,14 +1,16 @@
 import React from 'react';
 import classes from './ForumMain.module.css';
 import ForumBlog from "./ForumBlog";
+import {useLocalObservable} from "mobx-react";
+import ForumStore2 from "../../stores/ForumStore2";
 
 const ForumMain = () => {
-    let RN = Number(Math.floor(Math.random() * 3)+1);
-    let img2 = `https://t1.daumcdn.net/tistory_admin/static/top/pc/bg_forum${RN}.jpg`;
+    const forumStore = useLocalObservable(() => new ForumStore2());
+
     return (
         <div>
             <div className={classes.forumHeader}>
-                <img className={classes.forumImg} src={img2} alt="fourmHeaderImg"/>
+                <img className={classes.forumImg} src={forumStore.forumTopImg} alt="fourmHeaderImg"/>
                 <div className={classes.forumSearch}>
                     <div className={classes.forumTitle}>Forum</div>
                     <div className={classes.forumDescription}>티스토리에 대한 이야기를 자유롭게 나눠보세요</div>
