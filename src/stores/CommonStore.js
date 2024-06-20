@@ -12,7 +12,7 @@ export const PathUrl = {
     FOLLOWER: '/follower',
     RECOVERY_ACCOUNT: '/accountRecovery',
     CONVERT_ACCOUNT: '/convertAccount',
-    NEW_ACCOUNT: '/newAccount',
+    NEW_BLOG: '/newBlog',
     PROFILE_LAYER: '/profileLayer',
 }
 

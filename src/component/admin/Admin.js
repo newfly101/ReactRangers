@@ -3,6 +3,7 @@ import classes from "./Admin.module.css";
 import AdminFilter from "./AdminFilter";
 import { Link } from "react-router-dom";
 import MyProfile from "./MyProfile";
+import {PathUrl} from "../../stores/CommonStore";
 
 const Admin = () => {
   const [filteredReceive, setFilteredReceive] = useState();
@@ -58,7 +59,7 @@ const Admin = () => {
               <div className={classes.AdminBlock5}>과거 개설 횟수 2회</div>
             </div>
             <div className={classes.AdminBlockBtn}>
-              <Link to={"/newBlog"}>
+              <Link to={PathUrl.NEW_BLOG}>
                 <button className={classes.AdminBlockBtnWindow}>
                   새 블로그 만들기
                 </button>

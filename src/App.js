@@ -16,6 +16,7 @@ import NewBlog from "./component/admin/NewBlog";
 import ProfileLayer from "./component/admin/userNameList/ProfileLayer";
 import TistoryContextProvider from "./stores/TistoryContext";
 import ScrollToTop from "./component/ScrollToTop";
+import {PathUrl} from "./stores/CommonStore";
 
 
 function App() {
@@ -26,18 +27,18 @@ function App() {
       <ScrollToTop />
       <Navigation />
       <Routes>
-        <Route path="/" element={<TistoryMain />} />
-        <Route path="/forum" element={<ForumMain />} />
-        <Route path="/feed" element={<Feed />} />
-        <Route path="/following" element={<Following />} />
-        <Route path="/follower" element={<Follower />} />
-        <Route path="/admin" element={<Admin />} />
-        <Route path="/story" element={<Story />} />
-        <Route path="/skin" element={<Skin />} />
-        <Route path="/accountRecovery" element={<AccountRecovery />} />
-        <Route path="/convertAccount" element={<ConvertAccount />} />
-        <Route path="/newBlog" element={<NewBlog />} />
-        <Route path="/profileLayer" element={<ProfileLayer />} />
+        <Route path={PathUrl.MAIN} element={<TistoryMain />} />
+        <Route path={PathUrl.FORUM} element={<ForumMain />} />
+        <Route path={PathUrl.FEED} element={<Feed />} />
+        <Route path={PathUrl.FOLLOWING} element={<Following />} />
+        <Route path={PathUrl.FOLLOWER} element={<Follower />} />
+        <Route path={PathUrl.ADMIN} element={<Admin />} />
+        <Route path={PathUrl.STORY} element={<Story />} />
+        <Route path={PathUrl.SKIN} element={<Skin />} />
+        <Route path={PathUrl.RECOVERY_ACCOUNT} element={<AccountRecovery />} />
+        <Route path={PathUrl.CONVERT_ACCOUNT} element={<ConvertAccount />} />
+        <Route path={PathUrl.NEW_BLOG} element={<NewBlog />} />
+        <Route path={PathUrl.PROFILE_LAYER} element={<ProfileLayer />} />
       </Routes>
       <Footer />
     </Router>
