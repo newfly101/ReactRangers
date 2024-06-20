@@ -57,20 +57,17 @@ export default class ForumStore2 {
 
     addDetailOpen = (index) => {
         this.forumDetailIndex = this.forumDetailIndex.map((item) => {
-            // console.log(item);
             if (item.hasOwnProperty(index)) {
                 return {[index]: !item[index]};
             }
             return item;
         });
 
-        console.log("forumDetailIndex",toJS(this.forumDetailIndex));
-        // console.log("index", index);
-
         if (!this.forumDetailIndex.some((item) => item.hasOwnProperty(index))) {
             this.forumDetailIndex = [...this.forumDetailIndex, {[index]: true}];
-            console.log("forumDetailIndex",toJS(this.forumDetailIndex));
         }
+
+        console.log("forumDetailIndex:",toJS(this.forumDetailIndex));
     }
 }
 
