@@ -1,0 +1,17 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px ;
+}
+
+
+.fieldset{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    min-width: 500px;
+    height: auto;
+    flex-direction: column;
+}
