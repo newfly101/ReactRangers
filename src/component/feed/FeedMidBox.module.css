@@ -23,4 +23,8 @@
     padding: 11px 33px 11px 33px;
     border-radius: 40px;
     margin-top: 3rem;
+    transition: all 0.2s ease-in-out;
+}
+.midButton:hover{
+   background: #ff5544;
 }
