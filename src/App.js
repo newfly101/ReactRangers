@@ -2,8 +2,6 @@ import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import Navigation from "./component/Navigation";
 import ForumMain from "./component/forum/ForumMain";
 import Feed from "./component/feed/Feed";
-import Following from "./component/feed/Following";
-import Follower from "./component/feed/Follower";
 import Admin from "./component/admin/Admin";
 import Story from "./component/story/Story";
 import "./App.css";
@@ -30,8 +28,6 @@ function App() {
         <Route path={PathUrl.MAIN} element={<TistoryMain />} />
         <Route path={PathUrl.FORUM} element={<ForumMain />} />
         <Route path={PathUrl.FEED} element={<Feed />} />
-        <Route path={PathUrl.FOLLOWING} element={<Following />} />
-        <Route path={PathUrl.FOLLOWER} element={<Follower />} />
         <Route path={PathUrl.ADMIN} element={<Admin />} />
         <Route path={PathUrl.STORY} element={<Story />} />
         <Route path={PathUrl.SKIN} element={<Skin />} />

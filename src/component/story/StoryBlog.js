@@ -6,42 +6,42 @@ const StoryBlog = ({storyStore}) => {
   return (
     <div className={classes.storyMidSection}>
       <Observer>
-        {()=>(
-            <>
-            {storyStore.dummyData.cardData.data.list.map((item, index) => (
-                  <a href={item.blogUrl} key={index} className={classes.blogWrapper}>
-                    <img
-                        src={`${item.blogImage}`}
-                        alt="스토리블로그 이미지"
-                        className={classes.blogImg}
-                    />
-                    <div className={classes.blogTextWrapper}>
-                      <div className={classes.blogInfo}>
-                        {item.serviceCategoryName} &nbsp;·&nbsp; 공감
-                        <label className={classes.blogInfoNum}>
-                          {item.reactionCount}
-                        </label>
-                        &nbsp; ·&nbsp; 응원
-                        <label className={classes.blogInfoNum}>{item.commentCount}</label>
+        {() => (
+          <>
+            {storyStore.dummyData.cardData.map((item, index) => (
+              <a href={item.blogUrl} key={index} className={classes.blogWrapper}>
+                <img
+                  src={`${item.blogImage}`}
+                  alt="스토리블로그 이미지"
+                  className={classes.blogImg}
+                />
+                <div className={classes.blogTextWrapper}>
+                  <div className={classes.blogInfo}>
+                    {item.serviceCategoryName} &nbsp;·&nbsp; 공감
+                    <label className={classes.blogInfoNum}>
+                      {item.reactionCount}
+                    </label>
+                    &nbsp; ·&nbsp; 응원
+                    <label className={classes.blogInfoNum}>{item.commentCount}</label>
+                  </div>
+                  <div className={classes.blogTitle}>
+                    {item.entryTitle.substring(0, 14)}
+                    <br/>
+                    {item.entryTitle.substring(14, 26)}
+                  </div>
+                  <div className={classes.blogFooter}>
+                    <div>
+                      <div className={classes.blogDesc}>
+                        {item.blogTitle.substring(0, 15)}
                       </div>
-                      <div className={classes.blogTitle}>
-                        {item.entryTitle.substring(0, 14)}
-                        <br />
-                        {item.entryTitle.substring(14, 26)}
-                      </div>
-                      <div className={classes.blogFooter}>
-                        <div>
-                          <div className={classes.blogDesc}>
-                            {item.blogTitle.substring(0, 15)}
-                          </div>
-                          <div className={classes.blogAuthor}>by {item.authorName}</div>
-                        </div>
-                        <div className={classes.subscribeBtn}>구독하기</div>
-                      </div>
+                      <div className={classes.blogAuthor}>by {item.authorName}</div>
                     </div>
-                  </a>
-              ))}
-            </>
+                    <div className={classes.subscribeBtn}>구독하기</div>
+                  </div>
+                </div>
+              </a>
+            ))}
+          </>
         )}
       </Observer>
     </div>

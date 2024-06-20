@@ -38,6 +38,10 @@
   background: none;
   padding: 0.8rem;
 }
+.navLogo{
+  width: 5rem;
+  transform: translateY(0.2rem);
+}
 .pageTitle {
   /*font-size: 1.3rem;*/
   display: flex;
