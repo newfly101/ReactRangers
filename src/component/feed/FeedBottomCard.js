@@ -8,7 +8,7 @@ const FeedBottomCard = () => {
         <div className={classes.blogCardText}>최근 활동이 많은 블로그입니다. 구독해 보세요.</div>
         {FeedDummyData.map((item, index) => (
           <div key={index} className={classes.blogCard}>
-            <div className={classes.blogImageWrapper}><img className={classes.blogImage} src={item.image}/></div>
+            <div className={classes.blogImageWrapper}><img alt={'blogImg'} className={classes.blogImage} src={item.image}/></div>
             <div className={classes.blogCardNickname}>{item.nickname}</div>
             <div className={classes.blogCardFollower}>구독자 {item.followerCount}</div>
             <div className={classes.blogCardDescription}>{item.description}</div>
