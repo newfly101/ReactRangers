@@ -21,7 +21,7 @@ const TstorySkin = () => {
     <>
       <div className={classes.main}>
         <Topimage />
-        <Category handleCategoryButton={handleCategoryButton} />
+        {isAVew !== 4 && <Category handleCategoryButton={handleCategoryButton} />}
         {isAVew === 0 && <Skinpage items={items} />}
         {isAVew === 1 && <UserSkin usersSkin={usersSkin} />}
         {isAVew === 2 && <SkinPageKJH items={items} />}

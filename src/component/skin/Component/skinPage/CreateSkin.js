@@ -3,9 +3,13 @@ import React from 'react';
 const CreateSkin = () => {
     return (
         <>
-        <div>
-            스킨 제목
-        </div>
+            <div>
+                <form>
+                    <fieldset>
+                        <div></div>
+                    </fieldset>
+                </form>
+            </div>
         </>
     );
 };
