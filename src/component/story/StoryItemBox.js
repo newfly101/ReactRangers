@@ -1,14 +1,30 @@
-import React from "react";
+import React, {useEffect} from "react";
 import classes from "./StoryItemBox.module.css";
 import {Observer} from "mobx-react";
 
 const StoryItemBox = ({storyStore}) => {
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY + window.innerHeight >= document.body.scrollHeight - 50) {
+        storyStore.addItemList();
+
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, [storyStore]);
+
   return (
     <div className={classes.itemboxesContainer}>
         <Observer>
             {()=>(
                 <>
-                {storyStore.dummyData.itemData.data.list.map((item, index) => (
+                {storyStore.dummyData.itemData.map((item, index) => (
                         <div key={index}>
                             <a className={classes.itemBoxContainer} href={item.link}>
                                 <section className={classes.itemBoxWrapper}>

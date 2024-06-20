@@ -8,7 +8,7 @@ const StoryBlog = ({storyStore}) => {
       <Observer>
         {()=>(
             <>
-            {storyStore.dummyData.cardData.data.list.map((item, index) => (
+            {storyStore.dummyData.cardData.map((item, index) => (
                   <a href={item.blogUrl} key={index} className={classes.blogWrapper}>
                     <img
                         src={`${item.blogImage}`}
