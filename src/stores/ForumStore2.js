@@ -25,11 +25,14 @@ export const tabs = [
 
 export default class ForumStore2 {
 
+    randomNumber = Number(Math.floor(Math.random() * 3)+1);
+
     // observable state
     forumDummy = forumData.all;
     forumUrl = 'all';
     forumTapIndex = 0;
     forumTap = Object.assign([], tabs);
+    forumTopImg = `https://t1.daumcdn.net/tistory_admin/static/top/pc/bg_forum${this.randomNumber}.jpg`;
 
     constructor() {
         makeAutoObservable(this);
