@@ -24,11 +24,11 @@
     background: white;
     height: 20rem;
     width: 18.2rem;
-    transition: all 0.2s ease-in;
+    transition: all 0.2s ease-out;
     cursor: pointer;
 }
 .blogCard:hover{
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
 }
 .blogImageWrapper{
     border-radius: 5rem;
