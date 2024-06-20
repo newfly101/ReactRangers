@@ -22,7 +22,7 @@ const Navigation = () => {
     return (
         <Observer>
             {() => (
-                <div>
+                <>
                     {authStore.loginModal &&
                         <div className={classes.backdrop} onClick={closeLoginModal}></div>
                     }
@@ -69,7 +69,7 @@ const Navigation = () => {
                             <LoginModal isOpen={authStore.loginModal} close={closeLoginModal}/>
                         }
                     </nav>
-                </div>
+                </>
             )}
         </Observer>
     )
