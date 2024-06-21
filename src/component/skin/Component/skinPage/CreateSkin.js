@@ -14,6 +14,10 @@ const CreateSkin = () => {
                                 <input type="text" placeholder={"스킨명을 입력하세요"}/>
                             </div>
                         </div>
+                        <div>
+                            <div><label>게시글 주소</label></div>
+                            <div><input type="text" value={"https://"}/></div>
+                        </div>
                     </fieldset>
                 </form>
                 </div>
