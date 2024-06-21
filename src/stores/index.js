@@ -12,6 +12,7 @@ const stores = () => ({
     forumStore: ForumStore(),
     forum2Store: new ForumStore2(),
     StoryStore: new StoryStore(),
+    FeedStore: new FeedStore(),
 });
 
 

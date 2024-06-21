@@ -1,0 +1,40 @@
+.topTextContainer{
+    margin-top: 9rem;
+}
+.topTitle{
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+.topText{
+    font-size: 1.4rem;
+}
+
+.subscribeInfo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 56rem;
+    border-bottom: 2px solid black;
+    padding-bottom: 2.2rem ;
+}
+
+.subscribeWrapper{
+    color: #7b756b;
+    font-size: 0.9rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    user-select: none;
+}
+.subscribeNum{
+    font-size: 1.4rem;
+    margin-left: 0.3rem;
+
+}
+.subscribingNum{
+    display: flex;
+    align-items: center;
+    font-size: 0.78rem;
+    margin-left: 1rem;
+}

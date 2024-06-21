@@ -1,0 +1,30 @@
+
+.midWrapper{
+    margin: 5rem 34rem 7rem 0;
+    white-space: nowrap;
+}
+
+.midTitle{
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.midText{
+    color: #7b756b;
+    font-size: 0.8rem;
+    margin-top: 1rem;
+}
+.midButton{
+    font-size: 0.8rem;
+    margin-right: 40px;
+    border: none;
+    background: black;
+    color: white;
+    padding: 11px 33px 11px 33px;
+    border-radius: 40px;
+    margin-top: 3rem;
+    transition: all 0.2s ease-in-out;
+}
+.midButton:hover{
+   background: #ff5544;
+}

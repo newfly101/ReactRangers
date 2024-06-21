@@ -3,12 +3,18 @@
 
 
 # 👨‍👨‍👧 Team 소개
+|김재홍|조일문|황초희|
+|:-----:|:-----:|:-----:|
+|<img src="https://github.com/newfly101/ReactRangers/assets/62008619/959b13db-cfce-49d5-b3ce-d2214baf1b41" width="120px" height="120px" />|<img src="https://github.com/newfly101/ReactRangers/assets/62008619/c481e5c3-046d-4883-a550-df55e3f57c68" width="120px" height="120px" />|<img src="https://github.com/newfly101/ReactRangers/assets/62008619/aeaf57ee-7b6d-48cc-a4fd-5c39840f01b7" width="120px" height="120px" />|
+|[newfly101](https://github.com/newfly101)|[KRjasoncho](https://github.com/KRjasoncho)|[chochohee](https://github.com/chochohee)|
 
+<!--
 |김재홍|김국봉|조일문|황초희|조승환|정인학|
 |:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|
 |FS DEV|FE DEV|FS DEV|FS DEV|FS DEV|FS DEV|
 |<img src="https://github.com/newfly101/ReactRangers/assets/62008619/959b13db-cfce-49d5-b3ce-d2214baf1b41" width="120px" height="120px" />|<img src="https://github.com/newfly101/ReactRangers/assets/62008619/ade00b15-8ee5-4803-a3f2-eda6419dfd71" width="120px" height="120px" />|<img src="https://github.com/newfly101/ReactRangers/assets/62008619/c481e5c3-046d-4883-a550-df55e3f57c68" width="120px" height="120px" />|<img src="https://github.com/newfly101/ReactRangers/assets/62008619/aeaf57ee-7b6d-48cc-a4fd-5c39840f01b7" width="120px" height="120px" />|<img src="https://github.com/newfly101/ReactRangers/assets/62008619/7c229f2a-4944-419e-9c9e-435b7042ae54" width="120px" height="120px" />|<img src="https://github.com/newfly101/ReactRangers/assets/62008619/8d9842d6-6af5-40ad-9c56-a5d6153aa259" width="120px" height="120px" />|
 |[newfly101](https://github.com/newfly101)|[rose_](https://github.com/ros-e2)|[KRjasoncho](https://github.com/KRjasoncho)|[chochohee](https://github.com/chochohee)|[brandysh](https://github.com/brandysh)|[inagi94](https://github.com/inagi94)|
+-->
 
 # 목차
 ### I) 🛠기술 스택
