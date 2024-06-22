@@ -23,6 +23,13 @@
   height: 100vh;
 }
 
+.AdminFont {
+  margin-top: 35px;
+  margin-bottom: 15px;
+  font-size: 17px;
+  font-weight: normal;
+}
+
 .AdminBlock {
   display: flex;
   justify-content: center;
@@ -32,25 +39,23 @@
   border: 1px solid #e0e5ee;
 }
 
-.AdminFont {
-  margin-top: 35px;
-  margin-bottom: 15px;
-  font-size: 17px;
-  font-weight: normal;
+.AdminBlockImage {
+  width: 80px;
+  height: 80px;
+  margin: 25px;
 }
 
-.AdminBlockEmail {
-  padding-top: 5px;
+.AdminBlockImage img {
+  width: 80px;
+  border: 1px solid #e0e5ee;
 }
 
 .AdminBlockMenu {
   width: 650px;
 }
 
-.AdminBlockImage {
-  width: 80px;
-  height: 80px;
-  margin: 25px;
+.AdminBlockEmail {
+  padding-top: 5px;
 }
 
 .AdminBlockButton {

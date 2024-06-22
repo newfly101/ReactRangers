@@ -9,7 +9,7 @@ const MyProfile = () => {
   return (
     <>
       <div className={classes.profile}>
-        <div className={classes.profileImage}>
+        <div className={classes.profileImageBox}>
           <a href="/admin">
             <img
               src="https://img1.daumcdn.net/thumb/C100x100/?scode=mtistory2&fname=https%3A%2F%2Ft1.daumcdn.net%2Ftistory_admin%2Fstatic%2Fmanage%2Fimages%2Fr3%2Fdefault_S.png"

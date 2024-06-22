@@ -3,7 +3,7 @@ import classes from "./Admin.module.css";
 import AdminFilter from "./AdminFilter";
 import { Link } from "react-router-dom";
 import MyProfile from "./MyProfile";
-import {PathUrl} from "../../stores/CommonStore";
+import { PathUrl } from "../../stores/CommonStore";
 
 const Admin = () => {
   const [filteredReceive, setFilteredReceive] = useState();
@@ -32,7 +32,7 @@ const Admin = () => {
               </a>
             </div>
             <div className={classes.AdminBlockMenu}>
-              <div className={classes.AdminBlockName}>새벽의 이것저것</div>
+              <label>새벽의 이것저것</label>
               <div className={classes.AdminBlockEmail}>game.tistory.com</div>
             </div>
             <div>

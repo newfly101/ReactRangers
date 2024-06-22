@@ -4,21 +4,19 @@
   border: 1px solid #e0e5ee;
 }
 
-.profileImage {
+.profileImageBox {
   padding: 30px 0 25px;
-  border-radius: 0.5rem;
-}
-
-.profileImage img {
-  width: 100px;
-  height: 100px;
   display: block;
   margin-left: auto;
   margin-right: auto;
-  padding-bottom: 20px;
+}
+
+.profileImageBox img {
+  border-radius: 100%;
 }
 
 .user {
+  padding-top: 20px;
   font-weight: bold;
 }
 
