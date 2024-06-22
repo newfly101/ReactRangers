@@ -4,9 +4,8 @@ import {Link} from "react-router-dom";
 import {PathUrl} from "../../stores/CommonStore";
 
 const ConvertForm = () => {
-    const [checkedMethod, setCheckedMethod] = useState(null);
+
     return (
-        <>
             <div className={classes.loginBox}>
                 <div>티스토리에 로그인 하세요.</div>
                 <form>
@@ -33,36 +32,6 @@ const ConvertForm = () => {
                     </span>
                 </div>
             </div>
-
-            {/*  <span className={classes.mainATags}>*/}
-            {/*  <Link*/}
-            {/*      className={classes.mainLink}*/}
-            {/*      to="/signUp"*/}
-      {/*  >*/}
-      {/*    회원가입 / {" "}*/}
-      {/*  </Link>*/}
-      {/*    <div className={classes.linkTag}>*/}
-      {/*      <Link*/}
-      {/*          className={classes.mainLink}*/}
-      {/*          to="/AccountRecovery"*/}
-      {/*          onMouseOver={() => setCheckedMethod(true)}*/}
-      {/*          state={{checkedMethod}}*/}
-      {/*      >*/}
-      {/*    계정 /{" "}*/}
-      {/*  </Link>*/}
-      {/*  <Link*/}
-      {/*      className={classes.mainLink}*/}
-      {/*      to="/AccountRecovery"*/}
-      {/*      onMouseOver={() => setCheckedMethod(false)}*/}
-      {/*      state={{checkedMethod}}*/}
-      {/*  >*/}
-      {/*    비밀번호 찾기*/}
-      {/*  </Link>*/}
-      {/*    </div>*/}
-
-      {/*</span>*/}
-      {/*      </div>*/}
-</>
     );
 };
 
