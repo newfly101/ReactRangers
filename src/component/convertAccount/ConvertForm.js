@@ -14,12 +14,6 @@ const ConvertForm = () => {
         console.log(authStore.login.email);
         console.log(authStore.login.password);
     }
-    const onChangeLoginEmail = (email) => {
-        authStore.login.email = email;
-    }
-    const onChangeLoginPassword = (password) => {
-        authStore.login.password = password;
-    }
 
     return (
         <Observer>
