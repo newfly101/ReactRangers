@@ -19,6 +19,17 @@ const ConvertForm = () => {
         } else {
             console.error("등록된 계정이 없습니다.");
         }
+        checkEmailValidation(authStore.login.email, authStore.login.password);
+    }
+
+    const checkEmailValidation = (email, password) => {
+        if (email.trim() === '') {
+            authStore.validLoginForm = false;
+        }
+        if (password.trim() === '') {
+            authStore.validLoginForm = false;
+        }
+        console.log("login 가능 ? >> ",authStore.validLoginForm);
     }
 
     return (

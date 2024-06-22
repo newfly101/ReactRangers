@@ -62,6 +62,7 @@ const AuthStore = () => {
         loginToken : '',
         loginUser : Object.assign({}, EmptyUser),
         loginModal : ModalState.isModalOpen,
+        validLoginForm : false,
 
         // action
         checkLogin() {
