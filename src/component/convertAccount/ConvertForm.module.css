@@ -41,6 +41,12 @@
   border-radius: 0.25rem;
 }
 
+.loginBox {
+  width: 320px;
+  align-items: center;
+  justify-content: center;
+}
+
 .loginBtn {
   color: white;
   font-size: 1rem;
@@ -52,6 +58,24 @@
 }
 
 .mainLink {
+  text-decoration-line: none;
+  color: inherit;
+}
+
+.linkTag {
+  text-decoration-line: none;
+  color: inherit;
+  align-items: flex-end;
+}
+.linkBox {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 5px;
+}
+.loginLink a {
   text-decoration-line: none;
   color: inherit;
 }
