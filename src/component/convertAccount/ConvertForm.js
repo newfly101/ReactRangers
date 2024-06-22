@@ -32,7 +32,7 @@ const ConvertForm = () => {
                         type="email"
                         placeholder="이메일"
                         value={authStore.login.email}
-                        onChange={(event) => onChangeLoginEmail(event.target.value)}
+                        onChange={(event) => authStore.changeLoginEmail(event.target.value)}
                     /></div>
                     <div>
                         <input
@@ -40,7 +40,7 @@ const ConvertForm = () => {
                             type="password"
                             placeholder="비밀번호"
                             value={authStore.login.password}
-                            onChange={(event) => onChangeLoginPassword(event.target.value)}
+                            onChange={(event) => authStore.changeLoginPassword(event.target.value)}
                         />
                     </div>
                     <button type="submit">

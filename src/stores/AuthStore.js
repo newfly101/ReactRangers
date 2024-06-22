@@ -64,6 +64,9 @@ const AuthStore = () => {
         changeLoginId(id) {
             this.login.id = id;
         },
+        changeLoginEmail(email) {
+            this.login.email = email;
+        },
         changeLoginPassword(pwd) {
             this.login.password = pwd;
         },
