@@ -13,6 +13,7 @@ export const ModalState = {
 
 const EmptyLogin = {
     id: '',
+    email: '',
     password: ''
 }
 
