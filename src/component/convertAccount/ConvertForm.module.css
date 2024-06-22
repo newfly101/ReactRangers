@@ -11,26 +11,30 @@
   margin-bottom: 2rem;
 }
 
-.emailInput[type="email"] {
+.loginInput[type="email"] {
   width: 19.5rem;
   height: 3rem;
   border: 1px solid rgb(226, 226, 226);
   border-radius: 0.2rem;
   border-bottom: none;
+  padding-left: 20px;
+  margin-left: 20px;
 }
 
-.passwordInput[type="password"] {
+.loginInput[type="password"] {
   width: 19.5rem;
   height: 3rem;
   border: 1px solid rgb(226, 226, 226);
   border-radius: 0.2rem;
+  padding-left: 20px;
+  margin-left: 20px;
 }
 
-.passwordInput::placeholder,
-.emailInput::placeholder {
+.loginInput::placeholder {
   font-size: 0.9rem;
   padding-left: 0.6rem;
 }
+
 .convertBtn {
   display: flex;
   justify-content: center;

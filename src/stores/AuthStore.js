@@ -48,6 +48,12 @@ const EmptyUser = {
 //     }
 // });
 
+export const AdminUser = {
+    id: "ADMIN",
+    email: "admin@naver.com",
+    password: "1234"
+}
+
 const AuthStore = () => {
     return makeAutoObservable({
         // state
