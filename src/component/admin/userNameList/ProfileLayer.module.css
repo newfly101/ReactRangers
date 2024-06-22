@@ -31,7 +31,7 @@
   font-weight: normal;
 }
 
-.AdminBlock7 {
+.AdminBlock1 {
   background: #fff;
   padding: 30px 30px;
   border: 1px solid #e0e5ee;
@@ -39,7 +39,20 @@
   border-bottom: 0;
 }
 
-.AdminBlock8 {
+.AdminBlock2 {
+  background: #fff;
+  padding: 30px 30px;
+  border: 1px solid #e0e5ee;
+  font-size: 13px;
+  border-bottom: 0;
+}
+
+.profileImage {
+  width: 40px;
+  margin-right: 4px;
+}
+
+.AdminBlock3 {
   background: #fafbfc;
   border: 1px solid #e0e5ee;
   padding: 10px 35px;
@@ -63,4 +76,43 @@
   font-size: 14px;
   padding: 10px 35px;
   border: 1px solid #e0e5ee;
+}
+
+.siteRow {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.addSiteRow {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.input {
+  width: 48%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.select {
+  width: 48%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.button1 {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  color: #959595;
+  background-color: #fafbfc;
+  border: 1px solid #e0e5ee;
+  cursor: pointer;
+  margin-bottom: 10px;
 }
