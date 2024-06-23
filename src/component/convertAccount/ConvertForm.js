@@ -12,6 +12,8 @@ const ConvertForm = () => {
         event.preventDefault();
         if (AdminUser.email === authStore.login.email) {
             if (AdminUser.password === authStore.login.password) {
+                authStore.changeLoginId();
+                window.sessionStorage.setItem("user", JSON.stringify(authStore.login.id));
                 console.log("로그인 되었습니다.");
             } else {
                 console.error("비밀번호가 틀렸습니다.");

@@ -68,8 +68,8 @@ const AuthStore = () => {
         checkLogin() {
             console.log('Check Login');
         },
-        changeLoginId(id) {
-            this.login.id = id;
+        changeLoginId() {
+            this.login.id = this.login.email.split("@")[0];
         },
         changeLoginEmail(email) {
             this.login.email = email;
