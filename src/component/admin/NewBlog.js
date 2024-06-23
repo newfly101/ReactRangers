@@ -23,8 +23,8 @@ const NewBlog = () => {
     return Object.keys(newErrors).length === 0;
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
+  const handleSubmit = (event) => {
+    event.preventDefault();
     if (validateForm()) {
       console.log({ blogName, blogAddress, blogNickname });
     }
@@ -43,7 +43,7 @@ const NewBlog = () => {
               type="text"
               id="blogName"
               value={blogName}
-              onChange={(e) => setBlogName(e.target.value)}
+              onChange={(event) => setBlogName(event.target.value)}
             />
             {errors.blogName && (
               <p className={classes.error}>{errors.blogName}</p>
@@ -56,7 +56,7 @@ const NewBlog = () => {
                 type="text"
                 id="blogAddress"
                 value={blogAddress}
-                onChange={(e) => setBlogAddress(e.target.value)}
+                onChange={(event) => setBlogAddress(event.target.value)}
               />
               <span>.tistory.com</span>
             </div>
@@ -70,7 +70,7 @@ const NewBlog = () => {
               type="text"
               id="blogNickname"
               value={blogNickname}
-              onChange={(e) => setBlogNickname(e.target.value)}
+              onChange={(event) => setBlogNickname(event.target.value)}
             />
             {errors.blogNickname && (
               <p className={classes.error}>{errors.blogNickname}</p>

@@ -1,7 +1,7 @@
 import React from "react";
 
 const AdminFilter = (props) => {
-  const receiveChangeHandler = (event) => {
+  const filterChangeHandler = (event) => {
     props.onChangeFilter(event.target.value);
   };
 
@@ -9,7 +9,7 @@ const AdminFilter = (props) => {
     <>
       <div>
         <label>서비스 관련 소식 및 마케팅 메일을</label>
-        <select value={props.selected} onChange={receiveChangeHandler}>
+        <select value={props.selected} onChange={filterChangeHandler}>
           <option value="수신합니다.">수신합니다.</option>
           <option value="수신하지 않습니다.">수신하지 않습니다.</option>
         </select>
