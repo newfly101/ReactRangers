@@ -1,5 +1,4 @@
 .wrapTit {
-  margin-top: 20px;
   text-align: left;
   margin-top: -135px;
 }
@@ -67,8 +66,7 @@
   justify-content: space-between;
   width: 95%;
   max-width: 85vw;
-  margin: 0 auto;
   height: auto;
-  padding: 90px 0px;
+  padding: 90px 0;
   cursor: pointer;
 }
