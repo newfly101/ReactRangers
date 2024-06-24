@@ -48,7 +48,7 @@ const Navigation = () => {
                 {commonStore.navigationTaps.map((item) => (
                   <div key={item.key} className={classes.pageLinkBox} onClick={commonStore.onClickScrollTop}>
                     {authStore.loginState === State.NotAuthenticated && item.key === PathUrl.FEED ?
-                        <span>{item.label}</span>
+                        <span onClick={openLoginModal}>{item.label}</span>
                         :
                         <Link to={item.key}>{item.label}</Link>
                     }
