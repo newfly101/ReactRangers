@@ -66,6 +66,7 @@ const AuthStore = () => {
                     this.changeLoginId();
                     window.localStorage.setItem("user", JSON.stringify(this.login.id));
                     this.changeLoginState(State.Authenticated);
+                    window.localStorage.setItem("loginState", this.loginState);
                     console.log("로그인 되었습니다.");
                 } else {
                     console.error("비밀번호가 틀렸습니다.");
@@ -76,6 +77,12 @@ const AuthStore = () => {
         },
         changeLoginState(value) {
             this.loginState = value;
+        },
+        handleLogout() {
+            this.changeLoginState(State.NotAuthenticated);
+            window.localStorage.removeItem("user");
+            window.localStorage.setItem("loginState", this.loginState);
+            console.log("로그아웃 되었습니다.");
         },
         restoreState() {
             const storedLoginId = window.localStorage.getItem("user");
