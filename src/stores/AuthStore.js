@@ -79,6 +79,21 @@ const AuthStore = () => {
         },
         changeLoginModalState(state) {
             this.loginModal = state;
+        },
+        handleOnLoginSubmit(event) {
+            event.preventDefault();
+            if (AdminUser.email === this.login.email) {
+                if (AdminUser.password === this.login.password) {
+                    this.changeLoginId();
+                    window.sessionStorage.setItem("user", JSON.stringify(this.login.id));
+                    console.log("로그인 되었습니다.");
+                } else {
+                    console.error("비밀번호가 틀렸습니다.");
+                }
+            } else {
+                console.error("등록된 계정이 없습니다.");
+            }
+            // checkEmailValidation(this.login.email, this.login.password);
         }
     });
 };

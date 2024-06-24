@@ -8,38 +8,22 @@ import AuthStore, {AdminUser} from "../../stores/AuthStore";
 const ConvertForm = () => {
     const authStore = useLocalObservable(AuthStore);
 
-    const handleOnLoginSubmit = (event) => {
-        event.preventDefault();
-        if (AdminUser.email === authStore.login.email) {
-            if (AdminUser.password === authStore.login.password) {
-                authStore.changeLoginId();
-                window.sessionStorage.setItem("user", JSON.stringify(authStore.login.id));
-                console.log("로그인 되었습니다.");
-            } else {
-                console.error("비밀번호가 틀렸습니다.");
-            }
-        } else {
-            console.error("등록된 계정이 없습니다.");
-        }
-        checkEmailValidation(authStore.login.email, authStore.login.password);
-    }
-
-    const checkEmailValidation = (email, password) => {
-        if (email.trim() === '') {
-            authStore.validLoginForm = false;
-        }
-        if (password.trim() === '') {
-            authStore.validLoginForm = false;
-        }
-        console.log("login 가능 ? >> ",authStore.validLoginForm);
-    }
+    // const checkEmailValidation = (email, password) => {
+    //     if (email.trim() === '') {
+    //         authStore.validLoginForm = false;
+    //     }
+    //     if (password.trim() === '') {
+    //         authStore.validLoginForm = false;
+    //     }
+    //     console.log("login 가능 ? >> ",authStore.validLoginForm);
+    // }
 
     return (
         <Observer>
             {() => (
                 <div className={classes.loginBox}>
                     <h2>티스토리에 로그인 하세요.</h2>
-                    <form onSubmit={handleOnLoginSubmit}>
+                    <form onSubmit={(event) => authStore.handleOnLoginSubmit(event)}>
                         <div>
                             <input
                                 className={classes.loginInput}
