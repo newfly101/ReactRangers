@@ -68,7 +68,12 @@ const Navigation = () => {
                   <div key={item.key}
                        className={useScroll > 250 ? classes.pageLinkBox : classes.pageLinkBoxBlank}
                        onClick={commonStore.onClickScrollTop}>
-                    <Link to={item.key}>{item.label}</Link>
+                    {authStore.loginState === State.NotAuthenticated && item.key === PathUrl.FEED ?
+                        <span onClick={openLoginModal}>{item.label}</span>
+                        :
+                        <Link to={item.key}>{item.label}</Link>
+                    }
+                    {/*<Link to={item.key}>{item.label}</Link>*/}
                   </div>
                 ))}
               </div>
