@@ -3,91 +3,102 @@ import classes from "./Navigation.module.css";
 import {Link} from "react-router-dom";
 import LoginModal from "./login/LoginModal";
 import {Observer, useLocalObservable} from "mobx-react";
-import AuthStore from "../stores/AuthStore";
+import {State, useAuthStore} from "../stores/AuthStore";
 import CommonStore, {PathUrl} from "../stores/CommonStore";
 
 const Navigation = () => {
-  const authStore = useLocalObservable(AuthStore);
-  const commonStore = useLocalObservable(CommonStore);
-  const [useScroll, setUseScroll] = React.useState(0);
+    const authStore = useAuthStore();
+    const commonStore = useLocalObservable(CommonStore);
+    const [useScroll, setUseScroll] = React.useState(0);
 
-  const openLoginModal = () => {
-    authStore.changeLoginModalState(true);
-    authStore.checkLogin();
-  };
-  const closeLoginModal = () => {
-    authStore.changeLoginModalState(false);
-  };
-  const getScrolled = () => {
-    setUseScroll(window.scrollY);
-  }
-
-  useEffect(() => {
-    window.addEventListener("scroll", getScrolled);
-    return () => {
-      window.removeEventListener("scroll", getScrolled);
+    const openLoginModal = () => {
+        authStore.changeLoginModalState(true);
+        authStore.checkLogin();
     };
-  }, [useScroll]);
-  /*   스킨 페이지, 포럼 페이지 인 경우 css 조정 해야 되니 DO NOT touch source - 김재홍   */
+    const closeLoginModal = () => {
+        authStore.changeLoginModalState(false);
+    };
+    const getScrolled = () => {
+        setUseScroll(window.scrollY);
+    }
 
-  return (
-    <Observer>
-      {() => (
-        <>
-          {authStore.loginModal &&
-            <div className={classes.backdrop} onClick={closeLoginModal}></div>
-          }
-          <nav className={useScroll > 250 ? classes.navBar : classes.navBarBlank}>
-            {commonStore.locationPath.current !== PathUrl.FORUM && commonStore.locationPath.current !== PathUrl.SKIN ? (
-              <div className={classes.navBarBox}>
-                <div className={classes.pageTitle} onClick={() => commonStore.onClickScrollTop()}>
-                  <Link to={PathUrl.MAIN}>
-                    <img src={"/tistoryLogo.webp"} alt="TistoryLogo" className={classes.navLogo}/>
-                  </Link>
-                </div>
-                {commonStore.navigationTaps.map((item) => (
-                  <div key={item.key} className={classes.pageLinkBox} onClick={commonStore.onClickScrollTop}>
-                    <Link to={item.key}>{item.label}</Link>
-                  </div>
-                ))}
-              </div>
-            ) : (
-              <div className={classes.navBarBox}>
-                <div className={useScroll > 250 ? classes.pageTitle : classes.pageTitleBlank}
-                     onClick={commonStore.onClickScrollTop}>
-                  <Link to={PathUrl.MAIN}>
-                    <img src={"/tistoryLogo.webp"} alt="TistoryLogo"/>
-                  </Link>
-                </div>
-                {commonStore.navigationTaps.map((item) => (
-                  <div key={item.key}
-                       className={useScroll > 250 ? classes.pageLinkBox : classes.pageLinkBoxBlank}
-                       onClick={commonStore.onClickScrollTop}>
-                    <Link to={item.key}>{item.label}</Link>
-                  </div>
-                ))}
-              </div>
-            )}
-            {commonStore.locationPath.current !== PathUrl.ADMIN ?
-              <div
-                className={`${classes.navBarLogin} ${!(useScroll > 250) && (commonStore.locationPath.current === PathUrl.FORUM || commonStore.locationPath.current === PathUrl.SKIN) ? classes.navBarLoginFlag : ""}`}>
-                <button onClick={openLoginModal}>시작하기</button>
-              </div>
-              :
-              <div
-                className={`${classes.navBarLogin} ${!(useScroll > 250) && (commonStore.locationPath.current === PathUrl.FORUM || commonStore.locationPath.current === PathUrl.SKIN) ? classes.navBarLoginFlag : ""}`}>
-                <img className={classes.loginedImg}
-                     src="https://www.webfx.com/wp-content/uploads/2022/08/github-logo.png" alt="logined"/>
-              </div>
-            }
+    useEffect(() => {
+        window.addEventListener("scroll", getScrolled);
+        return () => {
+            window.removeEventListener("scroll", getScrolled);
+        };
+    }, [useScroll]);
+
+    return (
+        <Observer>
+            {() => (
+                <>
             {authStore.loginModal &&
-              <LoginModal isOpen={authStore.loginModal} close={closeLoginModal}/>
+              <div className={classes.backdrop} onClick={closeLoginModal}></div>
             }
-          </nav>
-        </>
-      )}
-    </Observer>
-  )
+              <nav className={useScroll > 250 ? classes.navBar : classes.navBarBlank}>
+                  {commonStore.locationPath.current !== PathUrl.FORUM && commonStore.locationPath.current !== PathUrl.SKIN ? (
+                      <div className={classes.navBarBox}>
+                          <div className={classes.pageTitle} onClick={() => commonStore.onClickScrollTop()}>
+                              <Link to={PathUrl.MAIN}>
+                                  <img src={"/tistoryLogo.webp"} alt="TistoryLogo" className={classes.navLogo}/>
+                              </Link>
+                          </div>
+                          {commonStore.navigationTaps.map((item) => (
+                              <div key={item.key} className={classes.pageLinkBox}
+                                   onClick={commonStore.onClickScrollTop}>
+                                  {authStore.loginState === State.NotAuthenticated ? (item.key === PathUrl.FEED ?
+                                          <span onClick={openLoginModal}>{item.label}</span>
+                                          :
+                                          <Link to={item.key}>{item.label}</Link>)
+                                      :
+                                      <Link to={item.key}>{item.label}</Link>
+                                  }
+                              </div>
+                          ))}
+                      </div>
+                  ) : (
+                      <div className={classes.navBarBox}>
+                          <div className={useScroll > 250 ? classes.pageTitle : classes.pageTitleBlank}
+                               onClick={commonStore.onClickScrollTop}>
+                              <Link to={PathUrl.MAIN}>
+                                  <img src={"/tistoryLogo.webp"} alt="TistoryLogo"/>
+                              </Link>
+                          </div>
+                          {commonStore.navigationTaps.map((item) => (
+                              <div key={item.key}
+                                   className={useScroll > 250 ? classes.pageLinkBox : classes.pageLinkBoxBlank}
+                                   onClick={commonStore.onClickScrollTop}>
+                                  {authStore.loginState === State.NotAuthenticated ? (item.key === PathUrl.FEED ?
+                                          <span onClick={openLoginModal}>{item.label}</span>
+                                          :
+                                          <Link to={item.key}>{item.label}</Link>)
+                                      :
+                                      <Link to={item.key}>{item.label}</Link>
+                                  }
+                              </div>
+                          ))}
+                      </div>
+                  )}
+                  {authStore.loginState === State.NotAuthenticated ?
+                      <div
+                          className={classes.navBarLogin}>
+                          <button onClick={openLoginModal}>시작하기</button>
+                      </div>
+                      :
+                      <div
+                          className={classes.navBarLogin}>
+                          <button onClick={() => authStore.handleLogout()}>로그아웃</button>
+                      </div>
+                  }
+                  {authStore.loginModal &&
+                      <LoginModal isOpen={authStore.loginModal} close={closeLoginModal}/>
+                  }
+              </nav>
+                </>
+            )}
+        </Observer>
+    )
 };
 
 export default Navigation;

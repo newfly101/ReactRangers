@@ -1,6 +1,6 @@
 import React from "react";
-import classes from ".//Main.module.css";
-import mainImage from ".//Main.jpg";
+import classes from "./Main.module.css";
+import mainImage from "./Main.jpg";
 
 const Main = () => {
   return (

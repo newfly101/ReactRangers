@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import { ReactComponent as LinkIcon } from ".//link.svg";
-import classes from ".//SkinPage.module.css";
+import { ReactComponent as LinkIcon } from "./link.svg";
+import classes from "./SkinPage.module.css";
 
 const SkinPage = (props) => {
   const { items } = props;
