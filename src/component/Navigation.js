@@ -3,7 +3,7 @@ import classes from "./Navigation.module.css";
 import {Link} from "react-router-dom";
 import LoginModal from "./login/LoginModal";
 import {Observer, useLocalObservable} from "mobx-react";
-import AuthStore from "../stores/AuthStore";
+import AuthStore, {State} from "../stores/AuthStore";
 import CommonStore, {PathUrl} from "../stores/CommonStore";
 
 const Navigation = () => {
@@ -47,7 +47,12 @@ const Navigation = () => {
                 </div>
                 {commonStore.navigationTaps.map((item) => (
                   <div key={item.key} className={classes.pageLinkBox} onClick={commonStore.onClickScrollTop}>
-                    <Link to={item.key}>{item.label}</Link>
+                    {authStore.loginState === State.NotAuthenticated && item.key === PathUrl.FEED ?
+                        <span>{item.label}</span>
+                        :
+                        <Link to={item.key}>{item.label}</Link>
+                    }
+                    {/*<Link to={item.key}>{item.label}</Link>*/}
                   </div>
                 ))}
               </div>

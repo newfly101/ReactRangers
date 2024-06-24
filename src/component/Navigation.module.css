@@ -143,6 +143,14 @@
   color: black;
   text-decoration-line: none;
 }
+.pageLinkBox span {
+  color: black;
+  text-decoration-line: none;
+  cursor: pointer;
+}
+.pageLinkBox span:hover {
+  text-decoration-line: underline;
+}
 .pageLinkBox a:hover {
   text-decoration-line: underline;
 }
