@@ -21,9 +21,6 @@ const Navigation = () => {
     const getScrolled = () => {
         setUseScroll(window.scrollY);
     }
-    const logoutPage = () => {
-        authStore.handleLogout();
-    }
 
     useEffect(() => {
         window.addEventListener("scroll", getScrolled);
@@ -91,7 +88,7 @@ const Navigation = () => {
                       :
                       <div
                           className={classes.navBarLogin}>
-                          <button onClick={logoutPage}>로그아웃</button>
+                          <button onClick={() => authStore.handleLogout()}>로그아웃</button>
                       </div>
                   }
                   {authStore.loginModal &&

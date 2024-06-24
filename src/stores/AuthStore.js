@@ -1,6 +1,7 @@
 import {makeAutoObservable} from 'mobx';
 import {createContext, useContext} from "react";
 import {useLocalObservable} from "mobx-react";
+import {PathUrl} from "./CommonStore";
 
 export const State = {
     Authenticated: 'Authenticated',
@@ -74,6 +75,7 @@ const AuthStore = () => {
             } else {
                 console.error("등록된 계정이 없습니다.");
             }
+            window.location.href = PathUrl.MAIN;
         },
         changeLoginState(value) {
             this.loginState = value;
@@ -83,6 +85,7 @@ const AuthStore = () => {
             window.localStorage.removeItem("user");
             window.localStorage.setItem("loginState", this.loginState);
             console.log("로그아웃 되었습니다.");
+            window.location.href = PathUrl.MAIN;
         },
         restoreState() {
             const storedLoginId = window.localStorage.getItem("user");
