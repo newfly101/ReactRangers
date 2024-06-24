@@ -5,8 +5,8 @@ import classes from "./SkinPage.module.css";
 const SkinPage = (props) => {
   const { items } = props;
 
-  const initiaImageClick = items.map(() => false);
-  const [imageClick, setImageClick] = useState(initiaImageClick);
+  const initImageClick = items.map(() => false);
+  const [imageClick, setImageClick] = useState(initImageClick);
 
   const clickLeftArrow = (index) => {
     const updatedImageClicks = [...imageClick];

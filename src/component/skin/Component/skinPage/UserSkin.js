@@ -5,7 +5,7 @@ import { ReactComponent as LinkIcon } from "./link.svg";
 const UserSkin = (props) => {
   const { usersSkin } = props;
 
-  const [isHoverd, setIsHovered] = useState(null);
+  const [isHovered, setIsHovered] = useState(null);
 
   const handleMouseEnter = (index) => {
     setIsHovered(index);
@@ -29,7 +29,7 @@ const UserSkin = (props) => {
                     onMouseLeave={handleMouseLeave}
                   >
                     <img src={user.image} alt={user.index} />
-                    {isHoverd === index && (
+                    {isHovered === index && (
                       <div className={Classes.hoverCard}>
                         <div className={Classes.hoverProfile}>
                           <img src={user.profile} alt={user.index} />
