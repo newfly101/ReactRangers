@@ -5,20 +5,12 @@ import ProfileLayerFilter from "./ProfileLayerFilter";
 
 const ProfileLayer = () => {
   const [filteredReceive, setFilteredReceive] = useState("공개하지 않습니다.");
-  const [sites, setSites] = useState([
-    { name: "새벽감성개발자", url: "game@naver.com" },
-  ]);
+  const [sites, setSites] = useState([]);
   const [newSite, setNewSite] = useState({ name: "tistory", url: "http://" });
+  const [showNewSiteInput, setShowNewSiteInput] = useState(false);
 
   const changeFilterHandler = (selectedValue) => {
     setFilteredReceive(selectedValue);
-  };
-
-  const handleAddSite = () => {
-    if (newSite.name && newSite.url) {
-      setSites([...sites, newSite]);
-      setNewSite({ name: "tistory", url: "http://" });
-    }
   };
 
   const handleInputChange = (event, index) => {
@@ -37,6 +29,14 @@ const ProfileLayer = () => {
   const handleDeleteSite = (index) => {
     const updatedSites = sites.filter((_, i) => i !== index);
     setSites(updatedSites);
+  };
+
+  const handleSaveChanges = () => {
+    if (showNewSiteInput && newSite.name && newSite.url) {
+      setSites([...sites, newSite]);
+      setNewSite({ name: "tistory", url: "http://" });
+      setShowNewSiteInput(false);
+    }
   };
 
   return (
@@ -59,6 +59,15 @@ const ProfileLayer = () => {
         <div className={classes.adminBlock2}>
           <label>표시하는 사이트</label>
           <div>
+            <div className={classes.siteRow}>
+              <img
+                src="https://img1.daumcdn.net/thumb/C100x100/?scode=mtistory2&fname=https%3A%2F%2Ft1.daumcdn.net%2Ftistory_admin%2Fstatic%2Fmanage%2Fimages%2Fr3%2Fdefault_S.png"
+                alt="프로필이미지"
+                className={classes.profileImage}
+              />
+              <span className={classes.myNeme}>새벽감성개발자 님의 블로그</span>
+              <span className={classes.myUrl}>game@naver.com</span>
+            </div>
             {sites.map((site, index) => (
               <div key={index} className={classes.siteRow}>
                 <img
@@ -88,31 +97,43 @@ const ProfileLayer = () => {
                 </button>
               </div>
             ))}
-            <div className={classes.newSiteRow}>
-              <input
-                type="text"
-                name="name"
-                value={newSite.name}
-                onChange={handleNewSiteChange}
-                placeholder="사이트 이름"
-                className={classes.input}
-              />
-              <input
-                type="text"
-                name="url"
-                value={newSite.url}
-                onChange={handleNewSiteChange}
-                placeholder="사이트 URL"
-                className={classes.input}
-              />
-            </div>
-            <button onClick={handleAddSite} className={classes.addButton}>
+
+            {showNewSiteInput && (
+              <div className={classes.newSiteRow}>
+                <select
+                  name="name"
+                  value={newSite.name}
+                  onChange={handleNewSiteChange}
+                  className={classes.input}
+                >
+                  <option value="tistory">tistory</option>
+                  <option value="kakaostory">kakaostory</option>
+                  <option value="instagram">instagram</option>
+                  <option value="facebook">facebook</option>
+                  <option value="youtube">youtube</option>
+                </select>
+                <input
+                  type="text"
+                  name="url"
+                  value={newSite.url}
+                  onChange={handleNewSiteChange}
+                  placeholder="사이트 URL"
+                  className={classes.input}
+                />
+              </div>
+            )}
+            <button
+              onClick={() => setShowNewSiteInput(true)}
+              className={classes.addButton}
+            >
               다른사이트 추가하기
             </button>
           </div>
         </div>
         <div className={classes.adminBlock3}>
-          <button className={classes.saveButton}>변경사항 저장</button>
+          <button onClick={handleSaveChanges} className={classes.saveButton}>
+            변경사항 저장
+          </button>
         </div>
       </div>
     </div>

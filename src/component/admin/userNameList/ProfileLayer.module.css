@@ -52,6 +52,30 @@
   margin-right: 4px;
 }
 
+.myNeme {
+  width: 250px;
+  height: 38px;
+  padding: 0px 13px;
+  border: 1px solid #e0e6ec;
+  font-size: 16px;
+  line-height: 38px;
+  color: #9b9fb3;
+  background: #ebf0f5;
+}
+
+.myUrl {
+  width: 250px;
+  height: 38px;
+  padding: 0px 13px;
+  border: 1px solid #e0e6ec;
+  font-size: 16px;
+  line-height: 38px;
+  color: #9b9fb3;
+  background: #ebf0f5;
+  width: 542px;
+  margin-left: 4px;
+}
+
 .siteRow,
 .newSiteRow {
   display: flex;
@@ -76,6 +100,8 @@
 }
 
 .addButton {
+  display: flex;
+  justify-content: start;
   width: 100%;
   padding: 10px;
   font-size: 16px;
