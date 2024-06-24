@@ -1,3 +1,31 @@
+export const adminUserDummyData = {
+    "data": {
+        "user": {
+            "id": 6345688,
+            "accountType": "kakao",
+            "loginId": "hibeeant@naver.com",
+            "name": "새벽감성개발자",
+            "level": 1,
+            "defaultBlogId": 6553882,
+            "defaultBlogUrl": "https://developer-dawn-game.tistory.com",
+            "emailAccepted": true,
+            "blogCreateCount": 2,
+            "profileImageUrl": "https://t1.daumcdn.net/tistory_admin/blog/admin/profile_default_06.png",
+            "defaultProfileImageUrl": "https://t1.daumcdn.net/tistory_admin/blog/admin/profile_default_06.png",
+            "description": "",
+            "imageCache": true,
+            "joined": null
+        },
+        "userActionLimitation": {
+            "activeBlogLimit": 5,
+            "createBlogLimit": 10,
+            "dailyOpenPublishLimit": 15,
+            "dailyWriteLimit": 50,
+            "level": "BEGINNER"
+        }
+    },
+    "code": "OK"
+}
 export const adminBlogDummyData = {
     "status": 200,
     "desc": "OK",
