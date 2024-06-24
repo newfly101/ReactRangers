@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import classes from "./ProfileLayer.module.css";
 import MyProfile from "../MyProfile";
 import ProfileLayerFilter from "./ProfileLayerFilter";
+import deleteIcon from "../assets/deleteIcon.svg";
 
 const ProfileLayer = () => {
   const [filteredReceive, setFilteredReceive] = useState("공개하지 않습니다.");
@@ -89,11 +90,12 @@ const ProfileLayer = () => {
                   onChange={(event) => handleInputChange(event, index)}
                   className={classes.input}
                 />
-                <button
-                  onClick={() => handleDeleteSite(index)}
-                  className={classes.deleteButton}
-                >
-                  삭제
+                <button onClick={() => handleDeleteSite(index)}>
+                  <img
+                    className={classes.deleteButton}
+                    src={deleteIcon}
+                    alt="deleteIcon"
+                  />
                 </button>
               </div>
             ))}

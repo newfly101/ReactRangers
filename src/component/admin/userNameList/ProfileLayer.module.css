@@ -99,6 +99,14 @@
   border-radius: 4px;
 }
 
+.deleteButton {
+  display: flex;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  background-color: #fff;
+}
+
 .addButton {
   display: flex;
   justify-content: start;
