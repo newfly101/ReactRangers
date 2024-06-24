@@ -3,6 +3,7 @@ import AuthStore from "./AuthStore";
 import ForumStore2 from "./ForumStore2";
 import StoryStore from "./StoryStore";
 import CommonStore from "./CommonStore";
+import FeedStore from "./FeedStore";
 
 
 const stores = () => ({
