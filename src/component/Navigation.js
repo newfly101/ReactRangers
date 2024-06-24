@@ -3,11 +3,11 @@ import classes from "./Navigation.module.css";
 import {Link} from "react-router-dom";
 import LoginModal from "./login/LoginModal";
 import {Observer, useLocalObservable} from "mobx-react";
-import AuthStore, {State} from "../stores/AuthStore";
+import {State, useAuthStore} from "../stores/AuthStore";
 import CommonStore, {PathUrl} from "../stores/CommonStore";
 
 const Navigation = () => {
-  const authStore = useLocalObservable(AuthStore);
+  const authStore = useAuthStore();
   const commonStore = useLocalObservable(CommonStore);
   const [useScroll, setUseScroll] = React.useState(0);
 
@@ -47,10 +47,12 @@ const Navigation = () => {
                 </div>
                 {commonStore.navigationTaps.map((item) => (
                   <div key={item.key} className={classes.pageLinkBox} onClick={commonStore.onClickScrollTop}>
-                    {authStore.loginState === State.NotAuthenticated && item.key === PathUrl.FEED ?
-                        <span onClick={openLoginModal}>{item.label}</span>
-                        :
-                        <Link to={item.key}>{item.label}</Link>
+                    {authStore.loginState === State.NotAuthenticated ? (item.key === PathUrl.FEED ?
+                          <span onClick={openLoginModal}>{item.label}</span>
+                          :
+                          <Link to={item.key}>{item.label}</Link>)
+                      :
+                      <Link to={item.key}>{item.label}</Link>
                     }
                     {/*<Link to={item.key}>{item.label}</Link>*/}
                   </div>
@@ -68,8 +70,10 @@ const Navigation = () => {
                   <div key={item.key}
                        className={useScroll > 250 ? classes.pageLinkBox : classes.pageLinkBoxBlank}
                        onClick={commonStore.onClickScrollTop}>
-                    {authStore.loginState === State.NotAuthenticated && item.key === PathUrl.FEED ?
-                        <span onClick={openLoginModal}>{item.label}</span>
+                    {authStore.loginState === State.NotAuthenticated ? (item.key === PathUrl.FEED ?
+                            <span onClick={openLoginModal}>{item.label}</span>
+                            :
+                            <Link to={item.key}>{item.label}</Link>)
                         :
                         <Link to={item.key}>{item.label}</Link>
                     }

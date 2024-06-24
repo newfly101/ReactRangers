@@ -2,21 +2,11 @@ import React from "react";
 import classes from "./ConvertForm.module.css";
 import {Link} from "react-router-dom";
 import {PathUrl} from "../../stores/CommonStore";
-import {Observer, useLocalObservable} from "mobx-react";
-import AuthStore, {AdminUser} from "../../stores/AuthStore";
+import {Observer} from "mobx-react";
+import {useAuthStore} from "../../stores/AuthStore";
 
 const ConvertForm = () => {
-    const authStore = useLocalObservable(AuthStore);
-
-    // const checkEmailValidation = (email, password) => {
-    //     if (email.trim() === '') {
-    //         authStore.validLoginForm = false;
-    //     }
-    //     if (password.trim() === '') {
-    //         authStore.validLoginForm = false;
-    //     }
-    //     console.log("login 가능 ? >> ",authStore.validLoginForm);
-    // }
+    const authStore = useAuthStore();
 
     return (
         <Observer>

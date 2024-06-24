@@ -1,4 +1,6 @@
 import {makeAutoObservable} from 'mobx';
+import {createContext, useContext} from "react";
+import {useLocalObservable} from "mobx-react";
 
 export const State = {
     Authenticated: 'Authenticated',
@@ -85,7 +87,8 @@ const AuthStore = () => {
             if (AdminUser.email === this.login.email) {
                 if (AdminUser.password === this.login.password) {
                     this.changeLoginId();
-                    window.sessionStorage.setItem("user", JSON.stringify(this.login.id));
+                    window.localStorage.setItem("user", JSON.stringify(this.login.id));
+                    this.changeLoginState(State.Authenticated);
                     console.log("로그인 되었습니다.");
                 } else {
                     console.error("비밀번호가 틀렸습니다.");
@@ -94,8 +97,36 @@ const AuthStore = () => {
                 console.error("등록된 계정이 없습니다.");
             }
             // checkEmailValidation(this.login.email, this.login.password);
+        },
+        changeLoginState(value) {
+            this.loginState = value;
+            // this.loginState = State.Authenticated;
+        },
+        restoreState() {
+            const storedLoginId = window.localStorage.getItem("user");
+            const storedLoginState = window.localStorage.getItem("loginState");
+            if (storedLoginId) {
+                this.login.id = JSON.parse(storedLoginId);
+            }
+            if (storedLoginState) {
+                this.changeLoginState(storedLoginState);
+            }
         }
     });
 };
 
-export default AuthStore;
+const AuthContext = createContext(null);
+
+export const AuthProvider = ({ children }) => {
+    const authStore = useLocalObservable(AuthStore);
+    authStore.restoreState();
+
+    return (
+        <AuthContext.Provider value={authStore}>
+            {children}
+        </AuthContext.Provider>
+    );
+};
+
+
+export const useAuthStore = () => useContext(AuthContext);
