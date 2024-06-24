@@ -27,29 +27,6 @@ const EmptyUser = {
     updatedDatetime: '',
 }
 
-// const AuthStore = observable({
-//     // state
-//     login : Object.assign({}, EmptyLogin),
-//     loginState: State.NotAuthenticated,
-//     loginToken : '',
-//     loginUser : Object.assign({}, EmptyUser),
-//     loginModal : ModalState.isModalOpen,
-//
-//     // action
-//     checkLogin() {
-//       console.log('Check Login');
-//     },
-//     changeLoginId(id) {
-//         this.login.id = id;
-//     },
-//     changeLoginPassword(pwd) {
-//         this.login.password = pwd;
-//     },
-//     changeLoginModalState(state) {
-//         this.loginModal = state;
-//     }
-// });
-
 export const AdminUser = {
     id: "ADMIN",
     email: "admin@naver.com",
@@ -96,11 +73,9 @@ const AuthStore = () => {
             } else {
                 console.error("등록된 계정이 없습니다.");
             }
-            // checkEmailValidation(this.login.email, this.login.password);
         },
         changeLoginState(value) {
             this.loginState = value;
-            // this.loginState = State.Authenticated;
         },
         restoreState() {
             const storedLoginId = window.localStorage.getItem("user");
@@ -130,3 +105,4 @@ export const AuthProvider = ({ children }) => {
 
 
 export const useAuthStore = () => useContext(AuthContext);
+export default AuthStore;
