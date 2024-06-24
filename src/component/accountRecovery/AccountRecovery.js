@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import classes from "./AccountRecovery.module.css";
 
 import AccountRecoveryTopText from "./AccountRecoveryTopText";
