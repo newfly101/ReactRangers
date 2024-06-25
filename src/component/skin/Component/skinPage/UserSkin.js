@@ -24,7 +24,7 @@ const UserSkin = (props) => {
                 <div className={Classes.item}>
                   <div
                     key={index}
-                    className={Classes.image}
+                    className={Classes.userImage}
                     onMouseEnter={() => handleMouseEnter(index)}
                     onMouseLeave={handleMouseLeave}
                   >
