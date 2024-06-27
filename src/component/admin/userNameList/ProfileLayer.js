@@ -60,7 +60,7 @@ const ProfileLayer = () => {
         <div className={classes.adminBlock2}>
           <label>표시하는 사이트</label>
           <div>
-            <div className={classes.siteRow}>
+            <div className={classes.site}>
               <img
                 src="https://img1.daumcdn.net/thumb/C100x100/?scode=mtistory2&fname=https%3A%2F%2Ft1.daumcdn.net%2Ftistory_admin%2Fstatic%2Fmanage%2Fimages%2Fr3%2Fdefault_S.png"
                 alt="프로필이미지"
@@ -70,7 +70,7 @@ const ProfileLayer = () => {
               <span className={classes.myUrl}>game@naver.com</span>
             </div>
             {sites.map((site, index) => (
-              <div key={index} className={classes.siteRow}>
+              <div key={index} className={classes.site}>
                 <img
                   src="https://img1.daumcdn.net/thumb/C100x100/?scode=mtistory2&fname=https%3A%2F%2Ft1.daumcdn.net%2Ftistory_admin%2Fstatic%2Fmanage%2Fimages%2Fr3%2Fdefault_S.png"
                   alt="프로필이미지"
@@ -101,7 +101,7 @@ const ProfileLayer = () => {
             ))}
 
             {showNewSiteInput && (
-              <div className={classes.newSiteRow}>
+              <div className={classes.newSite}>
                 <select
                   name="name"
                   value={newSite.name}
