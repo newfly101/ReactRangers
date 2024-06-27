@@ -26,7 +26,7 @@ const MyProfile = () => {
             <div className={classes.myBlogIcon}>
               <img src={home} alt="home" />
             </div>
-            <Link to={"/admin"} className={classes.myBlogLink}>
+            <Link to={"/admin"} className={classes.link}>
               <div className={classes.myBlog}>내 블로그</div>
             </Link>
           </div>
@@ -39,19 +39,21 @@ const MyProfile = () => {
                 <div className={classes.userName}>내 계정</div>
               </div>
               <div className={classes.userNameList}>
-                <Link to={"/profileLayer"} className={classes.myBlogLink}>
+                <Link to={"/profileLayer"} className={classes.link}>
                   <div className={classes.listTitle}>프로필 레이어</div>
                 </Link>
-                <div className={classes.listTitle}>응원내역보기</div>
+                <Link to={"/supportList"} className={classes.link}>
+                  <div className={classes.listTitle}>응원내역보기</div>
+                </Link>
                 <div className={classes.listTitle}>카카오계정 관리</div>
               </div>
             </div>
           </div>
           <div>
-            <div className={classes.linkIcon}>
+            <div className={classes.externalIcon}>
               <img src={down} alt="down" />
             </div>
-            <div className={classes.link}>외부 기능</div>
+            <div className={classes.external}>외부 기능</div>
           </div>
         </div>
       </div>
