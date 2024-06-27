@@ -9,9 +9,10 @@ const SupportList = () => {
         <MyProfile />
       </div>
       <div id={classes.supportListRight}>
-        <div className={classes.supportBlock1}>안녕</div>
+        <div className={classes.mainTitle}>응원내역</div>
+        <div className={classes.supportBlock1}>검색기능</div>
 
-        <div className={classes.supportBlock2}>안녕</div>
+        <div className={classes.supportBlock2}>댓글목록</div>
       </div>
     </div>
   );

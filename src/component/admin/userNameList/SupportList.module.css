@@ -24,15 +24,22 @@
   width: 870px;
 }
 
-.supportBlock1 {
-  background: #fff;
-  padding: 30px 30px;
-  border: 1px solid #e0e5ee;
-  font-size: 13px;
-  border-bottom: 0;
+.mainTitle {
+  margin-top: 35px;
+  margin-bottom: 15px;
+  font-size: 17px;
+  font-weight: normal;
 }
 
-.supportlock2 {
+.supportBlock1 {
+  background: #fafbfc;
+  border: 1px solid #e0e5ee;
+  padding: 10px 35px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.supportBlock2 {
   background: #fff;
   padding: 30px 30px;
   border: 1px solid #e0e5ee;
