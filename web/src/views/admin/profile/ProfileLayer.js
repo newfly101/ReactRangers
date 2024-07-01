@@ -40,11 +40,11 @@ const ProfileLayer = () => {
   };
 
   return (
-    <div id={classes.profileLayer}>
-      <div id={classes.adminLeft}>
+    <div className={classes.profileLayer}>
+      <div className={classes.adminLeft}>
         <MyProfile />
       </div>
-      <div id={classes.adminRight}>
+      <div className={classes.adminRight}>
         <div>
           <div className={classes.mainTitle}>프로필 레이어</div>
           <div>
@@ -92,7 +92,7 @@ const ProfileLayer = () => {
                 <button onClick={() => handleDeleteSite(index)}>
                   <img
                     className={classes.deleteButton}
-                    src={'/admin/deleteIcon'}
+                    src={"/admin/deleteIcon"}
                     alt="deleteIcon"
                   />
                 </button>

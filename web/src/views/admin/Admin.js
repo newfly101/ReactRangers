@@ -15,11 +15,11 @@ const Admin = () => {
   };
 
   return (
-    <div id={classes.admin}>
-      <div id={classes.adminLeft}>
+    <div className={classes.admin}>
+      <div className={classes.adminLeft}>
         <MyProfile />
       </div>
-      <div id={classes.adminRight}>
+      <div className={classes.adminRight}>
         <div className={classes.adminBlog}>
           <div className={classes.adminFont}> 운영 중인 블로그</div>
           <form className={classes.adminBlock}>

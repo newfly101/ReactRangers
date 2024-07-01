@@ -4,11 +4,11 @@ import MyProfile from "../MyProfile";
 
 const SupportList = () => {
   return (
-    <div id={classes.supportList}>
-      <div id={classes.supportListLeft}>
+    <div className={classes.supportList}>
+      <div className={classes.supportListLeft}>
         <MyProfile />
       </div>
-      <div id={classes.supportListRight}>
+      <div className={classes.supportListRight}>
         <div className={classes.mainTitle}>응원내역</div>
         <div className={classes.supportBlock1}>검색기능</div>
 

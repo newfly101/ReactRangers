@@ -30,11 +30,11 @@ const NewBlog = () => {
     }
   };
   return (
-    <div id={classes.newBlog}>
-      <div id={classes.newBlogLeft}>
+    <div className={classes.newBlog}>
+      <div className={classes.newBlogLeft}>
         <MyProfile />
       </div>
-      <div id={classes.newBlogRight}>
+      <div className={classes.newBlogRight}>
         <h3>새 블로그 만들기</h3>
         <form className={classes.newBlogInputBox}>
           <div className={classes.newBlogName}>

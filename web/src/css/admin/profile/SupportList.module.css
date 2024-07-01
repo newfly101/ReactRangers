@@ -1,4 +1,4 @@
-#supportList {
+.supportList {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -8,7 +8,7 @@
   margin-top: 120px;
 }
 
-#supportListLeft {
+.supportListLeft {
   float: left;
   width: 216px;
   position: relative;
@@ -16,7 +16,7 @@
   padding-top: 100px;
 }
 
-#supportListRight {
+.supportListRight {
   margin-top: 20px;
   float: right;
   margin-left: 40px;

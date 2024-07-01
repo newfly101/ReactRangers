@@ -1,4 +1,4 @@
-#profileLayer {
+.profileLayer {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -8,7 +8,7 @@
   margin-top: 120px;
 }
 
-#adminLeft {
+.adminLeft {
   float: left;
   width: 216px;
   position: relative;
@@ -16,7 +16,7 @@
   padding-top: 100px;
 }
 
-#adminRight {
+.adminRight {
   margin-top: 20px;
   float: right;
   margin-left: 40px;
