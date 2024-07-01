@@ -52,8 +52,33 @@
   margin-right: 4px;
 }
 
-.siteRow,
-.newSiteRow {
+.myNeme {
+  width: 250px;
+  height: 38px;
+  padding: 0px 13px;
+  border: 1px solid #e0e6ec;
+  font-size: 16px;
+  line-height: 38px;
+  color: #9b9fb3;
+  background: #ebf0f5;
+}
+
+.myUrl {
+  width: 250px;
+  height: 38px;
+  padding: 0px 13px;
+  border: 1px solid #e0e6ec;
+  font-size: 16px;
+  line-height: 38px;
+  color: #9b9fb3;
+  background: #ebf0f5;
+  width: 542px;
+  margin-left: 4px;
+}
+
+.site,
+.newSite {
+  margin-top: 10px;
   display: flex;
   align-items: center;
   margin-bottom: 10px;
@@ -75,7 +100,17 @@
   border-radius: 4px;
 }
 
+.deleteButton {
+  display: flex;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  background-color: #fff;
+}
+
 .addButton {
+  display: flex;
+  justify-content: start;
   width: 100%;
   padding: 10px;
   font-size: 16px;

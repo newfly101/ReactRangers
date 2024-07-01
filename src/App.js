@@ -12,14 +12,13 @@ import ConvertAccount from "./component/convertAccount/ConvertAccount";
 import TistoryMain from "./component/storymain/TistoryMain";
 import NewBlog from "./component/admin/NewBlog";
 import ProfileLayer from "./component/admin/userNameList/ProfileLayer";
+import SupportList from "./component/admin/userNameList/SupportList";
 
 import ScrollToTop from "./component/ScrollToTop";
-import {PathUrl} from "./stores/CommonStore";
-
+import { PathUrl } from "./stores/CommonStore";
 
 function App() {
   return (
-
     <Router>
       {/* location.pathname 전역 저장 및 자동 스크롤 기능 : <ScrollToTop /> */}
       <ScrollToTop />
@@ -35,10 +34,10 @@ function App() {
         <Route path={PathUrl.CONVERT_ACCOUNT} element={<ConvertAccount />} />
         <Route path={PathUrl.NEW_BLOG} element={<NewBlog />} />
         <Route path={PathUrl.PROFILE_LAYER} element={<ProfileLayer />} />
+        <Route path={PathUrl.SUPPORT_LIST} element={<SupportList />} />
       </Routes>
       <Footer />
     </Router>
-
   );
 }
 

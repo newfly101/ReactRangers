@@ -47,7 +47,7 @@
   position: absolute;
   left: 15px;
 }
-.myBlogLink {
+.link {
   text-decoration-line: none;
   color: black;
 }
@@ -83,7 +83,7 @@
   padding-left: 47px;
 }
 
-.linkIcon {
+.externalIcon {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -94,7 +94,7 @@
   top: 500px;
 }
 
-.link {
+.external {
   border-top: 1px solid #e0e5ee;
   padding: 10px 0 14px 47px;
 }
