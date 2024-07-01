@@ -7,7 +7,7 @@ const Footer = () => {
       <div className={classes.innerFoot}>
         <div className={classes.contTistory}>
           <div className={classes.wrapDesc}>
-            <img src="tistory.ico" alt="" className={classes.tistroryImg} />
+            <img src={'/tistory.ico'} alt="" className={classes.tistroryImg} />
             <span className={classes.descFooter}>
               <div className={classes.txtFooter}>
                 티스토리는 카카오에서
@@ -71,7 +71,7 @@ const Footer = () => {
                 className={classes.inputText}
               />
               <button type="submit" className={classes.btnSearch}>
-                <img src="search.svg" alt="검색" />
+                <img src={'/common/search.svg'} alt="search" />
               </button>
             </form>
           </div>

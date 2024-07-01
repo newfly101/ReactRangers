@@ -28,7 +28,7 @@
 
 .MainBannerPTag {
   text-decoration: none;
-  color: inherit;
+  /*color: inherit;*/
   position: relative;
   font-size: 2.5em;
   margin-bottom: 5px;

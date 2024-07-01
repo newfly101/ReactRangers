@@ -13,7 +13,7 @@
 }
 /*호버시 그림자가 나타나는 css*/
 .blogWrapper:hover {
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
   transition: 0.6s all ease-out;
 }
 /*각각의 blog를 감싸는 css*/
