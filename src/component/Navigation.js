@@ -1,7 +1,7 @@
 import React, {useEffect} from "react";
-import classes from "./Navigation.module.css";
+import classes from "../css/component/Navigation.module.css";
 import {Link} from "react-router-dom";
-import LoginModal from "./login/LoginModal";
+import LoginModal from "../views/login/LoginModal";
 import {Observer, useLocalObservable} from "mobx-react";
 import {State, useAuthStore} from "../stores/AuthStore";
 import CommonStore, {PathUrl} from "../stores/CommonStore";

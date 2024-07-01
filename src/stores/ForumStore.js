@@ -5,7 +5,7 @@ import {
     blogIntroData,
     blogSkinData,
     blogTipData
-} from "../component/forum/ForumTapDummyData";
+} from "../dummyData/ForumDummyData";
 import {useLocalObservable} from "mobx-react";
 
 export const forumData = {

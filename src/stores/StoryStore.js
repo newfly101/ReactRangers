@@ -1,18 +1,18 @@
 import {makeAutoObservable} from "mobx";
-import {dummyCardLife, dummyItemLife, dummyItemLife2} from "../component/story/dummyData/StoryDummyDataLife";
+import {dummyCardLife, dummyItemLife, dummyItemLife2} from "../dummyData/story/StoryDummyDataLife";
 import {
   dummyCardCulture,
   dummyItemCulture,
   dummyItemCulture2
-} from "../component/story/dummyData/StoryDummyDataCulture";
-import {dummyCardIt, dummyItemIt, dummyItemIt2} from "../component/story/dummyData/StoryDummyDataIt";
+} from "../dummyData/story/StoryDummyDataCulture";
+import {dummyCardIt, dummyItemIt, dummyItemIt2} from "../dummyData/story/StoryDummyDataIt";
 import {
   dummyCardCurrent,
   dummyItemCurrent,
   dummyItemCurrent2
-} from "../component/story/dummyData/StoryDummyDataCurrent";
-import {dummyCardSport, dummyItemSport, dummyItemSport2} from "../component/story/dummyData/StoryDummyDataSport";
-import {dummyCardTravel, dummyItemTravel, dummyItemTravel2} from "../component/story/dummyData/StoryDummyDataTravel";
+} from "../dummyData/story/StoryDummyDataCurrent";
+import {dummyCardSport, dummyItemSport, dummyItemSport2} from "../dummyData/story/StoryDummyDataSport";
+import {dummyCardTravel, dummyItemTravel, dummyItemTravel2} from "../dummyData/story/StoryDummyDataTravel";
 
 const tagsName = [
   {tagName: "라이프", dataName: "life"},

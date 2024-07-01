@@ -6,7 +6,7 @@ import {
     blogIntroData,
     blogSkinData,
     blogTipData
-} from "../component/forum/ForumTapDummyData";
+} from "../dummyData/ForumDummyData";
 
 export const forumData = {
     all : blogEntryData,
