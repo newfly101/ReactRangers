@@ -1,4 +1,5 @@
 import {makeAutoObservable} from "mobx";
+import axios from "axios";
 
 class PayStore{
 
@@ -6,6 +7,9 @@ class PayStore{
     makeAutoObservable(this)
   }
 
+  openPayPage =()=>{
+
+  }
 }
 
 export default PayStore

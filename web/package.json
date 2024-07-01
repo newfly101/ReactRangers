@@ -7,6 +7,7 @@
     "@testing-library/jest-dom": "^6.4.6",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "axios": "^1.7.2",
     "css-select": "^5.1.0",
     "dayjs": "^1.11.11",
     "mobx": "^6.12.4",
