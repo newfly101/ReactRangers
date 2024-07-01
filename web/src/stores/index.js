@@ -5,6 +5,7 @@ import StoryStore from "./StoryStore";
 import CommonStore from "./CommonStore";
 import FeedStore from "./FeedStore";
 import AccountRecoveryStore from "./AccountRecoveryStore"
+import PayStore from "./PayStore";
 
 
 const stores = () => ({
@@ -15,7 +16,8 @@ const stores = () => ({
     forum2Store: new ForumStore2(),
     StoryStore: new StoryStore(),
     FeedStore: new FeedStore(),
-    AccountRecovery: new AccountRecoveryStore()
+    AccountRecovery: new AccountRecoveryStore(),
+    PayStore: new PayStore()
 });
 
 
