@@ -34,6 +34,7 @@
   width: 900px;
   background: #fff;
   border: 1px solid #e0e5ee;
+  border-bottom: 0;
   margin-top: 10px;
 }
 
@@ -63,4 +64,37 @@
   background: #fafbfc;
   padding: 25px 30px;
   border: 1px solid #e0e5ee;
+}
+
+.currentSituationBoxTitle {
+  font-size: 20px;
+  color: black;
+  margin: 50px 0 10px;
+}
+
+.currentSituationBox {
+  display: flex;
+  justify-content: space-between;
+  background: #fff;
+  border: 1px solid #e0e5ee;
+  padding: 30px 30px;
+  border-bottom: 0;
+}
+
+.buttonBox {
+  background: #fafbfc;
+  border: 1px solid #e0e5ee;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: flex-end;
+  border-top: 0;
+}
+
+.newBlogButton {
+  border-color: #333;
+  background: #333;
+  color: white;
+  text-align: center;
+  font-size: 14px;
+  padding: 10px 35px;
 }
