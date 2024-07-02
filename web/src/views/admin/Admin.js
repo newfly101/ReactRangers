@@ -12,7 +12,7 @@ const Admin = () => {
         <MyProfile />
       </div>
       <div className={classes.adminRight}>
-        <label className={classes.blogBoxTitle}> 운영 중인 블로그</label>
+        <div className={classes.adminTitle}> 운영 중인 블로그</div>
         <div className={classes.blogBox}>
           <img
             src="https://img1.daumcdn.net/thumb/S180x180/?scode=mtistory2&fname=https%3A%2F%2Ft1.daumcdn.net%2Ftistory_admin%2Fstatic%2Fmanage%2Fimages%2Fr3%2Fdefault_S.png"

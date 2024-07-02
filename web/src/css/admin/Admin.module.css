@@ -17,14 +17,14 @@
 }
 
 .adminRight {
-  margin-top: 90px;
   margin-left: 40px;
   height: 100vh;
 }
 
-.blogBoxTitle {
+.adminTitle {
   font-size: 20px;
   color: black;
+  margin: 50px 0 10px;
 }
 
 .blogBox {
@@ -64,12 +64,6 @@
   background: #fafbfc;
   padding: 25px 30px;
   border: 1px solid #e0e5ee;
-}
-
-.adminTitle {
-  font-size: 20px;
-  color: black;
-  margin: 50px 0 10px;
 }
 
 .currentSituationBox {
