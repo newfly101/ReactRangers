@@ -9,9 +9,7 @@
 }
 
 .adminLeft {
-  float: left;
-  width: 220px;
-  position: relative;
+  width: 215px;
   height: 100vh;
   padding-top: 100px;
 }
@@ -66,7 +64,7 @@
   border: 1px solid #e0e5ee;
 }
 
-.currentSituationBox {
+.titleBox {
   display: flex;
   justify-content: space-between;
   background: #fff;
@@ -75,24 +73,38 @@
   border-bottom: 0;
 }
 
-.currentSituationBoxText {
+.titleBoxText {
   font-size: 12px;
 }
 
-.newBlogButtonBox {
+.buttonBox {
   background: #fafbfc;
   border: 1px solid #e0e5ee;
   padding: 15px 30px;
   display: flex;
   justify-content: flex-end;
-  border-top: 0;
 }
 
 .newBlogButton {
-  border-color: #333;
   background: #333;
   color: white;
   text-align: center;
   font-size: 14px;
   padding: 10px 35px;
+}
+
+.saveButton {
+  background: #fafafa;
+  color: #959595;
+  font-size: 14px;
+  padding: 10px 35px;
+  border: 1px solid #e0e5ee;
+}
+
+.secession {
+  margin-top: 20px;
+  margin-left: 10px;
+  font-size: 13px;
+  color: gray;
+  letter-spacing: -2px;
 }
