@@ -6,6 +6,14 @@ import MyProfile from "./MyProfile";
 import { PathUrl } from "../../stores/CommonStore";
 
 const Admin = () => {
+  const [filter, setFilter] = useState();
+
+  const filterChangeHandler = (selectedValue) => {
+    setFilter(
+      selectedValue === "수신합니다." ? "수신합니다." : "수신하지 않습니다."
+    );
+  };
+
   return (
     <div className={classes.admin}>
       <div className={classes.adminLeft}>
@@ -41,13 +49,15 @@ const Admin = () => {
           <div className={classes.titleBoxText}>과거 개설 횟수 1회</div>
         </div>
         <div className={classes.buttonBox}>
-          <button className={classes.newBlogButton}>새 블로그 만들기</button>
+          <Link to={"/NewBlog"}>
+            <button className={classes.newBlogButton}>새 블로그 만들기</button>
+          </Link>
         </div>
 
         <div className={classes.adminTitle}>이메일 알림</div>
 
         <div className={classes.titleBox}>
-          <div>서비스 관령 소식 및 마케팅 메일을 수신하지 않습니다.</div>
+          <AdminFilter selected={filter} onChangeFilter={filterChangeHandler} />
         </div>
         <div className={classes.buttonBox}>
           <button className={classes.saveButton}>변경사항 저장</button>
