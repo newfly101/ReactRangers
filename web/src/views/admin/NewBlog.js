@@ -35,7 +35,8 @@ const NewBlog = () => {
         <MyProfile />
       </div>
       <div className={classes.newBlogRight}>
-        <h3>새 블로그 만들기</h3>
+        <div className={classes.newBlogTitle}>새 블로그 만들기</div>
+
         <form className={classes.newBlogInputBox}>
           <div className={classes.newBlogName}>
             <label>블로그 이름</label>
