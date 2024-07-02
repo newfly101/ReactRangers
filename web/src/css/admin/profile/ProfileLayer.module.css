@@ -8,38 +8,30 @@
   margin-top: 120px;
 }
 
-.adminLeft {
+.profileLayerLeft {
   width: 215px;
   height: 100vh;
   padding-top: 100px;
 }
 
-.adminRight {
+.profileLayerRight {
   margin-left: 40px;
   height: 100vh;
 }
 
-.mainTitle {
+.profileLayerTitle {
   font-size: 20px;
   color: black;
   margin: 50px 0 10px;
 }
 
-.adminBlock1 {
+.profileLayerBox {
   background: #fff;
   padding: 30px 30px;
   border: 1px solid #e0e5ee;
   font-size: 13px;
   border-bottom: 0;
-  width: 902px;
-}
-
-.adminBlock2 {
-  background: #fff;
-  padding: 30px 30px;
-  border: 1px solid #e0e5ee;
-  font-size: 13px;
-  border-bottom: 0;
+  width: 840px;
 }
 
 .profileImage {
@@ -59,7 +51,6 @@
 }
 
 .myUrl {
-  /*width: 250px;*/
   height: 38px;
   padding: 0 13px;
   border: 1px solid #e0e6ec;
