@@ -13,6 +13,7 @@ const Admin = () => {
       </div>
       <div className={classes.adminRight}>
         <div className={classes.adminTitle}> 운영 중인 블로그</div>
+
         <div className={classes.blogBox}>
           <img
             src="https://img1.daumcdn.net/thumb/S180x180/?scode=mtistory2&fname=https%3A%2F%2Ft1.daumcdn.net%2Ftistory_admin%2Fstatic%2Fmanage%2Fimages%2Fr3%2Fdefault_S.png"
@@ -30,23 +31,28 @@ const Admin = () => {
         </div>
 
         <div className={classes.adminTitle}>운영∙개설 현황</div>
-        <div>
-          <div className={classes.currentSituationBox}>
-            <div>4개의 블로그를 더 운영할 수 있습니다.</div>
-            <div className={classes.currentSituationBoxText}>
-              운영 중인 블로그 1개
-            </div>
-          </div>
-          <div className={classes.currentSituationBox}>
-            <div>블로그 개설 가능 횟수가 8회 남았습니다.</div>
-            <div className={classes.currentSituationBoxText}>
-              과거 개설 횟수 1회
-            </div>
-          </div>
-          <div className={classes.newBlogButtonBox}>
-            <button className={classes.newBlogButton}>새 블로그 만들기</button>
-          </div>
+
+        <div className={classes.titleBox}>
+          <div>4개의 블로그를 더 운영할 수 있습니다.</div>
+          <div className={classes.titleBoxText}>운영 중인 블로그 1개</div>
         </div>
+        <div className={classes.titleBox}>
+          <div>블로그 개설 가능 횟수가 8회 남았습니다.</div>
+          <div className={classes.titleBoxText}>과거 개설 횟수 1회</div>
+        </div>
+        <div className={classes.buttonBox}>
+          <button className={classes.newBlogButton}>새 블로그 만들기</button>
+        </div>
+
+        <div className={classes.adminTitle}>이메일 알림</div>
+
+        <div className={classes.titleBox}>
+          <div>서비스 관령 소식 및 마케팅 메일을 수신하지 않습니다.</div>
+        </div>
+        <div className={classes.buttonBox}>
+          <button className={classes.saveButton}>변경사항 저장</button>
+        </div>
+        <div className={classes.secession}>티스토리에서 탈퇴하기</div>
       </div>
     </div>
   );
