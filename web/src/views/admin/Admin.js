@@ -29,19 +29,21 @@ const Admin = () => {
           대표 블로그는 방문한 블로그/팀블로그 활동 시 사용됩니다.
         </div>
 
-        <div className={classes.currentSituationBoxTitle}>운영∙개설 현황</div>
+        <div className={classes.adminTitle}>운영∙개설 현황</div>
         <div>
           <div className={classes.currentSituationBox}>
             <div>4개의 블로그를 더 운영할 수 있습니다.</div>
-            <div className={classes.adminBlock3}>운영 중인 블로그 1개</div>
+            <div className={classes.currentSituationBoxText}>
+              운영 중인 블로그 1개
+            </div>
           </div>
-
           <div className={classes.currentSituationBox}>
             <div>블로그 개설 가능 횟수가 8회 남았습니다.</div>
-            <div className={classes.adminBlock5}>과거 개설 횟수 2회</div>
+            <div className={classes.currentSituationBoxText}>
+              과거 개설 횟수 1회
+            </div>
           </div>
-
-          <div className={classes.buttonBox}>
+          <div className={classes.newBlogButtonBox}>
             <button className={classes.newBlogButton}>새 블로그 만들기</button>
           </div>
         </div>
