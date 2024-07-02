@@ -17,8 +17,50 @@
 }
 
 .adminRight {
-  margin-top: 20px;
-  float: right;
+  margin-top: 90px;
   margin-left: 40px;
   height: 100vh;
+}
+
+.blogBoxTitle {
+  font-size: 20px;
+  color: black;
+}
+
+.blogBox {
+  display: flex;
+  align-items: center;
+  height: 120px;
+  width: 900px;
+  background: #fff;
+  border: 1px solid #e0e5ee;
+  margin-top: 10px;
+}
+
+.profileImg {
+  width: 80px;
+  height: 80px;
+  margin: 25px;
+  border: 1px solid #e0e5ee;
+}
+
+.profileEmail {
+  padding-top: 5px;
+  font-size: 13px;
+  color: gray;
+}
+
+.blogBoxButton {
+  margin-left: 560px;
+  padding: 5px 18px;
+  background: #333;
+  color: white;
+}
+
+.blogBoxExplanation {
+  font-size: 12px;
+  color: gray;
+  background: #fafbfc;
+  padding: 25px 30px;
+  border: 1px solid #e0e5ee;
 }
