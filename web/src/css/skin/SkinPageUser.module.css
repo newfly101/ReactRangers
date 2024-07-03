@@ -23,6 +23,12 @@
   position: relative;
   border: 0.5px solid rgba(0, 0, 0, 0.1);
   width: 240px;
+  height: 180px;
+}
+
+.userImage img {
+  width: 240px;
+  height: auto;
 }
 
 .userImage:before {
