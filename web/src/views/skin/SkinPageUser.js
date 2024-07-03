@@ -4,7 +4,7 @@ import classes from "../../css/skin/SkinPageUser.module.css";
 const SkinPageUser = (props) => {
   const { usersSkin } = props;
 
-  const [isHoverd, setIsHovered] = useState(null);
+  const [isHovered, setIsHovered] = useState(null);
 
   const handleMouseEnter = (index) => {
     setIsHovered(index);
@@ -27,8 +27,8 @@ const SkinPageUser = (props) => {
                     onMouseEnter={() => handleMouseEnter(index)}
                     onMouseLeave={handleMouseLeave}
                   >
-                    <img className={classes.image} src={user.image} alt={user.index} />
-                    {isHoverd === index && (
+                    <img src={user.image} alt={user.index} />
+                    {isHovered === index && (
                       <div className={classes.hoverCard}>
                         <div className={classes.hoverProfile}>
                           <img src={user.profile} alt={user.index} />
@@ -38,8 +38,8 @@ const SkinPageUser = (props) => {
                           <div className={classes.linkButton}>
                             <button>
                               배포 사이트 보기
-                              <span>
-                                <img src={'/SkinImg/link.svg'} className={classes.icon} alt="skinmore"/>
+                              <span className={classes.iconContainer}>
+                                <img src={'/SkinImg/link.svg'} alt="skinmore"/>
                               </span>
                             </button>
                           </div>
