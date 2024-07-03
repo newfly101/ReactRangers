@@ -40,23 +40,20 @@ const ProfileLayer = () => {
   };
 
   return (
-    <div id={classes.profileLayer}>
-      <div id={classes.adminLeft}>
+    <div className={classes.profileLayer}>
+      <div className={classes.profileLayerLeft}>
         <MyProfile />
       </div>
-      <div id={classes.adminRight}>
-        <div>
-          <div className={classes.mainTitle}>프로필 레이어</div>
-          <div>
-            <div className={classes.adminBlock1}>
-              <ProfileLayerFilter
-                selected={filteredReceive}
-                onChangeFilter={changeFilterHandler}
-              />
-            </div>
-          </div>
+      <div className={classes.profileLayerRight}>
+        <div className={classes.profileLayerTitle}>프로필 레이어</div>
+        <div className={classes.profileLayerBox}>
+          <ProfileLayerFilter
+            selected={filteredReceive}
+            onChangeFilter={changeFilterHandler}
+          />
         </div>
-        <div className={classes.adminBlock2}>
+
+        <div className={classes.profileLayerBox}>
           <label>표시하는 사이트</label>
           <div>
             <div className={classes.site}>
@@ -92,7 +89,7 @@ const ProfileLayer = () => {
                 <button onClick={() => handleDeleteSite(index)}>
                   <img
                     className={classes.deleteButton}
-                    src={'/admin/deleteIcon'}
+                    src={"/admin/deleteIcon"}
                     alt="deleteIcon"
                   />
                 </button>

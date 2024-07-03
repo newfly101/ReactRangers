@@ -1,4 +1,4 @@
-#admin {
+.admin {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -8,119 +8,84 @@
   margin-top: 120px;
 }
 
-#adminLeft {
-  float: left;
-  width: 220px;
-  position: relative;
+.adminLeft {
+  width: 215px;
   height: 100vh;
   padding-top: 100px;
 }
 
-#adminRight {
-  margin-top: 20px;
-  float: right;
+.adminRight {
   margin-left: 40px;
   height: 100vh;
 }
 
-.adminFont {
-  margin-top: 35px;
-  margin-bottom: 15px;
-  font-size: 17px;
-  font-weight: normal;
+.adminTitle {
+  font-size: 20px;
+  color: black;
+  margin: 50px 0 10px;
 }
 
-.adminBlock {
+.blogBox {
   display: flex;
-  justify-content: center;
   align-items: center;
   height: 120px;
+  width: 900px;
   background: #fff;
   border: 1px solid #e0e5ee;
+  border-bottom: 0;
+  margin-top: 10px;
 }
 
-.adminBlockImage {
+.profileImg {
   width: 80px;
   height: 80px;
   margin: 25px;
-}
-
-.adminBlockImage img {
-  width: 80px;
   border: 1px solid #e0e5ee;
 }
 
-.adminBlockMenu {
-  width: 650px;
-}
-
-.adminBlockEmail {
+.profileEmail {
   padding-top: 5px;
-}
-
-.adminBlockButton {
-  margin-right: 30px;
-  padding: 5px 18px;
-  background: #333;
-  color: white;
-  cursor: pointer;
-  font-size: 11px;
-}
-
-.adminBlockGuide {
-  padding: 25px 29px;
-  background: #fafbfc;
-  border: 1px solid #e0e5ee;
-  border-top: 0;
-  font-size: 11px;
+  font-size: 13px;
   color: gray;
 }
 
-.adminBlockName {
-  font-size: 15px;
-  font-weight: bold;
+.blogBoxButton {
+  margin-left: 560px;
+  padding: 5px 18px;
+  background: #333;
+  color: white;
 }
 
-.adminBlockName:hover,
-.adminBlockEmail:hover {
-  cursor: pointer;
-  text-decoration: underline;
+.blogBoxExplanation {
+  font-size: 12px;
+  color: gray;
+  background: #fafbfc;
+  padding: 25px 30px;
+  border: 1px solid #e0e5ee;
 }
 
-.adminSituation1,
-.adminSituation2 {
+.titleBox {
   display: flex;
   justify-content: space-between;
   background: #fff;
   border: 1px solid #e0e5ee;
   padding: 30px 30px;
-}
-
-.adminSituation1 {
   border-bottom: 0;
 }
 
-.adminBlock2,
-.adminBlock4 {
-  font-size: 15px;
+.titleBoxText {
+  font-size: 12px;
 }
 
-.adminBlock3,
-.adminBlock5 {
-  font-size: 11px;
-}
-
-.adminBlockBtn {
+.buttonBox {
   background: #fafbfc;
   border: 1px solid #e0e5ee;
   padding: 15px 30px;
   display: flex;
   justify-content: flex-end;
-  border-top: 0;
 }
 
-.adminBlockBtnWindow {
-  border-color: #333;
+.newBlogButton {
   background: #333;
   color: white;
   text-align: center;
@@ -128,40 +93,18 @@
   padding: 10px 35px;
 }
 
-.adminBlockBtnWindow:hover {
-  background: #505050;
-}
-
-.adminBlock7 {
-  background: #fff;
-  padding: 30px 30px;
-  border: 1px solid #e0e5ee;
-  font-size: 13px;
-  border-bottom: 0;
-}
-
-.adminBlock8 {
-  background: #fafbfc;
-  border: 1px solid #e0e5ee;
+.saveButton {
+  background: #fafafa;
+  color: #959595;
+  font-size: 14px;
   padding: 10px 35px;
-  display: flex;
-  justify-content: flex-end;
+  border: 1px solid #e0e5ee;
 }
 
-.adminWithdraw {
+.secession {
   margin-top: 20px;
   margin-left: 10px;
   font-size: 13px;
   color: gray;
   letter-spacing: -2px;
-  cursor: pointer;
-}
-
-.button {
-  background: #fff;
-  color: #959595;
-  text-align: center;
-  font-size: 14px;
-  padding: 10px 35px;
-  border: 1px solid #e0e5ee;
 }
