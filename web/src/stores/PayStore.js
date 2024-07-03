@@ -1,5 +1,4 @@
 import {makeAutoObservable} from "mobx";
-import axios from "axios";
 import * as PortOne from "@portone/browser-sdk/v2";
 
 class PayStore {
