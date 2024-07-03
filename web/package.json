@@ -1,0 +1,53 @@
+{
+  "name": "reactrangers",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "@portone/browser-sdk": "^0.0.7",
+    "@testing-library/jest-dom": "^6.4.6",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "axios": "^1.7.2",
+    "css-select": "^5.1.0",
+    "dayjs": "^1.11.11",
+    "mobx": "^6.12.4",
+    "mobx-react": "^9.1.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-mobx": "^0.0.4",
+    "react-router-dom": "^6.0.0",
+    "react-scripts": "5.0.1",
+    "react-slick": "^0.30.2",
+    "slick-carousel": "^1.8.1",
+    "swiper": "^11.1.4",
+    "web-vitals": "^4.2.1"
+  },
+  "scripts": {
+    "start": "react-app-rewired start",
+    "build": "react-app-rewired build",
+    "test": "react-app-rewired test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "react-app-rewired": "^2.2.1"
+  }
+}

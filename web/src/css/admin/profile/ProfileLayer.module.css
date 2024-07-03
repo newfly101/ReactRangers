@@ -1,0 +1,125 @@
+.profileLayer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f3f5f7;
+  height: 100vh;
+  width: 100%;
+  margin-top: 120px;
+}
+
+.profileLayerLeft {
+  width: 215px;
+  height: 100vh;
+  padding-top: 100px;
+}
+
+.profileLayerRight {
+  margin-left: 40px;
+  height: 100vh;
+}
+
+.profileLayerTitle {
+  font-size: 20px;
+  color: black;
+  margin: 50px 0 10px;
+}
+
+.profileLayerBox {
+  background: #fff;
+  padding: 30px 30px;
+  border: 1px solid #e0e5ee;
+  font-size: 13px;
+  border-bottom: 0;
+  width: 840px;
+}
+
+.profileImage {
+  width: 40px;
+  margin-right: 4px;
+}
+
+.myNeme {
+  width: 250px;
+  height: 38px;
+  padding: 0 13px;
+  border: 1px solid #e0e6ec;
+  font-size: 16px;
+  line-height: 38px;
+  color: #9b9fb3;
+  background: #ebf0f5;
+}
+
+.myUrl {
+  height: 38px;
+  padding: 0 13px;
+  border: 1px solid #e0e6ec;
+  font-size: 16px;
+  line-height: 38px;
+  color: #9b9fb3;
+  background: #ebf0f5;
+  width: 542px;
+  margin-left: 4px;
+}
+
+.site,
+.newSite {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.input {
+  width: 48%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.select {
+  width: 48%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.deleteButton {
+  display: flex;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  background-color: #fff;
+}
+
+.addButton {
+  display: flex;
+  justify-content: start;
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  color: #959595;
+  background-color: #fafbfc;
+  border: 1px solid #e0e5ee;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.adminBlock3 {
+  background: #fafbfc;
+  border: 1px solid #e0e5ee;
+  padding: 10px 35px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.saveButton {
+  background: #fff;
+  color: #959595;
+  text-align: center;
+  font-size: 14px;
+  padding: 10px 35px;
+  border: 1px solid #e0e5ee;
+}

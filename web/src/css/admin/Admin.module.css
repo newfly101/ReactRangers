@@ -1,0 +1,110 @@
+.admin {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f3f5f7;
+  height: 100vh;
+  width: 100%;
+  margin-top: 120px;
+}
+
+.adminLeft {
+  width: 215px;
+  height: 100vh;
+  padding-top: 100px;
+}
+
+.adminRight {
+  margin-left: 40px;
+  height: 100vh;
+}
+
+.adminTitle {
+  font-size: 20px;
+  color: black;
+  margin: 50px 0 10px;
+}
+
+.blogBox {
+  display: flex;
+  align-items: center;
+  height: 120px;
+  width: 900px;
+  background: #fff;
+  border: 1px solid #e0e5ee;
+  border-bottom: 0;
+  margin-top: 10px;
+}
+
+.profileImg {
+  width: 80px;
+  height: 80px;
+  margin: 25px;
+  border: 1px solid #e0e5ee;
+}
+
+.profileEmail {
+  padding-top: 5px;
+  font-size: 13px;
+  color: gray;
+}
+
+.blogBoxButton {
+  margin-left: 560px;
+  padding: 5px 18px;
+  background: #333;
+  color: white;
+}
+
+.blogBoxExplanation {
+  font-size: 12px;
+  color: gray;
+  background: #fafbfc;
+  padding: 25px 30px;
+  border: 1px solid #e0e5ee;
+}
+
+.titleBox {
+  display: flex;
+  justify-content: space-between;
+  background: #fff;
+  border: 1px solid #e0e5ee;
+  padding: 30px 30px;
+  border-bottom: 0;
+}
+
+.titleBoxText {
+  font-size: 12px;
+}
+
+.buttonBox {
+  background: #fafbfc;
+  border: 1px solid #e0e5ee;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.newBlogButton {
+  background: #333;
+  color: white;
+  text-align: center;
+  font-size: 14px;
+  padding: 10px 35px;
+}
+
+.saveButton {
+  background: #fafafa;
+  color: #959595;
+  font-size: 14px;
+  padding: 10px 35px;
+  border: 1px solid #e0e5ee;
+}
+
+.secession {
+  margin-top: 20px;
+  margin-left: 10px;
+  font-size: 13px;
+  color: gray;
+  letter-spacing: -2px;
+}

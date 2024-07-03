@@ -1,0 +1,22 @@
+{
+  "id" : "/",
+  "short_name": "Tistory Clone",
+  "name": "Tistory Clone SuperCoding Team02",
+  "description": "Replaces pictures with pictures of cats.",
+  "icons": [
+    {
+      "src": "tistory.ico",
+      "sizes": "32x32",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "tistory.svg",
+      "type": "image/svg+xml",
+      "sizes": "50x50"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}

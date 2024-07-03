@@ -1,0 +1,93 @@
+.profile {
+  background: #fff;
+  text-align: center;
+  border: 1px solid #e0e5ee;
+  padding: 30px 0 25px;
+  display: block;
+}
+
+.profileImg {
+  border-radius: 100%;
+}
+
+.user {
+  padding-top: 20px;
+  font-weight: bold;
+}
+
+.email {
+  color: #888;
+  font-size: 13px;
+}
+
+.profileList {
+  margin-top: 6px;
+  background: #fff;
+  font-size: 15px;
+  padding-bottom: 7px;
+  border: 1px solid #e0e5ee;
+}
+
+.myBlogBox {
+  width: 214px;
+  height: 48px;
+}
+
+.myBlogIcon {
+  width: 21px;
+  height: 21px;
+  position: absolute;
+  padding: 12px 12px 12px;
+}
+
+.myBlogTitle {
+  padding: 12px 0 10px 47px;
+  color: black;
+}
+
+.link {
+  text-decoration-line: none;
+}
+.userNameBox {
+  border-top: 1px solid #e0e5ee;
+  padding: 12px 0 14px;
+}
+
+.userNameIcon {
+  width: 21px;
+  height: 21px;
+  position: absolute;
+  padding-left: 12px;
+}
+
+.userNameTitle {
+  padding-bottom: 8px;
+  padding-left: 47px;
+}
+
+.userNameList {
+  font-size: 13px;
+  font-weight: 100;
+  color: #555;
+  padding: 5px 0 0 47px;
+}
+
+.externalIcon {
+  width: 21px;
+  height: 21px;
+  position: absolute;
+  padding: 12px 12px 12px;
+}
+
+.externalTitle {
+  border-top: 1px solid #e0e5ee;
+  padding: 12px 0 10px 47px;
+  color: black;
+}
+
+.myBlogTitle:hover,
+.userNameList:hover,
+.externalTitle:hover {
+  background: #e0e5ee;
+  cursor: pointer;
+}
