@@ -6,7 +6,19 @@ const NewBlog = () => {
   const [blogName, setBlogName] = useState("");
   const [blogUrl, setBlogUrl] = useState("");
   const [blogNickname, setBlogNickname] = useState("");
-  const [errors, setErrors] = useState({});
+  const [blogNameError, setBlogNameError] = useState("");
+  const [blogUrlError, setBlogUrlError] = useState("");
+  const [blogNicknameError, setBlogNicknameError] = useState("");
+
+  const errorMessageHandler = (text) => {
+    if (text === "blogName" && blogName === "") {
+      setBlogNameError("블로그 이름을 입력해 주세요.");
+    } else if (text === "blogUrl" && blogUrl === "") {
+      setBlogUrlError("숫자, 영문 소문자, 하이픈(-)만 입력 가능합니다.");
+    } else if (text === "blogNickname" && blogNickname === "") {
+      setBlogNicknameError("닉네임을 입력해 주세요.");
+    }
+  };
 
   return (
     <div className={classes.newBlog}>
@@ -24,7 +36,11 @@ const NewBlog = () => {
               id="blogName"
               value={blogName}
               onChange={(event) => setBlogName(event.target.value)}
+              onBlur={() => errorMessageHandler("blogName")}
             />
+            {blogNameError && (
+              <div className={classes.error}>{blogNameError}</div>
+            )}
           </div>
           <div className={classes.newBlogUrl}>
             블로그 주소
@@ -38,9 +54,13 @@ const NewBlog = () => {
                 id="blogUrl"
                 value={blogUrl}
                 onChange={(event) => setBlogUrl(event.target.value)}
+                onBlur={() => errorMessageHandler("blogUrl")}
               />
               <div className={classes.newBlogUrlName}>.tistory.com</div>
             </div>
+            {blogUrlError && (
+              <div className={classes.error}>{blogUrlError}</div>
+            )}
           </div>
           <div className={classes.newBlogNickname}>
             블로그 닉네임
@@ -50,7 +70,11 @@ const NewBlog = () => {
               id="blogNickname"
               value={blogNickname}
               onChange={(event) => setBlogNickname(event.target.value)}
+              onBlur={() => errorMessageHandler("blogNickname")}
             />
+            {blogNicknameError && (
+              <div className={classes.error}>{blogNicknameError}</div>
+            )}
           </div>
         </form>
         <div className={classes.newBlogButtonBox}>

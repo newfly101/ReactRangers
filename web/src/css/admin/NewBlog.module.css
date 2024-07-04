@@ -72,6 +72,12 @@
   font-size: 16px;
 }
 
+.error {
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
 .newBlogButtonBox {
   background: #fafbfc;
   border: 1px solid #e0e5ee;
