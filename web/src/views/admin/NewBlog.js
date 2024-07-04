@@ -4,31 +4,10 @@ import MyProfile from "./MyProfile";
 
 const NewBlog = () => {
   const [blogName, setBlogName] = useState("");
-  const [blogAddress, setBlogAddress] = useState("");
+  const [blogUrl, setBlogUrl] = useState("");
   const [blogNickname, setBlogNickname] = useState("");
   const [errors, setErrors] = useState({});
 
-  const validateForm = () => {
-    const newErrors = {};
-    if (!blogName) {
-      newErrors.blogName = "블로그 이름을 입력해 주세요.";
-    }
-    if (!blogAddress) {
-      newErrors.blogAddress = "숫자, 영문 소문자, 하이픈(-)만 입력 가능합니다.";
-    }
-    if (!blogNickname) {
-      newErrors.blogNickname = "블로그 닉네임을 입력해 주세요.";
-    }
-    setErrors(newErrors);
-    return Object.keys(newErrors).length === 0;
-  };
-
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    if (validateForm()) {
-      console.log({ blogName, blogAddress, blogNickname });
-    }
-  };
   return (
     <div className={classes.newBlog}>
       <div className={classes.newBlogLeft}>
@@ -39,51 +18,43 @@ const NewBlog = () => {
 
         <form className={classes.newBlogInputBox}>
           <div className={classes.newBlogName}>
-            <label>블로그 이름</label>
+            블로그 이름
             <input
               type="text"
               id="blogName"
               value={blogName}
               onChange={(event) => setBlogName(event.target.value)}
             />
-            {errors.blogName && (
-              <p className={classes.error}>{errors.blogName}</p>
-            )}
           </div>
           <div className={classes.newBlogUrl}>
-            <label>블로그 주소</label>
+            블로그 주소
+            <label>
+              기본주소는 개설후 변경할 수 없으니 신중하게 만들어 주세요.
+            </label>
             <div className={classes.newBlogUrlBox}>
               <input
-                type="text"
-                id="blogAddress"
-                value={blogAddress}
-                onChange={(event) => setBlogAddress(event.target.value)}
+                type="url"
+                placeholder="최소 4자 ~ 최대 32자의 영문 소문자, 숫자, 하이픈(-)으로 입력해 주세요."
+                id="blogUrl"
+                value={blogUrl}
+                onChange={(event) => setBlogUrl(event.target.value)}
               />
-              <span>.tistory.com</span>
+              <div className={classes.newBlogUrlName}>.tistory.com</div>
             </div>
-            {errors.blogAddress && (
-              <p className={classes.error}>{errors.blogAddress}</p>
-            )}
           </div>
           <div className={classes.newBlogNickname}>
-            <label>블로그 닉네임</label>
+            블로그 닉네임
+            <label>블로그에서 사용할 닉네임을 만들어 주세요</label>
             <input
               type="text"
               id="blogNickname"
               value={blogNickname}
               onChange={(event) => setBlogNickname(event.target.value)}
             />
-            {errors.blogNickname && (
-              <p className={classes.error}>{errors.blogNickname}</p>
-            )}
           </div>
         </form>
         <div className={classes.newBlogButtonBox}>
-          <button
-            type="submit"
-            className={classes.newBlogButton}
-            onClick={handleSubmit}
-          >
+          <button type="submit" className={classes.newBlogButton}>
             개설하기기
           </button>
         </div>

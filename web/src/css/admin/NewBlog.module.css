@@ -36,7 +36,11 @@
 .newBlogName,
 .newBlogUrl,
 .newBlogNickname {
-  margin-bottom: 15px;
+  margin-bottom: 20px;
+  margin-left: 10px;
+  display: block;
+  font-size: 14px;
+  color: black;
 }
 
 .newBlogUrlBox {
@@ -44,25 +48,28 @@
   justify-content: space-between;
 }
 
-.newBlogName label,
+.newBlogUrlName {
+  font-size: 15px;
+  padding-top: 15px;
+}
+
 .newBlogUrl label,
 .newBlogNickname label {
-  display: block;
-  margin-bottom: 5px;
+  font-size: 13px;
+  color: gray;
+  padding-left: 12px;
 }
 
 .newBlogName input,
 .newBlogUrl input,
 .newBlogNickname input {
-  width: 100%;
-  padding: 10px 0;
+  width: 806px;
+  height: 38px;
+  padding: 0 13px;
+  margin-top: 9px;
   margin-right: 20px;
   border: 1px solid #e0e5ee;
-}
-
-.error {
-  color: red;
-  font-size: 13px;
+  font-size: 16px;
 }
 
 .newBlogButtonBox {
