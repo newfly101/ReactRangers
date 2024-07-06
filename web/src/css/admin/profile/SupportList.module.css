@@ -31,11 +31,19 @@
   padding: 10px 35px;
   display: flex;
   justify-content: flex-end;
+  align-items: center;
   width: 830px;
 }
 
 .searchIcon {
   display: flex;
+  align-items: center;
+}
+
+.searchIcon img {
+  margin-left: 8px;
+  width: 20px;
+  height: 20px;
 }
 
 .searchText {
@@ -46,7 +54,7 @@
 }
 
 .searchText input {
-  width: 800px;
+  width: 780px;
 }
 
 .searchList {
