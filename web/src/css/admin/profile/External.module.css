@@ -24,13 +24,21 @@
   color: black;
   margin: 50px 0 10px;
 }
+.externalTitle span {
+  font-size: 13px;
+  color: gray;
+  padding-left: 10px;
+}
 
 .serviceBox {
   background: #fafbfc;
   border: 1px solid #e0e5ee;
+  border-bottom: 0;
   padding: 10px 35px;
-  display: flex;
   width: 830px;
+  display: flex;
+  justify-content: space-around;
+  font-size: 13px;
 }
 
 .serviceList {
@@ -38,5 +46,6 @@
   padding: 30px 30px;
   border: 1px solid #e0e5ee;
   font-size: 13px;
-  border-bottom: 0;
+  display: flex;
+  justify-content: center;
 }
