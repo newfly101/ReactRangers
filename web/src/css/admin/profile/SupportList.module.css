@@ -25,7 +25,7 @@
   margin: 50px 0 10px;
 }
 
-.supportBlock1 {
+.searchBox {
   background: #fafbfc;
   border: 1px solid #e0e5ee;
   padding: 10px 35px;
@@ -34,10 +34,26 @@
   width: 830px;
 }
 
-.supportBlock2 {
+.searchIcon {
+  display: flex;
+}
+
+.searchText {
+  background: #fafbfc;
+  display: flex;
+  justify-content: flex-end;
+  width: 860px;
+}
+
+.searchText input {
+  width: 800px;
+}
+
+.searchList {
   background: #fff;
   padding: 30px 30px;
   border: 1px solid #e0e5ee;
   font-size: 13px;
-  border-bottom: 0;
+  display: flex;
+  justify-content: center;
 }
