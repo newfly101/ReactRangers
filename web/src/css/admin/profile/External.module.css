@@ -1,0 +1,42 @@
+.external {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f3f5f7;
+  height: 100vh;
+  width: 100%;
+  margin-top: 120px;
+}
+
+.externalLeft {
+  width: 215px;
+  height: 100vh;
+  padding-top: 100px;
+}
+
+.externalRight {
+  margin-left: 40px;
+  height: 100vh;
+}
+
+.externalTitle {
+  font-size: 20px;
+  color: black;
+  margin: 50px 0 10px;
+}
+
+.serviceBox {
+  background: #fafbfc;
+  border: 1px solid #e0e5ee;
+  padding: 10px 35px;
+  display: flex;
+  width: 830px;
+}
+
+.serviceList {
+  background: #fff;
+  padding: 30px 30px;
+  border: 1px solid #e0e5ee;
+  font-size: 13px;
+  border-bottom: 0;
+}

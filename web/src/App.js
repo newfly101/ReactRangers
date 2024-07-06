@@ -13,6 +13,7 @@ import TistoryMain from "./views/main/TistoryMain";
 import NewBlog from "./views/admin/NewBlog";
 import ProfileLayer from "./views/admin/profile/ProfileLayer";
 import SupportList from "./views/admin/profile/SupportList";
+import External from "./views/admin/profile/External";
 import Pay from "./views/pay/Pay";
 
 import ScrollToTop from "./component/ScrollToTop";
@@ -36,6 +37,7 @@ function App() {
         <Route path={PathUrl.NEW_BLOG} element={<NewBlog />} />
         <Route path={PathUrl.PROFILE_LAYER} element={<ProfileLayer />} />
         <Route path={PathUrl.SUPPORT_LIST} element={<SupportList />} />
+        <Route path={PathUrl.EXTERNAL} element={<External />} />
         <Route path={PathUrl.PAY} element={<Pay />} />
       </Routes>
       <Footer />

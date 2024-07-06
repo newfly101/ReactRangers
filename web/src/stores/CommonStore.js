@@ -15,7 +15,8 @@ export const PathUrl = {
   NEW_BLOG: "/newBlog",
   PROFILE_LAYER: "/profileLayer",
   SUPPORT_LIST: "/supportList",
-  PAY: '/pay'
+  EXTERNAL: "/external",
+  PAY: "/pay",
 };
 
 export const navigationTaps = [
