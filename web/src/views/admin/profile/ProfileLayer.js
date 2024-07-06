@@ -54,7 +54,7 @@ const ProfileLayer = () => {
         </div>
 
         <div className={classes.profileLayerBox}>
-          <label>표시하는 사이트</label>
+          표시하는 사이트
           <div>
             <div className={classes.site}>
               <img
@@ -89,7 +89,7 @@ const ProfileLayer = () => {
                 <button onClick={() => handleDeleteSite(index)}>
                   <img
                     className={classes.deleteButton}
-                    src={"/admin/deleteIcon"}
+                    src={"/admin/deleteIcon.svg"}
                     alt="deleteIcon"
                   />
                 </button>
@@ -128,7 +128,7 @@ const ProfileLayer = () => {
             </button>
           </div>
         </div>
-        <div className={classes.adminBlock3}>
+        <div className={classes.buttonBox}>
           <button onClick={handleSaveChanges} className={classes.saveButton}>
             변경사항 저장
           </button>
