@@ -50,7 +50,9 @@ const MyProfile = () => {
             alt="down"
             className={classes.externalIcon}
           />
-          <div className={classes.externalTitle}>외부 기능</div>
+          <Link to={"/external"} className={classes.link}>
+            <div className={classes.externalTitle}>외부 기능</div>
+          </Link>
         </div>
       </div>
     </>
