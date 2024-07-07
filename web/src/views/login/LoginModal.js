@@ -34,6 +34,11 @@ class LoginModal extends Component {
                   <img src={"/kakao_login_medium_narrow.png"} alt="kakaologin" />
                 </button>
               </Link>
+              <Link to="/login" onClick={close}>
+                <button className={classes.loginBtn}>
+                  아이디로 로그인하기
+                </button>
+              </Link>
               <Link
                 to="/AccountRecovery"
                 className={classes.tistoryLoginHelp}

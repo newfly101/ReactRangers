@@ -14,6 +14,7 @@ import NewBlog from "./views/admin/NewBlog";
 import ProfileLayer from "./views/admin/profile/ProfileLayer";
 import SupportList from "./views/admin/profile/SupportList";
 import Pay from "./views/pay/Pay";
+import Login from "./views/login/Login";
 
 import ScrollToTop from "./component/ScrollToTop";
 import { PathUrl } from "./stores/CommonStore";
@@ -37,6 +38,7 @@ function App() {
         <Route path={PathUrl.PROFILE_LAYER} element={<ProfileLayer />} />
         <Route path={PathUrl.SUPPORT_LIST} element={<SupportList />} />
         <Route path={PathUrl.PAY} element={<Pay />} />
+        <Route path={PathUrl.LOGIN} element={<Login/>}/>
       </Routes>
       <Footer />
     </Router>
