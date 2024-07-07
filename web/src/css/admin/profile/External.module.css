@@ -1,4 +1,4 @@
-.supportList {
+.external {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -8,48 +8,40 @@
   margin-top: 120px;
 }
 
-.supportListLeft {
+.externalLeft {
   width: 215px;
   height: 100vh;
   padding-top: 100px;
 }
 
-.supportListRight {
+.externalRight {
   margin-left: 40px;
   height: 100vh;
 }
 
-.mainTitle {
+.externalTitle {
   font-size: 20px;
   color: black;
   margin: 50px 0 10px;
 }
+.externalTitle span {
+  font-size: 13px;
+  color: gray;
+  padding-left: 10px;
+}
 
-.searchBox {
+.serviceBox {
   background: #fafbfc;
   border: 1px solid #e0e5ee;
+  border-bottom: 0;
   padding: 10px 35px;
-  display: flex;
-  justify-content: flex-end;
   width: 830px;
-}
-
-.searchIcon {
   display: flex;
+  justify-content: space-around;
+  font-size: 13px;
 }
 
-.searchText {
-  background: #fafbfc;
-  display: flex;
-  justify-content: flex-end;
-  width: 860px;
-}
-
-.searchText input {
-  width: 800px;
-}
-
-.searchList {
+.serviceList {
   background: #fff;
   padding: 30px 30px;
   border: 1px solid #e0e5ee;

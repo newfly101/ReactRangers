@@ -29,8 +29,8 @@
   background: #fff;
   padding: 30px 30px;
   border: 1px solid #e0e5ee;
-  font-size: 13px;
   border-bottom: 0;
+  font-size: 13px;
   width: 840px;
 }
 
@@ -51,6 +51,7 @@
 }
 
 .myUrl {
+  width: 490px;
   height: 38px;
   padding: 0 13px;
   border: 1px solid #e0e6ec;
@@ -58,7 +59,6 @@
   line-height: 38px;
   color: #9b9fb3;
   background: #ebf0f5;
-  width: 542px;
   margin-left: 4px;
 }
 
@@ -66,29 +66,18 @@
 .newSite {
   margin-top: 10px;
   display: flex;
-  align-items: center;
   margin-bottom: 10px;
 }
 
 .input {
-  width: 48%;
+  width: 490px;
   padding: 10px;
   font-size: 16px;
   border: 1px solid #ddd;
-  border-radius: 4px;
-}
-
-.select {
-  width: 48%;
-  padding: 10px;
-  font-size: 16px;
-  border: 1px solid #ddd;
-  border-radius: 4px;
 }
 
 .deleteButton {
   display: flex;
-  justify-content: center;
   width: 30px;
   height: 30px;
   background-color: #fff;
@@ -103,23 +92,21 @@
   color: #959595;
   background-color: #fafbfc;
   border: 1px solid #e0e5ee;
-  cursor: pointer;
   margin-bottom: 10px;
 }
 
-.adminBlock3 {
+.buttonBox {
   background: #fafbfc;
   border: 1px solid #e0e5ee;
-  padding: 10px 35px;
+  padding: 15px 30px;
   display: flex;
   justify-content: flex-end;
 }
 
 .saveButton {
-  background: #fff;
-  color: #959595;
+  background: #333;
+  color: white;
   text-align: center;
   font-size: 14px;
   padding: 10px 35px;
-  border: 1px solid #e0e5ee;
 }
