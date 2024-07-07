@@ -17,6 +17,9 @@ export const PathUrl = {
   SUPPORT_LIST: "/supportList",
   EXTERNAL: "/external",
   PAY: "/pay",
+  LOGIN: "/login",
+  SIGNIN: "/signin"
+
 };
 
 export const navigationTaps = [

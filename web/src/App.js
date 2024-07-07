@@ -19,6 +19,7 @@ import Login from "./views/login/Login";
 
 import ScrollToTop from "./component/ScrollToTop";
 import { PathUrl } from "./stores/CommonStore";
+import Signin from "./views/login/Signin";
 
 function App() {
   return (
@@ -41,7 +42,7 @@ function App() {
         <Route path={PathUrl.EXTERNAL} element={<External />} />
         <Route path={PathUrl.PAY} element={<Pay />} />
         <Route path={PathUrl.LOGIN} element={<Login/>}/>
-        <Route path={PathUrl.SIGNIN} element={<signin/>}/>
+        <Route path={PathUrl.SIGNIN} element={<Signin/>}/>
       </Routes>
       <Footer />
     </Router>
