@@ -16,7 +16,8 @@ export const PathUrl = {
   PROFILE_LAYER: "/profileLayer",
   SUPPORT_LIST: "/supportList",
   PAY: '/pay',
-  LOGIN: '/login'
+  LOGIN: '/login',
+  SIGNIN: '/signin'
 };
 
 export const navigationTaps = [

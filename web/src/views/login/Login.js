@@ -8,7 +8,7 @@ const Login = () => {
       <div className={classes.loginFormContainer}>
       <LoginForm/>
       </div>
-      <Link to={}
+      <Link to='/signin'/>
       <div>계정이 없다면, 즉시 회원가입 하기</div>
     </div>
   );

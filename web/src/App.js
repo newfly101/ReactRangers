@@ -39,6 +39,7 @@ function App() {
         <Route path={PathUrl.SUPPORT_LIST} element={<SupportList />} />
         <Route path={PathUrl.PAY} element={<Pay />} />
         <Route path={PathUrl.LOGIN} element={<Login/>}/>
+        <Route path={PathUrl.SIGNIN} element={<signin/>}/>
       </Routes>
       <Footer />
     </Router>
