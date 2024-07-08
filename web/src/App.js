@@ -15,9 +15,11 @@ import ProfileLayer from "./views/admin/profile/ProfileLayer";
 import SupportList from "./views/admin/profile/SupportList";
 import External from "./views/admin/profile/External";
 import Pay from "./views/pay/Pay";
+import Login from "./views/login/Login";
 
 import ScrollToTop from "./component/ScrollToTop";
 import { PathUrl } from "./stores/CommonStore";
+import Signin from "./views/login/Signin";
 
 function App() {
   return (
@@ -39,6 +41,8 @@ function App() {
         <Route path={PathUrl.SUPPORT_LIST} element={<SupportList />} />
         <Route path={PathUrl.EXTERNAL} element={<External />} />
         <Route path={PathUrl.PAY} element={<Pay />} />
+        <Route path={PathUrl.LOGIN} element={<Login/>}/>
+        <Route path={PathUrl.SIGNIN} element={<Signin/>}/>
       </Routes>
       <Footer />
     </Router>
