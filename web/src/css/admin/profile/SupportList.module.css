@@ -59,9 +59,10 @@
 
 .searchList {
   background: #fff;
-  padding: 30px 30px;
+  padding: 100px 100px;
   border: 1px solid #e0e5ee;
   font-size: 13px;
   display: flex;
   justify-content: center;
+  color: #888;
 }
